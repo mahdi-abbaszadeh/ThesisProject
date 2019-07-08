@@ -12,7 +12,6 @@ use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 Use Work.ConnectionPack.All;
 Use work.FilePack.all;
-gfdgfgdg
 
 entity NOC_Test is 
 end;
