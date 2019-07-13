@@ -44,10 +44,49 @@ Generic(
 		Clk				: In  std_logic;
 		Reset			: In  std_logic;
 
-		SentCnt			: Out UnsignedArr16(RowNo*ColNo-1 Downto 0);
-		ReceCnt			: Out UnsignedArr16(RowNo*ColNo-1 Downto 0);
-		AveReceTime		: Out UnsignedArr20(RowNo*ColNo-1 Downto 0);
-		StopSim			: In Std_Logic
+		--SentCnt			: Out UnsignedArr16(RowNo*ColNo-1 Downto 0);
+		--ReceCnt			: Out UnsignedArr16(RowNo*ColNo-1 Downto 0);
+		--AveReceTime		: Out UnsignedArr20(RowNo*ColNo-1 Downto 0);
+		--StopSim			: In Std_Logic
+
+		PE00_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE00_InpEn			: Out  	Std_Logic;
+		PE00_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE00_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE00_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE00_OutpEn			: In 	Std_Logic;
+		PE00_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		PE00_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+
+		PE01_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE01_InpEn			: Out  	Std_Logic;
+		PE01_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE01_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE01_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE01_OutpEn			: In 	Std_Logic;
+		PE01_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		PE01_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+
+		PE10_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE10_InpEn			: Out  	Std_Logic;
+		PE10_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE10_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE10_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE10_OutpEn			: In 	Std_Logic;
+		PE10_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		PE10_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+
+		PE11_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE11_InpEn			: Out  	Std_Logic;
+		PE11_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE11_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE11_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE11_OutpEn			: In 	Std_Logic;
+		PE11_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		PE11_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0)
+
+
+
 		);
 end;
 
@@ -243,43 +282,110 @@ Signal	Sel2	: UnsignedArrMNxPhyxViChAddr; --ers=>" ? ViChAddr=1
 
 begin 
 
-mg1: For j in 0 to RowNo-1 Generate
-	mg2: For i in 0 to ColNo-1 Generate
-	--write(str,i);
-	--InpPoisson(j) <= String'(j);
-	--InpPoisson(j):=Int_to_string(j*ColNo+i);
-	Data2(j*ColNo+i) <= (Data(Index(j+1,i,ColNo,RowNo))(1),Data(Index(j,i+1,ColNo,RowNo))(0)
-						   ,Data(Index(j-1,i,ColNo,RowNo))(3),Data(Index(j,i-1,ColNo,RowNo))(2));
-	En2(j*ColNo+i) <= 	(En(Index(j+1,i,ColNo,RowNo))(1),En(Index(j,i+1,ColNo,RowNo))(0)
-						   ,En(Index(j-1,i,ColNo,RowNo))(3),En(Index(j,i-1,ColNo,RowNo))(2));
-	--Ready2(j*ColNo+i) <= 	(Ready(Index(j,i-1,ColNo,RowNo))(2),Ready(Index(j-1,i,ColNo,RowNo))(3)
-	--					   ,Ready(Index(j,i+1,ColNo,RowNo))(0),Ready(Index(j+1,i,ColNo,RowNo))(1));				   
+--mg1: For j in 0 to RowNo-1 Generate
+--	mg2: For i in 0 to ColNo-1 Generate
+--	--write(str,i);
+--	--InpPoisson(j) <= String'(j);
+--	--InpPoisson(j):=Int_to_string(j*ColNo+i);
+--	Data2(j*ColNo+i) <= (Data(Index(j+1,i,ColNo,RowNo))(1),Data(Index(j,i+1,ColNo,RowNo))(0)
+--						   ,Data(Index(j-1,i,ColNo,RowNo))(3),Data(Index(j,i-1,ColNo,RowNo))(2));
+--	En2(j*ColNo+i) <= 	(En(Index(j+1,i,ColNo,RowNo))(1),En(Index(j,i+1,ColNo,RowNo))(0)
+--						   ,En(Index(j-1,i,ColNo,RowNo))(3),En(Index(j,i-1,ColNo,RowNo))(2));
+--	--Ready2(j*ColNo+i) <= 	(Ready(Index(j,i-1,ColNo,RowNo))(2),Ready(Index(j-1,i,ColNo,RowNo))(3)
+--	--					   ,Ready(Index(j,i+1,ColNo,RowNo))(0),Ready(Index(j+1,i,ColNo,RowNo))(1));				   
 
 
---	Ready(Index(j+1,i,ColNo,RowNo))(1) <= Ready2(j*ColNo+i)(3);
---	Ready(Index(j,i+1,ColNo,RowNo))(0) <= Ready2(j*ColNo+i)(2);
---	Ready(Index(j-1,i,ColNo,RowNo))(3) <= Ready2(j*ColNo+i)(1);
---	Ready(Index(j,i-1,ColNo,RowNo))(2) <= Ready2(j*ColNo+i)(0);
-	ag3  : For k in 0 to ViCh-1 Generate
-		Ready(Index(j+1,i,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(j*ColNo+i)(3 *ViCh+k);
-		Ready(Index(j,i+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(j*ColNo+i)(2 *ViCh+k);
-		Ready(Index(j-1,i,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(j*ColNo+i)(1 *ViCh+k);
-		Ready(Index(j,i-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(j*ColNo+i)(0 *ViCh+k);
-	End Generate;	
+----	Ready(Index(j+1,i,ColNo,RowNo))(1) <= Ready2(j*ColNo+i)(3);
+----	Ready(Index(j,i+1,ColNo,RowNo))(0) <= Ready2(j*ColNo+i)(2);
+----	Ready(Index(j-1,i,ColNo,RowNo))(3) <= Ready2(j*ColNo+i)(1);
+----	Ready(Index(j,i-1,ColNo,RowNo))(2) <= Ready2(j*ColNo+i)(0);
+--	ag3  : For k in 0 to ViCh-1 Generate
+--		Ready(Index(j+1,i,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(j*ColNo+i)(3 *ViCh+k);
+--		Ready(Index(j,i+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(j*ColNo+i)(2 *ViCh+k);
+--		Ready(Index(j-1,i,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(j*ColNo+i)(1 *ViCh+k);
+--		Ready(Index(j,i-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(j*ColNo+i)(0 *ViCh+k);
+--	End Generate;	
 	
-	Sel2(j*ColNo+i) <=	(Sel(Index(j+1,i,ColNo,RowNo))(1),Sel(Index(j,i+1,ColNo,RowNo))(0)
-						   ,Sel(Index(j-1,i,ColNo,RowNo))(3),Sel(Index(j,i-1,ColNo,RowNo))(2));					   
-m1: Entity Work.Node 
+--	Sel2(j*ColNo+i) <=	(Sel(Index(j+1,i,ColNo,RowNo))(1),Sel(Index(j,i+1,ColNo,RowNo))(0)
+--						   ,Sel(Index(j-1,i,ColNo,RowNo))(3),Sel(Index(j,i-1,ColNo,RowNo))(2));					   
+--m1: Entity Work.Node 
+--	Generic Map(
+--		--InpFilePoisson	=> InpFilePoisson(j*ColNo+i)	,	
+--		--InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
+--		--OutpFilePack	=> OutpFilePack(j*ColNo+i)		 ,
+--		--OutpFileTime	=> OutpFileTime(j*ColNo+i)		,
+	
+--		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(j*ColNo+i))	,	
+--		InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
+--		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(j*ColNo+i))		 ,
+--		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(j*ColNo+i))		,
+	
+--		ViChAddr	=> ViChAddr		,
+--		PhyRoChAddr	=> PhyRoChAddr	,
+--		--			   --
+--		PhyCh		=> PhyCh		,
+--		ViCh		=> ViCh			,
+--		RoCh 		=> RoCh 		,
+--		PhyRoCh		=> PhyRoCh		,
+--		--			   --
+--		PackWidth	=> PackWidth	,
+--		DataWidth	=> DataWidth	,
+--		--			   --
+--		CurNode		=> j*ColNo+i	,
+--		--Y			=> j			,	
+--		PackGen		=> PackGen(j*ColNo+i) ,
+--		PackGenNum	=> PackGenNum
+--		)
+--	Port Map(
+--		Clk				=> Clk			,	
+--		Reset			=> Reset		,	
+
+--		InpData			=> Data2(j*ColNo+i)	,	
+--		InpEn			=> En2(j*ColNo+i)		,	
+--		InpReady		=> Ready2(j*ColNo+i)	,
+--		InpSel			=> Sel2(j*ColNo+i)		,		
+
+--		OutpData		=> Data(j*ColNo+i),
+--		OutpEn			=> En(j*ColNo+i)	,	
+--		OutpReady		=> Ready(j*ColNo+i)	,
+		
+--		SentCnt			=> SentCnt(j*ColNo+i)	,
+--		ReceCnt			=> ReceCnt(j*ColNo+i)	,
+--		AveReceTime		=> AveReceTime(j*ColNo+i),
+--		--sim
+--		StopSim			=> StopSim,
+
+--		OutpSel			=> Sel(j*ColNo+i)					
+--	);
+--	End Generate;	
+--End Generate;	
+
+
+	--*************************************************************************************
+	--*************************************************************************************
+	-- j = 0, i = 0;
+	--*************************************************************************************
+	--*************************************************************************************
+Data2(0*ColNo+0) <= (Data(Index(0+1,0,ColNo,RowNo))(1),Data(Index(0,0+1,ColNo,RowNo))(0)
+					   ,Data(Index(0-1,0,ColNo,RowNo))(3),Data(Index(0,0-1,ColNo,RowNo))(2));
+En2(0*ColNo+0) <= 	(En(Index(0+1,0,ColNo,RowNo))(1),En(Index(0,0+1,ColNo,RowNo))(0)
+					   ,En(Index(0-1,0,ColNo,RowNo))(3),En(Index(0,0-1,ColNo,RowNo))(2));
+
+ag00 : For k in 0 to ViCh-1 Generate
+	Ready(Index(0+1,0,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(0*ColNo+0)(3 *ViCh+k);
+	Ready(Index(0,0+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(0*ColNo+0)(2 *ViCh+k);
+	Ready(Index(0-1,0,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(0*ColNo+0)(1 *ViCh+k);
+	Ready(Index(0,0-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(0*ColNo+0)(0 *ViCh+k);
+End Generate;	
+
+Sel2(0*ColNo+0) <=	(Sel(Index(0+1,0,ColNo,RowNo))(1),Sel(Index(0,0+1,ColNo,RowNo))(0)
+					   ,Sel(Index(0-1,0,ColNo,RowNo))(3),Sel(Index(0,0-1,ColNo,RowNo))(2));					   
+m00: Entity Work.Node 
 	Generic Map(
-		--InpFilePoisson	=> InpFilePoisson(j*ColNo+i)	,	
-		--InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
-		--OutpFilePack	=> OutpFilePack(j*ColNo+i)		 ,
-		--OutpFileTime	=> OutpFileTime(j*ColNo+i)		,
-	
-		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(j*ColNo+i))	,	
-		InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
-		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(j*ColNo+i))		 ,
-		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(j*ColNo+i))		,
+		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(0*ColNo+0))	,	
+		InpFileUniform	=> InpFileUniform(0*ColNo+0)	,	
+		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(0*ColNo+0))		 ,
+		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(0*ColNo+0))		,
 	
 		ViChAddr	=> ViChAddr		,
 		PhyRoChAddr	=> PhyRoChAddr	,
@@ -292,33 +398,240 @@ m1: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> j*ColNo+i	,
+		CurNode		=> 0*ColNo+0	,
 		--Y			=> j			,	
-		PackGen		=> PackGen(j*ColNo+i) ,
+		PackGen		=> PackGen(0*ColNo+0) ,
 		PackGenNum	=> PackGenNum
 		)
 	Port Map(
 		Clk				=> Clk			,	
 		Reset			=> Reset		,	
 
-		InpData			=> Data2(j*ColNo+i)	,	
-		InpEn			=> En2(j*ColNo+i)		,	
-		InpReady		=> Ready2(j*ColNo+i)	,
-		InpSel			=> Sel2(j*ColNo+i)		,		
+		InpData			=> Data2(0*ColNo+0)	,	
+		InpEn			=> En2(0*ColNo+0)		,	
+		InpReady		=> Ready2(0*ColNo+0)	,
+		InpSel			=> Sel2(0*ColNo+0)		,		
 
-		OutpData		=> Data(j*ColNo+i),
-		OutpEn			=> En(j*ColNo+i)	,	
-		OutpReady		=> Ready(j*ColNo+i)	,
-		
-		SentCnt			=> SentCnt(j*ColNo+i)	,
-		ReceCnt			=> ReceCnt(j*ColNo+i)	,
-		AveReceTime		=> AveReceTime(j*ColNo+i),
-		--sim
-		StopSim			=> StopSim,
+		OutpData		=> Data(0*ColNo+0),
+		OutpEn			=> En(0*ColNo+0)	,	
+		OutpReady		=> Ready(0*ColNo+0)	,
+		OutpSel			=> Sel(0*ColNo+0),
 
-		OutpSel			=> Sel(j*ColNo+i)					
+		PE_InpData		=> PE00_InpData,
+		PE_InpEn		=> PE00_InpEn,
+		PE_InpReady		=> PE00_InpReady,
+		PE_InpSel		=> PE00_InpSel,
+
+		PE_OutpData		=> PE00_OutpData,
+		PE_OutpEn		=> PE00_OutpEn,
+		PE_OutpReady 	=> PE00_OutpReady,
+		PE_OutpSel		=> PE00_OutpSel				
 	);
-	End Generate;	
+
+
+
+	--*************************************************************************************
+	--*************************************************************************************
+	-- j = 0, i = 1;
+	--*************************************************************************************
+	--*************************************************************************************
+Data2(0*ColNo+1) <= (Data(Index(0+1,1,ColNo,RowNo))(1),Data(Index(0,1+1,ColNo,RowNo))(0)
+						   ,Data(Index(0-1,1,ColNo,RowNo))(3),Data(Index(0,1-1,ColNo,RowNo))(2));
+En2(0*ColNo+1) <= 	(En(Index(0+1,1,ColNo,RowNo))(1),En(Index(0,1+1,ColNo,RowNo))(0)
+						   ,En(Index(0-1,1,ColNo,RowNo))(3),En(Index(0,1-1,ColNo,RowNo))(2));
+
+ag01  : For k in 0 to ViCh-1 Generate
+	Ready(Index(0+1,1,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(0*ColNo+1)(3 *ViCh+k);
+	Ready(Index(0,1+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(0*ColNo+1)(2 *ViCh+k);
+	Ready(Index(0-1,1,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(0*ColNo+1)(1 *ViCh+k);
+	Ready(Index(0,1-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(0*ColNo+1)(0 *ViCh+k);
 End Generate;	
+
+Sel2(0*ColNo+1) <=	(Sel(Index(0+1,1,ColNo,RowNo))(1),Sel(Index(0,1+1,ColNo,RowNo))(0)
+						   ,Sel(Index(0-1,1,ColNo,RowNo))(3),Sel(Index(0,1-1,ColNo,RowNo))(2));					   
+m01: Entity Work.Node 
+	Generic Map(
+	
+		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(0*ColNo+1))	,	
+		InpFileUniform	=> InpFileUniform(0*ColNo+1)	,	
+		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(0*ColNo+1))		 ,
+		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(0*ColNo+1))		,
+	
+		ViChAddr	=> ViChAddr		,
+		PhyRoChAddr	=> PhyRoChAddr	,
+		--			   --
+		PhyCh		=> PhyCh		,
+		ViCh		=> ViCh			,
+		RoCh 		=> RoCh 		,
+		PhyRoCh		=> PhyRoCh		,
+		--			   --
+		PackWidth	=> PackWidth	,
+		DataWidth	=> DataWidth	,
+		--			   --
+		CurNode		=> 0*ColNo+1	,
+		--Y			=> 0			,	
+		PackGen		=> PackGen(0*ColNo+1) ,
+		PackGenNum	=> PackGenNum
+		)
+	Port Map(
+		Clk				=> Clk			,	
+		Reset			=> Reset		,	
+
+		InpData			=> Data2(0*ColNo+1)	,	
+		InpEn			=> En2(0*ColNo+1)		,	
+		InpReady		=> Ready2(0*ColNo+1)	,
+		InpSel			=> Sel2(0*ColNo+1)		,		
+
+		OutpData		=> Data(0*ColNo+1),
+		OutpEn			=> En(0*ColNo+1)	,	
+		OutpReady		=> Ready(0*ColNo+1)	,
+		OutpSel			=> Sel(0*ColNo+1),
+
+		PE_InpData		=> PE01_InpData,
+		PE_InpEn		=> PE01_InpEn,
+		PE_InpReady		=> PE01_InpReady,
+		PE_InpSel		=> PE01_InpSel,
+
+		PE_OutpData		=> PE01_OutpData,
+		PE_OutpEn		=> PE01_OutpEn,
+		PE_OutpReady 	=> PE01_OutpReady,
+		PE_OutpSel		=> PE01_OutpSel					
+	);
+
+	--*************************************************************************************
+	--*************************************************************************************
+	-- j = 1, i = 0;
+	--*************************************************************************************
+	--*************************************************************************************
+Data2(1*ColNo+0) <= (Data(Index(1+1,0,ColNo,RowNo))(1),Data(Index(1,0+1,ColNo,RowNo))(0)
+						   ,Data(Index(1-1,0,ColNo,RowNo))(3),Data(Index(1,0-1,ColNo,RowNo))(2));
+En2(1*ColNo+0) <= 	(En(Index(1+1,0,ColNo,RowNo))(1),En(Index(1,0+1,ColNo,RowNo))(0)
+						   ,En(Index(1-1,0,ColNo,RowNo))(3),En(Index(1,0-1,ColNo,RowNo))(2));
+
+ag10  : For k in 0 to ViCh-1 Generate
+	Ready(Index(1+1,0,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(1*ColNo+0)(3 *ViCh+k);
+	Ready(Index(1,0+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(1*ColNo+0)(2 *ViCh+k);
+	Ready(Index(1-1,0,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(1*ColNo+0)(1 *ViCh+k);
+	Ready(Index(1,0-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(1*ColNo+0)(0 *ViCh+k);
+End Generate;	
+
+Sel2(1*ColNo+0) <=	(Sel(Index(1+1,0,ColNo,RowNo))(1),Sel(Index(1,0+1,ColNo,RowNo))(0)
+						   ,Sel(Index(1-1,0,ColNo,RowNo))(3),Sel(Index(1,0-1,ColNo,RowNo))(2));					   
+m10: Entity Work.Node 
+	Generic Map(
+	
+		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(1*ColNo+0))	,	
+		InpFileUniform	=> InpFileUniform(1*ColNo+0)	,	
+		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(1*ColNo+0))		 ,
+		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(1*ColNo+0))		,
+	
+		ViChAddr	=> ViChAddr		,
+		PhyRoChAddr	=> PhyRoChAddr	,
+		--			   --
+		PhyCh		=> PhyCh		,
+		ViCh		=> ViCh			,
+		RoCh 		=> RoCh 		,
+		PhyRoCh		=> PhyRoCh		,
+		--			   --
+		PackWidth	=> PackWidth	,
+		DataWidth	=> DataWidth	,
+		--			   --
+		CurNode		=> 1*ColNo+0	,
+		--Y			=> 1			,	
+		PackGen		=> PackGen(1*ColNo+0) ,
+		PackGenNum	=> PackGenNum
+		)
+	Port Map(
+		Clk				=> Clk			,	
+		Reset			=> Reset		,	
+
+		InpData			=> Data2(1*ColNo+0)	,	
+		InpEn			=> En2(1*ColNo+0)		,	
+		InpReady		=> Ready2(1*ColNo+0)	,
+		InpSel			=> Sel2(1*ColNo+0)		,		
+
+		OutpData		=> Data(1*ColNo+0),
+		OutpEn			=> En(1*ColNo+0)	,	
+		OutpReady		=> Ready(1*ColNo+0)	,
+		OutpSel			=> Sel(1*ColNo+0),
+
+		PE_InpData		=> PE10_InpData,
+		PE_InpEn		=> PE10_InpEn,
+		PE_InpReady		=> PE10_InpReady,
+		PE_InpSel		=> PE10_InpSel,
+
+		PE_OutpData		=> PE10_OutpData,
+		PE_OutpEn		=> PE10_OutpEn,
+		PE_OutpReady 	=> PE10_OutpReady,
+		PE_OutpSel		=> PE10_OutpSel					
+	);
+
+		--*************************************************************************************
+	--*************************************************************************************
+	-- j = 1, i = 1;
+	--*************************************************************************************
+	--*************************************************************************************
+Data2(1*ColNo+1) <= (Data(Index(1+1,1,ColNo,RowNo))(1),Data(Index(1,1+1,ColNo,RowNo))(0)
+						   ,Data(Index(1-1,1,ColNo,RowNo))(3),Data(Index(1,1-1,ColNo,RowNo))(2));
+En2(1*ColNo+1) <= 	(En(Index(1+1,1,ColNo,RowNo))(1),En(Index(1,1+1,ColNo,RowNo))(0)
+						   ,En(Index(1-1,1,ColNo,RowNo))(3),En(Index(1,1-1,ColNo,RowNo))(2));
+
+ag3  : For k in 0 to ViCh-1 Generate
+	Ready(Index(1+1,1,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(1*ColNo+1)(3 *ViCh+k);
+	Ready(Index(1,1+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(1*ColNo+1)(2 *ViCh+k);
+	Ready(Index(1-1,1,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(1*ColNo+1)(1 *ViCh+k);
+	Ready(Index(1,1-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(1*ColNo+1)(0 *ViCh+k);
+End Generate;	
+
+Sel2(1*ColNo+1) <=	(Sel(Index(1+1,1,ColNo,RowNo))(1),Sel(Index(1,1+1,ColNo,RowNo))(0)
+						   ,Sel(Index(1-1,1,ColNo,RowNo))(3),Sel(Index(1,1-1,ColNo,RowNo))(2));					   
+m2: Entity Work.Node 
+	Generic Map(
+	
+		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(1*ColNo+1))	,	
+		InpFileUniform	=> InpFileUniform(1*ColNo+1)	,	
+		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(1*ColNo+1))		 ,
+		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(1*ColNo+1))		,
+	
+		ViChAddr	=> ViChAddr		,
+		PhyRoChAddr	=> PhyRoChAddr	,
+		--			   --
+		PhyCh		=> PhyCh		,
+		ViCh		=> ViCh			,
+		RoCh 		=> RoCh 		,
+		PhyRoCh		=> PhyRoCh		,
+		--			   --
+		PackWidth	=> PackWidth	,
+		DataWidth	=> DataWidth	,
+		--			   --
+		CurNode		=> 1*ColNo+1	,
+		--Y			=> 1			,	
+		PackGen		=> PackGen(1*ColNo+1) ,
+		PackGenNum	=> PackGenNum
+		)
+	Port Map(
+		Clk				=> Clk			,	
+		Reset			=> Reset		,	
+
+		InpData			=> Data2(1*ColNo+1)	,	
+		InpEn			=> En2(1*ColNo+1)		,	
+		InpReady		=> Ready2(1*ColNo+1)	,
+		InpSel			=> Sel2(1*ColNo+1)		,		
+
+		OutpData		=> Data(1*ColNo+1),
+		OutpEn			=> En(1*ColNo+1)	,	
+		OutpReady		=> Ready(1*ColNo+1)	,
+		OutpSel			=> Sel(1*ColNo+1),
+
+		PE_InpData		=> PE00_InpData,
+		PE_InpEn		=> PE00_InpEn,
+		PE_InpReady		=> PE00_InpReady,
+		PE_InpSel		=> PE00_InpSel,
+
+		PE_OutpData		=> PE00_OutpData,
+		PE_OutpEn		=> PE00_OutpEn,
+		PE_OutpReady 	=> PE00_OutpReady,
+		PE_OutpSel		=> PE00_OutpSel					
+	);
 
 End;
