@@ -799,7 +799,7 @@ entity PEv is
 		--X			: Integer := 0;
 		--Y			: Integer := 0;
 		CurNode		: Integer := 0;
-		PackSize: Integer :=64;
+		PackSize 	: Integer :=64;
 		PackWidth		: Integer := 8; -- bit of pack size
 		PackGen			: std_logic :='1';
 		PackGenNum		: Unsigned(15 Downto 0)

@@ -346,7 +346,7 @@ m1: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> j*ColNo+i	,
+		CurNode     => j*ColNo+i	,
 		--Y			=> j			,	
 		PackGen		=> PackGen(j*ColNo+i) ,
 		PackGenNum	=> PackGenNum

@@ -84,9 +84,9 @@ CurrentNode <= CurNode;
 --YY <= Y;
 
 InpDataArr(PhyRoCh-1 Downto 0) 	<=	InpData		;		
-InpEnArr(PhyRoCh-1 Downto 0)		<=	InpEn		;	
+InpEnArr(PhyRoCh-1 Downto 0)	<=	InpEn		;	
 InpReady						<=	InpReadyArr(PhyRoCh*ViCh-1 Downto 0);	
-InpSelArr(PhyRoCh-1 Downto 0)		<=	InpSel		;	
+InpSelArr(PhyRoCh-1 Downto 0)	<=	InpSel		;	
 
 OutpData	<=	OutpDataArr(PhyRoCh-1 Downto 0)		;	
 OutpEn		<=	OutpEnArr(PhyRoCh-1 Downto 0)			;	
