@@ -623,15 +623,15 @@ m11: Entity Work.Node
 		OutpReady		=> Ready(1*ColNo+1)	,
 		OutpSel			=> Sel(1*ColNo+1),
 
-		PE_InpData		=> PE00_InpData,
-		PE_InpEn		=> PE00_InpEn,
-		PE_InpReady		=> PE00_InpReady,
-		PE_InpSel		=> PE00_InpSel,
+		PE_InpData		=> PE11_InpData,
+		PE_InpEn		=> PE11_InpEn,
+		PE_InpReady		=> PE11_InpReady,
+		PE_InpSel		=> PE11_InpSel,
 
-		PE_OutpData		=> PE00_OutpData,
-		PE_OutpEn		=> PE00_OutpEn,
-		PE_OutpReady 	=> PE00_OutpReady,
-		PE_OutpSel		=> PE00_OutpSel					
+		PE_OutpData		=> PE11_OutpData,
+		PE_OutpEn		=> PE11_OutpEn,
+		PE_OutpReady 	=> PE11_OutpReady,
+		PE_OutpSel		=> PE11_OutpSel					
 	);
 
 End;
