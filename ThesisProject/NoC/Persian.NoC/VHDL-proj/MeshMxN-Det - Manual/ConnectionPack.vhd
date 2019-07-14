@@ -41,8 +41,8 @@ Type StrArr6 is Array(natural range <>) of String(6 Downto 1);
 
 --Type UnsignedArr2Arr4 is array (natural range <>) of UnsignedArr2(3 Downto 0);
 	
-Constant RowNo : Integer := 4;	
-Constant ColNo : Integer := 4;	
+Constant RowNo : Integer := 2;	
+Constant ColNo : Integer := 2;	
 Constant DataWidth : Integer  :=8;
 Constant PhyCh : Integer := 4;
 Constant ViCh : Integer := 1;
@@ -52,7 +52,7 @@ Constant PackSize: Integer :=32;--32;
 Constant RecePackIgnorePercent :Integer :=20; --20%
 Constant DumpTimePackFile : Boolean := false;
 Constant PackWidth	: Integer := 8;
-Constant AddrWidth	: Integer := 4;	
+Constant AddrWidth	: Integer := 2;	
 Constant RoChAddr		: Integer := 1;
 Constant PhyChAddr		: Integer := 2;
 Constant PhyRoChAddr	: Integer := 2+1;
