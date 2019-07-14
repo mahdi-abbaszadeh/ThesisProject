@@ -576,7 +576,7 @@ Data2(1*ColNo+1) <= (Data(Index(1+1,1,ColNo,RowNo))(1),Data(Index(1,1+1,ColNo,Ro
 En2(1*ColNo+1) <= 	(En(Index(1+1,1,ColNo,RowNo))(1),En(Index(1,1+1,ColNo,RowNo))(0)
 						   ,En(Index(1-1,1,ColNo,RowNo))(3),En(Index(1,1-1,ColNo,RowNo))(2));
 
-ag3  : For k in 0 to ViCh-1 Generate
+ag11  : For k in 0 to ViCh-1 Generate
 	Ready(Index(1+1,1,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(1*ColNo+1)(3 *ViCh+k);
 	Ready(Index(1,1+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(1*ColNo+1)(2 *ViCh+k);
 	Ready(Index(1-1,1,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(1*ColNo+1)(1 *ViCh+k);
@@ -585,7 +585,7 @@ End Generate;
 
 Sel2(1*ColNo+1) <=	(Sel(Index(1+1,1,ColNo,RowNo))(1),Sel(Index(1,1+1,ColNo,RowNo))(0)
 						   ,Sel(Index(1-1,1,ColNo,RowNo))(3),Sel(Index(1,1-1,ColNo,RowNo))(2));					   
-m2: Entity Work.Node 
+m11: Entity Work.Node 
 	Generic Map(
 	
 		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(1*ColNo+1))	,	
