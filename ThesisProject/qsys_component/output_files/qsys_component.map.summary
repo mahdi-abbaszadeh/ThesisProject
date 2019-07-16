@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Jul 16 12:46:39 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : qsys_component
+Top-level Entity Name : multiplePortRegister
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 958
+Total pins : 34
+Total virtual pins : 0
+Total block memory bits : 535,552
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

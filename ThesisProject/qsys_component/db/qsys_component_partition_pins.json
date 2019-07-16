@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "q2_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[10]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[11]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[12]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[13]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[14]",
+					"strict" : false
+				},
+				{
+					"name" : "q2_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "resetn_reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

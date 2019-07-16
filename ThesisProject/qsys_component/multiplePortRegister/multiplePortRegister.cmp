@@ -1,0 +1,9 @@
+	component multiplePortRegister is
+		port (
+			clk_clk        : in  std_logic                     := 'X'; -- clk
+			q1_export      : out std_logic_vector(15 downto 0);        -- export
+			q2_export      : out std_logic_vector(15 downto 0);        -- export
+			resetn_reset_n : in  std_logic                     := 'X'  -- reset_n
+		);
+	end component multiplePortRegister;
+
