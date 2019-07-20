@@ -7,818 +7,882 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/Mahdi2016/Desktop/New folder
+Z0 dC:/Users/Mahdi2016/Desktop/New folder
 T_opt
 !s110 1563175697
 VV`EXlil26nRDZL0lg@cZP1
 04 8 10 work noc_test behavioral 1
 =1-acfdce48c4e3-5d2c2b10-1fd-3f08
 o-quiet -auto_acc_if_foreign -work work
-tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OL;O;10.5;63
+R0
+vadaptor
+Z2 !s110 1563613445
+!i10b 1
+!s100 zf^6;jl3>9hg2]^1nP7ng1
+I:mb1K?IkXikKk@C?o0_5f1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 dC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual
+w1563613439
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor.v
+L0 1
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+Z6 !s108 1563613444.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
 Eaddressext
-Z0 w1562566360
-Z1 DPx4 work 14 connectionpack 0 22 2BAadBc]o?`HafC_E8d`62
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual
-Z6 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd
-Z7 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd
+Z8 w1562566360
+Z9 DPx4 work 14 connectionpack 0 22 2BAadBc]o?`HafC_E8d`62
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R4
+Z13 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd
+Z14 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd
 l0
 L469
 VaUETBE=XjK@CB1BW`Bjif3
 !s100 BJD2=_Mf0O<NfIkBiHF8H1
-Z8 OL;C;10.5;63
+Z15 OL;C;10.5;63
 32
-Z9 !s110 1563175675
+Z16 !s110 1563613444
 !i10b 1
-Z10 !s108 1563175674.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd|
-Z12 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd|
+R6
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd|
+Z18 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/RouterA.vhd|
 !i113 0
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1 CvgOpt 0
+Z19 o-work work -2002 -explicit
+Z20 tExplicit 1 CvgOpt 0
 Abehavioral
-Z15 DEx4 work 4 fifo 0 22 SZZRJU37<4[9<TOJ0G1;72
-R1
-R2
-R3
-R4
-Z16 DEx4 work 10 addressext 0 22 aUETBE=XjK@CB1BW`Bjif3
+Z21 DEx4 work 4 fifo 0 22 SZZRJU37<4[9<TOJ0G1;72
+R9
+R10
+R11
+R12
+Z22 DEx4 work 10 addressext 0 22 aUETBE=XjK@CB1BW`Bjif3
 l511
 L501
 V[<5=EDQimcVLRQia>Q5YM1
 !s100 9cOc?75PHX=?MVlb9^dnP0
-R8
+R15
 32
-R9
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Ecombiner
+R8
+R9
 R10
 R11
 R12
-!i113 0
+R4
 R13
 R14
-Ecombiner
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L87
 V30njA:X3zzmHmSEi:2alg1
 !s100 D`8OVoiIZ]L<4GCb]hIai3
-R8
+R15
 32
-Z17 !s110 1563175674
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R1
-R2
-R3
-R4
-Z18 DEx4 work 8 combiner 0 22 30njA:X3zzmHmSEi:2alg1
+Z23 DEx4 work 8 combiner 0 22 30njA:X3zzmHmSEi:2alg1
 l107
 L106
 V>fkIBeQ:cL5b5Y><X]Z6e1
 !s100 0elP>^V7cND4[CMFHl<zm1
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Ecomputation
+R8
+Z24 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R9
+Z25 DPx4 work 8 filepack 0 22 AEmd5CcGOoSJRe;N3mM8O0
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Ecomputation
-R0
-Z19 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-R1
-Z20 DPx4 work 8 filepack 0 22 AEmd5CcGOoSJRe;N3mM8O0
-R2
-R3
 R4
-R5
-Z21 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd
-Z22 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd
+Z26 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd
+Z27 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd
 l0
 L19
 V:D>RnBAZ<>bok20_SkFHZ1
 !s100 OBcK1CDDFZQ3<4VUdJCI@0
-R8
+R15
 32
-R17
+Z28 !s110 1563613443
 !i10b 1
-R10
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd|
-Z24 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd|
+Z29 !s108 1563613443.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd|
+Z31 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Computation.vhd|
 !i113 0
-R13
-R14
-Abehavioral
 R19
-R1
 R20
-R2
-R3
-R4
-Z25 DEx4 work 11 computation 0 22 :D>RnBAZ<>bok20_SkFHZ1
+Abehavioral
+R24
+R9
+R25
+R10
+R11
+R12
+Z32 DEx4 work 11 computation 0 22 :D>RnBAZ<>bok20_SkFHZ1
 l61
 L39
 VK?2TgfL[UEI9GV=[c4=j72
 !s100 ck:ZD?7=FMWcJ;5^<hW];1
-R8
+R15
 32
-R17
+R28
 !i10b 1
-R10
-R23
-R24
+R29
+R30
+R31
 !i113 0
-R13
-R14
+R19
+R20
 Pconnectionpack
-R2
-R3
+R10
+R11
+R12
+Z33 w1563175645
 R4
-Z26 w1563175645
-R5
-Z27 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd
-Z28 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd
+Z34 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd
+Z35 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd
 l0
 L14
 V2BAadBc]o?`HafC_E8d`62
 !s100 o>5i;=_R6WcVd<AW_OaQ23
-R8
+R15
 32
 b1
-R17
+R28
 !i10b 1
-R10
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd|
-Z30 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd|
+R29
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd|
+Z37 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/ConnectionPack.vhd|
 !i113 0
-R13
-R14
+R19
+R20
 Bbody
-R1
-R2
-R3
-R4
+R9
+R10
+R11
+R12
 l0
 L181
 VG47K8S2YXmKU3KoLhig5C2
 !s100 h0D@<FKZ[eoHXH0oY3B`b2
-R8
+R15
 32
-R17
+R28
 !i10b 1
-R10
 R29
-R30
+R36
+R37
 !i113 0
+R19
+R20
+Edemux
+R8
+R9
+R10
+R11
+R12
+R4
 R13
 R14
-Edemux
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L124
 VniAJg=]Po3[UE6EVT<5dz0
 !s100 i;Uki4EBgWn[ljE[Z;cHE0
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R1
-R2
-R3
-R4
-Z31 DEx4 work 5 demux 0 22 niAJg=]Po3[UE6EVT<5dz0
+Z38 DEx4 work 5 demux 0 22 niAJg=]Po3[UE6EVT<5dz0
 l148
 L146
 VOY3W5TmjlNO@X?SnPfNd?2
 !s100 nkQ<oiZnW6fJk:5fEK1333
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Efifo
+R8
 R10
 R11
 R12
-!i113 0
+R4
 R13
 R14
-Efifo
-R0
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L4
 VSZZRJU37<4[9<TOJ0G1;72
 !s100 nKCW>C]UgBL44iPNb4^Y;3
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R2
-R3
-R4
-R15
+R21
 l38
 L22
 V5W:0lRabYohi;9SHfOHF;1
 !s100 Xn3e1ofzA0P25PD[odc_70
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Pfilepack
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Pfilepack
-R2
-R3
+R8
 R4
-R0
-R5
-Z32 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd
-Z33 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd
+Z39 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd
+Z40 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd
 l0
 L15
 VAEmd5CcGOoSJRe;N3mM8O0
 !s100 L=HGLX]@lZSML>lRL;1k<3
-R8
+R15
 32
 b1
-R17
+R16
 !i10b 1
-R10
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd|
-Z35 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd|
+R6
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd|
+Z42 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/FilePack.vhd|
 !i113 0
-R13
-R14
-Bbody
+R19
 R20
-R2
-R3
-R4
+Bbody
+R25
+R10
+R11
+R12
 l0
 L73
 V[Lnh=Y2E[Cci@WL0?@_MU3
 !s100 Zgc2?:1L?3h3K8oFX^2oH0
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R34
-R35
+R6
+R41
+R42
 !i113 0
+R19
+R20
+Emux
+R8
+R9
+R10
+R11
+R12
+R4
 R13
 R14
-Emux
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L671
 Vj1DS>_MELKljYI9dH0NjO3
 !s100 :F10iV@1d7H9d;n1:]Qk]1
-R8
+R15
 32
-R9
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+Z43 DEx4 work 8 selector 0 22 ;h59jSkPPHUIdYJZL5zYB2
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-Z36 DEx4 work 8 selector 0 22 ;h59jSkPPHUIdYJZL5zYB2
-R1
-R2
-R3
-R4
-Z37 DEx4 work 3 mux 0 22 j1DS>_MELKljYI9dH0NjO3
+Z44 DEx4 work 3 mux 0 22 j1DS>_MELKljYI9dH0NjO3
 l695
 L693
 VDCTf>DFNodaCn9SDd9PF73
 !s100 eSVWmYDb_k4SZ3lf<UbhQ3
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R10
-R11
-R12
+R6
+R17
+R18
 !i113 0
-R13
-R14
-Enoc
-Z38 w1563088323
-R1
+R19
 R20
+Enoc
+Z45 w1563088323
+R9
+R25
+R12
+R11
+R10
 R4
-R3
-R2
-R5
-Z39 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd
-Z40 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd
+Z46 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd
+Z47 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd
 l0
 L19
 VF1b97Td<H<7ENZ3FOAZWS2
 !s100 KMKBz>D@eS21bXG9V`1[n1
-R8
+R15
 32
-R9
+R16
 !i10b 1
-Z41 !s108 1563175675.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd|
-Z43 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd|
+R6
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd|
+Z49 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC.vhd|
 !i113 0
-R13
-R14
-Abehavioral
-Z44 DEx4 work 4 node 0 22 i@jVE::e[l2G]^Y0B]`HV0
-R1
+R19
 R20
-R4
-R3
-R2
-Z45 DEx4 work 3 noc 0 22 F1b97Td<H<7ENZ3FOAZWS2
+Abehavioral
+Z50 DEx4 work 4 node 0 22 i@jVE::e[l2G]^Y0B]`HV0
+R9
+R25
+R12
+R11
+R10
+Z51 DEx4 work 3 noc 0 22 F1b97Td<H<7ENZ3FOAZWS2
 l283
 L94
 V3Q`3:7NVc@LYHQZJ8EGnF0
 !s100 2R206Vil[YWVbMK@SGABY1
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R41
-R42
-R43
+R6
+R48
+R49
 !i113 0
-R13
-R14
-Enoc_test
-Z46 w1563084007
+R19
 R20
-R1
+Enoc_test
+Z52 w1563084007
+R25
+R9
+R12
+R11
+R10
 R4
-R3
-R2
-R5
-Z47 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd
-Z48 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd
+Z53 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd
+Z54 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd
 l0
 L17
 VJVFA9CYCKWNV8F]c6PTY?1
 !s100 SBQj;nS?S0INd;<1141Ck0
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R41
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd|
-Z50 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd|
+R6
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd|
+Z56 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/NOC_Test.vhd|
 !i113 0
-R13
-R14
-Abehavioral
-Z51 DEx4 work 3 pev 0 22 ?@P`l7Ji3NVI?FU@T2>>R2
-R45
 R19
-R25
 R20
-R1
-R4
-R3
-R2
+Abehavioral
+Z57 DEx4 work 3 pev 0 22 ?@P`l7Ji3NVI?FU@T2>>R2
+R51
+R24
+R32
+R25
+R9
+R12
+R11
+R10
 DEx4 work 8 noc_test 0 22 JVFA9CYCKWNV8F]c6PTY?1
 l95
 L21
 VlU=TFKdn9:R`R5FTd3aD=0
 !s100 >mgl4H:<PV<`?Y;n@3IS[3
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R41
-R49
-R50
+R6
+R55
+R56
 !i113 0
-R13
-R14
+R19
+R20
 Enode
-Z52 w1563007184
-R1
-R2
-R3
+Z58 w1563007184
+R9
+R10
+R11
+R12
 R4
-R5
-Z53 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd
-Z54 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd
+Z59 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd
+Z60 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd
 l0
 L15
 Vi@jVE::e[l2G]^Y0B]`HV0
 !s100 iA0`_CEK?hhW_j<_>EL7<1
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R41
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd|
-Z56 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd|
+R6
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd|
+Z62 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/Node.vhd|
 !i113 0
-R13
-R14
+R19
+R20
 Abehavioral
-Z57 DEx4 work 6 router 0 22 4n[m;o@DjgYld_F5?DQG^3
-R1
-R2
-R3
-R4
-R44
+Z63 DEx4 work 6 router 0 22 4n[m;o@DjgYld_F5?DQG^3
+R9
+R10
+R11
+R12
+R50
 l94
 L75
 V_0_k>]khYBT5WDzI8kiDN1
 !s100 L;Sjh7WaE3OlBhWig40@Z1
-R8
+R15
 32
-R9
+R16
 !i10b 1
-R41
-R55
-R56
+R6
+R61
+R62
 !i113 0
-R13
-R14
-Epev
-R0
+R19
 R20
-R1
-R2
-R3
+Epev
+R8
+R25
+R9
+R10
+R11
+R12
 R4
-R5
-Z58 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd
-Z59 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd
+Z64 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd
+Z65 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd
 l0
 L789
 V?@P`l7Ji3NVI?FU@T2>>R2
 !s100 T35@dEA`bG3]a^iA8BnMe1
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd|
-Z61 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd|
+R6
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd|
+Z67 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/NoC/Persian.NoC/VHDL-proj/MeshMxN-Det - Manual/PEvA.vhd|
 !i113 0
-R13
-R14
+R19
+R20
 Abehavioral
 DEx4 work 5 demux 0 22 k4gaKN01z?5nZAzWUHaRX2
-R19
-Z62 DEx4 work 6 writer 0 22 @lfdC^9?6MlXJ:A8Mdk:71
+R24
+Z68 DEx4 work 6 writer 0 22 @lfdC^9?6MlXJ:A8Mdk:71
 DEx4 work 3 mux 0 22 W2WE@5FZ;O@gjQ45O`lT90
-Z63 DEx4 work 7 readerv 0 22 Zg@^Fg02ilCJB6HScjSET3
-R20
-R1
-R2
-R3
-R4
-R51
+Z69 DEx4 work 7 readerv 0 22 Zg@^Fg02ilCJB6HScjSET3
+R25
+R9
+R10
+R11
+R12
+R57
 l850
 L829
 VPSlRBz:O]X>M[85D[<hMo1
 !s100 kn;IQUTZPgOoh4c>VdUlK1
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R60
-R61
+R6
+R66
+R67
 !i113 0
-R13
-R14
-Ereaderv
-R0
+R19
 R20
-R1
+vram_dp_ar_aw
 R2
+!i10b 1
+!s100 D2ZJ>NVl9S[AHfBVUcW2l1
+Ii_^nnNX3YKYjGYLZ>[Db51
 R3
 R4
+w1563609666
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/ram_dp_ar_aw.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/ram_dp_ar_aw.v
+L0 7
 R5
-R58
-R59
+r1
+!s85 0
+31
+Z70 !s108 1563613445.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/ram_dp_ar_aw.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/ram_dp_ar_aw.v|
+!i113 0
+R7
+R1
+Ereaderv
+R8
+R25
+R9
+R10
+R11
+R12
+R4
+R64
+R65
 l0
 L16
 VZg@^Fg02ilCJB6HScjSET3
 !s100 0>??;BU?Me>mdQH9gKGKG1
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R60
-R61
+R6
+R66
+R67
 !i113 0
-R13
-R14
-Abehavioral
+R19
 R20
-R1
-R2
-R3
-R4
-R63
+Abehavioral
+R25
+R9
+R10
+R11
+R12
+R69
 l75
 L49
 VY1`?_6[c=e4h3clC4D?0I2
 !s100 Y]J=eO[z__P1M=ZTRZV?g3
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R60
-R61
+R6
+R66
+R67
 !i113 0
+R19
+R20
+Ereservator
+R8
+R9
+R10
+R11
+R12
+R4
 R13
 R14
-Ereservator
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L214
 Vi]Z7IU@HL<H03@V5AS2RC0
 !s100 i6ITk?m1jIV[<IfFcc5;M1
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R1
-R2
-R3
-R4
-Z64 DEx4 work 10 reservator 0 22 i]Z7IU@HL<H03@V5AS2RC0
+Z71 DEx4 work 10 reservator 0 22 i]Z7IU@HL<H03@V5AS2RC0
 l246
 L244
 V132VGAiGFMEA;=_JjhhzX2
 !s100 :=G^ac`6[[CNEL0J?>iT>2
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Erouter
+R8
+R9
 R10
 R11
 R12
-!i113 0
+R4
 R13
 R14
-Erouter
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L775
 V4n[m;o@DjgYld_F5?DQG^3
 !s100 YcdEDLDmTFLRXh02P@=ig0
-R8
+R15
 32
-R9
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R38
+R44
+Z72 DEx4 work 6 switch 0 22 H=8V?Gob^zVBV2eAeI:Ge2
+R71
+R23
+R22
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R31
-R37
-Z65 DEx4 work 6 switch 0 22 H=8V?Gob^zVBV2eAeI:Ge2
-R64
-R18
-R16
-R1
-R2
-R3
-R4
-R57
+R63
 l835
 L810
 V9AT5592ASL[BAkhoGEhb51
 !s100 HiCH7gGL`N]?CCIH3m[Dn2
-R8
+R15
 32
-R9
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Eselector
+R8
+R9
 R10
 R11
 R12
-!i113 0
+R4
 R13
 R14
-Eselector
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L294
 V;h59jSkPPHUIdYJZL5zYB2
 !s100 gd:MoMDXJTcNRLZ8?Ml1C1
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R1
-R2
-R3
-R4
-R36
+R43
 l311
 L309
 Vi`3?amHFLQ@=7^lAfCoj;1
 !s100 Y;X`ZWAAP6IbN``^Nz1>V1
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Eswitch
+R8
+R9
 R10
 R11
 R12
-!i113 0
+R4
 R13
 R14
-Eswitch
-R0
-R1
-R2
-R3
-R4
-R5
-R6
-R7
 l0
 L376
 VH=8V?Gob^zVBV2eAeI:Ge2
 !s100 9`Wn63^IP5=<Kg2eK>0K>3
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+Abehavioral
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Abehavioral
-R1
-R2
-R3
-R4
-R65
+R72
 l405
 L403
 VH8594oU5Gm;dKLXdQElRm3
 !s100 N4^4c]EgE>fo2DPMA_BHY3
-R8
+R15
 32
-R17
+R16
 !i10b 1
+R6
+R17
+R18
+!i113 0
+R19
+R20
+vsyn_fifo
+R2
+!i10b 1
+!s100 DeV0BQWMoX3jOLSc95TRc3
+IdlSDGn45@a:f=>VbAOKa01
+R3
+R4
+w1563609638
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/syn_fifo.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/syn_fifo.v
+L0 7
+R5
+r1
+!s85 0
+31
+R70
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/syn_fifo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/syn_fifo.v|
+!i113 0
+R7
+R1
+Ewriter
+R8
+R24
+R25
+R9
 R10
 R11
 R12
-!i113 0
-R13
-R14
-Ewriter
-R0
-R19
-R20
-R1
-R2
-R3
 R4
-R5
-R58
-R59
+R64
+R65
 l0
 L244
 V@lfdC^9?6MlXJ:A8Mdk:71
 !s100 ]LmYC3GSPe9;d8lm9C>lE1
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R60
-R61
+R6
+R66
+R67
 !i113 0
-R13
-R14
-Abehavioral
 R19
 R20
-R1
-R2
-R3
-R4
-R62
+Abehavioral
+R24
+R25
+R9
+R10
+R11
+R12
+R68
 l297
 L279
 VS;7O3aF3H::BAM^:8NnVn3
 !s100 Od`S^1^Z>HOF;hMDz:Q[61
-R8
+R15
 32
-R17
+R16
 !i10b 1
-R10
-R60
-R61
+R6
+R66
+R67
 !i113 0
-R13
-R14
+R19
+R20
