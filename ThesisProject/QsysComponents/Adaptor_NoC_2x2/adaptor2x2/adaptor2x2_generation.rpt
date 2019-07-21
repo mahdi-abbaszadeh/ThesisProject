@@ -1,0 +1,256 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\Adaptor_NoC_2x2\adaptor2x2.qsys --block-symbol-file --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\Adaptor_NoC_2x2\adaptor2x2 --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Adaptor_NoC_2x2/adaptor2x2.qsys
+Progress: Reading input file
+Progress: Adding Data_Memory_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_00
+Progress: Adding Data_Memory_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_01
+Progress: Adding Data_Memory_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_10
+Progress: Adding Data_Memory_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_11
+Progress: Adding Instruction_Memory_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_00
+Progress: Adding Instruction_Memory_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_01
+Progress: Adding Instruction_Memory_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_10
+Progress: Adding Instruction_Memory_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_11
+Progress: Adding adaptor_2x2_0 [adaptor_2x2 1.0]
+Progress: Parameterizing module adaptor_2x2_0
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_00 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_00
+Progress: Adding jtag_uart_01 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_01
+Progress: Adding jtag_uart_10 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_10
+Progress: Adding jtag_uart_11 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_11
+Progress: Adding nios2_gen2_00 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_00
+Progress: Adding nios2_gen2_01 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_01
+Progress: Adding nios2_gen2_10 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_10
+Progress: Adding nios2_gen2_11 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_11
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: adaptor2x2.jtag_uart_00: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_01: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_10: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_11: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\Adaptor_NoC_2x2\adaptor2x2.qsys --synthesis=VERILOG --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\Adaptor_NoC_2x2\adaptor2x2\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Adaptor_NoC_2x2/adaptor2x2.qsys
+Progress: Reading input file
+Progress: Adding Data_Memory_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_00
+Progress: Adding Data_Memory_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_01
+Progress: Adding Data_Memory_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_10
+Progress: Adding Data_Memory_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Data_Memory_11
+Progress: Adding Instruction_Memory_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_00
+Progress: Adding Instruction_Memory_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_01
+Progress: Adding Instruction_Memory_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_10
+Progress: Adding Instruction_Memory_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Instruction_Memory_11
+Progress: Adding adaptor_2x2_0 [adaptor_2x2 1.0]
+Progress: Parameterizing module adaptor_2x2_0
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_00 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_00
+Progress: Adding jtag_uart_01 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_01
+Progress: Adding jtag_uart_10 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_10
+Progress: Adding jtag_uart_11 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_11
+Progress: Adding nios2_gen2_00 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_00
+Progress: Adding nios2_gen2_01 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_01
+Progress: Adding nios2_gen2_10 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_10
+Progress: Adding nios2_gen2_11 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_gen2_11
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: adaptor2x2.jtag_uart_00: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_01: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_10: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2.jtag_uart_11: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: adaptor2x2: Generating adaptor2x2 "adaptor2x2" for QUARTUS_SYNTH
+Info: Data_Memory_00: Starting RTL generation for module 'adaptor2x2_Data_Memory_00'
+Info: Data_Memory_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Data_Memory_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0004_Data_Memory_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0004_Data_Memory_00_gen//adaptor2x2_Data_Memory_00_component_configuration.pl  --do_build_sim=0  ]
+Info: Data_Memory_00: Done RTL generation for module 'adaptor2x2_Data_Memory_00'
+Info: Data_Memory_00: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Data_Memory_00"
+Info: Data_Memory_01: Starting RTL generation for module 'adaptor2x2_Data_Memory_01'
+Info: Data_Memory_01:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Data_Memory_01 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0005_Data_Memory_01_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0005_Data_Memory_01_gen//adaptor2x2_Data_Memory_01_component_configuration.pl  --do_build_sim=0  ]
+Info: Data_Memory_01: Done RTL generation for module 'adaptor2x2_Data_Memory_01'
+Info: Data_Memory_01: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Data_Memory_01"
+Info: Data_Memory_10: Starting RTL generation for module 'adaptor2x2_Data_Memory_10'
+Info: Data_Memory_10:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Data_Memory_10 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0006_Data_Memory_10_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0006_Data_Memory_10_gen//adaptor2x2_Data_Memory_10_component_configuration.pl  --do_build_sim=0  ]
+Info: Data_Memory_10: Done RTL generation for module 'adaptor2x2_Data_Memory_10'
+Info: Data_Memory_10: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Data_Memory_10"
+Info: Data_Memory_11: Starting RTL generation for module 'adaptor2x2_Data_Memory_11'
+Info: Data_Memory_11:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Data_Memory_11 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0007_Data_Memory_11_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0007_Data_Memory_11_gen//adaptor2x2_Data_Memory_11_component_configuration.pl  --do_build_sim=0  ]
+Info: Data_Memory_11: Done RTL generation for module 'adaptor2x2_Data_Memory_11'
+Info: Data_Memory_11: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Data_Memory_11"
+Info: Instruction_Memory_00: Starting RTL generation for module 'adaptor2x2_Instruction_Memory_00'
+Info: Instruction_Memory_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Instruction_Memory_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0008_Instruction_Memory_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0008_Instruction_Memory_00_gen//adaptor2x2_Instruction_Memory_00_component_configuration.pl  --do_build_sim=0  ]
+Info: Instruction_Memory_00: Done RTL generation for module 'adaptor2x2_Instruction_Memory_00'
+Info: Instruction_Memory_00: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Instruction_Memory_00"
+Info: Instruction_Memory_01: Starting RTL generation for module 'adaptor2x2_Instruction_Memory_01'
+Info: Instruction_Memory_01:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Instruction_Memory_01 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0009_Instruction_Memory_01_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0009_Instruction_Memory_01_gen//adaptor2x2_Instruction_Memory_01_component_configuration.pl  --do_build_sim=0  ]
+Info: Instruction_Memory_01: Done RTL generation for module 'adaptor2x2_Instruction_Memory_01'
+Info: Instruction_Memory_01: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Instruction_Memory_01"
+Info: Instruction_Memory_10: Starting RTL generation for module 'adaptor2x2_Instruction_Memory_10'
+Info: Instruction_Memory_10:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Instruction_Memory_10 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0010_Instruction_Memory_10_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0010_Instruction_Memory_10_gen//adaptor2x2_Instruction_Memory_10_component_configuration.pl  --do_build_sim=0  ]
+Info: Instruction_Memory_10: Done RTL generation for module 'adaptor2x2_Instruction_Memory_10'
+Info: Instruction_Memory_10: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Instruction_Memory_10"
+Info: Instruction_Memory_11: Starting RTL generation for module 'adaptor2x2_Instruction_Memory_11'
+Info: Instruction_Memory_11:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=adaptor2x2_Instruction_Memory_11 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0011_Instruction_Memory_11_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0011_Instruction_Memory_11_gen//adaptor2x2_Instruction_Memory_11_component_configuration.pl  --do_build_sim=0  ]
+Info: Instruction_Memory_11: Done RTL generation for module 'adaptor2x2_Instruction_Memory_11'
+Info: Instruction_Memory_11: "adaptor2x2" instantiated altera_avalon_onchip_memory2 "Instruction_Memory_11"
+Info: adaptor_2x2_0: "adaptor2x2" instantiated adaptor_2x2 "adaptor_2x2_0"
+Info: jtag_uart_00: Starting RTL generation for module 'adaptor2x2_jtag_uart_00'
+Info: jtag_uart_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=adaptor2x2_jtag_uart_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0013_jtag_uart_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0013_jtag_uart_00_gen//adaptor2x2_jtag_uart_00_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_00: Done RTL generation for module 'adaptor2x2_jtag_uart_00'
+Info: jtag_uart_00: "adaptor2x2" instantiated altera_avalon_jtag_uart "jtag_uart_00"
+Info: nios2_gen2_00: "adaptor2x2" instantiated altera_nios2_gen2 "nios2_gen2_00"
+Info: nios2_gen2_01: "adaptor2x2" instantiated altera_nios2_gen2 "nios2_gen2_01"
+Info: nios2_gen2_10: "adaptor2x2" instantiated altera_nios2_gen2 "nios2_gen2_10"
+Info: nios2_gen2_11: "adaptor2x2" instantiated altera_nios2_gen2 "nios2_gen2_11"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "adaptor2x2" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "adaptor2x2" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "adaptor2x2" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_3: "adaptor2x2" instantiated altera_mm_interconnect "mm_interconnect_3"
+Info: irq_mapper: "adaptor2x2" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "adaptor2x2" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'adaptor2x2_nios2_gen2_00_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=adaptor2x2_nios2_gen2_00_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0016_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0016_cpu_gen//adaptor2x2_nios2_gen2_00_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.07.21 10:26:10 (*) Starting Nios II generation
+Info: cpu: # 2019.07.21 10:26:10 (*)   Checking for plaintext license.
+Info: cpu: # 2019.07.21 10:26:11 (*)   Plaintext license not found.
+Info: cpu: # 2019.07.21 10:26:11 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.07.21 10:26:11 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.07.21 10:26:11 (*)   Creating all objects for CPU
+Info: cpu: # 2019.07.21 10:26:13 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.07.21 10:26:13 (*)   Creating plain-text RTL
+Info: cpu: # 2019.07.21 10:26:14 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'adaptor2x2_nios2_gen2_00_cpu'
+Info: cpu: "nios2_gen2_00" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'adaptor2x2_nios2_gen2_01_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=adaptor2x2_nios2_gen2_01_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0017_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0017_cpu_gen//adaptor2x2_nios2_gen2_01_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.07.21 10:26:15 (*) Starting Nios II generation
+Info: cpu: # 2019.07.21 10:26:15 (*)   Checking for plaintext license.
+Info: cpu: # 2019.07.21 10:26:16 (*)   Plaintext license not found.
+Info: cpu: # 2019.07.21 10:26:16 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.07.21 10:26:16 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.07.21 10:26:16 (*)   Creating all objects for CPU
+Info: cpu: # 2019.07.21 10:26:18 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.07.21 10:26:18 (*)   Creating plain-text RTL
+Info: cpu: # 2019.07.21 10:26:19 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'adaptor2x2_nios2_gen2_01_cpu'
+Info: cpu: "nios2_gen2_01" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'adaptor2x2_nios2_gen2_10_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=adaptor2x2_nios2_gen2_10_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0018_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0018_cpu_gen//adaptor2x2_nios2_gen2_10_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.07.21 10:26:20 (*) Starting Nios II generation
+Info: cpu: # 2019.07.21 10:26:20 (*)   Checking for plaintext license.
+Info: cpu: # 2019.07.21 10:26:22 (*)   Plaintext license not found.
+Info: cpu: # 2019.07.21 10:26:22 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.07.21 10:26:22 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.07.21 10:26:22 (*)   Creating all objects for CPU
+Info: cpu: # 2019.07.21 10:26:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.07.21 10:26:23 (*)   Creating plain-text RTL
+Info: cpu: # 2019.07.21 10:26:24 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'adaptor2x2_nios2_gen2_10_cpu'
+Info: cpu: "nios2_gen2_10" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'adaptor2x2_nios2_gen2_11_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=adaptor2x2_nios2_gen2_11_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0019_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8098_3858043192732894378.dir/0019_cpu_gen//adaptor2x2_nios2_gen2_11_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.07.21 10:26:25 (*) Starting Nios II generation
+Info: cpu: # 2019.07.21 10:26:25 (*)   Checking for plaintext license.
+Info: cpu: # 2019.07.21 10:26:27 (*)   Plaintext license not found.
+Info: cpu: # 2019.07.21 10:26:27 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.07.21 10:26:27 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.07.21 10:26:27 (*)   Creating all objects for CPU
+Info: cpu: # 2019.07.21 10:26:28 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.07.21 10:26:28 (*)   Creating plain-text RTL
+Info: cpu: # 2019.07.21 10:26:29 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'adaptor2x2_nios2_gen2_11_cpu'
+Info: cpu: "nios2_gen2_11" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_00_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_00_data_master_translator"
+Info: adaptor_2x2_0_Input_00_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "adaptor_2x2_0_Input_00_translator"
+Info: nios2_gen2_00_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_00_data_master_agent"
+Info: adaptor_2x2_0_Input_00_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "adaptor_2x2_0_Input_00_agent"
+Info: adaptor_2x2_0_Input_00_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "adaptor_2x2_0_Input_00_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: adaptor_2x2_0_Input_00_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "adaptor_2x2_0_Input_00_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor2x2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor2x2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor2x2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: adaptor_2x2_0_Input_00_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "adaptor_2x2_0_Input_00_rsp_width_adapter"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor2x2/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/Adaptor_NoC_2x2/adaptor2x2/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_002: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_002"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_002" instantiated error_adapter "error_adapter_0"
+Info: adaptor2x2: Done "adaptor2x2" with 50 modules, 111 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

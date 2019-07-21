@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Jul 21 10:47:33 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : Adaptor
+Top-level Entity Name : adaptor2x2
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 4401
+Total pins : 2
+Total virtual pins : 0
+Total block memory bits : 308,224
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

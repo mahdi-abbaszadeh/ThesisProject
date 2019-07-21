@@ -1,0 +1,36 @@
+
+State Machine - |adaptor2x2|adaptor2x2_nios2_gen2_10:nios2_gen2_10|adaptor2x2_nios2_gen2_10_cpu:cpu|adaptor2x2_nios2_gen2_10_cpu_nios2_oci:the_adaptor2x2_nios2_gen2_10_cpu_nios2_oci|adaptor2x2_nios2_gen2_10_cpu_debug_slave_wrapper:the_adaptor2x2_nios2_gen2_10_cpu_debug_slave_wrapper|adaptor2x2_nios2_gen2_10_cpu_debug_slave_tck:the_adaptor2x2_nios2_gen2_10_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |adaptor2x2|adaptor2x2_nios2_gen2_11:nios2_gen2_11|adaptor2x2_nios2_gen2_11_cpu:cpu|adaptor2x2_nios2_gen2_11_cpu_nios2_oci:the_adaptor2x2_nios2_gen2_11_cpu_nios2_oci|adaptor2x2_nios2_gen2_11_cpu_debug_slave_wrapper:the_adaptor2x2_nios2_gen2_11_cpu_debug_slave_wrapper|adaptor2x2_nios2_gen2_11_cpu_debug_slave_tck:the_adaptor2x2_nios2_gen2_11_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |adaptor2x2|adaptor2x2_nios2_gen2_01:nios2_gen2_01|adaptor2x2_nios2_gen2_01_cpu:cpu|adaptor2x2_nios2_gen2_01_cpu_nios2_oci:the_adaptor2x2_nios2_gen2_01_cpu_nios2_oci|adaptor2x2_nios2_gen2_01_cpu_debug_slave_wrapper:the_adaptor2x2_nios2_gen2_01_cpu_debug_slave_wrapper|adaptor2x2_nios2_gen2_01_cpu_debug_slave_tck:the_adaptor2x2_nios2_gen2_01_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |adaptor2x2|adaptor2x2_nios2_gen2_00:nios2_gen2_00|adaptor2x2_nios2_gen2_00_cpu:cpu|adaptor2x2_nios2_gen2_00_cpu_nios2_oci:the_adaptor2x2_nios2_gen2_00_cpu_nios2_oci|adaptor2x2_nios2_gen2_00_cpu_debug_slave_wrapper:the_adaptor2x2_nios2_gen2_00_cpu_debug_slave_wrapper|adaptor2x2_nios2_gen2_00_cpu_debug_slave_tck:the_adaptor2x2_nios2_gen2_00_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
