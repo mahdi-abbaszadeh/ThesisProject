@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Jul 23 12:44:36 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : NIOS_with_FIFO
+Top-level Entity Name : unsaved
+Family : Cyclone V
+Device : 5CSEMA4U23C6
+Timing Models : Final
+Logic utilization (in ALMs) : 841 / 15,880 ( 5 % )
+Total registers : 1127
+Total pins : 1 / 314 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 537,088 / 2,764,800 ( 19 % )
+Total RAM Blocks : 73 / 270 ( 27 % )
+Total DSP Blocks : 0 / 84 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 5 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
