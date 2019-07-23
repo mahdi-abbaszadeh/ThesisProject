@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jul 23, 2019 10:46:26 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1563862586329</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jul 23, 2019 1:31:31 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1563872491500</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\software\NIOS_1_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\unsaved.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_1</Cpu>
@@ -194,7 +194,7 @@
                 <SettingName>hal.stdin</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart_1</Value>
+                <Value>jtag_uart_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDIN character-mode device. This setting is used by the ALT_STDIN family of defines in system.h.</Description>
@@ -206,7 +206,7 @@
                 <SettingName>hal.stdout</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart_1</Value>
+                <Value>jtag_uart_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDOUT character-mode device. This setting is used by the ALT_STDOUT family of defines in system.h.</Description>
@@ -218,7 +218,7 @@
                 <SettingName>hal.stderr</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart_1</Value>
+                <Value>jtag_uart_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDERR character-mode device. This setting is used by the ALT_STDERR family of defines in system.h.</Description>
@@ -899,40 +899,40 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>onchip_memory2_1</slaveDescriptor>
-                <addressRange>0x00001000 - 0x00001FFF</addressRange>
-                <addressSpan>4096</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>ST2MMFIFO_1_in_csr</slaveDescriptor>
-                <addressRange>0x00003000 - 0x0000301F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>MM2STFIFO_1_in_csr</slaveDescriptor>
-                <addressRange>0x00003020 - 0x0000303F</addressRange>
+                <addressRange>0x00021020 - 0x0002103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>jtag_uart_1</slaveDescriptor>
-                <addressRange>0x00003040 - 0x00003047</addressRange>
+                <slaveDescriptor>MM2STFIFO_1_in</slaveDescriptor>
+                <addressRange>0x00021048 - 0x0002104F</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>jtag_uart_0</slaveDescriptor>
+                <addressRange>0x00021050 - 0x00021057</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ST2MMFIFO_1_out</slaveDescriptor>
-                <addressRange>0x00003048 - 0x0000304F</addressRange>
+                <addressRange>0x00021058 - 0x0002105F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>MM2STFIFO_1_in</slaveDescriptor>
-                <addressRange>0x00003050 - 0x00003057</addressRange>
-                <addressSpan>8</addressSpan>
+                <slaveDescriptor>ST2MMFIFO_1_in_csr</slaveDescriptor>
+                <addressRange>0x00021060 - 0x0002107F</addressRange>
+                <addressSpan>32</addressSpan>
                 <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>onchip_memory2_1</slaveDescriptor>
+                <addressRange>0x00040000 - 0x0004FFFF</addressRange>
+                <addressSpan>65536</addressSpan>
+                <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>

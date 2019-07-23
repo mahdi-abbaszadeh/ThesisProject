@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_1' in SOPC Builder design 'unsaved'
  * SOPC Builder design path: ../../unsaved.sopcinfo
  *
- * Generated: Tue Jul 23 10:46:27 IRDT 2019
+ * Generated: Tue Jul 23 13:31:17 IRDT 2019
  */
 
 /*
@@ -69,7 +69,7 @@
 ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( NIOS2_GEN2_1, nios2_gen2_1);
 ALTERA_AVALON_FIFO_INSTANCE ( MM2STFIFO_1, MM2STFIFO_1);
 ALTERA_AVALON_FIFO_INSTANCE ( ST2MMFIFO_1, ST2MMFIFO_1);
-ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_1, jtag_uart_1);
+ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -94,5 +94,5 @@ void alt_sys_init( void )
 {
     ALTERA_AVALON_FIFO_INIT ( MM2STFIFO_1, MM2STFIFO_1);
     ALTERA_AVALON_FIFO_INIT ( ST2MMFIFO_1, ST2MMFIFO_1);
-    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_1, jtag_uart_1);
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
 }

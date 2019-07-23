@@ -142,7 +142,7 @@ ACDS_VERSION := 17.1
 ELF := NIOS_1.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_world_small.c
+C_SRCS := NIOS_1.c
 CXX_SRCS :=
 ASM_SRCS :=
 

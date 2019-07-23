@@ -45,7 +45,7 @@
    {
       datum baseAddress
       {
-         value = "12368";
+         value = "135240";
          type = "String";
       }
    }
@@ -53,7 +53,15 @@
    {
       datum baseAddress
       {
-         value = "12320";
+         value = "135200";
+         type = "String";
+      }
+   }
+   element MM2STFIFO_1.in_irq
+   {
+      datum _tags
+      {
+         value = "";
          type = "String";
       }
    }
@@ -93,7 +101,7 @@
    {
       datum baseAddress
       {
-         value = "12288";
+         value = "135264";
          type = "String";
       }
    }
@@ -101,7 +109,7 @@
    {
       datum baseAddress
       {
-         value = "12360";
+         value = "135256";
          type = "String";
       }
    }
@@ -126,22 +134,6 @@
       datum baseAddress
       {
          value = "135248";
-         type = "String";
-      }
-   }
-   element jtag_uart_1
-   {
-      datum _sortIndex
-      {
-         value = "10";
-         type = "int";
-      }
-   }
-   element jtag_uart_1.avalon_jtag_slave
-   {
-      datum baseAddress
-      {
-         value = "12352";
          type = "String";
       }
    }
@@ -173,7 +165,7 @@
    {
       datum baseAddress
       {
-         value = "10240";
+         value = "139264";
          type = "String";
       }
    }
@@ -205,7 +197,7 @@
    {
       datum baseAddress
       {
-         value = "4096";
+         value = "262144";
          type = "String";
       }
    }
@@ -260,7 +252,7 @@
    name="MM2STFIFO_1"
    kind="altera_avalon_fifo"
    version="17.1"
-   enabled="0">
+   enabled="1">
   <parameter name="avalonMMAvalonMMDataWidth" value="32" />
   <parameter name="avalonMMAvalonSTDataWidth" value="32" />
   <parameter name="bitsPerSymbol" value="8" />
@@ -310,7 +302,7 @@
    name="ST2MMFIFO_1"
    kind="altera_avalon_fifo"
    version="17.1"
-   enabled="0">
+   enabled="1">
   <parameter name="avalonMMAvalonMMDataWidth" value="32" />
   <parameter name="avalonMMAvalonSTDataWidth" value="32" />
   <parameter name="bitsPerSymbol" value="8" />
@@ -342,25 +334,6 @@
    kind="altera_avalon_jtag_uart"
    version="17.1"
    enabled="1">
-  <parameter name="allowMultipleConnections" value="false" />
-  <parameter name="avalonSpec" value="2.0" />
-  <parameter name="clkFreq" value="50000000" />
-  <parameter name="hubInstanceID" value="0" />
-  <parameter name="readBufferDepth" value="64" />
-  <parameter name="readIRQThreshold" value="8" />
-  <parameter name="simInputCharacterStream" value="" />
-  <parameter name="simInteractiveOptions">NO_INTERACTIVE_WINDOWS</parameter>
-  <parameter name="useRegistersForReadBuffer" value="false" />
-  <parameter name="useRegistersForWriteBuffer" value="false" />
-  <parameter name="useRelativePathForSimFile" value="false" />
-  <parameter name="writeBufferDepth" value="64" />
-  <parameter name="writeIRQThreshold" value="8" />
- </module>
- <module
-   name="jtag_uart_1"
-   kind="altera_avalon_jtag_uart"
-   version="17.1"
-   enabled="0">
   <parameter name="allowMultipleConnections" value="false" />
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clkFreq" value="50000000" />
@@ -561,9 +534,9 @@
    name="nios2_gen2_1"
    kind="altera_nios2_gen2"
    version="17.1"
-   enabled="0">
-  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
-  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_DEVICE" value="5CSEMA4U23C6" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
   <parameter name="bht_ramBlockType" value="Automatic" />
@@ -578,10 +551,10 @@
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="14" />
+  <parameter name="dataAddrWidth" value="19" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_1.s1' start='0x1000' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_1.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='ST2MMFIFO_1.in_csr' start='0x3000' end='0x3020' type='altera_avalon_fifo.in_csr' /><slave name='MM2STFIFO_1.in_csr' start='0x3020' end='0x3040' type='altera_avalon_fifo.in_csr' /><slave name='jtag_uart_1.avalon_jtag_slave' start='0x3040' end='0x3048' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='ST2MMFIFO_1.out' start='0x3048' end='0x3050' type='altera_avalon_fifo.out' /><slave name='MM2STFIFO_1.in' start='0x3050' end='0x3058' type='altera_avalon_fifo.in' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='MM2STFIFO_1.in_csr' start='0x21020' end='0x21040' type='altera_avalon_fifo.in_csr' /><slave name='MM2STFIFO_1.in' start='0x21048' end='0x21050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x21050' end='0x21058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='ST2MMFIFO_1.out' start='0x21058' end='0x21060' type='altera_avalon_fifo.out' /><slave name='ST2MMFIFO_1.in_csr' start='0x21060' end='0x21080' type='altera_avalon_fifo.in_csr' /><slave name='nios2_gen2_1.debug_mem_slave' start='0x22000' end='0x22800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x40000' end='0x50000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -619,8 +592,8 @@
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="14" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_1.s1' start='0x1000' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_1.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="19" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_gen2_1.debug_mem_slave' start='0x22000' end='0x22800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x40000' end='0x50000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -775,9 +748,9 @@
    name="onchip_memory2_1"
    kind="altera_avalon_onchip_memory2"
    version="17.1"
-   enabled="0">
+   enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">unsaved_onchip_memory2_1</parameter>
+  <parameter name="autoInitializationFileName">$${FILENAME}_onchip_memory2_1</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -791,7 +764,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="4096" />
+  <parameter name="memorySize" value="65536" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -816,9 +789,9 @@
    kind="avalon"
    version="17.1"
    start="nios2_gen2_1.data_master"
-   end="jtag_uart_1.avalon_jtag_slave">
+   end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3040" />
+  <parameter name="baseAddress" value="0x00021050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -836,7 +809,16 @@
    start="nios2_gen2_1.data_master"
    end="nios2_gen2_1.debug_mem_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2800" />
+  <parameter name="baseAddress" value="0x00022000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.data_master"
+   end="nios2_gen2_1.debug_mem_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00022000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -854,7 +836,7 @@
    start="nios2_gen2_1.data_master"
    end="MM2STFIFO_1.in">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3050" />
+  <parameter name="baseAddress" value="0x00021048" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -864,15 +846,6 @@
    end="MM2STFIFO_0.in_csr">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00021020" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="17.1"
-   start="nios2_gen2_1.data_master"
-   end="MM2STFIFO_1.in_csr">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -890,7 +863,25 @@
    start="nios2_gen2_1.data_master"
    end="ST2MMFIFO_1.in_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3000" />
+  <parameter name="baseAddress" value="0x00021060" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.data_master"
+   end="MM2STFIFO_1.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00021020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.data_master"
+   end="ST2MMFIFO_1.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00021060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -908,7 +899,16 @@
    start="nios2_gen2_1.data_master"
    end="ST2MMFIFO_1.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3048" />
+  <parameter name="baseAddress" value="0x00021058" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.data_master"
+   end="ST2MMFIFO_1.out">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00021058" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -926,7 +926,16 @@
    start="nios2_gen2_1.data_master"
    end="onchip_memory2_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1000" />
+  <parameter name="baseAddress" value="0x00040000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.data_master"
+   end="onchip_memory2_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00040000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -944,7 +953,16 @@
    start="nios2_gen2_1.instruction_master"
    end="nios2_gen2_1.debug_mem_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2800" />
+  <parameter name="baseAddress" value="0x00022000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.instruction_master"
+   end="nios2_gen2_1.debug_mem_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00022000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -962,23 +980,42 @@
    start="nios2_gen2_1.instruction_master"
    end="onchip_memory2_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1000" />
+  <parameter name="baseAddress" value="0x00040000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="nios2_gen2_1.instruction_master"
+   end="onchip_memory2_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00040000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
    kind="avalon_streaming"
    version="17.1"
    start="MM2STFIFO_0.out"
+   end="ST2MMFIFO_1.in" />
+ <connection
+   kind="avalon_streaming"
+   version="17.1"
+   start="MM2STFIFO_1.out"
    end="ST2MMFIFO_0.in" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="nios2_gen2_0.clk" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="nios2_gen2_1.clk" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="jtag_uart_0.clk" />
- <connection kind="clock" version="17.1" start="clk_0.clk" end="jtag_uart_1.clk" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="nios2_gen2_1.clk" />
  <connection
    kind="clock"
    version="17.1"
    start="clk_0.clk"
    end="onchip_memory2_0.clk1" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="clk_0.clk"
+   end="onchip_memory2_1.clk1" />
  <connection
    kind="clock"
    version="17.1"
@@ -999,6 +1036,16 @@
    version="17.1"
    start="clk_0.clk"
    end="ST2MMFIFO_0.clk_in" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="clk_0.clk"
+   end="ST2MMFIFO_1.clk_in" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="clk_0.clk"
+   end="MM2STFIFO_1.clk_in" />
  <connection
    kind="clock"
    version="17.1"
@@ -1035,6 +1082,20 @@
  <connection
    kind="interrupt"
    version="17.1"
+   start="nios2_gen2_1.irq"
+   end="MM2STFIFO_1.in_irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="17.1"
+   start="nios2_gen2_1.irq"
+   end="ST2MMFIFO_1.in_irq">
+  <parameter name="irqNumber" value="1" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="17.1"
    start="nios2_gen2_0.irq"
    end="jtag_uart_0.irq">
   <parameter name="irqNumber" value="2" />
@@ -1043,7 +1104,7 @@
    kind="interrupt"
    version="17.1"
    start="nios2_gen2_1.irq"
-   end="jtag_uart_1.irq">
+   end="jtag_uart_0.irq">
   <parameter name="irqNumber" value="2" />
  </connection>
  <connection
@@ -1065,12 +1126,17 @@
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="jtag_uart_1.reset" />
+   end="nios2_gen2_1.reset" />
  <connection
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
    end="onchip_memory2_0.reset1" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="onchip_memory2_1.reset1" />
  <connection
    kind="reset"
    version="17.1"
@@ -1099,7 +1165,22 @@
  <connection
    kind="reset"
    version="17.1"
+   start="clk_0.clk_reset"
+   end="MM2STFIFO_1.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="ST2MMFIFO_1.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
    start="nios2_gen2_0.debug_reset_request"
+   end="clk_0.clk_in_reset" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="nios2_gen2_1.debug_reset_request"
    end="clk_0.clk_in_reset" />
  <connection
    kind="reset"

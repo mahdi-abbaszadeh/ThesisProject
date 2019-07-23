@@ -1,5 +1,5 @@
 Flow report for NIOS_with_FIFO
-Tue Jul 23 12:44:58 2019
+Tue Jul 23 13:29:20 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Tue Jul 23 12:44:46 2019           ;
+; Flow Status                     ; Successful - Tue Jul 23 13:29:05 2019           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; NIOS_with_FIFO                                  ;
 ; Top-level Entity Name           ; unsaved                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA4U23C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 841 / 15,880 ( 5 % )                            ;
-; Total registers                 ; 1127                                            ;
+; Logic utilization (in ALMs)     ; 1,600 / 15,880 ( 10 % )                         ;
+; Total registers                 ; 1993                                            ;
 ; Total pins                      ; 1 / 314 ( < 1 % )                               ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 537,088 / 2,764,800 ( 19 % )                    ;
+; Total block memory bits         ; 1,073,152 / 2,764,800 ( 39 % )                  ;
 ; Total DSP Blocks                ; 0 / 84 ( 0 % )                                  ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/23/2019 12:42:49 ;
+; Start date & time ; 07/23/2019 13:26:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; NIOS_with_FIFO      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------------------+----------------+-------------+------------+
 ; Assignment Name                     ; Value                                                     ; Default Value  ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------------------+----------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1097508536857.156386956805368                             ; --             ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1097508536857.156387217608788                             ; --             ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                        ; --             ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                         ; --             ; --          ; --         ;
 ; MISC_FILE                           ; unsaved/synthesis/../unsaved.cmp                          ; --             ; --          ; --         ;
@@ -91,7 +91,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                              ; --             ; --          ; --         ;
 ; SLD_FILE                            ; unsaved/synthesis/unsaved.regmap                          ; --             ; --          ; --         ;
 ; SLD_FILE                            ; unsaved/synthesis/unsaved.debuginfo                       ; --             ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME unsaved HAS_SOPCINFO 1 GENERATION_ID 1563869502 ; --             ; unsaved     ; --         ;
+; SLD_INFO                            ; QSYS_NAME unsaved HAS_SOPCINFO 1 GENERATION_ID 1563872061 ; --             ; unsaved     ; --         ;
 ; SOPCINFO_FILE                       ; unsaved/synthesis/../../unsaved.sopcinfo                  ; --             ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                        ; --             ; --          ; --         ;
 ; TOP_LEVEL_ENTITY                    ; unsaved                                                   ; NIOS_with_FIFO ; --          ; --         ;
@@ -103,11 +103,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:51     ; 1.0                     ; 5009 MB             ; 00:01:21                           ;
-; Fitter                    ; 00:00:52     ; 1.1                     ; 6517 MB             ; 00:02:17                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4882 MB             ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:11     ; 1.7                     ; 5167 MB             ; 00:00:16                           ;
-; Total                     ; 00:02:01     ; --                      ; --                  ; 00:04:01                           ;
+; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 5069 MB             ; 00:01:36                           ;
+; Fitter                    ; 00:01:26     ; 1.2                     ; 6543 MB             ; 00:04:28                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 4907 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 2.0                     ; 5203 MB             ; 00:00:25                           ;
+; Total                     ; 00:02:52     ; --                      ; --                  ; 00:06:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

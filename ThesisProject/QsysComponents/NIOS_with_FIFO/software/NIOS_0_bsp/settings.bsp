@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jul 23, 2019 12:46:33 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1563869793343</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jul 23, 2019 1:46:06 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1563873366396</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\software\NIOS_0_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\unsaved.sopcinfo</SopcDesignFile>
