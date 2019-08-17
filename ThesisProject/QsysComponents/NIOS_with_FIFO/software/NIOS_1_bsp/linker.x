@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_1' in SOPC Builder design 'unsaved'
  * SOPC Builder design path: ../../unsaved.sopcinfo
  *
- * Generated: Tue Jul 23 13:31:17 IRDT 2019
+ * Generated: Sat Aug 10 16:35:54 IRDT 2019
  */
 
 /*
@@ -50,12 +50,14 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x40000, LENGTH = 32
-    onchip_memory2_1 : ORIGIN = 0x40020, LENGTH = 65504
+    reset : ORIGIN = 0x10000, LENGTH = 32
+    Inst_mem_1 : ORIGIN = 0x10020, LENGTH = 65504
+    onchip_memory2_1 : ORIGIN = 0x20000, LENGTH = 65536
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_onchip_memory2_1 = 0x40000;
+__alt_mem_Inst_mem_1 = 0x10000;
+__alt_mem_onchip_memory2_1 = 0x20000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -111,7 +113,7 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > onchip_memory2_1
+    } > Inst_mem_1
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
@@ -207,7 +209,7 @@ SECTIONS
         PROVIDE (__DTOR_END__ = ABSOLUTE(.));
         KEEP (*(.jcr))
         . = ALIGN(4);
-    } > onchip_memory2_1 = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
+    } > Inst_mem_1 = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
     .rodata :
     {
@@ -226,13 +228,9 @@ SECTIONS
      * This section's LMA is set to the .text region.
      * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
      *
-     * .rwdata region equals the .text region, and is set to be loaded into .text region.
-     * This requires two copies of .rwdata in the .text region. One read writable at VMA.
-     * and one read-only at LMA. crt0 will copy from LMA to VMA on reset
-     *
      */
 
-    .rwdata LOADADDR (.rodata) + SIZEOF (.rodata) : AT ( LOADADDR (.rodata) + SIZEOF (.rodata)+ SIZEOF (.rwdata) )
+    .rwdata : AT ( LOADADDR (.text) + SIZEOF (.text) )
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -255,14 +253,7 @@ SECTIONS
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .bss LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .bss :
     {
         __bss_start = ABSOLUTE(.);
         PROVIDE (__sbss_start = ABSOLUTE(.));
@@ -307,7 +298,24 @@ SECTIONS
      *
      */
 
-    .onchip_memory2_1 LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .Inst_mem_1 LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    {
+        PROVIDE (_alt_partition_Inst_mem_1_start = ABSOLUTE(.));
+        *(.Inst_mem_1 .Inst_mem_1. Inst_mem_1.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_Inst_mem_1_end = ABSOLUTE(.));
+    } > Inst_mem_1
+
+    PROVIDE (_alt_partition_Inst_mem_1_load_addr = LOADADDR(.Inst_mem_1));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .onchip_memory2_1 : AT ( LOADADDR (.Inst_mem_1) + SIZEOF (.Inst_mem_1) )
     {
         PROVIDE (_alt_partition_onchip_memory2_1_start = ABSOLUTE(.));
         *(.onchip_memory2_1 .onchip_memory2_1. onchip_memory2_1.*)
@@ -367,7 +375,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x50000;
+__alt_data_end = 0x30000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +391,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x50000 );
+PROVIDE( __alt_heap_limit    = 0x30000 );

@@ -1,0 +1,36 @@
+
+State Machine - |NoC_QSYS|NoC_QSYS_nios2_10:nios2_10|NoC_QSYS_nios2_10_cpu:cpu|NoC_QSYS_nios2_10_cpu_nios2_oci:the_NoC_QSYS_nios2_10_cpu_nios2_oci|NoC_QSYS_nios2_10_cpu_debug_slave_wrapper:the_NoC_QSYS_nios2_10_cpu_debug_slave_wrapper|NoC_QSYS_nios2_10_cpu_debug_slave_tck:the_NoC_QSYS_nios2_10_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |NoC_QSYS|NoC_QSYS_nios2_01:nios2_01|NoC_QSYS_nios2_01_cpu:cpu|NoC_QSYS_nios2_01_cpu_nios2_oci:the_NoC_QSYS_nios2_01_cpu_nios2_oci|NoC_QSYS_nios2_01_cpu_debug_slave_wrapper:the_NoC_QSYS_nios2_01_cpu_debug_slave_wrapper|NoC_QSYS_nios2_01_cpu_debug_slave_tck:the_NoC_QSYS_nios2_01_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |NoC_QSYS|NoC_QSYS_nios2_00:nios2_00|NoC_QSYS_nios2_00_cpu:cpu|NoC_QSYS_nios2_00_cpu_nios2_oci:the_NoC_QSYS_nios2_00_cpu_nios2_oci|NoC_QSYS_nios2_00_cpu_debug_slave_wrapper:the_NoC_QSYS_nios2_00_cpu_debug_slave_wrapper|NoC_QSYS_nios2_00_cpu_debug_slave_tck:the_NoC_QSYS_nios2_00_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |NoC_QSYS|NoC_QSYS_nios2_11:nios2_11|NoC_QSYS_nios2_11_cpu:cpu|NoC_QSYS_nios2_11_cpu_nios2_oci:the_NoC_QSYS_nios2_11_cpu_nios2_oci|NoC_QSYS_nios2_11_cpu_debug_slave_wrapper:the_NoC_QSYS_nios2_11_cpu_debug_slave_wrapper|NoC_QSYS_nios2_11_cpu_debug_slave_tck:the_NoC_QSYS_nios2_11_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jul 23, 2019 1:46:06 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1563873366396</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Aug 10, 2019 5:08:43 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1565440723760</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\software\NIOS_0_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\unsaved.sopcinfo</SopcDesignFile>
@@ -146,7 +146,7 @@
                 <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_memory2_0</Value>
+                <Value>Inst_mem_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -182,7 +182,7 @@
                 <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_memory2_0</Value>
+                <Value>Inst_mem_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -899,44 +899,50 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
+                <slaveDescriptor>Inst_mem_0</slaveDescriptor>
                 <addressRange>0x00010000 - 0x0001FFFF</addressRange>
                 <addressSpan>65536</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
+                <addressRange>0x00020000 - 0x0002FFFF</addressRange>
+                <addressSpan>65536</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>ST2MMFIFO_0_in_csr</slaveDescriptor>
-                <addressRange>0x00021000 - 0x0002101F</addressRange>
+                <addressRange>0x00031000 - 0x0003101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>MM2STFIFO_0_in_csr</slaveDescriptor>
-                <addressRange>0x00021020 - 0x0002103F</addressRange>
+                <addressRange>0x00031020 - 0x0003103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ST2MMFIFO_0_out</slaveDescriptor>
-                <addressRange>0x00021040 - 0x00021047</addressRange>
+                <addressRange>0x00031040 - 0x00031047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>MM2STFIFO_0_in</slaveDescriptor>
-                <addressRange>0x00021048 - 0x0002104F</addressRange>
+                <addressRange>0x00031048 - 0x0003104F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00021050 - 0x00021057</addressRange>
+                <addressRange>0x00031050 - 0x00031057</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>Inst_mem_0</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>

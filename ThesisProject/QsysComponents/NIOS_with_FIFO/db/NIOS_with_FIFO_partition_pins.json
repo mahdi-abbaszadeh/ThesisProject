@@ -6,6 +6,10 @@
 				{
 					"name" : "clk_clk",
 					"strict" : false
+				},
+				{
+					"name" : "reset_reset_n",
+					"strict" : false
 				}
 			]
 		}

@@ -1,0 +1,405 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\NoC_QSYS.qsys --block-symbol-file --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\NoC_QSYS --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading NIOS_with_NoC/NoC_QSYS.qsys
+Progress: Reading input file
+Progress: Adding NoC [NoC 1.0]
+Progress: Parameterizing module NoC
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding data_mem_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_00
+Progress: Adding data_mem_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_01
+Progress: Adding data_mem_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_10
+Progress: Adding data_mem_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_11
+Progress: Adding fifo_sink_00 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_00
+Progress: Adding fifo_sink_01 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_01
+Progress: Adding fifo_sink_10 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_10
+Progress: Adding fifo_sink_11 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_11
+Progress: Adding fifo_source_00 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_00
+Progress: Adding fifo_source_01 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_01
+Progress: Adding fifo_source_10 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_10
+Progress: Adding fifo_source_11 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_11
+Progress: Adding inst_mem_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_00
+Progress: Adding inst_mem_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_01
+Progress: Adding inst_mem_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_10
+Progress: Adding inst_mem_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_11
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_00 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_00
+Progress: Adding nios2_01 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_01
+Progress: Adding nios2_10 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_10
+Progress: Adding nios2_11 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_11
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: NoC_QSYS.fifo_sink_00: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_01: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_10: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_11: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_00: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_01: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_10: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_11: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\NoC_QSYS.qsys --synthesis=VERILOG --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\NoC_QSYS\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading NIOS_with_NoC/NoC_QSYS.qsys
+Progress: Reading input file
+Progress: Adding NoC [NoC 1.0]
+Progress: Parameterizing module NoC
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding data_mem_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_00
+Progress: Adding data_mem_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_01
+Progress: Adding data_mem_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_10
+Progress: Adding data_mem_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_mem_11
+Progress: Adding fifo_sink_00 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_00
+Progress: Adding fifo_sink_01 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_01
+Progress: Adding fifo_sink_10 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_10
+Progress: Adding fifo_sink_11 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_sink_11
+Progress: Adding fifo_source_00 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_00
+Progress: Adding fifo_source_01 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_01
+Progress: Adding fifo_source_10 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_10
+Progress: Adding fifo_source_11 [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_source_11
+Progress: Adding inst_mem_00 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_00
+Progress: Adding inst_mem_01 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_01
+Progress: Adding inst_mem_10 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_10
+Progress: Adding inst_mem_11 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module inst_mem_11
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_00 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_00
+Progress: Adding nios2_01 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_01
+Progress: Adding nios2_10 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_10
+Progress: Adding nios2_11 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_11
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: NoC_QSYS.fifo_sink_00: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_01: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_10: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_sink_11: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_00: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_01: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_10: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.fifo_source_11: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: NoC_QSYS.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_00.out/NoC.sink_00: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_01.out/NoC.sink_01: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_10.out/NoC.sink_10: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.fifo_source_11.out/NoC.sink_11: The source channel signal is 8 bits, but the sink is 1 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_00/fifo_sink_00.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_01/fifo_sink_01.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_10/fifo_sink_10.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The sink has a error signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The source data signal is 8 bits, but the sink is 32 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS.NoC.source_11/fifo_sink_11.in: The source channel signal is 1 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: NoC_QSYS: Generating NoC_QSYS "NoC_QSYS" for QUARTUS_SYNTH
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_001: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_002: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_003: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_003: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_004: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_004: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_005: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_005: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_006: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_006: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_007: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_007: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting timing_adapter: timing_adapter_0
+Info: NoC: "NoC_QSYS" instantiated NoC "NoC"
+Info: data_mem_00: Starting RTL generation for module 'NoC_QSYS_data_mem_00'
+Info: data_mem_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NoC_QSYS_data_mem_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0003_data_mem_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0003_data_mem_00_gen//NoC_QSYS_data_mem_00_component_configuration.pl  --do_build_sim=0  ]
+Info: data_mem_00: Done RTL generation for module 'NoC_QSYS_data_mem_00'
+Info: data_mem_00: "NoC_QSYS" instantiated altera_avalon_onchip_memory2 "data_mem_00"
+Info: data_mem_01: Starting RTL generation for module 'NoC_QSYS_data_mem_01'
+Info: data_mem_01:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NoC_QSYS_data_mem_01 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0004_data_mem_01_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0004_data_mem_01_gen//NoC_QSYS_data_mem_01_component_configuration.pl  --do_build_sim=0  ]
+Info: data_mem_01: Done RTL generation for module 'NoC_QSYS_data_mem_01'
+Info: data_mem_01: "NoC_QSYS" instantiated altera_avalon_onchip_memory2 "data_mem_01"
+Info: data_mem_10: Starting RTL generation for module 'NoC_QSYS_data_mem_10'
+Info: data_mem_10:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NoC_QSYS_data_mem_10 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0005_data_mem_10_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0005_data_mem_10_gen//NoC_QSYS_data_mem_10_component_configuration.pl  --do_build_sim=0  ]
+Info: data_mem_10: Done RTL generation for module 'NoC_QSYS_data_mem_10'
+Info: data_mem_10: "NoC_QSYS" instantiated altera_avalon_onchip_memory2 "data_mem_10"
+Info: data_mem_11: Starting RTL generation for module 'NoC_QSYS_data_mem_11'
+Info: data_mem_11:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NoC_QSYS_data_mem_11 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0006_data_mem_11_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0006_data_mem_11_gen//NoC_QSYS_data_mem_11_component_configuration.pl  --do_build_sim=0  ]
+Info: data_mem_11: Done RTL generation for module 'NoC_QSYS_data_mem_11'
+Info: data_mem_11: "NoC_QSYS" instantiated altera_avalon_onchip_memory2 "data_mem_11"
+Info: fifo_sink_00: Starting RTL generation for module 'NoC_QSYS_fifo_sink_00'
+Info: fifo_sink_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=NoC_QSYS_fifo_sink_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0007_fifo_sink_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0007_fifo_sink_00_gen//NoC_QSYS_fifo_sink_00_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_sink_00: Done RTL generation for module 'NoC_QSYS_fifo_sink_00'
+Info: fifo_sink_00: "NoC_QSYS" instantiated altera_avalon_fifo "fifo_sink_00"
+Info: fifo_source_00: Starting RTL generation for module 'NoC_QSYS_fifo_source_00'
+Info: fifo_source_00:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=NoC_QSYS_fifo_source_00 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0008_fifo_source_00_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0008_fifo_source_00_gen//NoC_QSYS_fifo_source_00_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_source_00: Done RTL generation for module 'NoC_QSYS_fifo_source_00'
+Info: fifo_source_00: "NoC_QSYS" instantiated altera_avalon_fifo "fifo_source_00"
+Info: jtag_uart_0: Starting RTL generation for module 'NoC_QSYS_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=NoC_QSYS_jtag_uart_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0009_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0009_jtag_uart_0_gen//NoC_QSYS_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'NoC_QSYS_jtag_uart_0'
+Info: jtag_uart_0: "NoC_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_00: "NoC_QSYS" instantiated altera_nios2_gen2 "nios2_00"
+Info: nios2_01: "NoC_QSYS" instantiated altera_nios2_gen2 "nios2_01"
+Info: nios2_10: "NoC_QSYS" instantiated altera_nios2_gen2 "nios2_10"
+Info: nios2_11: "NoC_QSYS" instantiated altera_nios2_gen2 "nios2_11"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_019: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_020: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_021: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_022: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_023: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_024: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "NoC_QSYS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "NoC_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: avalon_st_adapter: "NoC_QSYS" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_004: "NoC_QSYS" instantiated altera_avalon_st_adapter "avalon_st_adapter_004"
+Info: rst_controller: "NoC_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'NoC_QSYS_nios2_00_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NoC_QSYS_nios2_00_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0012_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0012_cpu_gen//NoC_QSYS_nios2_00_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 17:36:17 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 17:36:17 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 17:36:18 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 17:36:18 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 17:36:18 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 17:36:18 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 17:36:19 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 17:36:19 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 17:36:20 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'NoC_QSYS_nios2_00_cpu'
+Info: cpu: "nios2_00" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'NoC_QSYS_nios2_01_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NoC_QSYS_nios2_01_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0013_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0013_cpu_gen//NoC_QSYS_nios2_01_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 17:36:21 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 17:36:21 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 17:36:22 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 17:36:22 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 17:36:22 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 17:36:22 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 17:36:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 17:36:23 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 17:36:23 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'NoC_QSYS_nios2_01_cpu'
+Info: cpu: "nios2_01" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'NoC_QSYS_nios2_10_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NoC_QSYS_nios2_10_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0014_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0014_cpu_gen//NoC_QSYS_nios2_10_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 17:36:24 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 17:36:24 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 17:36:25 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 17:36:25 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 17:36:25 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 17:36:25 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 17:36:26 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 17:36:26 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 17:36:27 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'NoC_QSYS_nios2_10_cpu'
+Info: cpu: "nios2_10" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'NoC_QSYS_nios2_11_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NoC_QSYS_nios2_11_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0015_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_1562711808217922800.dir/0015_cpu_gen//NoC_QSYS_nios2_11_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 17:36:28 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 17:36:28 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 17:36:29 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 17:36:29 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 17:36:29 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 17:36:29 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 17:36:30 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 17:36:30 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 17:36:31 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'NoC_QSYS_nios2_11_cpu'
+Info: cpu: "nios2_11" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_00_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_00_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_00_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_00_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: router_015: "mm_interconnect_0" instantiated altera_merlin_router "router_015"
+Info: router_016: "mm_interconnect_0" instantiated altera_merlin_router "router_016"
+Info: router_021: "mm_interconnect_0" instantiated altera_merlin_router "router_021"
+Info: router_022: "mm_interconnect_0" instantiated altera_merlin_router "router_022"
+Info: router_027: "mm_interconnect_0" instantiated altera_merlin_router "router_027"
+Info: router_028: "mm_interconnect_0" instantiated altera_merlin_router "router_028"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_004"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_004"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: data_format_adapter_0: "avalon_st_adapter" instantiated data_format_adapter "data_format_adapter_0"
+Info: channel_adapter_0: "avalon_st_adapter" instantiated channel_adapter "channel_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: data_format_adapter_0: "avalon_st_adapter_004" instantiated data_format_adapter "data_format_adapter_0"
+Info: channel_adapter_0: "avalon_st_adapter_004" instantiated channel_adapter "channel_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_004" instantiated error_adapter "error_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_004" instantiated timing_adapter "timing_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: NoC_QSYS: Done "NoC_QSYS" with 63 modules, 114 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

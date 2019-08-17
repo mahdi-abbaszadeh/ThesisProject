@@ -1,0 +1,22 @@
+20:45:27 **** Incremental Build of configuration Nios II for project NIOS_11 ****
+make all 
+Info: Building ../NIOS_11_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_11_bsp/
+[BSP build complete]
+Info: Compiling code_11.c to obj/default/code_11.o
+nios2-elf-gcc -xc -MP -MMD -c -I../NIOS_11_bsp//HAL/inc -I../NIOS_11_bsp/ -I../NIOS_11_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_11.o code_11.c
+code_11.c: In function 'main':
+code_11.c:197:7: warning: unused variable 'temp' [-Wunused-variable]
+   int temp;
+       ^
+Info: Linking NIOS_11.elf
+nios2-elf-g++  -T'../NIOS_11_bsp//linker.x' -msys-crt0='../NIOS_11_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../NIOS_11_bsp/  -msmallc  -Wl,-Map=NIOS_11.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o NIOS_11.elf obj/default/code_11.o -lm -msys-lib=m
+nios2-elf-insert NIOS_11.elf --thread_model hal --cpu_name nios2_11 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name NoC_QSYS --quartus_project_dir "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC" --jdi ../..//output_files/NIOS_NoC.jdi --sopcinfo C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_11_bsp/../../NoC_QSYS.sopcinfo
+Info: (NIOS_11.elf) 5236 Bytes program size (code + initialized data).
+Info:               10 KBytes free for stack + heap.
+Info: Creating NIOS_11.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source NIOS_11.elf >NIOS_11.objdump
+[NIOS_11 build complete]
+
+20:45:31 Build Finished (took 3s.427ms)
+

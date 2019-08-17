@@ -2,6 +2,10 @@ Info: Starting: Create block symbol file (.bsf)
 Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\unsaved.qsys --block-symbol-file --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\unsaved --family="Cyclone V" --part=5CSEMA4U23C6
 Progress: Loading NIOS_with_FIFO/unsaved.qsys
 Progress: Reading input file
+Progress: Adding Inst_mem_0 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Inst_mem_0
+Progress: Adding Inst_mem_1 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Inst_mem_1
 Progress: Adding MM2STFIFO_0 [altera_avalon_fifo 17.1]
 Progress: Parameterizing module MM2STFIFO_0
 Progress: Adding MM2STFIFO_1 [altera_avalon_fifo 17.1]
@@ -23,23 +27,11 @@ Progress: Parameterizing module onchip_memory2_0
 Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 17.1]
 Progress: Parameterizing module onchip_memory2_1
 Progress: Building connections
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/nios2_gen2_1.debug_mem_slave
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/ST2MMFIFO_1.in_csr
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/ST2MMFIFO_1.out
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/onchip_memory2_1.s1
-Warning: Ingoring duplicate connection nios2_gen2_1.instruction_master/nios2_gen2_1.debug_mem_slave
-Warning: Ingoring duplicate connection nios2_gen2_1.instruction_master/onchip_memory2_1.s1
-Warning: Ingoring duplicate connection clk_0.clk/nios2_gen2_1.clk
-Warning: Ingoring duplicate connection clk_0.clk/onchip_memory2_1.clk1
-Warning: Ingoring duplicate connection clk_0.clk/MM2STFIFO_1.clk_in
-Warning: Ingoring duplicate connection clk_0.clk/ST2MMFIFO_1.clk_in
-Warning: Ingoring duplicate connection nios2_gen2_1.irq/MM2STFIFO_1.in_irq
-Warning: Ingoring duplicate connection nios2_gen2_1.irq/ST2MMFIFO_1.in_irq
-Warning: Ingoring duplicate connection clk_0.clk_reset/nios2_gen2_1.reset
-Warning: Ingoring duplicate connection clk_0.clk_reset/onchip_memory2_1.reset1
-Warning: Ingoring duplicate connection clk_0.clk_reset/MM2STFIFO_1.reset_in
-Warning: Ingoring duplicate connection clk_0.clk_reset/ST2MMFIFO_1.reset_in
-Warning: Ingoring duplicate connection nios2_gen2_1.debug_reset_request/clk_0.clk_in_reset
+Warning: Ingoring duplicate connection nios2_gen2_0.instruction_master/Inst_mem_0.s1
+Warning: Ingoring duplicate connection clk_0.clk/Inst_mem_0.clk1
+Warning: Ingoring duplicate connection clk_0.clk/Inst_mem_1.clk1
+Warning: Ingoring duplicate connection clk_0.clk_reset/Inst_mem_0.reset1
+Warning: Ingoring duplicate connection clk_0.clk_reset/Inst_mem_1.reset1
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
@@ -55,6 +47,10 @@ Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\unsaved.qsys --synthesis=VERILOG --output-directory=C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_FIFO\unsaved\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
 Progress: Loading NIOS_with_FIFO/unsaved.qsys
 Progress: Reading input file
+Progress: Adding Inst_mem_0 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Inst_mem_0
+Progress: Adding Inst_mem_1 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module Inst_mem_1
 Progress: Adding MM2STFIFO_0 [altera_avalon_fifo 17.1]
 Progress: Parameterizing module MM2STFIFO_0
 Progress: Adding MM2STFIFO_1 [altera_avalon_fifo 17.1]
@@ -76,23 +72,11 @@ Progress: Parameterizing module onchip_memory2_0
 Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 17.1]
 Progress: Parameterizing module onchip_memory2_1
 Progress: Building connections
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/nios2_gen2_1.debug_mem_slave
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/ST2MMFIFO_1.in_csr
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/ST2MMFIFO_1.out
-Warning: Ingoring duplicate connection nios2_gen2_1.data_master/onchip_memory2_1.s1
-Warning: Ingoring duplicate connection nios2_gen2_1.instruction_master/nios2_gen2_1.debug_mem_slave
-Warning: Ingoring duplicate connection nios2_gen2_1.instruction_master/onchip_memory2_1.s1
-Warning: Ingoring duplicate connection clk_0.clk/nios2_gen2_1.clk
-Warning: Ingoring duplicate connection clk_0.clk/onchip_memory2_1.clk1
-Warning: Ingoring duplicate connection clk_0.clk/MM2STFIFO_1.clk_in
-Warning: Ingoring duplicate connection clk_0.clk/ST2MMFIFO_1.clk_in
-Warning: Ingoring duplicate connection nios2_gen2_1.irq/MM2STFIFO_1.in_irq
-Warning: Ingoring duplicate connection nios2_gen2_1.irq/ST2MMFIFO_1.in_irq
-Warning: Ingoring duplicate connection clk_0.clk_reset/nios2_gen2_1.reset
-Warning: Ingoring duplicate connection clk_0.clk_reset/onchip_memory2_1.reset1
-Warning: Ingoring duplicate connection clk_0.clk_reset/MM2STFIFO_1.reset_in
-Warning: Ingoring duplicate connection clk_0.clk_reset/ST2MMFIFO_1.reset_in
-Warning: Ingoring duplicate connection nios2_gen2_1.debug_reset_request/clk_0.clk_in_reset
+Warning: Ingoring duplicate connection nios2_gen2_0.instruction_master/Inst_mem_0.s1
+Warning: Ingoring duplicate connection clk_0.clk/Inst_mem_0.clk1
+Warning: Ingoring duplicate connection clk_0.clk/Inst_mem_1.clk1
+Warning: Ingoring duplicate connection clk_0.clk_reset/Inst_mem_0.reset1
+Warning: Ingoring duplicate connection clk_0.clk_reset/Inst_mem_1.reset1
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
@@ -102,26 +86,34 @@ Info: unsaved.ST2MMFIFO_0: For Avalon-ST and Avalon-MM combinations, data width 
 Info: unsaved.ST2MMFIFO_1: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
 Info: unsaved.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: unsaved: Generating unsaved "unsaved" for QUARTUS_SYNTH
+Info: Inst_mem_0: Starting RTL generation for module 'unsaved_Inst_mem_0'
+Info: Inst_mem_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_Inst_mem_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0002_Inst_mem_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0002_Inst_mem_0_gen//unsaved_Inst_mem_0_component_configuration.pl  --do_build_sim=0  ]
+Info: Inst_mem_0: Done RTL generation for module 'unsaved_Inst_mem_0'
+Info: Inst_mem_0: "unsaved" instantiated altera_avalon_onchip_memory2 "Inst_mem_0"
+Info: Inst_mem_1: Starting RTL generation for module 'unsaved_Inst_mem_1'
+Info: Inst_mem_1:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_Inst_mem_1 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0003_Inst_mem_1_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0003_Inst_mem_1_gen//unsaved_Inst_mem_1_component_configuration.pl  --do_build_sim=0  ]
+Info: Inst_mem_1: Done RTL generation for module 'unsaved_Inst_mem_1'
+Info: Inst_mem_1: "unsaved" instantiated altera_avalon_onchip_memory2 "Inst_mem_1"
 Info: MM2STFIFO_0: Starting RTL generation for module 'unsaved_MM2STFIFO_0'
-Info: MM2STFIFO_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=unsaved_MM2STFIFO_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0002_MM2STFIFO_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0002_MM2STFIFO_0_gen//unsaved_MM2STFIFO_0_component_configuration.pl  --do_build_sim=0  ]
+Info: MM2STFIFO_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=unsaved_MM2STFIFO_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0004_MM2STFIFO_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0004_MM2STFIFO_0_gen//unsaved_MM2STFIFO_0_component_configuration.pl  --do_build_sim=0  ]
 Info: MM2STFIFO_0: Done RTL generation for module 'unsaved_MM2STFIFO_0'
 Info: MM2STFIFO_0: "unsaved" instantiated altera_avalon_fifo "MM2STFIFO_0"
 Info: ST2MMFIFO_0: Starting RTL generation for module 'unsaved_ST2MMFIFO_0'
-Info: ST2MMFIFO_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=unsaved_ST2MMFIFO_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0003_ST2MMFIFO_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0003_ST2MMFIFO_0_gen//unsaved_ST2MMFIFO_0_component_configuration.pl  --do_build_sim=0  ]
+Info: ST2MMFIFO_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=unsaved_ST2MMFIFO_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0005_ST2MMFIFO_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0005_ST2MMFIFO_0_gen//unsaved_ST2MMFIFO_0_component_configuration.pl  --do_build_sim=0  ]
 Info: ST2MMFIFO_0: Done RTL generation for module 'unsaved_ST2MMFIFO_0'
 Info: ST2MMFIFO_0: "unsaved" instantiated altera_avalon_fifo "ST2MMFIFO_0"
 Info: jtag_uart_0: Starting RTL generation for module 'unsaved_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=unsaved_jtag_uart_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0004_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0004_jtag_uart_0_gen//unsaved_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=unsaved_jtag_uart_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0006_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0006_jtag_uart_0_gen//unsaved_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'unsaved_jtag_uart_0'
 Info: jtag_uart_0: "unsaved" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "unsaved" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: nios2_gen2_1: "unsaved" instantiated altera_nios2_gen2 "nios2_gen2_1"
 Info: onchip_memory2_0: Starting RTL generation for module 'unsaved_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0005_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0005_onchip_memory2_0_gen//unsaved_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_0 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0007_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0007_onchip_memory2_0_gen//unsaved_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'unsaved_onchip_memory2_0'
 Info: onchip_memory2_0: "unsaved" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: onchip_memory2_1: Starting RTL generation for module 'unsaved_onchip_memory2_1'
-Info: onchip_memory2_1:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_1 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0006_onchip_memory2_1_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0006_onchip_memory2_1_gen//unsaved_onchip_memory2_1_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_1:   Generation command is [exec D:/intelfpga/17.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga/17.1/quartus/bin64/perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_1 --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0008_onchip_memory2_1_gen/ --quartus_dir=D:/intelfpga/17.1/quartus --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0008_onchip_memory2_1_gen//unsaved_onchip_memory2_1_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_1: Done RTL generation for module 'unsaved_onchip_memory2_1'
 Info: onchip_memory2_1: "unsaved" instantiated altera_avalon_onchip_memory2 "onchip_memory2_1"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -137,33 +129,35 @@ Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "unsaved" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "unsaved" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "unsaved" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'unsaved_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=unsaved_nios2_gen2_0_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0009_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0009_cpu_gen//unsaved_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2019.07.23 13:25:02 (*) Starting Nios II generation
-Info: cpu: # 2019.07.23 13:25:02 (*)   Checking for plaintext license.
-Info: cpu: # 2019.07.23 13:25:03 (*)   Plaintext license not found.
-Info: cpu: # 2019.07.23 13:25:03 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2019.07.23 13:25:03 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2019.07.23 13:25:03 (*)   Creating all objects for CPU
-Info: cpu: # 2019.07.23 13:25:04 (*)   Generating RTL from CPU objects
-Info: cpu: # 2019.07.23 13:25:04 (*)   Creating plain-text RTL
-Info: cpu: # 2019.07.23 13:25:04 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=unsaved_nios2_gen2_0_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0011_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0011_cpu_gen//unsaved_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 16:13:12 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 16:13:12 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 16:13:13 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 16:13:13 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 16:13:13 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 16:13:13 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 16:13:14 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 16:13:14 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 16:13:15 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'unsaved_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu: Starting RTL generation for module 'unsaved_nios2_gen2_1_cpu'
-Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=unsaved_nios2_gen2_1_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0010_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8100_7148762399774938268.dir/0010_cpu_gen//unsaved_nios2_gen2_1_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2019.07.23 13:25:05 (*) Starting Nios II generation
-Info: cpu: # 2019.07.23 13:25:05 (*)   Checking for plaintext license.
-Info: cpu: # 2019.07.23 13:25:06 (*)   Plaintext license not found.
-Info: cpu: # 2019.07.23 13:25:06 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2019.07.23 13:25:06 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2019.07.23 13:25:06 (*)   Creating all objects for CPU
-Info: cpu: # 2019.07.23 13:25:07 (*)   Generating RTL from CPU objects
-Info: cpu: # 2019.07.23 13:25:07 (*)   Creating plain-text RTL
-Info: cpu: # 2019.07.23 13:25:08 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec D:/intelFPGA/17.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA/17.1/quartus/bin64//perl/lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin/europa -I D:/intelfpga/17.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga/17.1/quartus/sopc_builder/bin -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=unsaved_nios2_gen2_1_cpu --dir=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0012_cpu_gen/ --quartus_bindir=D:/intelFPGA/17.1/quartus/bin64/ --verilog --config=C:/Users/MAHDI2~1/AppData/Local/Temp/alt8118_6522584770100274081.dir/0012_cpu_gen//unsaved_nios2_gen2_1_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.08.10 16:13:16 (*) Starting Nios II generation
+Info: cpu: # 2019.08.10 16:13:16 (*)   Checking for plaintext license.
+Info: cpu: # 2019.08.10 16:13:17 (*)   Plaintext license not found.
+Info: cpu: # 2019.08.10 16:13:17 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.08.10 16:13:17 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.08.10 16:13:17 (*)   Creating all objects for CPU
+Info: cpu: # 2019.08.10 16:13:18 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.08.10 16:13:18 (*)   Creating plain-text RTL
+Info: cpu: # 2019.08.10 16:13:18 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'unsaved_nios2_gen2_1_cpu'
 Info: cpu: "nios2_gen2_1" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -180,7 +174,9 @@ Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_
 Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
 Info: router_011: "mm_interconnect_0" instantiated altera_merlin_router "router_011"
 Info: router_012: "mm_interconnect_0" instantiated altera_merlin_router "router_012"
+Info: router_018: "mm_interconnect_0" instantiated altera_merlin_router "router_018"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
@@ -188,10 +184,12 @@ Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysCo
 Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_FIFO/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_FIFO/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
 Info: Reusing file C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_FIFO/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: unsaved: Done "unsaved" with 36 modules, 58 files
+Info: unsaved: Done "unsaved" with 41 modules, 65 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

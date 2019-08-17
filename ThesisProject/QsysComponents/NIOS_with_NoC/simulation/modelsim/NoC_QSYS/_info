@@ -1,0 +1,5309 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/simulation/modelsim
+Eaddressext
+Z1 w1564313812
+Z2 DPx4 work 14 connectionpack 0 22 QE5e4S=zUUQZo<5JiS>h:2
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/RouterA.vhd
+Z7 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/RouterA.vhd
+l0
+L469
+V^7P]`zcGmZDDoV]@Wz]8W0
+!s100 BJD2=_Mf0O<NfIkBiHF8H1
+Z8 OL;C;10.5;63
+31
+Z9 !s110 1564481159
+!i10b 1
+Z10 !s108 1564481159.000000
+Z11 !s90 -reportprogress|300|-93|-work|NoC_QSYS|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/RouterA.vhd|
+Z12 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/RouterA.vhd|
+!i113 0
+Z13 o-93 -work NoC_QSYS
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+Z15 DEx4 work 4 fifo 0 22 LoJ720f@@H@ibR56gJi:e2
+R2
+R3
+R4
+R5
+Z16 DEx4 work 10 addressext 0 22 ^7P]`zcGmZDDoV]@Wz]8W0
+l511
+L501
+Vih`P8APMePC21PW`efDjl0
+!s100 9cOc?75PHX=?MVlb9^dnP0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+valtera_avalon_sc_fifo
+Z17 !s110 1564481150
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+IL6mU<09@C<X:@i;micfB@1
+Z18 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z19 w1564313879
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Z20 L0 21
+Z21 OL;L;10.5;63
+r1
+!s85 0
+31
+Z22 !s108 1564481150.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 0
+Z23 o-vlog01compat -work NoC_QSYS -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z24 !s92 -vlog01compat -work NoC_QSYS +incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z25 tCvgOpt 0
+valtera_merlin_arb_adder
+Z26 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z27 !s110 1564481155
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+I2J>clSR^VK]bG61E@RSD41
+R18
+Z28 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R19
+Z29 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Z30 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R21
+r1
+!s85 0
+31
+Z31 !s108 1564481155.000000
+Z32 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 0
+Z34 o-sv -work NoC_QSYS -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z35 !s92 -sv -work NoC_QSYS +incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R25
+valtera_merlin_arbitrator
+R26
+R27
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IKbIDhHc>Hf2@jajhPGZn@0
+R18
+R28
+S1
+R0
+R19
+R29
+R30
+L0 103
+R21
+r1
+!s85 0
+31
+R31
+R32
+R33
+!i113 0
+R34
+R35
+R25
+valtera_merlin_burst_uncompressor
+R26
+R9
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+I8bKDl96ZE=O7PIoI[mgWO3
+R18
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R21
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 0
+R34
+R35
+R25
+valtera_merlin_master_agent
+R26
+R9
+!i10b 1
+!s100 _CJm:YX=>U2LQKH;8=@cb0
+Il^2:k2^=Y7N2eVLJXm_i]0
+R18
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_agent.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R21
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 0
+R34
+R35
+R25
+valtera_merlin_master_translator
+R26
+R9
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+IKGTH0@LeD=<z5Td9gBk5m3
+R18
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_translator.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_translator.sv
+L0 32
+R21
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 0
+R34
+R35
+R25
+valtera_merlin_slave_agent
+R26
+R9
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+IVk6?5`SYSlb6<NU^;jPW70
+R18
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R21
+r1
+!s85 0
+31
+Z36 !s108 1564481158.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 0
+R34
+R35
+R25
+valtera_merlin_slave_translator
+R26
+R9
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+Ill3>Z@Z4[;ORNQZngg4Je0
+R18
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R21
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 0
+R34
+R35
+R25
+valtera_reset_controller
+Z37 !s110 1564481149
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+ILnh2lb?>DcCUecTm`X=b52
+R18
+R0
+Z38 w1564313864
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_controller.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_controller.v
+L0 42
+R21
+r1
+!s85 0
+31
+Z39 !s108 1564481149.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_controller.v|
+!i113 0
+R23
+R24
+R25
+valtera_reset_synchronizer
+R37
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I:icJ7lo?KWY?_U1Ed`bA>3
+R18
+R0
+R38
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_synchronizer.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 0
+R23
+R24
+R25
+Ecombiner
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L87
+VT<iebYPOf12mBLEBCZd[F0
+!s100 D`8OVoiIZ]L<4GCb]hIai3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+Z40 DEx4 work 8 combiner 0 22 T<iebYPOf12mBLEBCZd[F0
+l107
+L106
+VJSJ6EWh<7lQg586cdl<J;1
+!s100 0elP>^V7cND4[CMFHl<zm1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Pconnectionpack
+R3
+R4
+R5
+R1
+R0
+Z41 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/ConnectionPack.vhd
+Z42 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/ConnectionPack.vhd
+l0
+L14
+VQE5e4S=zUUQZo<5JiS>h:2
+!s100 o>5i;=_R6WcVd<AW_OaQ23
+R8
+31
+b1
+R9
+!i10b 1
+R10
+Z43 !s90 -reportprogress|300|-93|-work|NoC_QSYS|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/ConnectionPack.vhd|
+Z44 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/ConnectionPack.vhd|
+!i113 0
+R13
+R14
+Bbody
+R2
+R3
+R4
+R5
+l0
+L181
+Vzb>NVoF=H718SOa<5NZl_1
+!s100 h0D@<FKZ[eoHXH0oY3B`b2
+R8
+31
+R9
+!i10b 1
+R10
+R43
+R44
+!i113 0
+R13
+R14
+Edemux
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L124
+VHN0?bL:UbjkSi:cz;:C8B2
+!s100 i;Uki4EBgWn[ljE[Z;cHE0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+Z45 DEx4 work 5 demux 0 22 HN0?bL:UbjkSi:cz;:C8B2
+l148
+L146
+V@Zz<H8[Ui>=HEHS;lGf533
+!s100 nkQ<oiZnW6fJk:5fEK1333
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Efifo
+R1
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L4
+VLoJ720f@@H@ibR56gJi:e2
+!s100 nKCW>C]UgBL44iPNb4^Y;3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+R5
+R15
+l38
+L22
+V]F89]mA91BV3bD^>beXg52
+!s100 Xn3e1ofzA0P25PD[odc_70
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Pfilepack
+R3
+R4
+R5
+R1
+R0
+Z46 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/FilePack.vhd
+Z47 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/FilePack.vhd
+l0
+L15
+V5_XcOW4cmQM4zNoGUX2z51
+!s100 L=HGLX]@lZSML>lRL;1k<3
+R8
+31
+b1
+R9
+!i10b 1
+R10
+Z48 !s90 -reportprogress|300|-93|-work|NoC_QSYS|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/FilePack.vhd|
+Z49 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/FilePack.vhd|
+!i113 0
+R13
+R14
+Bbody
+Z50 DPx4 work 8 filepack 0 22 5_XcOW4cmQM4zNoGUX2z51
+R3
+R4
+R5
+l0
+L73
+V87P;HDkaTWdfnZS8X2Z8=3
+!s100 Zgc2?:1L?3h3K8oFX^2oH0
+R8
+31
+R9
+!i10b 1
+R10
+R48
+R49
+!i113 0
+R13
+R14
+Emux
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L671
+VJbTUE_<lDjjoAfL1>UDPT3
+!s100 :F10iV@1d7H9d;n1:]Qk]1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+Z51 DEx4 work 8 selector 0 22 LC>;`JHWKTAQ`?:WG[Am32
+R2
+R3
+R4
+R5
+Z52 DEx4 work 3 mux 0 22 JbTUE_<lDjjoAfL1>UDPT3
+l695
+L693
+Vd>3WjY]<REnkdoKaDeUi^3
+!s100 eSVWmYDb_k4SZ3lf<UbhQ3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Enoc
+R1
+R2
+R50
+R5
+R4
+R3
+R0
+Z53 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NOC.vhd
+Z54 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NOC.vhd
+l0
+L19
+Vc2`DYV:ccC0R3Jf3nYg>=2
+!s100 hj6WTcF3`a:X@bTWSHlXB3
+R8
+31
+Z55 !s110 1564481160
+!i10b 1
+Z56 !s108 1564481160.000000
+Z57 !s90 -reportprogress|300|-93|-work|NoC_QSYS|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NOC.vhd|
+Z58 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NOC.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+Z59 DEx4 work 4 node 0 22 G<aDcLGGLMXnXaT2Vhm3S3
+R2
+R50
+R5
+R4
+R3
+DEx4 work 3 noc 0 22 c2`DYV:ccC0R3Jf3nYg>=2
+l283
+L94
+VOf7L19LKTURTC1z9WP`S:2
+!s100 2R206Vil[YWVbMK@SGABY1
+R8
+31
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 0
+R13
+R14
+vNoC_QSYS
+R37
+!i10b 1
+!s100 ILnCoZOjSbEShKnQ?<]>W2
+I2LQmQ9]>zzQ:f@c;b8mfj0
+R18
+R0
+R1
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/NoC_QSYS.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/NoC_QSYS.v
+L0 6
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/NoC_QSYS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/NoC_QSYS.v|
+!i113 0
+R23
+!s92 -vlog01compat -work NoC_QSYS +incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R25
+n@no@c_@q@s@y@s
+vNoC_QSYS_avalon_st_adapter
+R37
+!i10b 1
+!s100 GzOdEkBma@:0>C3C>U^Km2
+I_oi7TH90M>CG1T`F9=V5J0
+R18
+R0
+w1564313863
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter.v
+L0 9
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter
+vNoC_QSYS_avalon_st_adapter_004
+R37
+!i10b 1
+!s100 HA=LG8bLo]SoJLY?W8TmO2
+I2^864zC;nEhR[eK;E_6cE2
+R18
+R0
+R38
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004.v
+L0 9
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_004
+vNoC_QSYS_avalon_st_adapter_004_channel_adapter_0
+R26
+Z60 !s110 1564481154
+!i10b 1
+!s100 6>JQFPK9:dZY?^0cM3KKB2
+IB[:9]2h]b7D9M5?n;4oC:3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_004_channel_adapter_0_sv_unit
+S1
+R0
+Z61 w1564313881
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_channel_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_channel_adapter_0.sv
+Z62 L0 55
+R21
+r1
+!s85 0
+31
+Z63 !s108 1564481154.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_channel_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_channel_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_004_channel_adapter_0
+vNoC_QSYS_avalon_st_adapter_004_data_format_adapter_0
+R26
+R60
+!i10b 1
+!s100 R_@>oLN^_6X1C;RO`QZ@C0
+IZ3lN>9m:M?g=3E7Ya2EkZ1
+R18
+!s105 NoC_QSYS_avalon_st_adapter_004_data_format_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_data_format_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_data_format_adapter_0.sv
+Z64 L0 65
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_data_format_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_data_format_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_004_data_format_adapter_0
+vNoC_QSYS_avalon_st_adapter_004_error_adapter_0
+R26
+R60
+!i10b 1
+!s100 _@oJ;Lf09XK8EFUCj?z>81
+IYLzIEGL=h6G`<g>K5C`i;3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_004_error_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_error_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_error_adapter_0.sv
+Z65 L0 66
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_error_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_004_error_adapter_0
+vNoC_QSYS_avalon_st_adapter_004_timing_adapter_0
+R26
+R60
+!i10b 1
+!s100 :U`TP2Pm?EASdd@Nn_<KU1
+IRD5o0_QKMT[ide1<2jjTK3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_004_timing_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_timing_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_timing_adapter_0.sv
+Z66 L0 60
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_timing_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_004_timing_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_004_timing_adapter_0
+vNoC_QSYS_avalon_st_adapter_channel_adapter_0
+R26
+R27
+!i10b 1
+!s100 8Jm75ca=NEDSEWP0LYJ0m2
+IKDNLkXZ5IR^L6GiZaXXJn3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_channel_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_channel_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_channel_adapter_0.sv
+R62
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_channel_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_channel_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_channel_adapter_0
+vNoC_QSYS_avalon_st_adapter_data_format_adapter_0
+R26
+R27
+!i10b 1
+!s100 e6JJhf@Gjo85of1W92UWP3
+Ih4`z^1O8jN`[[:bJ>RiVd0
+R18
+!s105 NoC_QSYS_avalon_st_adapter_data_format_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0.sv
+R64
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_data_format_adapter_0
+vNoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram
+R26
+R27
+!i10b 1
+!s100 W^dUMBoMC@8:UjbY732Ha2
+IHSfQQF65[@hSJYAQDYXNO0
+R18
+!s105 NoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram.sv
+Z67 L0 36
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_data_ram.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_data_format_adapter_0_data_ram
+vNoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram
+R26
+R27
+!i10b 1
+!s100 R>37mdk6CH3=K>WP2B4Sb2
+IMd`3;SnTcI=j?8_5N739d3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram.sv
+R67
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_data_format_adapter_0_state_ram.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_data_format_adapter_0_state_ram
+vNoC_QSYS_avalon_st_adapter_error_adapter_0
+R26
+R27
+!i10b 1
+!s100 JUmgQEETPQX>Jn^o?L5NI1
+IP3F?Oeno[ao`Jff_nnnK>1
+R18
+!s105 NoC_QSYS_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_error_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_error_adapter_0.sv
+R65
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_error_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_error_adapter_0
+vNoC_QSYS_avalon_st_adapter_timing_adapter_0
+R26
+R60
+!i10b 1
+!s100 Yc@:n?>]GRmlagFbFPKWO2
+I^Ha3_2OnzGU5G;dLB81nm3
+R18
+!s105 NoC_QSYS_avalon_st_adapter_timing_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0.sv
+R66
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_timing_adapter_0
+vNoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo
+R26
+R60
+!i10b 1
+!s100 >26@MIWQUoSe<PmMHfR4X1
+I;WCTl5XgP854eE?[d1G8o1
+R18
+!s105 NoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo.sv
+L0 53
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_avalon_st_adapter_timing_adapter_0_fifo.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_avalon_st_adapter_timing_adapter_0_fifo
+vNoC_QSYS_data_mem_00
+R60
+!i10b 1
+!s100 Ah8SbdamdKN]IFOk2Gj410
+IU=mSXTkn?D3YPnE;Lo[^W1
+R18
+R0
+R1
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_00.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_00.v
+R20
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_00.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_00.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_data_mem_00
+vNoC_QSYS_data_mem_01
+Z68 !s110 1564481153
+!i10b 1
+!s100 LfHEC[]AN48BNnYNGb1:F0
+IgYa>[MhW4^CLUc9:@he5z1
+R18
+R0
+Z69 w1564313813
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_01.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_01.v
+R20
+R21
+r1
+!s85 0
+31
+Z70 !s108 1564481153.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_01.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_01.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_data_mem_01
+vNoC_QSYS_data_mem_10
+R68
+!i10b 1
+!s100 cCGUNjmbWClRLm<GdYH[12
+I?]Dkn9iOkD6z[Lmk:LF?Z0
+R18
+R0
+R69
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_10.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_10.v
+R20
+R21
+r1
+!s85 0
+31
+R70
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_10.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_10.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_data_mem_10
+vNoC_QSYS_data_mem_11
+R68
+!i10b 1
+!s100 1d3?H?n`77IEQ>f_bUVaD2
+I2i]dgjGY1WTm20AX;:e[11
+R18
+R0
+Z71 w1564313814
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_11.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_11.v
+R20
+R21
+r1
+!s85 0
+31
+R70
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_11.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_data_mem_11.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_data_mem_11
+vNoC_QSYS_fifo_sink_00
+R68
+!i10b 1
+!s100 >^OZFX0^fQF<THmz`aKRj1
+I3nTQ>G0UlHN6oi4b]`KQb0
+R18
+R0
+R71
+Z72 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_sink_00.v
+Z73 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_sink_00.v
+L0 593
+R21
+r1
+!s85 0
+31
+R70
+Z74 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_sink_00.v|
+Z75 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_sink_00.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00
+vNoC_QSYS_fifo_sink_00_map_avalonst_to_avalonmm
+R68
+!i10b 1
+!s100 zK?;S:^^ga01<NhJEVZM61
+ISog2X2<jI_odhnIil^5_a1
+R18
+R0
+R71
+R72
+R73
+L0 465
+R21
+r1
+!s85 0
+31
+R70
+R74
+R75
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00_map_avalonst_to_avalonmm
+vNoC_QSYS_fifo_sink_00_map_avalonst_to_avalonmm_other_info
+R68
+!i10b 1
+!s100 nmSOIJn3c0cAX;ReiXAg41
+ITATQ4Mm;N2o@d;VRRO_P`0
+R18
+R0
+R71
+R72
+R73
+L0 550
+R21
+r1
+!s85 0
+31
+R70
+R74
+R75
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00_map_avalonst_to_avalonmm_other_info
+vNoC_QSYS_fifo_sink_00_scfifo_with_controls
+R68
+!i10b 1
+!s100 Jf1`GX0i<RIMX`]WAc_dE3
+I_]gAI]=^7fdl@aLA@zG4P3
+R18
+R0
+R71
+R72
+R73
+Z76 L0 88
+R21
+r1
+!s85 0
+31
+R70
+R74
+R75
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00_scfifo_with_controls
+vNoC_QSYS_fifo_sink_00_single_clock_fifo
+R68
+!i10b 1
+!s100 g9`Od0f<SAJ_d>NTnd8>n2
+IoeP4RNm04no27G1@KeP>L3
+R18
+R0
+R71
+R72
+R73
+R20
+R21
+r1
+!s85 0
+31
+R70
+R74
+R75
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00_single_clock_fifo
+vNoC_QSYS_fifo_sink_00_single_clock_fifo_for_other_info
+R68
+!i10b 1
+!s100 FijEg4A:?=oR74MDNSnS=3
+IK8YI]CebM^dd5SRz>1=jV0
+R18
+R0
+R71
+R72
+R73
+L0 495
+R21
+r1
+!s85 0
+31
+R70
+R74
+R75
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_sink_00_single_clock_fifo_for_other_info
+vNoC_QSYS_fifo_source_00
+R68
+!i10b 1
+!s100 am24gnKQ=lhE8O8Jnzmel1
+IZ4`472D6Y7@a779`XZ[E21
+R18
+R0
+Z77 w1564313815
+Z78 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_source_00.v
+Z79 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_source_00.v
+L0 638
+R21
+r1
+!s85 0
+31
+R70
+Z80 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_source_00.v|
+Z81 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_fifo_source_00.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00
+vNoC_QSYS_fifo_source_00_map_avalonmm_to_avalonst
+R68
+!i10b 1
+!s100 ZTDge>eYNk9J@ODh1VRKh0
+Iko:K7SPY`g>GNZl7V^z1Y0
+R18
+R0
+R77
+R78
+R79
+L0 463
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_map_avalonmm_to_avalonst
+vNoC_QSYS_fifo_source_00_map_avalonmm_to_avalonst_other_info
+R68
+!i10b 1
+!s100 oa@TL8Z?XP^ObEQK<?F7e0
+Ie1_IEQTd5zn6lEK@kO[791
+R18
+R0
+R77
+R78
+R79
+L0 548
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_map_avalonmm_to_avalonst_other_info
+vNoC_QSYS_fifo_source_00_map_fifo_other_info_to_avalonst
+R68
+!i10b 1
+!s100 Wf0UkW@enEU?7zQWJc^o12
+IngknIDc9?dhFf76XOHBS@1
+R18
+R0
+R77
+R78
+R79
+L0 607
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_map_fifo_other_info_to_avalonst
+vNoC_QSYS_fifo_source_00_scfifo_with_controls
+R68
+!i10b 1
+!s100 9<_8Z0`7R<c0QKTPMYWDz0
+I<Nj8V19>594fO63bFQ8?S0
+R18
+R0
+R77
+R78
+R79
+R76
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_scfifo_with_controls
+vNoC_QSYS_fifo_source_00_single_clock_fifo
+R68
+!i10b 1
+!s100 P?:dk_C74KWQb0SodGWmL1
+IeC_b8?AzXb_`jJ9z>TGGg2
+R18
+R0
+R77
+R78
+R79
+R20
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_single_clock_fifo
+vNoC_QSYS_fifo_source_00_single_clock_fifo_for_other_info
+R68
+!i10b 1
+!s100 W^U0YaCa][?_Z]hadmG:Z1
+ICU>5SY3S^LhV;e<:G8>_Z2
+R18
+R0
+R77
+R78
+R79
+L0 493
+R21
+r1
+!s85 0
+31
+R70
+R80
+R81
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_fifo_source_00_single_clock_fifo_for_other_info
+vNoC_QSYS_irq_mapper
+R26
+R27
+!i10b 1
+!s100 R;:PngdV2RIETBl?f[^5b1
+I>k<S7iV<Xe<T[D]M7WlNV0
+R18
+!s105 NoC_QSYS_irq_mapper_sv_unit
+S1
+R0
+Z82 w1564313862
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_irq_mapper.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_irq_mapper.sv
+L0 31
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_irq_mapper.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_irq_mapper
+vNoC_QSYS_jtag_uart_0
+R68
+!i10b 1
+!s100 PJo6DIKF[TZcPITXLnNBV1
+IMRQ>b^:YaF3GA>GoV9[R00
+R18
+R0
+R77
+Z83 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_jtag_uart_0.v
+Z84 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_jtag_uart_0.v
+L0 331
+R21
+r1
+!s85 0
+31
+R70
+Z85 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_jtag_uart_0.v|
+Z86 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_jtag_uart_0.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_jtag_uart_0
+vNoC_QSYS_jtag_uart_0_scfifo_r
+R68
+!i10b 1
+!s100 RmchdAM^3XRaRQmif[oDk2
+ITc91M:C;Tj>fPcJPnP9R62
+R18
+R0
+R77
+R83
+R84
+L0 243
+R21
+r1
+!s85 0
+31
+R70
+R85
+R86
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_jtag_uart_0_scfifo_r
+vNoC_QSYS_jtag_uart_0_scfifo_w
+R68
+!i10b 1
+!s100 X8E]VMGC=gJWXUH[?Gb]b2
+I_TeJ=S;o]TmTzM;jHnb7g0
+R18
+R0
+R77
+R83
+R84
+L0 78
+R21
+r1
+!s85 0
+31
+R70
+R85
+R86
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_jtag_uart_0_scfifo_w
+vNoC_QSYS_jtag_uart_0_sim_scfifo_r
+R68
+!i10b 1
+!s100 @h=I[LeU1PJDGJWf2enlI0
+I3=0iR13[52TEUKQGb?Y2=1
+R18
+R0
+R77
+R83
+R84
+L0 164
+R21
+r1
+!s85 0
+31
+R70
+R85
+R86
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_jtag_uart_0_sim_scfifo_r
+vNoC_QSYS_jtag_uart_0_sim_scfifo_w
+R68
+!i10b 1
+!s100 DAhe:60Q]5]:D2[W<z_:M2
+I66lPc8@?:]PfmiLWnE8N_3
+R18
+R0
+R77
+R83
+R84
+R20
+R21
+r1
+!s85 0
+31
+R70
+R85
+R86
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_jtag_uart_0_sim_scfifo_w
+vNoC_QSYS_mm_interconnect_0
+R37
+!i10b 1
+!s100 =2Y76[FWSmD^YY1[>K0c^3
+Il^G]XSF0eoOB3VeW`MAbc1
+R18
+R0
+R82
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0.v
+L0 9
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0
+vNoC_QSYS_mm_interconnect_0_avalon_st_adapter
+R17
+!i10b 1
+!s100 c3i<cln]5fdiEOWQVQbld1
+IhV_UzdaYz3eN9]6BnHlV:0
+R18
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R21
+r1
+!s85 0
+31
+R39
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_avalon_st_adapter
+vNoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R26
+R27
+!i10b 1
+!s100 X>GGbWMnmjWg6;@T<JDz@1
+I3;W6m[9^dGd;J4cU?Q6E91
+R18
+!s105 NoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R61
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R65
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+vNoC_QSYS_mm_interconnect_0_cmd_demux
+R26
+Z87 !s110 1564481156
+!i10b 1
+!s100 GB9^QgJX?a4_GfB;@OQHG1
+IhNn8cg[SRjSg2:?5@SRC?2
+R18
+!s105 NoC_QSYS_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux.sv
+Z88 L0 43
+R21
+r1
+!s85 0
+31
+Z89 !s108 1564481156.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_cmd_demux
+vNoC_QSYS_mm_interconnect_0_cmd_demux_004
+R26
+R87
+!i10b 1
+!s100 gLNE<<Ll0NM`iU<C?>Z^43
+IlV[Bl]ib_fn]WLDjmLTBo0
+R18
+!s105 NoC_QSYS_mm_interconnect_0_cmd_demux_004_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux_004.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux_004.sv
+R88
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux_004.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_demux_004.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_cmd_demux_004
+vNoC_QSYS_mm_interconnect_0_cmd_mux
+R26
+R87
+!i10b 1
+!s100 ihS7QNf6B1<EREaGNWC4E0
+I>NcBRmn6_6emJ22Y4oAb92
+R18
+!s105 NoC_QSYS_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux.sv
+Z90 L0 51
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_cmd_mux
+vNoC_QSYS_mm_interconnect_0_cmd_mux_001
+R26
+R87
+!i10b 1
+!s100 F4cf<J:YZNC?Ydm^2:COZ2
+IhlLgz0=4b>IN?ZHXS9GB43
+R18
+!s105 NoC_QSYS_mm_interconnect_0_cmd_mux_001_sv_unit
+S1
+R0
+Z91 w1564313880
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_001.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_001.sv
+R90
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_001.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_cmd_mux_001
+vNoC_QSYS_mm_interconnect_0_cmd_mux_002
+R26
+R87
+!i10b 1
+!s100 UUJ>]58gnK2XBk<PU9TIc2
+IDh7ohm[IMWA5;j;MV?C9b2
+R18
+!s105 NoC_QSYS_mm_interconnect_0_cmd_mux_002_sv_unit
+S1
+R0
+R91
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_002.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_002.sv
+R90
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_002.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_cmd_mux_002.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_cmd_mux_002
+vNoC_QSYS_mm_interconnect_0_router
+R26
+Z92 !s110 1564481158
+!i10b 1
+!s100 9FWPViCk2:`0[^@hCG]B]1
+IO:1Z?fCFjbU<FZPOP`eeW2
+R18
+Z93 !s105 NoC_QSYS_mm_interconnect_0_router_sv_unit
+S1
+R0
+R19
+Z94 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router.sv
+Z95 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router.sv
+Z96 L0 84
+R21
+r1
+!s85 0
+31
+R36
+Z97 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router.sv|
+Z98 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router
+vNoC_QSYS_mm_interconnect_0_router_001
+R26
+R92
+!i10b 1
+!s100 S8:2SodH7fD`^7<WN8DR93
+IKdkC8g0QPVL1<YDbjRSH73
+R18
+Z99 !s105 NoC_QSYS_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R19
+Z100 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_001.sv
+Z101 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_001.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z102 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_001.sv|
+Z103 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_001.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_001
+vNoC_QSYS_mm_interconnect_0_router_001_default_decode
+R26
+R92
+!i10b 1
+!s100 OPh2Ej<LnSZ97^@cm?QDZ3
+IYO]R6U<Hoief0o0cB;oFl3
+R18
+R99
+S1
+R0
+R19
+R100
+R101
+Z104 L0 45
+R21
+r1
+!s85 0
+31
+R36
+R102
+R103
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_001_default_decode
+vNoC_QSYS_mm_interconnect_0_router_002
+R26
+R92
+!i10b 1
+!s100 3K?BYNO1K;gOPPhY7][Wd1
+Ib1;c^ic3W0EeScidPRhfo1
+R18
+Z105 !s105 NoC_QSYS_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R19
+Z106 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_002.sv
+Z107 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_002.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z108 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_002.sv|
+Z109 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_002.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_002
+vNoC_QSYS_mm_interconnect_0_router_002_default_decode
+R26
+R92
+!i10b 1
+!s100 9NHkfP3ciOfn>2[a?6^g22
+I^Q75E;GTDPoB>i83kINXg3
+R18
+R105
+S1
+R0
+R19
+R106
+R107
+R104
+R21
+r1
+!s85 0
+31
+R36
+R108
+R109
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_002_default_decode
+vNoC_QSYS_mm_interconnect_0_router_003
+R26
+R92
+!i10b 1
+!s100 4a6:J9EOYA0NCNP;jS]X]1
+I_@E:k7FNOAYjo`_1En1@F0
+R18
+Z110 !s105 NoC_QSYS_mm_interconnect_0_router_003_sv_unit
+S1
+R0
+R19
+Z111 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_003.sv
+Z112 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_003.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z113 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_003.sv|
+Z114 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_003.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_003
+vNoC_QSYS_mm_interconnect_0_router_003_default_decode
+R26
+R92
+!i10b 1
+!s100 SHecNKdP=OZc0dj58XQFF3
+IahMB9R:aQ_SJ[>h^CK5f;3
+R18
+R110
+S1
+R0
+R19
+R111
+R112
+R104
+R21
+r1
+!s85 0
+31
+R36
+R113
+R114
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_003_default_decode
+vNoC_QSYS_mm_interconnect_0_router_004
+R26
+R92
+!i10b 1
+!s100 eS9QE>3=zV@FE`AmeL5@j0
+Ioa6@L1lUg^gTB8M8YhUcN1
+R18
+Z115 !s105 NoC_QSYS_mm_interconnect_0_router_004_sv_unit
+S1
+R0
+R19
+Z116 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_004.sv
+Z117 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_004.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z118 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_004.sv|
+Z119 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_004.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_004
+vNoC_QSYS_mm_interconnect_0_router_004_default_decode
+R26
+R92
+!i10b 1
+!s100 =WLMGI3C5aRcTV=JU_cb>0
+I7OG4Y5ONg6`FONkDQ7W_H0
+R18
+R115
+S1
+R0
+R19
+R116
+R117
+R104
+R21
+r1
+!s85 0
+31
+R36
+R118
+R119
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_004_default_decode
+vNoC_QSYS_mm_interconnect_0_router_005
+R26
+R92
+!i10b 1
+!s100 g[0@UQMO^VcXD2T9L^4nj2
+IKdkXaCEd[^9]RoKD]G1lm0
+R18
+Z120 !s105 NoC_QSYS_mm_interconnect_0_router_005_sv_unit
+S1
+R0
+R19
+Z121 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_005.sv
+Z122 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_005.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z123 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_005.sv|
+Z124 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_005.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_005
+vNoC_QSYS_mm_interconnect_0_router_005_default_decode
+R26
+R92
+!i10b 1
+!s100 2ejSST0j;@FYWeCm0?U_[3
+Ii<F9SU>JXn1_2O9JdNe==2
+R18
+R120
+S1
+R0
+R19
+R121
+R122
+R104
+R21
+r1
+!s85 0
+31
+R36
+R123
+R124
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_005_default_decode
+vNoC_QSYS_mm_interconnect_0_router_006
+R26
+R92
+!i10b 1
+!s100 DzzMZG[>MU:MaT?ZHP9S?2
+I>BVS<>1?8HGDMma_Gnneb3
+R18
+Z125 !s105 NoC_QSYS_mm_interconnect_0_router_006_sv_unit
+S1
+R0
+R19
+Z126 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_006.sv
+Z127 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_006.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z128 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_006.sv|
+Z129 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_006.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_006
+vNoC_QSYS_mm_interconnect_0_router_006_default_decode
+R26
+R92
+!i10b 1
+!s100 ;g]IQF1[Lb[JP2g_TMe@[1
+IXeCoTmozWU`PG1j[aACaH0
+R18
+R125
+S1
+R0
+R19
+R126
+R127
+R104
+R21
+r1
+!s85 0
+31
+R36
+R128
+R129
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_006_default_decode
+vNoC_QSYS_mm_interconnect_0_router_007
+R26
+R92
+!i10b 1
+!s100 8;V;eeXii^Pmjz4fcH@j]0
+Ijo5Q8nL5KN5>CP[zFnM>>2
+R18
+Z130 !s105 NoC_QSYS_mm_interconnect_0_router_007_sv_unit
+S1
+R0
+R19
+Z131 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_007.sv
+Z132 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_007.sv
+R96
+R21
+r1
+!s85 0
+31
+R36
+Z133 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_007.sv|
+Z134 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_007.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_007
+vNoC_QSYS_mm_interconnect_0_router_007_default_decode
+R26
+R92
+!i10b 1
+!s100 O=00eDWkfRjGnh^[OENAJ1
+I1Y7i@WhRP_E_CgD=7Bl621
+R18
+R130
+S1
+R0
+R19
+R131
+R132
+R104
+R21
+r1
+!s85 0
+31
+R36
+R133
+R134
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_007_default_decode
+vNoC_QSYS_mm_interconnect_0_router_008
+R26
+Z135 !s110 1564481157
+!i10b 1
+!s100 l];bCX9?;`:4iBgzmzP8S3
+INi<2]6daW2naO2gf?hlb12
+R18
+Z136 !s105 NoC_QSYS_mm_interconnect_0_router_008_sv_unit
+S1
+R0
+R19
+Z137 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_008.sv
+Z138 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_008.sv
+R96
+R21
+r1
+!s85 0
+31
+Z139 !s108 1564481157.000000
+Z140 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_008.sv|
+Z141 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_008.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_008
+vNoC_QSYS_mm_interconnect_0_router_008_default_decode
+R26
+R135
+!i10b 1
+!s100 kDjoTBmc]f@:o9eF;aO9N1
+Ih?3FDA13@z`k1GN;lNlX32
+R18
+R136
+S1
+R0
+R19
+R137
+R138
+R104
+R21
+r1
+!s85 0
+31
+R139
+R140
+R141
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_008_default_decode
+vNoC_QSYS_mm_interconnect_0_router_009
+R26
+R135
+!i10b 1
+!s100 EPXFbDX2fjJ9X;ITYJi0;3
+I?VX:;9ni57fc_XI3ad1JU2
+R18
+Z142 !s105 NoC_QSYS_mm_interconnect_0_router_009_sv_unit
+S1
+R0
+R19
+Z143 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_009.sv
+Z144 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_009.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z145 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_009.sv|
+Z146 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_009.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_009
+vNoC_QSYS_mm_interconnect_0_router_009_default_decode
+R26
+R135
+!i10b 1
+!s100 P@<U_[JeAYdH4MKXX>Y2:0
+IRaJ35mmF:G[9NQORPSZ]@0
+R18
+R142
+S1
+R0
+R19
+R143
+R144
+R104
+R21
+r1
+!s85 0
+31
+R139
+R145
+R146
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_009_default_decode
+vNoC_QSYS_mm_interconnect_0_router_010
+R26
+R135
+!i10b 1
+!s100 E::KDPjD9_`W1[:iT08Xn3
+I@1z][M52JU3e0d7:M>gL30
+R18
+Z147 !s105 NoC_QSYS_mm_interconnect_0_router_010_sv_unit
+S1
+R0
+R19
+Z148 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_010.sv
+Z149 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_010.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z150 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_010.sv|
+Z151 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_010.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_010
+vNoC_QSYS_mm_interconnect_0_router_010_default_decode
+R26
+R135
+!i10b 1
+!s100 <68?B7=`S6GW04cHP@>V42
+InBgP:_:ocF@=QFL80d1972
+R18
+R147
+S1
+R0
+R19
+R148
+R149
+R104
+R21
+r1
+!s85 0
+31
+R139
+R150
+R151
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_010_default_decode
+vNoC_QSYS_mm_interconnect_0_router_015
+R26
+R135
+!i10b 1
+!s100 LdBOJ4HO6ai=QF5nn`XJK2
+Igk4KSCeTO9GGJe=dhh7IC2
+R18
+Z152 !s105 NoC_QSYS_mm_interconnect_0_router_015_sv_unit
+S1
+R0
+R19
+Z153 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_015.sv
+Z154 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_015.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z155 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_015.sv|
+Z156 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_015.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_015
+vNoC_QSYS_mm_interconnect_0_router_015_default_decode
+R26
+R135
+!i10b 1
+!s100 KNmO>HD;n[eAiVcH5?WZU2
+Im]Zf^8jFYDTX01YBi87?J2
+R18
+R152
+S1
+R0
+R19
+R153
+R154
+R104
+R21
+r1
+!s85 0
+31
+R139
+R155
+R156
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_015_default_decode
+vNoC_QSYS_mm_interconnect_0_router_016
+R26
+R135
+!i10b 1
+!s100 4][LUBUF8E]IiSklQ_4@m1
+IzMkK[R0AWM8>MUJbWmB:z0
+R18
+Z157 !s105 NoC_QSYS_mm_interconnect_0_router_016_sv_unit
+S1
+R0
+R19
+Z158 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_016.sv
+Z159 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_016.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z160 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_016.sv|
+Z161 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_016.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_016
+vNoC_QSYS_mm_interconnect_0_router_016_default_decode
+R26
+R135
+!i10b 1
+!s100 d^na7oJB<gklUoAhzf<Y>0
+IRdPW@9FTmJ7GaOKn>WJT^1
+R18
+R157
+S1
+R0
+R19
+R158
+R159
+R104
+R21
+r1
+!s85 0
+31
+R139
+R160
+R161
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_016_default_decode
+vNoC_QSYS_mm_interconnect_0_router_021
+R26
+R135
+!i10b 1
+!s100 1[UG==HmKC46TPbAJH12g1
+ITSUOhC6hdP?5gi_F:AFTe2
+R18
+Z162 !s105 NoC_QSYS_mm_interconnect_0_router_021_sv_unit
+S1
+R0
+R19
+Z163 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_021.sv
+Z164 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_021.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z165 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_021.sv|
+Z166 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_021.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_021
+vNoC_QSYS_mm_interconnect_0_router_021_default_decode
+R26
+R135
+!i10b 1
+!s100 HYCCggeJH>EU]>lIKfgQ;0
+IJ<eK2PRLQ6]YXQ:`3X3]63
+R18
+R162
+S1
+R0
+R19
+R163
+R164
+R104
+R21
+r1
+!s85 0
+31
+R139
+R165
+R166
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_021_default_decode
+vNoC_QSYS_mm_interconnect_0_router_022
+R26
+R135
+!i10b 1
+!s100 6Pg2[VzQnAiUOW=HL4`h^0
+Idc4gVCBgN;ANa:SnVGoaF0
+R18
+Z167 !s105 NoC_QSYS_mm_interconnect_0_router_022_sv_unit
+S1
+R0
+R19
+Z168 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_022.sv
+Z169 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_022.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z170 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_022.sv|
+Z171 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_022.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_022
+vNoC_QSYS_mm_interconnect_0_router_022_default_decode
+R26
+R135
+!i10b 1
+!s100 T1GdEfW[1On<LV0`6Ll`D3
+I9lB9o^To7SaaFF8VPJ:aN2
+R18
+R167
+S1
+R0
+R19
+R168
+R169
+R104
+R21
+r1
+!s85 0
+31
+R139
+R170
+R171
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_022_default_decode
+vNoC_QSYS_mm_interconnect_0_router_027
+R26
+R135
+!i10b 1
+!s100 oci@:1VhaBS<G^<>V:hec2
+IISnh`1edSTcC^MHd33T113
+R18
+Z172 !s105 NoC_QSYS_mm_interconnect_0_router_027_sv_unit
+S1
+R0
+R19
+Z173 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_027.sv
+Z174 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_027.sv
+R96
+R21
+r1
+!s85 0
+31
+R139
+Z175 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_027.sv|
+Z176 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_027.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_027
+vNoC_QSYS_mm_interconnect_0_router_027_default_decode
+R26
+R135
+!i10b 1
+!s100 UZc:5FTn2PkWXm=jC5b^>2
+Il<Zi3algcn?5Z01JCZHRl1
+R18
+R172
+S1
+R0
+R19
+R173
+R174
+R104
+R21
+r1
+!s85 0
+31
+R139
+R175
+R176
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_027_default_decode
+vNoC_QSYS_mm_interconnect_0_router_028
+R26
+R87
+!i10b 1
+!s100 :_3Dl_09[C3dQUSB7?DQY3
+Ib:@0H27obG`DkJRWU6YCS1
+R18
+Z177 !s105 NoC_QSYS_mm_interconnect_0_router_028_sv_unit
+S1
+R0
+R19
+Z178 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_028.sv
+Z179 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_028.sv
+R96
+R21
+r1
+!s85 0
+31
+R89
+Z180 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_028.sv|
+Z181 !s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_router_028.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_028
+vNoC_QSYS_mm_interconnect_0_router_028_default_decode
+R26
+R87
+!i10b 1
+!s100 ?mQzHSL7XSF@PVP?^6;dS0
+IkeA=k]JmFH2VcP7T=[0Ui0
+R18
+R177
+S1
+R0
+R19
+R178
+R179
+R104
+R21
+r1
+!s85 0
+31
+R89
+R180
+R181
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_028_default_decode
+vNoC_QSYS_mm_interconnect_0_router_default_decode
+R26
+R92
+!i10b 1
+!s100 z_j8kBXX:Gm0:AG3lnn<L3
+IHezBU`[@MDY^ilX4G`_=12
+R18
+R93
+S1
+R0
+R19
+R94
+R95
+R104
+R21
+r1
+!s85 0
+31
+R36
+R97
+R98
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_router_default_decode
+vNoC_QSYS_mm_interconnect_0_rsp_demux
+R26
+R87
+!i10b 1
+!s100 =GiBmf5Q^]WF=fl3?kOZ_0
+IP1L0^YVI3>R>jU::_N0h[0
+R18
+!s105 NoC_QSYS_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R91
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux.sv
+R88
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_rsp_demux
+vNoC_QSYS_mm_interconnect_0_rsp_demux_002
+R26
+R87
+!i10b 1
+!s100 0>I2nX3lLK5DM^cAPPNhM2
+IE<zlQ7j>Q`NW>L7oj0>an0
+R18
+!s105 NoC_QSYS_mm_interconnect_0_rsp_demux_002_sv_unit
+S1
+R0
+R91
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux_002.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux_002.sv
+R88
+R21
+r1
+!s85 0
+31
+R89
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux_002.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_demux_002.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_rsp_demux_002
+vNoC_QSYS_mm_interconnect_0_rsp_mux
+R26
+R87
+!i10b 1
+!s100 oj=aA9Maez:96MQ=V=0Bo1
+IR`@<Y0`23LddGA_7>RC[C3
+R18
+!s105 NoC_QSYS_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R91
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux.sv
+R90
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_rsp_mux
+vNoC_QSYS_mm_interconnect_0_rsp_mux_004
+R26
+R27
+!i10b 1
+!s100 ZM]SSm]]RNNX35mC?cT<03
+I]i[:iB2e7`LL>k@aZhUFN2
+R18
+!s105 NoC_QSYS_mm_interconnect_0_rsp_mux_004_sv_unit
+S1
+R0
+R91
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux_004.sv
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux_004.sv
+R90
+R21
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux_004.sv|
+!s90 -reportprogress|300|-sv|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_mm_interconnect_0_rsp_mux_004.sv|
+!i113 0
+R34
+R35
+R25
+n@no@c_@q@s@y@s_mm_interconnect_0_rsp_mux_004
+vNoC_QSYS_nios2_00
+Z182 !s110 1564481152
+!i10b 1
+!s100 _[4dUCIG9cBD_P2b=TfAQ1
+Id8Q]IkeXcnDZM^4:]IO]l3
+R18
+R0
+w1564313816
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00.v
+L0 9
+R21
+r1
+!s85 0
+31
+Z183 !s108 1564481152.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00
+vNoC_QSYS_nios2_00_cpu
+R182
+!i10b 1
+!s100 i[7]5GY>HozKH^Kk8WgJh3
+I7EYiT]=_h@DnGC=QBK[XX0
+R18
+R0
+Z184 w1564313868
+Z185 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu.v
+Z186 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu.v
+Z187 L0 2834
+R21
+r1
+!s85 0
+31
+R183
+Z188 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu.v|
+Z189 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu
+vNoC_QSYS_nios2_00_cpu_debug_slave_sysclk
+R182
+!i10b 1
+!s100 WJ]h:]:@oSh9CinIgPJ1a3
+I[zL4iSPVCCY^V;^4<@0<B1
+R18
+R0
+R184
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_sysclk.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_sysclk.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_sysclk.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_debug_slave_sysclk
+vNoC_QSYS_nios2_00_cpu_debug_slave_tck
+R68
+!i10b 1
+!s100 gj[U88bWKETA8^M=O<MAS3
+IEAfV0>X04B4?83eH2QhQH0
+R18
+R0
+R184
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_tck.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_tck.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_tck.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_debug_slave_tck
+vNoC_QSYS_nios2_00_cpu_debug_slave_wrapper
+R68
+!i10b 1
+!s100 Ih[oC@B>92`Q=b:LP;glE2
+IDVDRBd7?lQzLmGV@D_0<X0
+R18
+R0
+R184
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_wrapper.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_wrapper.v
+R20
+R21
+r1
+!s85 0
+31
+R70
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_debug_slave_wrapper.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_debug_slave_wrapper
+vNoC_QSYS_nios2_00_cpu_nios2_avalon_reg
+R182
+!i10b 1
+!s100 TVm@aCA[A]UGS;G_0d^PX3
+I^f>LckoSVKk8VGDZhHF932
+R18
+R0
+R184
+R185
+R186
+Z190 L0 2023
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_avalon_reg
+vNoC_QSYS_nios2_00_cpu_nios2_oci
+R182
+!i10b 1
+!s100 4S^0J`gcd_niI?iL;_nUG1
+I4^Y7fIe[iV:n:8Th`j9]R3
+R18
+R0
+R184
+R185
+R186
+Z191 L0 2362
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci
+vNoC_QSYS_nios2_00_cpu_nios2_oci_break
+R182
+!i10b 1
+!s100 3=4TA4TSfoA55j^2KzLb:0
+IaYF0Uk86`1aIFP_?Nh]di1
+R18
+R0
+R184
+R185
+R186
+Z192 L0 295
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_break
+vNoC_QSYS_nios2_00_cpu_nios2_oci_compute_input_tm_cnt
+R182
+!i10b 1
+!s100 B4oYzOjCZH;Z^?IUX]9m61
+ITVV4k9i[]KC4WoPnQYGBR3
+R18
+R0
+R184
+R185
+R186
+Z193 L0 1265
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_compute_input_tm_cnt
+vNoC_QSYS_nios2_00_cpu_nios2_oci_dbrk
+R182
+!i10b 1
+!s100 3^d9EJG7m8JKn?=@lHl5[0
+IL8Q:c;J]C4<8eOQzhbb0a1
+R18
+R0
+R184
+R185
+R186
+Z194 L0 795
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_dbrk
+vNoC_QSYS_nios2_00_cpu_nios2_oci_debug
+R182
+!i10b 1
+!s100 cdR]Jh6I;m]mgjUndaQAk1
+IAE27=8k[Y[dlbQP696[1P1
+R18
+R0
+R184
+R185
+R186
+Z195 L0 153
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_debug
+vNoC_QSYS_nios2_00_cpu_nios2_oci_dtrace
+R182
+!i10b 1
+!s100 CJ[U`I]=HGgT72[E4@M9N0
+ICCk`eZWKO9`26E74[?9_B3
+R18
+R0
+R184
+R185
+R186
+Z196 L0 1183
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_dtrace
+vNoC_QSYS_nios2_00_cpu_nios2_oci_fifo
+R182
+!i10b 1
+!s100 fm@0;E_3R5hJ73:jUS3kC0
+I`MT^HLE`^>Ma=0jP5[]NZ0
+R18
+R0
+R184
+R185
+R186
+Z197 L0 1427
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_fifo
+vNoC_QSYS_nios2_00_cpu_nios2_oci_fifo_cnt_inc
+R182
+!i10b 1
+!s100 z;Cg?M@1TD5nXcj774<923
+IOziU;UaNG3oj_heXSeN6<0
+R18
+R0
+R184
+R185
+R186
+Z198 L0 1380
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_fifo_cnt_inc
+vNoC_QSYS_nios2_00_cpu_nios2_oci_fifo_wrptr_inc
+R182
+!i10b 1
+!s100 dFeXcD6KNcE20c@e>NlEJ2
+IED]6Ae86lU>kK03^0:FEF2
+R18
+R0
+R184
+R185
+R186
+Z199 L0 1337
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_fifo_wrptr_inc
+vNoC_QSYS_nios2_00_cpu_nios2_oci_im
+R182
+!i10b 1
+!s100 VEn@omID[;h9WjiHYDcDH1
+IJ3:C^b3_eY:d@fE5HW4IT1
+R18
+R0
+R184
+R185
+R186
+Z200 L0 1936
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_im
+vNoC_QSYS_nios2_00_cpu_nios2_oci_itrace
+R182
+!i10b 1
+!s100 if64EoMEEhSedcWFVFAdb3
+IGT_a>[^I0nXDgFl<?91FN0
+R18
+R0
+R184
+R185
+R186
+Z201 L0 982
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_itrace
+vNoC_QSYS_nios2_00_cpu_nios2_oci_pib
+R182
+!i10b 1
+!s100 Jc:F6H<D[dS84U3a01^Hi3
+I23>9G0N^;fZZ1b[XG2jhY2
+R18
+R0
+R184
+R185
+R186
+Z202 L0 1913
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_pib
+vNoC_QSYS_nios2_00_cpu_nios2_oci_td_mode
+R182
+!i10b 1
+!s100 KH4X<VYHU:M>d`<3JUoG40
+IZY^eQ?_G29P[fn8J0FN=Y2
+R18
+R0
+R184
+R185
+R186
+Z203 L0 1115
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_td_mode
+vNoC_QSYS_nios2_00_cpu_nios2_oci_xbrk
+R182
+!i10b 1
+!s100 Tgl8a7?EXDN@Y<c1oj30]0
+I=Zfm5T5TD^7C<];`>VU4?3
+R18
+R0
+R184
+R185
+R186
+Z204 L0 588
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_oci_xbrk
+vNoC_QSYS_nios2_00_cpu_nios2_ocimem
+R182
+!i10b 1
+!s100 2?YCchZg8KMoEMRg:CmbA3
+IhaCmaaE:zdGmVg:Jho7gV0
+R18
+R0
+R184
+R185
+R186
+Z205 L0 2181
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_ocimem
+vNoC_QSYS_nios2_00_cpu_nios2_performance_monitors
+R182
+!i10b 1
+!s100 YS7KDV9_Q_SjJm9Ri843l3
+I^SM[eY2MEeCXhze8PCBNi1
+R18
+R0
+R184
+R185
+R186
+Z206 L0 2006
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_nios2_performance_monitors
+vNoC_QSYS_nios2_00_cpu_ociram_sp_ram_module
+R182
+!i10b 1
+!s100 ZHDV]WJBK?zfmOaa@1[0a0
+I@4z6i`N8dOi<XTaLTVo_g1
+R18
+R0
+R184
+R185
+R186
+Z207 L0 2116
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_ociram_sp_ram_module
+vNoC_QSYS_nios2_00_cpu_register_bank_a_module
+R182
+!i10b 1
+!s100 T3Z<9adCO1na@;93z6cK[0
+I2DYSk7]faSaF_aML_9eUK2
+R18
+R0
+R184
+R185
+R186
+R20
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_register_bank_a_module
+vNoC_QSYS_nios2_00_cpu_register_bank_b_module
+R182
+!i10b 1
+!s100 eGf9DC8jJ<D<f^C9Kfzbl0
+IFND?CSMF:2XSS`o;a:c0=0
+R18
+R0
+R184
+R185
+R186
+Z208 L0 87
+R21
+r1
+!s85 0
+31
+R183
+R188
+R189
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_register_bank_b_module
+vNoC_QSYS_nios2_00_cpu_test_bench
+R68
+!i10b 1
+!s100 mi9zK?_dBjHzQ:fBXf6272
+IHAa6niTU7;l<U<zG10fX52
+R18
+R0
+R184
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_test_bench.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_test_bench.v
+R20
+R21
+r1
+!s85 0
+31
+R70
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_00_cpu_test_bench.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_00_cpu_test_bench
+vNoC_QSYS_nios2_01
+Z209 !s110 1564481151
+!i10b 1
+!s100 1T3_W9AlML<^=:8B0i_M63
+ID:]TL@KAdRB0GoTNkneml1
+R18
+R0
+w1564313817
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01.v
+L0 9
+R21
+r1
+!s85 0
+31
+Z210 !s108 1564481151.000000
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01
+vNoC_QSYS_nios2_01_cpu
+R209
+!i10b 1
+!s100 kUJ5lLSGYj?@V`5EAgFd]0
+Id4`_ggcNVZJMPJlZzkhW;2
+R18
+R0
+Z211 w1564313872
+Z212 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu.v
+Z213 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu.v
+R187
+R21
+r1
+!s85 0
+31
+R210
+Z214 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu.v|
+Z215 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu
+vNoC_QSYS_nios2_01_cpu_debug_slave_sysclk
+R182
+!i10b 1
+!s100 z6W2>193<GkST0JG3lRzk1
+IE`=BgTaef4g5U6IHlQ<`;2
+R18
+R0
+R211
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_sysclk.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_sysclk.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_sysclk.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_debug_slave_sysclk
+vNoC_QSYS_nios2_01_cpu_debug_slave_tck
+R182
+!i10b 1
+!s100 b0dlIT7Y6JTlg1T8PMB8C3
+I5cW<MiI?icQe7JUU`?3WL3
+R18
+R0
+R211
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_tck.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_tck.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_tck.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_debug_slave_tck
+vNoC_QSYS_nios2_01_cpu_debug_slave_wrapper
+R182
+!i10b 1
+!s100 hJ4SGXb@nEC9LUN@a;Gnf3
+I^lo?LBA`9<B2MHHN3Sa]`0
+R18
+R0
+R211
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_wrapper.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_wrapper.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_debug_slave_wrapper.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_debug_slave_wrapper
+vNoC_QSYS_nios2_01_cpu_nios2_avalon_reg
+R209
+!i10b 1
+!s100 AP7S@k]H^dk41TfjDUH9P1
+I6R[E0ZGZzmXK`R4EgY8nf1
+R18
+R0
+R211
+R212
+R213
+R190
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_avalon_reg
+vNoC_QSYS_nios2_01_cpu_nios2_oci
+R209
+!i10b 1
+!s100 S71^h;E4;TcLbM[OkL`nH1
+IO`Q5WSXhaO=L6n_1bazMI1
+R18
+R0
+R211
+R212
+R213
+R191
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci
+vNoC_QSYS_nios2_01_cpu_nios2_oci_break
+R209
+!i10b 1
+!s100 U;M4WbJk4o3gK4<K=<ZnW2
+Ii^`gXKKHR4fUjS;N7EU5L0
+R18
+R0
+R211
+R212
+R213
+R192
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_break
+vNoC_QSYS_nios2_01_cpu_nios2_oci_compute_input_tm_cnt
+R209
+!i10b 1
+!s100 HkblRC[F9_YJ3<P<2h7ZO1
+IoX8PSB67S3iHf:jHG:ljA2
+R18
+R0
+R211
+R212
+R213
+R193
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_compute_input_tm_cnt
+vNoC_QSYS_nios2_01_cpu_nios2_oci_dbrk
+R209
+!i10b 1
+!s100 =_95NZYh6[A[kLBEY^3_J2
+IE2k7HA?nng;YCF<fYT79l1
+R18
+R0
+R211
+R212
+R213
+R194
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_dbrk
+vNoC_QSYS_nios2_01_cpu_nios2_oci_debug
+R209
+!i10b 1
+!s100 ?g1N8ojOe21Gj99Z8R;jj0
+ITP<h9IJTh8aWf]`:C3O_@3
+R18
+R0
+R211
+R212
+R213
+R195
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_debug
+vNoC_QSYS_nios2_01_cpu_nios2_oci_dtrace
+R209
+!i10b 1
+!s100 RWF2fA?No;7=`DQHnf>ZB1
+Ii_j1^IceeUNGMOoTR79;P0
+R18
+R0
+R211
+R212
+R213
+R196
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_dtrace
+vNoC_QSYS_nios2_01_cpu_nios2_oci_fifo
+R209
+!i10b 1
+!s100 ?Uzo:8HlEEPM0;Plm7b]h3
+IoZC4I9lTm;dKNdMX?`W?D1
+R18
+R0
+R211
+R212
+R213
+R197
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_fifo
+vNoC_QSYS_nios2_01_cpu_nios2_oci_fifo_cnt_inc
+R209
+!i10b 1
+!s100 R6dTdX4490]c9g4@]dTZV0
+I3LBJSUTNNzA=]UnhBT]352
+R18
+R0
+R211
+R212
+R213
+R198
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_fifo_cnt_inc
+vNoC_QSYS_nios2_01_cpu_nios2_oci_fifo_wrptr_inc
+R209
+!i10b 1
+!s100 ]gMj5P[Qi4;mhhCO7_^8^0
+Ibldki?zc?^`c4oj[FC]z71
+R18
+R0
+R211
+R212
+R213
+R199
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_fifo_wrptr_inc
+vNoC_QSYS_nios2_01_cpu_nios2_oci_im
+R209
+!i10b 1
+!s100 1VkBBn5Bh2aHQ:?Zhl6hL3
+IJCPUZJ]H2i8FML6lXg04f2
+R18
+R0
+R211
+R212
+R213
+R200
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_im
+vNoC_QSYS_nios2_01_cpu_nios2_oci_itrace
+R209
+!i10b 1
+!s100 5DaXZJ8@A]428VQ@HDiMl2
+I^oNDzkXXz4;?UJ8iciBW>2
+R18
+R0
+R211
+R212
+R213
+R201
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_itrace
+vNoC_QSYS_nios2_01_cpu_nios2_oci_pib
+R209
+!i10b 1
+!s100 eD2zE;lZYN5TWf0HC6[nW0
+IaC;SWAb7Z_gRcVIYil?`M3
+R18
+R0
+R211
+R212
+R213
+R202
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_pib
+vNoC_QSYS_nios2_01_cpu_nios2_oci_td_mode
+R209
+!i10b 1
+!s100 4h52KiFfj@NiN:[YU2:961
+IO>h7WWdS1eK:BiYZ1OPSI2
+R18
+R0
+R211
+R212
+R213
+R203
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_td_mode
+vNoC_QSYS_nios2_01_cpu_nios2_oci_xbrk
+R209
+!i10b 1
+!s100 :Q4K4BNVI;7K_TOhI`I9h2
+IWlXHVYzC]4z0`TC^d3CTS2
+R18
+R0
+R211
+R212
+R213
+R204
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_oci_xbrk
+vNoC_QSYS_nios2_01_cpu_nios2_ocimem
+R209
+!i10b 1
+!s100 6h<j__;[mDKjQQCUmGg653
+IFaWS[6mh_NB;ecB=jO2ZI2
+R18
+R0
+R211
+R212
+R213
+R205
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_ocimem
+vNoC_QSYS_nios2_01_cpu_nios2_performance_monitors
+R209
+!i10b 1
+!s100 >@<=`E@0?Z5W7b7@1eTKI2
+I9Bj[;B^Yj56UOMTVQRoNz1
+R18
+R0
+R211
+R212
+R213
+R206
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_nios2_performance_monitors
+vNoC_QSYS_nios2_01_cpu_ociram_sp_ram_module
+R209
+!i10b 1
+!s100 T<1An<QUmlXh?bZK@I@V`0
+Ief^WX[;e3>79bm[HClm750
+R18
+R0
+R211
+R212
+R213
+R207
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_ociram_sp_ram_module
+vNoC_QSYS_nios2_01_cpu_register_bank_a_module
+R209
+!i10b 1
+!s100 Am0;^h3VGm?5@=8^@O64T3
+IaS_oXMJXOXCm0dE6VHZX;1
+R18
+R0
+R211
+R212
+R213
+R20
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_register_bank_a_module
+vNoC_QSYS_nios2_01_cpu_register_bank_b_module
+R209
+!i10b 1
+!s100 <I2:N[IPZkik9h1:hi<d<3
+IGN@:N@AC[]6A3GYAmD2km1
+R18
+R0
+R211
+R212
+R213
+R208
+R21
+r1
+!s85 0
+31
+R210
+R214
+R215
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_register_bank_b_module
+vNoC_QSYS_nios2_01_cpu_test_bench
+R182
+!i10b 1
+!s100 g=P5=_cQLbnRlF@hLC?>K2
+I5[=FI[`4W1A`4;PjeLnAP3
+R18
+R0
+R211
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_test_bench.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_test_bench.v
+R20
+R21
+r1
+!s85 0
+31
+R183
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_01_cpu_test_bench.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_01_cpu_test_bench
+vNoC_QSYS_nios2_10
+R209
+!i10b 1
+!s100 Bk]V9chhLd3CJe6:bkOld3
+ImK4M[YTVQGWMzO[T_OHeR3
+R18
+R0
+w1564313818
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10.v
+L0 9
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10
+vNoC_QSYS_nios2_10_cpu
+R209
+!i10b 1
+!s100 7:IgR10XjVPS;ZZEWO9<F3
+I]=B`2G=AUz3EWzW2fg^NF0
+R18
+R0
+Z216 w1564313875
+Z217 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu.v
+Z218 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu.v
+R187
+R21
+r1
+!s85 0
+31
+R210
+Z219 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu.v|
+Z220 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu
+vNoC_QSYS_nios2_10_cpu_debug_slave_sysclk
+R209
+!i10b 1
+!s100 df:G5?GZBf^kAmM<0975K1
+IKI]UO6KebAW4=Q5JIHCW92
+R18
+R0
+R216
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_sysclk.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_sysclk.v
+R20
+R21
+r1
+!s85 0
+31
+R210
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_sysclk.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_debug_slave_sysclk
+vNoC_QSYS_nios2_10_cpu_debug_slave_tck
+R209
+!i10b 1
+!s100 eASBUlZJ9CEe?olnWW@<a1
+IMi6I3[fJESF>K7JmgOjI20
+R18
+R0
+R216
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_tck.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_tck.v
+R20
+R21
+r1
+!s85 0
+31
+R210
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_tck.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_debug_slave_tck
+vNoC_QSYS_nios2_10_cpu_debug_slave_wrapper
+R209
+!i10b 1
+!s100 CJ03haY?gnGFONeKAT1Q03
+IJR[54HOT^EmbU42VcFL>N1
+R18
+R0
+R216
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_wrapper.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_wrapper.v
+R20
+R21
+r1
+!s85 0
+31
+R210
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_debug_slave_wrapper.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_debug_slave_wrapper
+vNoC_QSYS_nios2_10_cpu_nios2_avalon_reg
+R209
+!i10b 1
+!s100 IEZT5P[44^kkGdknm;hSS2
+IX6P`ZG2MX;VF^ZJUF4gbV1
+R18
+R0
+R216
+R217
+R218
+R190
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_avalon_reg
+vNoC_QSYS_nios2_10_cpu_nios2_oci
+R209
+!i10b 1
+!s100 I>IZ8CQ1X9QDW`CM;lSI11
+ID_>D6[:P9hRg<c;MUXA8j1
+R18
+R0
+R216
+R217
+R218
+R191
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci
+vNoC_QSYS_nios2_10_cpu_nios2_oci_break
+R209
+!i10b 1
+!s100 I@7n?TEkAh0]UI]`CC;b_3
+I@98_OJBm=izzIlIFlQOGE2
+R18
+R0
+R216
+R217
+R218
+R192
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_break
+vNoC_QSYS_nios2_10_cpu_nios2_oci_compute_input_tm_cnt
+R209
+!i10b 1
+!s100 F_[IPfXe`X^oD15KmaT4>1
+I6PfdTb_LOBDdG@]@I[RO83
+R18
+R0
+R216
+R217
+R218
+R193
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_compute_input_tm_cnt
+vNoC_QSYS_nios2_10_cpu_nios2_oci_dbrk
+R209
+!i10b 1
+!s100 4>B>V@zfX7YRiaJdYJA6j3
+I70iLSB3T3i0>VeTYXoB0g3
+R18
+R0
+R216
+R217
+R218
+R194
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_dbrk
+vNoC_QSYS_nios2_10_cpu_nios2_oci_debug
+R209
+!i10b 1
+!s100 `]2j>RhU2SR;L50C>1RVj0
+IU9VQdSCMYO^2fF>d^;ak71
+R18
+R0
+R216
+R217
+R218
+R195
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_debug
+vNoC_QSYS_nios2_10_cpu_nios2_oci_dtrace
+R209
+!i10b 1
+!s100 Z7cIBH<@JOK>XGO6Z2AVE2
+I`6GGfcDa2@fE;H;@>15`f3
+R18
+R0
+R216
+R217
+R218
+R196
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_dtrace
+vNoC_QSYS_nios2_10_cpu_nios2_oci_fifo
+R209
+!i10b 1
+!s100 2dm[0QB6jFQ3>=R?HLE^U3
+IbjZYe9hQXSZbncgLmZOI90
+R18
+R0
+R216
+R217
+R218
+R197
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_fifo
+vNoC_QSYS_nios2_10_cpu_nios2_oci_fifo_cnt_inc
+R209
+!i10b 1
+!s100 90W?oToaU8akz>2_OOTcZ3
+I7JI7hjb@lVJ8J_G@ABh0L3
+R18
+R0
+R216
+R217
+R218
+R198
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_fifo_cnt_inc
+vNoC_QSYS_nios2_10_cpu_nios2_oci_fifo_wrptr_inc
+R209
+!i10b 1
+!s100 FXQWCzc==T_NeCK_OKH7d0
+I^h]:VFd1YYHnfe;[=F0b@3
+R18
+R0
+R216
+R217
+R218
+R199
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_fifo_wrptr_inc
+vNoC_QSYS_nios2_10_cpu_nios2_oci_im
+R209
+!i10b 1
+!s100 WE]DbGS4XZG4d1[?A6m8<2
+I<MPF2Oolog@EZT@XF@dj60
+R18
+R0
+R216
+R217
+R218
+R200
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_im
+vNoC_QSYS_nios2_10_cpu_nios2_oci_itrace
+R209
+!i10b 1
+!s100 16XcIFoT>IdSd4;FO5SL@2
+IE6@e[Vn0>oOD>1J?CBWjD3
+R18
+R0
+R216
+R217
+R218
+R201
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_itrace
+vNoC_QSYS_nios2_10_cpu_nios2_oci_pib
+R209
+!i10b 1
+!s100 H`gdDILn7:DLJLZN]825h1
+ITIOjYYPfe7;JmYJ<GBL6S3
+R18
+R0
+R216
+R217
+R218
+R202
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_pib
+vNoC_QSYS_nios2_10_cpu_nios2_oci_td_mode
+R209
+!i10b 1
+!s100 3nan[6CZEQdM1L;cgQPKN0
+ITeF5>WABOdGR=IHoIJXC<2
+R18
+R0
+R216
+R217
+R218
+R203
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_td_mode
+vNoC_QSYS_nios2_10_cpu_nios2_oci_xbrk
+R209
+!i10b 1
+!s100 Ye^6Q8jc6[0mg^jRc9nVP2
+IZ<ik:fal^5Z@6Mn_;GejX0
+R18
+R0
+R216
+R217
+R218
+R204
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_oci_xbrk
+vNoC_QSYS_nios2_10_cpu_nios2_ocimem
+R209
+!i10b 1
+!s100 KWk6VQJ;?9kejjHc42G`C0
+IiXNLc4M<3C;kl9SI`2hnM2
+R18
+R0
+R216
+R217
+R218
+R205
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_ocimem
+vNoC_QSYS_nios2_10_cpu_nios2_performance_monitors
+R209
+!i10b 1
+!s100 l1^W7fbU7IU_hBA8I5XQz0
+IVcjob>9DGmz_[izbZK:Wz3
+R18
+R0
+R216
+R217
+R218
+R206
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_nios2_performance_monitors
+vNoC_QSYS_nios2_10_cpu_ociram_sp_ram_module
+R209
+!i10b 1
+!s100 IaPa2P9N^[aChc>YBbXOm3
+IVMcnM_5e3Oe4E4?BOYo9F2
+R18
+R0
+R216
+R217
+R218
+R207
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_ociram_sp_ram_module
+vNoC_QSYS_nios2_10_cpu_register_bank_a_module
+R209
+!i10b 1
+!s100 V7BA5gA7VIJCTZIb^@OK:0
+I`jTNzDBeNhN4N:4FffnUR3
+R18
+R0
+R216
+R217
+R218
+R20
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_register_bank_a_module
+vNoC_QSYS_nios2_10_cpu_register_bank_b_module
+R209
+!i10b 1
+!s100 OEUXC50Q2EYK[iMPf=5j61
+IGQHh[;_gSZei>64Wb8HoC2
+R18
+R0
+R216
+R217
+R218
+R208
+R21
+r1
+!s85 0
+31
+R210
+R219
+R220
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_register_bank_b_module
+vNoC_QSYS_nios2_10_cpu_test_bench
+R209
+!i10b 1
+!s100 6WNeToIF[7La3o;=:;VjR3
+IjVbnTEac9OnWeGlk?z<H<1
+R18
+R0
+R216
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_test_bench.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_test_bench.v
+R20
+R21
+r1
+!s85 0
+31
+R210
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_10_cpu_test_bench.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_10_cpu_test_bench
+vNoC_QSYS_nios2_11
+R17
+!i10b 1
+!s100 4D^HSQaoEO=i:RbI3Ecn82
+I95L0]:VCE:FJkF6VoI;YZ1
+R18
+R0
+w1564313819
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11.v
+L0 9
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11
+vNoC_QSYS_nios2_11_cpu
+R17
+!i10b 1
+!s100 9<JF2KJn6_8RU4XP`2]Z32
+Ik5jnOWRacIf4do<X2^N921
+R18
+R0
+R19
+Z221 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu.v
+Z222 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu.v
+R187
+R21
+r1
+!s85 0
+31
+R22
+Z223 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu.v|
+Z224 !s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu
+vNoC_QSYS_nios2_11_cpu_debug_slave_sysclk
+R17
+!i10b 1
+!s100 :J4[a`gLAh;?T8^LDEb3<0
+IBO<oeY^j]7@cdj9Eem9]h0
+R18
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_sysclk.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_sysclk.v
+R20
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_sysclk.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_debug_slave_sysclk
+vNoC_QSYS_nios2_11_cpu_debug_slave_tck
+R17
+!i10b 1
+!s100 SeP5b^:Q58b]1EnL?BAX=3
+Ike@281[N1Gf3l8O_SE;913
+R18
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_tck.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_tck.v
+R20
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_tck.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_debug_slave_tck
+vNoC_QSYS_nios2_11_cpu_debug_slave_wrapper
+R17
+!i10b 1
+!s100 PeSzcNF5Hz3[@4oe3IX4]2
+Ijn2L6Hz0X<cPhj1gJ<_oV3
+R18
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_wrapper.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_wrapper.v
+R20
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_debug_slave_wrapper.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_debug_slave_wrapper
+vNoC_QSYS_nios2_11_cpu_nios2_avalon_reg
+R17
+!i10b 1
+!s100 R6O:z68gZ=hHmM=2Q^KOK0
+IA8X1d7de5f>M;Y`Tc13iV3
+R18
+R0
+R19
+R221
+R222
+R190
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_avalon_reg
+vNoC_QSYS_nios2_11_cpu_nios2_oci
+R17
+!i10b 1
+!s100 XalW^`7O;aC5im@GdQ>^Q2
+IGg@R01]PAE5TPUHX16JXl0
+R18
+R0
+R19
+R221
+R222
+R191
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci
+vNoC_QSYS_nios2_11_cpu_nios2_oci_break
+R17
+!i10b 1
+!s100 6mgioj`aQ2>gGcD<JkAiz2
+I<4dmI4?LO6`AF11Sb13W]1
+R18
+R0
+R19
+R221
+R222
+R192
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_break
+vNoC_QSYS_nios2_11_cpu_nios2_oci_compute_input_tm_cnt
+R17
+!i10b 1
+!s100 FEA76d`BJ?CQTIP?3SA:h3
+IH68gXK=`AV3AzYfA@Q[lO2
+R18
+R0
+R19
+R221
+R222
+R193
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_compute_input_tm_cnt
+vNoC_QSYS_nios2_11_cpu_nios2_oci_dbrk
+R17
+!i10b 1
+!s100 :z]ae^TW`^DP:[VI2k1;A2
+I_Ma]2_Qm<>`>eV5QB?E1`0
+R18
+R0
+R19
+R221
+R222
+R194
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_dbrk
+vNoC_QSYS_nios2_11_cpu_nios2_oci_debug
+R17
+!i10b 1
+!s100 B9HTE>kbO]hPVH?>_KBgB2
+IEk@fGk94;^2ZGBkCbSW_l0
+R18
+R0
+R19
+R221
+R222
+R195
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_debug
+vNoC_QSYS_nios2_11_cpu_nios2_oci_dtrace
+R17
+!i10b 1
+!s100 cRimW0QcUM6dd[_7K[gHb1
+IzY2cbDZI`dd8`h2e`@49F1
+R18
+R0
+R19
+R221
+R222
+R196
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_dtrace
+vNoC_QSYS_nios2_11_cpu_nios2_oci_fifo
+R17
+!i10b 1
+!s100 am80>I9zS7[`LCSG]J:`A3
+IJI8RmF4H15hbLAPlSVl3[3
+R18
+R0
+R19
+R221
+R222
+R197
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_fifo
+vNoC_QSYS_nios2_11_cpu_nios2_oci_fifo_cnt_inc
+R17
+!i10b 1
+!s100 J420?W:8]oJC7<K>RMHYX2
+IRZ[Nm386Qa]SA>bbb7JC90
+R18
+R0
+R19
+R221
+R222
+R198
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_fifo_cnt_inc
+vNoC_QSYS_nios2_11_cpu_nios2_oci_fifo_wrptr_inc
+R17
+!i10b 1
+!s100 9M^_>:_XGBjkmIK4Uo[[^0
+IHHQmJ0niePIMI;4jNSl>H1
+R18
+R0
+R19
+R221
+R222
+R199
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_fifo_wrptr_inc
+vNoC_QSYS_nios2_11_cpu_nios2_oci_im
+R17
+!i10b 1
+!s100 @EVgk<mC2]BWX8LOII9P91
+I9Lh;3G9V<HMg6EFL];zn53
+R18
+R0
+R19
+R221
+R222
+R200
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_im
+vNoC_QSYS_nios2_11_cpu_nios2_oci_itrace
+R17
+!i10b 1
+!s100 TfHNd9<5TCG_jf`R1IC0D2
+Ii0ndAeHaB9oSZRD^4^Tk30
+R18
+R0
+R19
+R221
+R222
+R201
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_itrace
+vNoC_QSYS_nios2_11_cpu_nios2_oci_pib
+R17
+!i10b 1
+!s100 TGRQQK;mZnA4ERE?HF6K=3
+I^XCM3VRa1bJ:f08gUYZcZ0
+R18
+R0
+R19
+R221
+R222
+R202
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_pib
+vNoC_QSYS_nios2_11_cpu_nios2_oci_td_mode
+R17
+!i10b 1
+!s100 DhK_MbboP0>?9dIaUnckn2
+ICIjRz=HYn3K68l0F?1DVj3
+R18
+R0
+R19
+R221
+R222
+R203
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_td_mode
+vNoC_QSYS_nios2_11_cpu_nios2_oci_xbrk
+R17
+!i10b 1
+!s100 6LI9ZAeA1Gnz9?<`d2]=O3
+IhU:VOR:9M<<4eb[n`AiD<0
+R18
+R0
+R19
+R221
+R222
+R204
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_oci_xbrk
+vNoC_QSYS_nios2_11_cpu_nios2_ocimem
+R17
+!i10b 1
+!s100 `GAgDJEi0f`[A[_dL6<YW2
+I?kS;[R:gAkQK:LQKQejUX1
+R18
+R0
+R19
+R221
+R222
+R205
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_ocimem
+vNoC_QSYS_nios2_11_cpu_nios2_performance_monitors
+R17
+!i10b 1
+!s100 cEZ;o1a^dZdOA1]jHbN982
+IWgmcNDbJJ>mTAg5jmcKjE0
+R18
+R0
+R19
+R221
+R222
+R206
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_nios2_performance_monitors
+vNoC_QSYS_nios2_11_cpu_ociram_sp_ram_module
+R17
+!i10b 1
+!s100 nbg7=UKWbGfLhCFcGVU=T0
+IaGO?_mB1UG7=>bDGZniBK0
+R18
+R0
+R19
+R221
+R222
+R207
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_ociram_sp_ram_module
+vNoC_QSYS_nios2_11_cpu_register_bank_a_module
+R17
+!i10b 1
+!s100 `a8K4>fV_53D`;B[DzhGI3
+IiNm@X@<I<HEX[O4Kj`0oH3
+R18
+R0
+R19
+R221
+R222
+R20
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_register_bank_a_module
+vNoC_QSYS_nios2_11_cpu_register_bank_b_module
+R17
+!i10b 1
+!s100 18S`M9SG[cf3`R1i5mngP1
+Ih4So>[9@N>`LBnW0f`?k]1
+R18
+R0
+R19
+R221
+R222
+R208
+R21
+r1
+!s85 0
+31
+R22
+R223
+R224
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_register_bank_b_module
+vNoC_QSYS_nios2_11_cpu_test_bench
+R17
+!i10b 1
+!s100 F81j9XUS[M0L:o<HMZDLj2
+IOV`ze8Sl1UUeHN>U?F]D^1
+R18
+R0
+R19
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_test_bench.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_test_bench.v
+R20
+R21
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/NoC_QSYS_nios2_11_cpu_test_bench.v|
+!i113 0
+R23
+R24
+R25
+n@no@c_@q@s@y@s_nios2_11_cpu_test_bench
+Enode
+R1
+R2
+R3
+R4
+R5
+R0
+Z225 8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/Node.vhd
+Z226 FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/Node.vhd
+l0
+L15
+VG<aDcLGGLMXnXaT2Vhm3S3
+!s100 iA0`_CEK?hhW_j<_>EL7<1
+R8
+31
+R55
+!i10b 1
+R56
+Z227 !s90 -reportprogress|300|-93|-work|NoC_QSYS|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/Node.vhd|
+Z228 !s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/Node.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+Z229 DEx4 work 6 router 0 22 DclK<5BE[ADPY9YS9bEFR0
+R2
+R3
+R4
+R5
+R59
+l94
+L75
+VZa`MY0X;ESG>1I<2L9OA;0
+!s100 L;Sjh7WaE3OlBhWig40@Z1
+R8
+31
+R55
+!i10b 1
+R56
+R227
+R228
+!i113 0
+R13
+R14
+Ereservator
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L214
+V^CcPoN2YGN5[5iL8QZUaM1
+!s100 i6ITk?m1jIV[<IfFcc5;M1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+Z230 DEx4 work 10 reservator 0 22 ^CcPoN2YGN5[5iL8QZUaM1
+l246
+L244
+VGCZeXJTbMKRSRkRigN=gL3
+!s100 :=G^ac`6[[CNEL0J?>iT>2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Erouter
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L775
+VDclK<5BE[ADPY9YS9bEFR0
+!s100 YcdEDLDmTFLRXh02P@=ig0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R45
+R52
+Z231 DEx4 work 6 switch 0 22 :Jn;Z9c>9g3IbY3`Yc0V?3
+R230
+R40
+R16
+R2
+R3
+R4
+R5
+R229
+l835
+L810
+Ve[3Zb5Ceb7Fc`5TO=Ug`c0
+!s100 HiCH7gGL`N]?CCIH3m[Dn2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eselector
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L294
+VLC>;`JHWKTAQ`?:WG[Am32
+!s100 gd:MoMDXJTcNRLZ8?Ml1C1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+R51
+l311
+L309
+V=l;?G?aAWZ:n1PO5giDS<3
+!s100 Y;X`ZWAAP6IbN``^Nz1>V1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eswitch
+R1
+R2
+R3
+R4
+R5
+R0
+R6
+R7
+l0
+L376
+V:Jn;Z9c>9g3IbY3`Yc0V?3
+!s100 9`Wn63^IP5=<Kg2eK>0K>3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+R231
+l405
+L403
+V_bj>6V5<S;VFh9JWn>4DM3
+!s100 N4^4c]EgE>fo2DPMA_BHY3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vwrapper
+R60
+!i10b 1
+!s100 >a1m@51hP5X<H3E`[?AU>3
+I:`Vk?16ci`mD8QjV41Wdd3
+R18
+R0
+R1
+8C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/wrapper.v
+FC:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/wrapper.v
+L0 1
+R21
+r1
+!s85 0
+31
+R63
+!s107 C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|NoC_QSYS|+incdir+C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules|C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/NoC_QSYS/synthesis/submodules/wrapper.v|
+!i113 0
+R23
+R24
+R25

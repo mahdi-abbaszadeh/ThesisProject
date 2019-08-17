@@ -1,0 +1,50 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst NoC_QSYS.nios2_11.clock_bridge -pg 1
+preplace inst NoC_QSYS.fifo_source_01 -pg 1 -lvl 4 -y 570
+preplace inst NoC_QSYS.nios2_00.clock_bridge -pg 1
+preplace inst NoC_QSYS.nios2_01.cpu -pg 1
+preplace inst NoC_QSYS.fifo_sink_10 -pg 1 -lvl 6 -y 810
+preplace inst NoC_QSYS.jtag_uart_0 -pg 1 -lvl 6 -y 1090
+preplace inst NoC_QSYS.fifo_sink_11 -pg 1 -lvl 6 -y 950
+preplace inst NoC_QSYS.nios2_00 -pg 1 -lvl 2 -y 210
+preplace inst NoC_QSYS.fifo_sink_00 -pg 1 -lvl 6 -y 530
+preplace inst NoC_QSYS.data_mem_10 -pg 1 -lvl 6 -y 210
+preplace inst NoC_QSYS.NoC -pg 1 -lvl 5 -y 700
+preplace inst NoC_QSYS.nios2_10.reset_bridge -pg 1
+preplace inst NoC_QSYS.nios2_01.reset_bridge -pg 1
+preplace inst NoC_QSYS.nios2_01 -pg 1 -lvl 1 -y 50
+preplace inst NoC_QSYS.fifo_sink_01 -pg 1 -lvl 6 -y 670
+preplace inst NoC_QSYS.data_mem_11 -pg 1 -lvl 6 -y 290
+preplace inst NoC_QSYS.data_mem_00 -pg 1 -lvl 6 -y 50
+preplace inst NoC_QSYS.clk_0 -pg 1 -lvl 3 -y 600
+preplace inst NoC_QSYS.data_mem_01 -pg 1 -lvl 6 -y 130
+preplace inst NoC_QSYS -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst NoC_QSYS.nios2_10.clock_bridge -pg 1
+preplace inst NoC_QSYS.nios2_01.clock_bridge -pg 1
+preplace inst NoC_QSYS.nios2_00.cpu -pg 1
+preplace inst NoC_QSYS.nios2_00.reset_bridge -pg 1
+preplace inst NoC_QSYS.fifo_source_10 -pg 1 -lvl 4 -y 740
+preplace inst NoC_QSYS.nios2_11.reset_bridge -pg 1
+preplace inst NoC_QSYS.nios2_10.cpu -pg 1
+preplace inst NoC_QSYS.nios2_10 -pg 1 -lvl 1 -y 290
+preplace inst NoC_QSYS.fifo_source_11 -pg 1 -lvl 4 -y 900
+preplace inst NoC_QSYS.nios2_11.cpu -pg 1
+preplace inst NoC_QSYS.nios2_11 -pg 1 -lvl 1 -y 470
+preplace inst NoC_QSYS.fifo_source_00 -pg 1 -lvl 4 -y 310
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(SLAVE)NoC.sink_00,(MASTER)fifo_source_00.out) 1 4 1 1590
+preplace netloc FAN_OUT<net_container>NoC_QSYS</net_container>(SLAVE)fifo_source_11.clk_in,(SLAVE)fifo_source_01.clk_in,(SLAVE)fifo_source_10.clk_in,(SLAVE)fifo_source_00.clk_in,(SLAVE)data_mem_01.clk1,(SLAVE)jtag_uart_0.clk,(SLAVE)data_mem_10.clk1,(SLAVE)data_mem_11.clk1,(SLAVE)nios2_00.clk,(SLAVE)fifo_sink_00.clk_in,(SLAVE)fifo_sink_01.clk_in,(SLAVE)fifo_sink_11.clk_in,(SLAVE)nios2_01.clk,(SLAVE)nios2_10.clk,(SLAVE)nios2_11.clk,(SLAVE)fifo_sink_10.clk_in,(SLAVE)data_mem_00.clk1,(SLAVE)NoC.clock,(MASTER)clk_0.clk) 1 0 6 80 230 540 350 NJ 350 1280 870 1530 850 1840
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(SLAVE)fifo_sink_10.in,(MASTER)NoC.source_10) 1 5 1 1860
+preplace netloc EXPORT<net_container>NoC_QSYS</net_container>(SLAVE)clk_0.clk_in,(SLAVE)NoC_QSYS.clk) 1 0 3 NJ 610 NJ 610 NJ
+preplace netloc FAN_OUT<net_container>NoC_QSYS</net_container>(SLAVE)data_mem_11.reset1,(SLAVE)fifo_source_01.reset_in,(SLAVE)data_mem_01.reset1,(SLAVE)fifo_source_00.reset_in,(SLAVE)data_mem_00.reset1,(SLAVE)fifo_sink_00.reset_in,(SLAVE)jtag_uart_0.reset,(SLAVE)nios2_10.reset,(SLAVE)fifo_sink_11.reset_in,(SLAVE)nios2_00.reset,(SLAVE)data_mem_10.reset1,(SLAVE)NoC.reset,(SLAVE)fifo_source_10.reset_in,(SLAVE)fifo_source_11.reset_in,(SLAVE)nios2_11.reset,(SLAVE)fifo_sink_10.reset_in,(SLAVE)nios2_01.reset,(MASTER)clk_0.clk_reset,(SLAVE)fifo_sink_01.reset_in) 1 0 6 120 250 500 370 NJ 370 1240 890 1570 870 1900
+preplace netloc INTERCONNECT<net_container>NoC_QSYS</net_container>(MASTER)nios2_00.irq,(SLAVE)fifo_sink_00.in_irq,(SLAVE)fifo_sink_11.in_irq,(MASTER)nios2_01.irq,(MASTER)nios2_10.irq,(SLAVE)jtag_uart_0.irq,(SLAVE)fifo_source_01.in_irq,(SLAVE)fifo_source_00.in_irq,(SLAVE)fifo_sink_10.in_irq,(SLAVE)fifo_source_11.in_irq,(SLAVE)fifo_source_10.in_irq,(MASTER)nios2_11.irq,(SLAVE)fifo_sink_01.in_irq) 1 1 5 480 390 1000 330 1260 560 NJ 560 1800
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(SLAVE)NoC.sink_01,(MASTER)fifo_source_01.out) 1 4 1 1550
+preplace netloc INTERCONNECT<net_container>NoC_QSYS</net_container>(SLAVE)fifo_source_00.in_csr,(MASTER)nios2_01.data_master,(MASTER)nios2_10.data_master,(SLAVE)fifo_source_00.in,(MASTER)nios2_01.instruction_master,(SLAVE)nios2_00.debug_mem_slave,(SLAVE)nios2_10.debug_mem_slave,(SLAVE)fifo_sink_11.out,(SLAVE)fifo_sink_10.out,(MASTER)nios2_11.data_master,(SLAVE)fifo_sink_01.out,(MASTER)nios2_00.data_master,(SLAVE)fifo_source_01.in,(SLAVE)fifo_sink_11.in_csr,(SLAVE)fifo_source_10.in,(SLAVE)fifo_sink_01.in_csr,(MASTER)nios2_11.instruction_master,(MASTER)nios2_00.instruction_master,(SLAVE)fifo_sink_00.in_csr,(SLAVE)data_mem_00.s1,(MASTER)nios2_10.instruction_master,(SLAVE)fifo_source_10.in_csr,(SLAVE)fifo_source_11.in,(SLAVE)fifo_sink_00.out,(SLAVE)data_mem_11.s1,(SLAVE)fifo_source_11.in_csr,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)nios2_11.debug_mem_slave,(SLAVE)data_mem_01.s1,(SLAVE)nios2_01.debug_mem_slave,(SLAVE)fifo_sink_10.in_csr,(SLAVE)fifo_source_01.in_csr,(SLAVE)data_mem_10.s1) 1 0 6 100 430 520 170 1000 240 1300 240 NJ 240 1880
+preplace netloc EXPORT<net_container>NoC_QSYS</net_container>(SLAVE)NoC_QSYS.reset,(SLAVE)clk_0.clk_in_reset) 1 0 3 NJ 630 NJ 630 NJ
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(MASTER)NoC.source_00,(SLAVE)fifo_sink_00.in) 1 5 1 1820
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(MASTER)NoC.source_01,(SLAVE)fifo_sink_01.in) 1 5 1 1780
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(MASTER)fifo_source_11.out,(SLAVE)NoC.sink_11) 1 4 1 1590
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(MASTER)fifo_source_10.out,(SLAVE)NoC.sink_10) 1 4 1 N
+preplace netloc POINT_TO_POINT<net_container>NoC_QSYS</net_container>(SLAVE)fifo_sink_11.in,(MASTER)NoC.source_11) 1 5 1 1820
+levelinfo -pg 1 0 50 2160
+levelinfo -hier NoC_QSYS 60 240 760 1070 1420 1640 2010 2150

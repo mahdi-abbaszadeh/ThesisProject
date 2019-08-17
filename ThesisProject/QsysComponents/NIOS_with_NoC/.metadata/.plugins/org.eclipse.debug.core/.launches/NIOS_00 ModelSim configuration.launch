@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.altera.sbtgui.launch.modelsim.Nios2ModelsimLaunchConfiguration">
+<stringAttribute key="elfFile" value="C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\software\NIOS_00\NIOS_00.elf"/>
+<stringAttribute key="modelSimPath" value="D:\modeltech64_10.5\win64"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="NIOS_00.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="NIOS_00"/>
+<stringAttribute key="spdPath" value="C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\NoC_QSYS_tb.spd"/>
+</launchConfiguration>

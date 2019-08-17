@@ -50,7 +50,7 @@ Constant ViChAddr : Integer :=1;
 Constant PackSize: Integer :=32;--32;
 
 Constant RecePackIgnorePercent :Integer :=20; --20%
-Constant DumpTimePackFile : Boolean := false;
+Constant DumpTimePackFile : Boolean := true;
 Constant PackWidth	: Integer := 8;
 Constant AddrWidth	: Integer := 4;	
 Constant RoChAddr		: Integer := 1;

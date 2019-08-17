@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sat Aug 10 17:42:25 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : NIOS_NoC
+Top-level Entity Name : NoC_QSYS
+Family : Cyclone V
+Device : 5CSEMA4U23C6
+Timing Models : Final
+Logic utilization (in ALMs) : 5,256 / 15,880 ( 33 % )
+Total registers : 6217
+Total pins : 1 / 314 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 658,432 / 2,764,800 ( 24 % )
+Total RAM Blocks : 132 / 270 ( 49 % )
+Total DSP Blocks : 0 / 84 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 5 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

@@ -1,18 +1,19 @@
-13:46:11 **** Incremental Build of configuration Nios II for project NIOS_0 ****
+17:08:50 **** Incremental Build of configuration Nios II for project NIOS_0 ****
+make all 
+Info: Building ../NIOS_0_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_0_bsp/
+[BSP build complete]
+Info: Linking NIOS_0.elf
+nios2-elf-g++  -T'../NIOS_0_bsp//linker.x' -msys-crt0='../NIOS_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../NIOS_0_bsp/  -msmallc  -Wl,-Map=NIOS_0.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o NIOS_0.elf obj/default/NIOS_0.o -lm -msys-lib=m
+nios2-elf-insert NIOS_0.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name unsaved --quartus_project_dir "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_FIFO" --jdi ../..//output_files/NIOS_with_FIFO.jdi --sopcinfo C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_FIFO/software/NIOS_0_bsp/../../unsaved.sopcinfo
+Info: (NIOS_0.elf) 4712 Bytes program size (code + initialized data).
+Info:              63 KBytes free for stack + heap.
+Info: Creating NIOS_0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source NIOS_0.elf >NIOS_0.objdump
+[NIOS_0 build complete]
+17:09:08 **** Incremental Build of configuration Nios II for project NIOS_0 ****
 make all 
 Info: Building ../NIOS_0_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_0_bsp/
 [BSP build complete]
 [NIOS_0 build complete]
-13:46:29 **** Incremental Build of configuration Nios II for project NIOS_0 ****
-make all 
-Info: Building ../NIOS_0_bsp/
-D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_0_bsp/
-[BSP build complete]
-[NIOS_0 build complete]
-13:47:05 **** Build of configuration Nios II for project NIOS_1 ****
-make all 
-Info: Building ../NIOS_1_bsp/
-D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_1_bsp/
-[BSP build complete]
-[NIOS_1 build complete]

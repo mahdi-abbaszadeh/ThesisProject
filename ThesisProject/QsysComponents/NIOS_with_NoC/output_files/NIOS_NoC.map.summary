@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sat Aug 10 17:40:01 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : NIOS_NoC
+Top-level Entity Name : NoC_QSYS
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 5830
+Total pins : 1
+Total virtual pins : 0
+Total block memory bits : 658,432
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
