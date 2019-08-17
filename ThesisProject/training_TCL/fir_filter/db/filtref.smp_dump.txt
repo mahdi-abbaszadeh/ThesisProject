@@ -1,8 +1,0 @@
-
-State Machine - |filtref|state_m:inst1|filter
-Name filter.tap3 filter.tap2 filter.tap1 filter.idle filter.tap4 
-filter.idle 0 0 0 0 0 
-filter.tap1 0 0 1 1 0 
-filter.tap2 0 1 0 1 0 
-filter.tap3 1 0 0 1 0 
-filter.tap4 0 0 0 1 1 

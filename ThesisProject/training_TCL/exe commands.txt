@@ -1,0 +1,2 @@
+exec D:/intelFPGA/17.1/quartus/sopc_builder/bin/qsys-script --script=NoC_QSYS_hw.tcl
+exec D:/intelFPGA/17.1/quartus/sopc_builder/bin/qsys-edit --debug
