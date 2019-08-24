@@ -18,20 +18,30 @@ nios2-swexample-create --name=$PROJECT_NAME \
 --bsp-dir=$BSP_DIR \
 --cpu-name=$CPU_NAME
 
-# Build BSP and Application
+# Build Application and BSP
 cd $APP_DIR
 ./create-this-app
 
 cd ../$BSP_NAME
 ./create-this-bsp
 
-# cd ../../../NewFolder
-# nios2-app-update-makefile --app-dir=$APP_DIR \
-# --add-src-files=code_00.c \
-# --no-src
+# Add source file and remove default one
+cd ../$APP_NAME
+rm hello_world_small.c
+rm $PROJECT_NAME.elf
+rm $PROJECT_NAME.map
+rm $PROJECT_NAME.objdump
+rm obj/default/hello_world_small.d
+rm obj/default/hello_world_small.o
+cp ../../../NewFolder/code_00.c code_00.c
 
-# cd $APP_DIR
-# ./create-this-app
+# generate make file for new source file
+nios2-app-generate-makefile --bsp-dir=../$BSP_NAME \
+--src-files=code_00.c
+make
+
+#build again
+./create-this-app
 
 
 #Download .sof file on board
@@ -40,4 +50,4 @@ nios2-configure-sof -d 2
 
 #Download .elf file on processor
 cd software/$APP_NAME
-nios2-download -g $PROJECT_NAME.elf --instance 0
+nios2-download -g code_00.elf --instance 0
