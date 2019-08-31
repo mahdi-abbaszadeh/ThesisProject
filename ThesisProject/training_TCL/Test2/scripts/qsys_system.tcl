@@ -107,6 +107,8 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 # Instances and instance parameters
 # (disabled instances are intentionally culled)
 	add_instance NoC NoC 1.0
+	set_instance_parameter_value NoC {RowNo} {2}
+	set_instance_parameter_value NoC {ColNo} {2}
 	set_instance_parameter_value NoC {AddrWidth} {2}
 	set_instance_parameter_value NoC {DataWidth} {8}
 	set_instance_parameter_value NoC {PackWidth} {8}

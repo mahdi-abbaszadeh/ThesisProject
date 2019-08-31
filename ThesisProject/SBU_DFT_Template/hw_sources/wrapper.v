@@ -47,17 +47,19 @@ module wrapper (
 
 	);
 
-parameter PackWidth = 8;
-parameter DataWidth = 8;
-parameter AddrWidth = 2;
-parameter RoChAddr	= 1;
-parameter PhyChAddr	= 2;
-parameter ViChAddr	= 1;
+parameter RowNo       = 2;
+parameter ColNo       = 2;
+parameter PackWidth   = 8;
+parameter DataWidth   = 8;
+parameter AddrWidth   = 2;
+parameter RoChAddr	  = 1;
+parameter PhyChAddr	  = 2;
+parameter ViChAddr	  = 1;
 parameter PhyRoChAddr = 3;		
-parameter RoCh		= 1;
-parameter PhyCh		= 4;
-parameter ViCh		= 1;
-parameter PhyRoCh	= 5;
+parameter RoCh		  = 1;
+parameter PhyCh		  = 4;
+parameter ViCh		  = 1;
+parameter PhyRoCh	  = 5;
 
 input clock, reset;
 
@@ -106,6 +108,8 @@ input 	[ViChAddr - 1:0] PE11_OutpSel;
 
 
 NOC #(
+	.RowNo(RowNo),
+	.ColNo(ColNo),
 	.PackWidth(PackWidth),
 	.DataWidth(DataWidth),
 	.AddrWidth(AddrWidth),

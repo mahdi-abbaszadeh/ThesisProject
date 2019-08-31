@@ -72,7 +72,21 @@ add_fileset_file RouterA.vhd VHDL PATH "../hw_sources/RouterA.vhd"
 
 # 
 # parameters
-# 
+#
+add_parameter RowNo INTEGER 2
+set_parameter_property RowNo DEFAULT_VALUE 2
+set_parameter_property RowNo DISPLAY_NAME RowNo
+set_parameter_property RowNo TYPE INTEGER
+set_parameter_property RowNo UNITS None
+set_parameter_property RowNo ALLOWED_RANGES -2147483648:2147483647
+set_parameter_property RowNo HDL_PARAMETER true
+add_parameter ColNo INTEGER 2
+set_parameter_property ColNo DEFAULT_VALUE 2
+set_parameter_property ColNo DISPLAY_NAME ColNo
+set_parameter_property ColNo TYPE INTEGER
+set_parameter_property ColNo UNITS None
+set_parameter_property ColNo ALLOWED_RANGES -2147483648:2147483647
+set_parameter_property ColNo HDL_PARAMETER true 
 add_parameter PackWidth INTEGER 8
 set_parameter_property PackWidth DEFAULT_VALUE 8
 set_parameter_property PackWidth DISPLAY_NAME PackWidth

@@ -18,8 +18,8 @@ use std.textio.all;
 
 entity NOC is  --MeshMxN
 Generic(
-		--RowNo		: Integer := 4;
-		--ColNo		: Integer := 4;
+		--RowNo		: Integer := 2;
+		--ColNo		: Integer := 2;
 
 		PackWidth	: Integer := 8;
 		DataWidth	: Integer := 8;
