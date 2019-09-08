@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="qsys_system" kind="qsys_system" version="1.0" fabric="QSYS">
  <!-- Format version 17.1 590 (Future versions may contain additional information.) -->
- <!-- 2019.08.24.15:35:40 -->
+ <!-- 2019.09.08.17:17:08 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1566644739</value>
+  <value>1567946828</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -98,6 +98,22 @@
  <module name="NoC" kind="NoC" version="1.0" path="NoC">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
+  <parameter name="RowNo">
+   <type>int</type>
+   <value>2</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="ColNo">
+   <type>int</type>
+   <value>2</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="PackWidth">
    <type>int</type>
    <value>8</value>
@@ -247,7 +263,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="sink_00" kind="avalon_streaming_sink" version="17.1">
+  <interface name="sink_0" kind="avalon_streaming_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -366,31 +382,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>false</isStart>
    <port>
-    <name>PE00_OutpData</name>
+    <name>PE0_OutpData</name>
     <direction>Input</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE00_OutpEn</name>
+    <name>PE0_OutpEn</name>
     <direction>Input</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE00_OutpReady</name>
+    <name>PE0_OutpReady</name>
     <direction>Output</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE00_OutpSel</name>
+    <name>PE0_OutpSel</name>
     <direction>Input</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="sink_01" kind="avalon_streaming_sink" version="17.1">
+  <interface name="sink_1" kind="avalon_streaming_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -509,31 +525,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>false</isStart>
    <port>
-    <name>PE01_OutpData</name>
+    <name>PE1_OutpData</name>
     <direction>Input</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE01_OutpEn</name>
+    <name>PE1_OutpEn</name>
     <direction>Input</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE01_OutpReady</name>
+    <name>PE1_OutpReady</name>
     <direction>Output</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE01_OutpSel</name>
+    <name>PE1_OutpSel</name>
     <direction>Input</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="sink_10" kind="avalon_streaming_sink" version="17.1">
+  <interface name="sink_2" kind="avalon_streaming_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -652,31 +668,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>false</isStart>
    <port>
-    <name>PE10_OutpData</name>
+    <name>PE2_OutpData</name>
     <direction>Input</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE10_OutpEn</name>
+    <name>PE2_OutpEn</name>
     <direction>Input</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE10_OutpReady</name>
+    <name>PE2_OutpReady</name>
     <direction>Output</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE10_OutpSel</name>
+    <name>PE2_OutpSel</name>
     <direction>Input</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="sink_11" kind="avalon_streaming_sink" version="17.1">
+  <interface name="sink_3" kind="avalon_streaming_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -795,31 +811,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>false</isStart>
    <port>
-    <name>PE11_OutpData</name>
+    <name>PE3_OutpData</name>
     <direction>Input</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE11_OutpEn</name>
+    <name>PE3_OutpEn</name>
     <direction>Input</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE11_OutpReady</name>
+    <name>PE3_OutpReady</name>
     <direction>Output</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE11_OutpSel</name>
+    <name>PE3_OutpSel</name>
     <direction>Input</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="source_00" kind="avalon_streaming_source" version="17.1">
+  <interface name="source_0" kind="avalon_streaming_source" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -938,31 +954,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>true</isStart>
    <port>
-    <name>PE00_InpData</name>
+    <name>PE0_InpData</name>
     <direction>Output</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE00_InpEn</name>
+    <name>PE0_InpEn</name>
     <direction>Output</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE00_InpReady</name>
+    <name>PE0_InpReady</name>
     <direction>Input</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE00_InpSel</name>
+    <name>PE0_InpSel</name>
     <direction>Output</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="source_01" kind="avalon_streaming_source" version="17.1">
+  <interface name="source_1" kind="avalon_streaming_source" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1081,31 +1097,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>true</isStart>
    <port>
-    <name>PE01_InpData</name>
+    <name>PE1_InpData</name>
     <direction>Output</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE01_InpEn</name>
+    <name>PE1_InpEn</name>
     <direction>Output</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE01_InpReady</name>
+    <name>PE1_InpReady</name>
     <direction>Input</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE01_InpSel</name>
+    <name>PE1_InpSel</name>
     <direction>Output</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="source_10" kind="avalon_streaming_source" version="17.1">
+  <interface name="source_2" kind="avalon_streaming_source" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1224,31 +1240,31 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>true</isStart>
    <port>
-    <name>PE10_InpData</name>
+    <name>PE2_InpData</name>
     <direction>Output</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE10_InpEn</name>
+    <name>PE2_InpEn</name>
     <direction>Output</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE10_InpReady</name>
+    <name>PE2_InpReady</name>
     <direction>Input</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE10_InpSel</name>
+    <name>PE2_InpSel</name>
     <direction>Output</direction>
     <width>1</width>
     <role>channel</role>
    </port>
   </interface>
-  <interface name="source_11" kind="avalon_streaming_source" version="17.1">
+  <interface name="source_3" kind="avalon_streaming_source" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1367,25 +1383,25 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>true</isStart>
    <port>
-    <name>PE11_InpData</name>
+    <name>PE3_InpData</name>
     <direction>Output</direction>
     <width>8</width>
     <role>data</role>
    </port>
    <port>
-    <name>PE11_InpEn</name>
+    <name>PE3_InpEn</name>
     <direction>Output</direction>
     <width>1</width>
     <role>valid</role>
    </port>
    <port>
-    <name>PE11_InpReady</name>
+    <name>PE3_InpReady</name>
     <direction>Input</direction>
     <width>1</width>
     <role>ready</role>
    </port>
    <port>
-    <name>PE11_InpSel</name>
+    <name>PE3_InpSel</name>
     <direction>Output</direction>
     <width>1</width>
     <role>channel</role>
@@ -1680,99 +1696,99 @@ parameters are a RESULT of the module parameters. -->
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>nios2_00</moduleName>
+    <moduleName>nios2_0</moduleName>
     <slaveName>clk</slaveName>
-    <name>nios2_00.clk</name>
+    <name>nios2_0.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>nios2_01</moduleName>
+    <moduleName>nios2_1</moduleName>
     <slaveName>clk</slaveName>
-    <name>nios2_01.clk</name>
+    <name>nios2_1.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>nios2_10</moduleName>
+    <moduleName>nios2_2</moduleName>
     <slaveName>clk</slaveName>
-    <name>nios2_10.clk</name>
+    <name>nios2_2.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>nios2_11</moduleName>
+    <moduleName>nios2_3</moduleName>
     <slaveName>clk</slaveName>
-    <name>nios2_11.clk</name>
+    <name>nios2_3.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_00</moduleName>
+    <moduleName>data_mem_0</moduleName>
     <slaveName>clk1</slaveName>
-    <name>data_mem_00.clk1</name>
+    <name>data_mem_0.clk1</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_01</moduleName>
+    <moduleName>data_mem_1</moduleName>
     <slaveName>clk1</slaveName>
-    <name>data_mem_01.clk1</name>
+    <name>data_mem_1.clk1</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_10</moduleName>
+    <moduleName>data_mem_2</moduleName>
     <slaveName>clk1</slaveName>
-    <name>data_mem_10.clk1</name>
+    <name>data_mem_2.clk1</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_11</moduleName>
+    <moduleName>data_mem_3</moduleName>
     <slaveName>clk1</slaveName>
-    <name>data_mem_11.clk1</name>
+    <name>data_mem_3.clk1</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_00</moduleName>
+    <moduleName>fifo_sink_0</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_sink_00.clk_in</name>
+    <name>fifo_sink_0.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_01</moduleName>
+    <moduleName>fifo_sink_1</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_sink_01.clk_in</name>
+    <name>fifo_sink_1.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_10</moduleName>
+    <moduleName>fifo_sink_2</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_sink_10.clk_in</name>
+    <name>fifo_sink_2.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_11</moduleName>
+    <moduleName>fifo_sink_3</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_sink_11.clk_in</name>
+    <name>fifo_sink_3.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_00</moduleName>
+    <moduleName>fifo_source_0</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_source_00.clk_in</name>
+    <name>fifo_source_0.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_01</moduleName>
+    <moduleName>fifo_source_1</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_source_01.clk_in</name>
+    <name>fifo_source_1.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_10</moduleName>
+    <moduleName>fifo_source_2</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_source_10.clk_in</name>
+    <name>fifo_source_2.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_11</moduleName>
+    <moduleName>fifo_source_3</moduleName>
     <slaveName>clk_in</slaveName>
-    <name>fifo_source_11.clk_in</name>
+    <name>fifo_source_3.clk_in</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
@@ -1844,10 +1860,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="data_mem_00"
+   name="data_mem_0"
    kind="altera_avalon_onchip_memory2"
    version="17.1"
-   path="data_mem_00">
+   path="data_mem_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -1872,7 +1888,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>qsys_system_data_mem_00</value>
+   <value>qsys_system_data_mem_0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -1936,7 +1952,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>qsys_system_data_mem_00</value>
+   <value>qsys_system_data_mem_0</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -2148,7 +2164,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_00</value>
+   <value>qsys_system_data_mem_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -2223,7 +2239,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_00.hex</value>
+   <value>qsys_system_data_mem_0.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -2712,10 +2728,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="data_mem_01"
+   name="data_mem_1"
    kind="altera_avalon_onchip_memory2"
    version="17.1"
-   path="data_mem_01">
+   path="data_mem_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -2740,7 +2756,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>qsys_system_data_mem_01</value>
+   <value>qsys_system_data_mem_1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -2804,7 +2820,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>qsys_system_data_mem_01</value>
+   <value>qsys_system_data_mem_1</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -3016,7 +3032,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_01</value>
+   <value>qsys_system_data_mem_1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3091,7 +3107,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_01.hex</value>
+   <value>qsys_system_data_mem_1.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3580,10 +3596,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="data_mem_10"
+   name="data_mem_2"
    kind="altera_avalon_onchip_memory2"
    version="17.1"
-   path="data_mem_10">
+   path="data_mem_2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -3608,7 +3624,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>qsys_system_data_mem_10</value>
+   <value>qsys_system_data_mem_2</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -3672,7 +3688,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>qsys_system_data_mem_10</value>
+   <value>qsys_system_data_mem_2</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -3884,7 +3900,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_10</value>
+   <value>qsys_system_data_mem_2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3959,7 +3975,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_10.hex</value>
+   <value>qsys_system_data_mem_2.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4448,10 +4464,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="data_mem_11"
+   name="data_mem_3"
    kind="altera_avalon_onchip_memory2"
    version="17.1"
-   path="data_mem_11">
+   path="data_mem_3">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -4476,7 +4492,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>qsys_system_data_mem_11</value>
+   <value>qsys_system_data_mem_3</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -4508,7 +4524,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>16384</value>
+   <value>32000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -4540,7 +4556,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>qsys_system_data_mem_11</value>
+   <value>qsys_system_data_mem_3</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -4640,7 +4656,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memorySize">
    <type>long</type>
-   <value>16384</value>
+   <value>32000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4752,7 +4768,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_11</value>
+   <value>qsys_system_data_mem_3</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4779,7 +4795,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width">
    <type>int</type>
-   <value>12</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4787,7 +4803,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width2">
    <type>int</type>
-   <value>12</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4827,7 +4843,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>qsys_system_data_mem_11.hex</value>
+   <value>qsys_system_data_mem_3.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4924,7 +4940,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>16384</value>
+    <value>32000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -5012,7 +5028,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>16384</value>
+    <value>32000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5223,7 +5239,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Input</direction>
-    <width>12</width>
+    <width>13</width>
     <role>address</role>
    </port>
    <port>
@@ -5316,10 +5332,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_sink_00"
+   name="fifo_sink_0"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_sink_00">
+   path="fifo_sink_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -6572,7 +6588,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_sink_00.in_csr</value>
+    <value>fifo_sink_0.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -6645,10 +6661,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_sink_01"
+   name="fifo_sink_1"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_sink_01">
+   path="fifo_sink_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -7901,7 +7917,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_sink_01.in_csr</value>
+    <value>fifo_sink_1.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -7974,10 +7990,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_sink_10"
+   name="fifo_sink_2"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_sink_10">
+   path="fifo_sink_2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -9230,7 +9246,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_sink_10.in_csr</value>
+    <value>fifo_sink_2.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -9303,10 +9319,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_sink_11"
+   name="fifo_sink_3"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_sink_11">
+   path="fifo_sink_3">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -10559,7 +10575,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_sink_11.in_csr</value>
+    <value>fifo_sink_3.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -10632,10 +10648,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_source_00"
+   name="fifo_source_0"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_source_00">
+   path="fifo_source_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -11888,7 +11904,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_source_00.in_csr</value>
+    <value>fifo_source_0.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -11961,10 +11977,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_source_01"
+   name="fifo_source_1"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_source_01">
+   path="fifo_source_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -13217,7 +13233,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_source_01.in_csr</value>
+    <value>fifo_source_1.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -13290,10 +13306,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_source_10"
+   name="fifo_source_2"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_source_10">
+   path="fifo_source_2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -14546,7 +14562,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_source_10.in_csr</value>
+    <value>fifo_source_2.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -14619,10 +14635,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="fifo_source_11"
+   name="fifo_source_3"
    kind="altera_avalon_fifo"
    version="17.1"
-   path="fifo_source_11">
+   path="fifo_source_3">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -15875,7 +15891,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>fifo_source_11.in_csr</value>
+    <value>fifo_source_3.in_csr</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -16694,11 +16710,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module
-   name="nios2_00"
-   kind="altera_nios2_gen2"
-   version="17.1"
-   path="nios2_00">
+ <module name="nios2_0" kind="altera_nios2_gen2" version="17.1" path="nios2_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -16831,7 +16843,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.breakSlave</name>
-   <value>nios2_00.debug_mem_slave</value>
+   <value>nios2_0.debug_mem_slave</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.cpuArchitecture</name>
@@ -16843,7 +16855,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.exceptionSlave</name>
-   <value>data_mem_00.s1</value>
+   <value>data_mem_0.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetOffset</name>
@@ -16851,7 +16863,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>data_mem_00.s1</value>
+   <value>data_mem_0.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -17311,7 +17323,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>data_mem_00.s1</value>
+   <value>data_mem_0.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -17327,7 +17339,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionSlave">
    <type>java.lang.String</type>
-   <value>data_mem_00.s1</value>
+   <value>data_mem_0.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -18079,7 +18091,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakSlave_derived">
    <type>java.lang.String</type>
-   <value>nios2_00.debug_mem_slave</value>
+   <value>nios2_0.debug_mem_slave</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18289,7 +18301,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_00.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_00.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_0.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18309,7 +18321,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_00.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_00.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_00.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_00.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_00.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_00.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_0.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_0.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_0.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18985,49 +18997,49 @@ parameters are a RESULT of the module parameters. -->
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_00</moduleName>
+    <moduleName>nios2_0</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_00.debug_mem_slave</name>
+    <name>nios2_0.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_00</moduleName>
+    <moduleName>fifo_source_0</moduleName>
     <slaveName>in</slaveName>
-    <name>fifo_source_00.in</name>
+    <name>fifo_source_0.in</name>
     <baseAddress>36936</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_00</moduleName>
+    <moduleName>fifo_sink_0</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_sink_00.in_csr</name>
+    <name>fifo_sink_0.in_csr</name>
     <baseAddress>36896</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_00</moduleName>
+    <moduleName>fifo_source_0</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_source_00.in_csr</name>
+    <name>fifo_source_0.in_csr</name>
     <baseAddress>36864</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_00</moduleName>
+    <moduleName>fifo_sink_0</moduleName>
     <slaveName>out</slaveName>
-    <name>fifo_sink_00.out</name>
+    <name>fifo_sink_0.out</name>
     <baseAddress>36928</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_00</moduleName>
+    <moduleName>data_mem_0</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_00.s1</name>
+    <name>data_mem_0.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -19320,17 +19332,17 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_00</moduleName>
+    <moduleName>nios2_0</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_00.debug_mem_slave</name>
+    <name>nios2_0.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_00</moduleName>
+    <moduleName>data_mem_0</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_00.s1</name>
+    <name>data_mem_0.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -19341,7 +19353,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>nios2_00.data_master</value>
+    <value>nios2_0.data_master</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -19405,16 +19417,16 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_00</moduleName>
+    <moduleName>fifo_sink_0</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_sink_00.in_irq</name>
+    <name>fifo_sink_0.in_irq</name>
     <interruptNumber>0</interruptNumber>
    </interrupt>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_00</moduleName>
+    <moduleName>fifo_source_0</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_source_00.in_irq</name>
+    <name>fifo_source_0.in_irq</name>
     <interruptNumber>1</interruptNumber>
    </interrupt>
    <interrupt>
@@ -19950,11 +19962,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module
-   name="nios2_01"
-   kind="altera_nios2_gen2"
-   version="17.1"
-   path="nios2_01">
+ <module name="nios2_1" kind="altera_nios2_gen2" version="17.1" path="nios2_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -20087,7 +20095,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.breakSlave</name>
-   <value>nios2_01.debug_mem_slave</value>
+   <value>nios2_1.debug_mem_slave</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.cpuArchitecture</name>
@@ -20099,7 +20107,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.exceptionSlave</name>
-   <value>data_mem_01.s1</value>
+   <value>data_mem_1.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetOffset</name>
@@ -20107,7 +20115,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>data_mem_01.s1</value>
+   <value>data_mem_1.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -20567,7 +20575,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>data_mem_01.s1</value>
+   <value>data_mem_1.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -20583,7 +20591,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionSlave">
    <type>java.lang.String</type>
-   <value>data_mem_01.s1</value>
+   <value>data_mem_1.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -21335,7 +21343,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakSlave_derived">
    <type>java.lang.String</type>
-   <value>nios2_01.debug_mem_slave</value>
+   <value>nios2_1.debug_mem_slave</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -21545,7 +21553,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_01.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_01.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_1.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -21565,7 +21573,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_01.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_01.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_01.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_01.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_01.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_01.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_1.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_1.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_1.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -22241,49 +22249,49 @@ parameters are a RESULT of the module parameters. -->
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_01</moduleName>
+    <moduleName>nios2_1</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_01.debug_mem_slave</name>
+    <name>nios2_1.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_01</moduleName>
+    <moduleName>fifo_source_1</moduleName>
     <slaveName>in</slaveName>
-    <name>fifo_source_01.in</name>
+    <name>fifo_source_1.in</name>
     <baseAddress>36936</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_01</moduleName>
+    <moduleName>fifo_sink_1</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_sink_01.in_csr</name>
+    <name>fifo_sink_1.in_csr</name>
     <baseAddress>36896</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_01</moduleName>
+    <moduleName>fifo_source_1</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_source_01.in_csr</name>
+    <name>fifo_source_1.in_csr</name>
     <baseAddress>36864</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_01</moduleName>
+    <moduleName>fifo_sink_1</moduleName>
     <slaveName>out</slaveName>
-    <name>fifo_sink_01.out</name>
+    <name>fifo_sink_1.out</name>
     <baseAddress>36928</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_01</moduleName>
+    <moduleName>data_mem_1</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_01.s1</name>
+    <name>data_mem_1.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -22576,17 +22584,17 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_01</moduleName>
+    <moduleName>nios2_1</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_01.debug_mem_slave</name>
+    <name>nios2_1.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_01</moduleName>
+    <moduleName>data_mem_1</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_01.s1</name>
+    <name>data_mem_1.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -22597,7 +22605,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>nios2_01.data_master</value>
+    <value>nios2_1.data_master</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -22661,16 +22669,16 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_01</moduleName>
+    <moduleName>fifo_sink_1</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_sink_01.in_irq</name>
+    <name>fifo_sink_1.in_irq</name>
     <interruptNumber>0</interruptNumber>
    </interrupt>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_01</moduleName>
+    <moduleName>fifo_source_1</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_source_01.in_irq</name>
+    <name>fifo_source_1.in_irq</name>
     <interruptNumber>1</interruptNumber>
    </interrupt>
    <interrupt>
@@ -23206,11 +23214,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module
-   name="nios2_10"
-   kind="altera_nios2_gen2"
-   version="17.1"
-   path="nios2_10">
+ <module name="nios2_2" kind="altera_nios2_gen2" version="17.1" path="nios2_2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -23343,7 +23347,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.breakSlave</name>
-   <value>nios2_10.debug_mem_slave</value>
+   <value>nios2_2.debug_mem_slave</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.cpuArchitecture</name>
@@ -23355,7 +23359,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.exceptionSlave</name>
-   <value>data_mem_10.s1</value>
+   <value>data_mem_2.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetOffset</name>
@@ -23363,7 +23367,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>data_mem_10.s1</value>
+   <value>data_mem_2.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -23823,7 +23827,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>data_mem_10.s1</value>
+   <value>data_mem_2.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -23839,7 +23843,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionSlave">
    <type>java.lang.String</type>
-   <value>data_mem_10.s1</value>
+   <value>data_mem_2.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -24591,7 +24595,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakSlave_derived">
    <type>java.lang.String</type>
-   <value>nios2_10.debug_mem_slave</value>
+   <value>nios2_2.debug_mem_slave</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -24801,7 +24805,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_10.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_10.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_2.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -24821,7 +24825,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_10.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_10.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_10.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_10.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_10.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_10.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_2.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_2.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_2.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -25497,49 +25501,49 @@ parameters are a RESULT of the module parameters. -->
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_10</moduleName>
+    <moduleName>nios2_2</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_10.debug_mem_slave</name>
+    <name>nios2_2.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_10</moduleName>
+    <moduleName>fifo_source_2</moduleName>
     <slaveName>in</slaveName>
-    <name>fifo_source_10.in</name>
+    <name>fifo_source_2.in</name>
     <baseAddress>36936</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_10</moduleName>
+    <moduleName>fifo_sink_2</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_sink_10.in_csr</name>
+    <name>fifo_sink_2.in_csr</name>
     <baseAddress>36896</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_10</moduleName>
+    <moduleName>fifo_source_2</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_source_10.in_csr</name>
+    <name>fifo_source_2.in_csr</name>
     <baseAddress>36864</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_10</moduleName>
+    <moduleName>fifo_sink_2</moduleName>
     <slaveName>out</slaveName>
-    <name>fifo_sink_10.out</name>
+    <name>fifo_sink_2.out</name>
     <baseAddress>36928</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_10</moduleName>
+    <moduleName>data_mem_2</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_10.s1</name>
+    <name>data_mem_2.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -25832,17 +25836,17 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_10</moduleName>
+    <moduleName>nios2_2</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_10.debug_mem_slave</name>
+    <name>nios2_2.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_10</moduleName>
+    <moduleName>data_mem_2</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_10.s1</name>
+    <name>data_mem_2.s1</name>
     <baseAddress>16384</baseAddress>
     <span>16384</span>
    </memoryBlock>
@@ -25853,7 +25857,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>nios2_10.data_master</value>
+    <value>nios2_2.data_master</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -25917,16 +25921,16 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_10</moduleName>
+    <moduleName>fifo_sink_2</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_sink_10.in_irq</name>
+    <name>fifo_sink_2.in_irq</name>
     <interruptNumber>0</interruptNumber>
    </interrupt>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_10</moduleName>
+    <moduleName>fifo_source_2</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_source_10.in_irq</name>
+    <name>fifo_source_2.in_irq</name>
     <interruptNumber>1</interruptNumber>
    </interrupt>
    <interrupt>
@@ -26462,11 +26466,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module
-   name="nios2_11"
-   kind="altera_nios2_gen2"
-   version="17.1"
-   path="nios2_11">
+ <module name="nios2_3" kind="altera_nios2_gen2" version="17.1" path="nios2_3">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -26599,7 +26599,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.breakSlave</name>
-   <value>nios2_11.debug_mem_slave</value>
+   <value>nios2_3.debug_mem_slave</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.cpuArchitecture</name>
@@ -26611,7 +26611,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.exceptionSlave</name>
-   <value>data_mem_11.s1</value>
+   <value>data_mem_3.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetOffset</name>
@@ -26619,7 +26619,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>data_mem_11.s1</value>
+   <value>data_mem_3.s1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -27079,7 +27079,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>data_mem_11.s1</value>
+   <value>data_mem_3.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -27095,7 +27095,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionSlave">
    <type>java.lang.String</type>
-   <value>data_mem_11.s1</value>
+   <value>data_mem_3.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -27847,7 +27847,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakSlave_derived">
    <type>java.lang.String</type>
-   <value>nios2_11.debug_mem_slave</value>
+   <value>nios2_3.debug_mem_slave</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -28057,7 +28057,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_11.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_11.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_3.s1' start='0x4000' end='0xBD00' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -28077,7 +28077,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='data_mem_11.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_11.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_11.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_11.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_11.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_11.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='data_mem_3.s1' start='0x4000' end='0xBD00' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_3.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_3.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -28753,51 +28753,51 @@ parameters are a RESULT of the module parameters. -->
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_11</moduleName>
+    <moduleName>nios2_3</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_11.debug_mem_slave</name>
+    <name>nios2_3.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_11</moduleName>
+    <moduleName>fifo_source_3</moduleName>
     <slaveName>in</slaveName>
-    <name>fifo_source_11.in</name>
+    <name>fifo_source_3.in</name>
     <baseAddress>36936</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_11</moduleName>
+    <moduleName>fifo_sink_3</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_sink_11.in_csr</name>
+    <name>fifo_sink_3.in_csr</name>
     <baseAddress>36896</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_11</moduleName>
+    <moduleName>fifo_source_3</moduleName>
     <slaveName>in_csr</slaveName>
-    <name>fifo_source_11.in_csr</name>
+    <name>fifo_source_3.in_csr</name>
     <baseAddress>36864</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_11</moduleName>
+    <moduleName>fifo_sink_3</moduleName>
     <slaveName>out</slaveName>
-    <name>fifo_sink_11.out</name>
+    <name>fifo_sink_3.out</name>
     <baseAddress>36928</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_11</moduleName>
+    <moduleName>data_mem_3</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_11.s1</name>
+    <name>data_mem_3.s1</name>
     <baseAddress>16384</baseAddress>
-    <span>16384</span>
+    <span>32000</span>
    </memoryBlock>
   </interface>
   <interface name="instruction_master" kind="avalon_master" version="17.1">
@@ -29088,19 +29088,19 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>nios2_11</moduleName>
+    <moduleName>nios2_3</moduleName>
     <slaveName>debug_mem_slave</slaveName>
-    <name>nios2_11.debug_mem_slave</name>
+    <name>nios2_3.debug_mem_slave</name>
     <baseAddress>34816</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
-    <moduleName>data_mem_11</moduleName>
+    <moduleName>data_mem_3</moduleName>
     <slaveName>s1</slaveName>
-    <name>data_mem_11.s1</name>
+    <name>data_mem_3.s1</name>
     <baseAddress>16384</baseAddress>
-    <span>16384</span>
+    <span>32000</span>
    </memoryBlock>
   </interface>
   <interface name="irq" kind="interrupt_receiver" version="17.1">
@@ -29109,7 +29109,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedAddressablePoint">
     <type>com.altera.entityinterfaces.IConnectionPoint</type>
-    <value>nios2_11.data_master</value>
+    <value>nios2_3.data_master</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -29173,16 +29173,16 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_sink_11</moduleName>
+    <moduleName>fifo_sink_3</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_sink_11.in_irq</name>
+    <name>fifo_sink_3.in_irq</name>
     <interruptNumber>0</interruptNumber>
    </interrupt>
    <interrupt>
     <isBridge>false</isBridge>
-    <moduleName>fifo_source_11</moduleName>
+    <moduleName>fifo_source_3</moduleName>
     <slaveName>in_irq</slaveName>
-    <name>fifo_source_11.in_irq</name>
+    <name>fifo_source_3.in_irq</name>
     <interruptNumber>1</interruptNumber>
    </interrupt>
    <interrupt>
@@ -29719,10 +29719,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <connection
-   name="nios2_00.data_master/jtag_uart_0.avalon_jtag_slave"
+   name="nios2_0.data_master/jtag_uart_0.avalon_jtag_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
+   start="nios2_0.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
@@ -29764,16 +29764,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>avalon_jtag_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/jtag_uart_0.avalon_jtag_slave"
+   name="nios2_1.data_master/jtag_uart_0.avalon_jtag_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
+   start="nios2_1.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
@@ -29815,16 +29815,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>avalon_jtag_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/jtag_uart_0.avalon_jtag_slave"
+   name="nios2_2.data_master/jtag_uart_0.avalon_jtag_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
+   start="nios2_2.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
@@ -29866,16 +29866,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>avalon_jtag_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/jtag_uart_0.avalon_jtag_slave"
+   name="nios2_3.data_master/jtag_uart_0.avalon_jtag_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
+   start="nios2_3.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
@@ -29917,17 +29917,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>avalon_jtag_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/nios2_00.debug_mem_slave"
+   name="nios2_0.data_master/nios2_0.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="nios2_00.debug_mem_slave">
+   start="nios2_0.data_master"
+   end="nios2_0.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -29968,17 +29968,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>nios2_00</endModule>
+  <endModule>nios2_0</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/nios2_01.debug_mem_slave"
+   name="nios2_1.data_master/nios2_1.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="nios2_01.debug_mem_slave">
+   start="nios2_1.data_master"
+   end="nios2_1.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30019,17 +30019,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>nios2_01</endModule>
+  <endModule>nios2_1</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/nios2_10.debug_mem_slave"
+   name="nios2_2.data_master/nios2_2.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="nios2_10.debug_mem_slave">
+   start="nios2_2.data_master"
+   end="nios2_2.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30070,17 +30070,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>nios2_10</endModule>
+  <endModule>nios2_2</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/nios2_11.debug_mem_slave"
+   name="nios2_3.data_master/nios2_3.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="nios2_11.debug_mem_slave">
+   start="nios2_3.data_master"
+   end="nios2_3.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30121,17 +30121,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>nios2_11</endModule>
+  <endModule>nios2_3</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/fifo_source_00.in"
+   name="nios2_0.data_master/fifo_source_0.in"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="fifo_source_00.in">
+   start="nios2_0.data_master"
+   end="fifo_source_0.in">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30172,17 +30172,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_00</endModule>
+  <endModule>fifo_source_0</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/fifo_source_01.in"
+   name="nios2_1.data_master/fifo_source_1.in"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="fifo_source_01.in">
+   start="nios2_1.data_master"
+   end="fifo_source_1.in">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30223,17 +30223,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_01</endModule>
+  <endModule>fifo_source_1</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/fifo_source_10.in"
+   name="nios2_2.data_master/fifo_source_2.in"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="fifo_source_10.in">
+   start="nios2_2.data_master"
+   end="fifo_source_2.in">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30274,17 +30274,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_10</endModule>
+  <endModule>fifo_source_2</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/fifo_source_11.in"
+   name="nios2_3.data_master/fifo_source_3.in"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="fifo_source_11.in">
+   start="nios2_3.data_master"
+   end="fifo_source_3.in">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30325,17 +30325,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_11</endModule>
+  <endModule>fifo_source_3</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/fifo_sink_00.in_csr"
+   name="nios2_0.data_master/fifo_sink_0.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="fifo_sink_00.in_csr">
+   start="nios2_0.data_master"
+   end="fifo_sink_0.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30376,17 +30376,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/fifo_source_00.in_csr"
+   name="nios2_0.data_master/fifo_source_0.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="fifo_source_00.in_csr">
+   start="nios2_0.data_master"
+   end="fifo_source_0.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30427,17 +30427,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_00</endModule>
+  <endModule>fifo_source_0</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/fifo_sink_01.in_csr"
+   name="nios2_1.data_master/fifo_sink_1.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="fifo_sink_01.in_csr">
+   start="nios2_1.data_master"
+   end="fifo_sink_1.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30478,17 +30478,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/fifo_source_01.in_csr"
+   name="nios2_1.data_master/fifo_source_1.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="fifo_source_01.in_csr">
+   start="nios2_1.data_master"
+   end="fifo_source_1.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30529,17 +30529,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_01</endModule>
+  <endModule>fifo_source_1</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/fifo_sink_10.in_csr"
+   name="nios2_2.data_master/fifo_sink_2.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="fifo_sink_10.in_csr">
+   start="nios2_2.data_master"
+   end="fifo_sink_2.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30580,17 +30580,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/fifo_source_10.in_csr"
+   name="nios2_2.data_master/fifo_source_2.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="fifo_source_10.in_csr">
+   start="nios2_2.data_master"
+   end="fifo_source_2.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30631,17 +30631,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_10</endModule>
+  <endModule>fifo_source_2</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/fifo_sink_11.in_csr"
+   name="nios2_3.data_master/fifo_sink_3.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="fifo_sink_11.in_csr">
+   start="nios2_3.data_master"
+   end="fifo_sink_3.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30682,17 +30682,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/fifo_source_11.in_csr"
+   name="nios2_3.data_master/fifo_source_3.in_csr"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="fifo_source_11.in_csr">
+   start="nios2_3.data_master"
+   end="fifo_source_3.in_csr">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30733,17 +30733,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_source_11</endModule>
+  <endModule>fifo_source_3</endModule>
   <endConnectionPoint>in_csr</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/fifo_sink_00.out"
+   name="nios2_0.data_master/fifo_sink_0.out"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="fifo_sink_00.out">
+   start="nios2_0.data_master"
+   end="fifo_sink_0.out">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30784,17 +30784,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>out</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/fifo_sink_01.out"
+   name="nios2_1.data_master/fifo_sink_1.out"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="fifo_sink_01.out">
+   start="nios2_1.data_master"
+   end="fifo_sink_1.out">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30835,17 +30835,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>out</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/fifo_sink_10.out"
+   name="nios2_2.data_master/fifo_sink_2.out"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="fifo_sink_10.out">
+   start="nios2_2.data_master"
+   end="fifo_sink_2.out">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30886,17 +30886,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>out</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/fifo_sink_11.out"
+   name="nios2_3.data_master/fifo_sink_3.out"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="fifo_sink_11.out">
+   start="nios2_3.data_master"
+   end="fifo_sink_3.out">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30937,17 +30937,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>out</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.data_master/data_mem_00.s1"
+   name="nios2_0.data_master/data_mem_0.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_00.data_master"
-   end="data_mem_00.s1">
+   start="nios2_0.data_master"
+   end="data_mem_0.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -30988,17 +30988,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>data_mem_00</endModule>
+  <endModule>data_mem_0</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.data_master/data_mem_01.s1"
+   name="nios2_1.data_master/data_mem_1.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_01.data_master"
-   end="data_mem_01.s1">
+   start="nios2_1.data_master"
+   end="data_mem_1.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31039,17 +31039,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>data_mem_01</endModule>
+  <endModule>data_mem_1</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.data_master/data_mem_10.s1"
+   name="nios2_2.data_master/data_mem_2.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_10.data_master"
-   end="data_mem_10.s1">
+   start="nios2_2.data_master"
+   end="data_mem_2.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31090,17 +31090,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>data_mem_10</endModule>
+  <endModule>data_mem_2</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.data_master/data_mem_11.s1"
+   name="nios2_3.data_master/data_mem_3.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_11.data_master"
-   end="data_mem_11.s1">
+   start="nios2_3.data_master"
+   end="data_mem_3.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31141,17 +31141,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
-  <endModule>data_mem_11</endModule>
+  <endModule>data_mem_3</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.instruction_master/nios2_00.debug_mem_slave"
+   name="nios2_0.instruction_master/nios2_0.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_00.instruction_master"
-   end="nios2_00.debug_mem_slave">
+   start="nios2_0.instruction_master"
+   end="nios2_0.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31192,17 +31192,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>nios2_00</endModule>
+  <endModule>nios2_0</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.instruction_master/nios2_01.debug_mem_slave"
+   name="nios2_1.instruction_master/nios2_1.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_01.instruction_master"
-   end="nios2_01.debug_mem_slave">
+   start="nios2_1.instruction_master"
+   end="nios2_1.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31243,17 +31243,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>nios2_01</endModule>
+  <endModule>nios2_1</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.instruction_master/nios2_10.debug_mem_slave"
+   name="nios2_2.instruction_master/nios2_2.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_10.instruction_master"
-   end="nios2_10.debug_mem_slave">
+   start="nios2_2.instruction_master"
+   end="nios2_2.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31294,17 +31294,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>nios2_10</endModule>
+  <endModule>nios2_2</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.instruction_master/nios2_11.debug_mem_slave"
+   name="nios2_3.instruction_master/nios2_3.debug_mem_slave"
    kind="avalon"
    version="17.1"
-   start="nios2_11.instruction_master"
-   end="nios2_11.debug_mem_slave">
+   start="nios2_3.instruction_master"
+   end="nios2_3.debug_mem_slave">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31345,17 +31345,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>nios2_11</endModule>
+  <endModule>nios2_3</endModule>
   <endConnectionPoint>debug_mem_slave</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.instruction_master/data_mem_00.s1"
+   name="nios2_0.instruction_master/data_mem_0.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_00.instruction_master"
-   end="data_mem_00.s1">
+   start="nios2_0.instruction_master"
+   end="data_mem_0.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31396,17 +31396,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>data_mem_00</endModule>
+  <endModule>data_mem_0</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.instruction_master/data_mem_01.s1"
+   name="nios2_1.instruction_master/data_mem_1.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_01.instruction_master"
-   end="data_mem_01.s1">
+   start="nios2_1.instruction_master"
+   end="data_mem_1.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31447,17 +31447,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>data_mem_01</endModule>
+  <endModule>data_mem_1</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.instruction_master/data_mem_10.s1"
+   name="nios2_2.instruction_master/data_mem_2.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_10.instruction_master"
-   end="data_mem_10.s1">
+   start="nios2_2.instruction_master"
+   end="data_mem_2.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31498,17 +31498,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>data_mem_10</endModule>
+  <endModule>data_mem_2</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.instruction_master/data_mem_11.s1"
+   name="nios2_3.instruction_master/data_mem_3.s1"
    kind="avalon"
    version="17.1"
-   start="nios2_11.instruction_master"
-   end="data_mem_11.s1">
+   start="nios2_3.instruction_master"
+   end="data_mem_3.s1">
   <parameter name="arbitrationPriority">
    <type>int</type>
    <value>1</value>
@@ -31549,17 +31549,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>data_mem_11</endModule>
+  <endModule>data_mem_3</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="fifo_source_00.out/NoC.sink_00"
+   name="fifo_source_0.out/NoC.sink_0"
    kind="avalon_streaming"
    version="17.1"
-   start="fifo_source_00.out"
-   end="NoC.sink_00">
+   start="fifo_source_0.out"
+   end="NoC.sink_0">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31576,17 +31576,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>fifo_source_00</startModule>
+  <startModule>fifo_source_0</startModule>
   <startConnectionPoint>out</startConnectionPoint>
   <endModule>NoC</endModule>
-  <endConnectionPoint>sink_00</endConnectionPoint>
+  <endConnectionPoint>sink_0</endConnectionPoint>
  </connection>
  <connection
-   name="fifo_source_01.out/NoC.sink_01"
+   name="fifo_source_1.out/NoC.sink_1"
    kind="avalon_streaming"
    version="17.1"
-   start="fifo_source_01.out"
-   end="NoC.sink_01">
+   start="fifo_source_1.out"
+   end="NoC.sink_1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31603,17 +31603,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>fifo_source_01</startModule>
+  <startModule>fifo_source_1</startModule>
   <startConnectionPoint>out</startConnectionPoint>
   <endModule>NoC</endModule>
-  <endConnectionPoint>sink_01</endConnectionPoint>
+  <endConnectionPoint>sink_1</endConnectionPoint>
  </connection>
  <connection
-   name="fifo_source_10.out/NoC.sink_10"
+   name="fifo_source_2.out/NoC.sink_2"
    kind="avalon_streaming"
    version="17.1"
-   start="fifo_source_10.out"
-   end="NoC.sink_10">
+   start="fifo_source_2.out"
+   end="NoC.sink_2">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31630,17 +31630,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>fifo_source_10</startModule>
+  <startModule>fifo_source_2</startModule>
   <startConnectionPoint>out</startConnectionPoint>
   <endModule>NoC</endModule>
-  <endConnectionPoint>sink_10</endConnectionPoint>
+  <endConnectionPoint>sink_2</endConnectionPoint>
  </connection>
  <connection
-   name="fifo_source_11.out/NoC.sink_11"
+   name="fifo_source_3.out/NoC.sink_3"
    kind="avalon_streaming"
    version="17.1"
-   start="fifo_source_11.out"
-   end="NoC.sink_11">
+   start="fifo_source_3.out"
+   end="NoC.sink_3">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31657,17 +31657,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>fifo_source_11</startModule>
+  <startModule>fifo_source_3</startModule>
   <startConnectionPoint>out</startConnectionPoint>
   <endModule>NoC</endModule>
-  <endConnectionPoint>sink_11</endConnectionPoint>
+  <endConnectionPoint>sink_3</endConnectionPoint>
  </connection>
  <connection
-   name="NoC.source_00/fifo_sink_00.in"
+   name="NoC.source_0/fifo_sink_0.in"
    kind="avalon_streaming"
    version="17.1"
-   start="NoC.source_00"
-   end="fifo_sink_00.in">
+   start="NoC.source_0"
+   end="fifo_sink_0.in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31685,16 +31685,16 @@ parameters are a RESULT of the module parameters. -->
    <valid>true</valid>
   </parameter>
   <startModule>NoC</startModule>
-  <startConnectionPoint>source_00</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <startConnectionPoint>source_0</startConnectionPoint>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="NoC.source_01/fifo_sink_01.in"
+   name="NoC.source_1/fifo_sink_1.in"
    kind="avalon_streaming"
    version="17.1"
-   start="NoC.source_01"
-   end="fifo_sink_01.in">
+   start="NoC.source_1"
+   end="fifo_sink_1.in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31712,16 +31712,16 @@ parameters are a RESULT of the module parameters. -->
    <valid>true</valid>
   </parameter>
   <startModule>NoC</startModule>
-  <startConnectionPoint>source_01</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <startConnectionPoint>source_1</startConnectionPoint>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="NoC.source_10/fifo_sink_10.in"
+   name="NoC.source_2/fifo_sink_2.in"
    kind="avalon_streaming"
    version="17.1"
-   start="NoC.source_10"
-   end="fifo_sink_10.in">
+   start="NoC.source_2"
+   end="fifo_sink_2.in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31739,16 +31739,16 @@ parameters are a RESULT of the module parameters. -->
    <valid>true</valid>
   </parameter>
   <startModule>NoC</startModule>
-  <startConnectionPoint>source_10</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <startConnectionPoint>source_2</startConnectionPoint>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
-   name="NoC.source_11/fifo_sink_11.in"
+   name="NoC.source_3/fifo_sink_3.in"
    kind="avalon_streaming"
    version="17.1"
-   start="NoC.source_11"
-   end="fifo_sink_11.in">
+   start="NoC.source_3"
+   end="fifo_sink_3.in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31766,8 +31766,8 @@ parameters are a RESULT of the module parameters. -->
    <valid>true</valid>
   </parameter>
   <startModule>NoC</startModule>
-  <startConnectionPoint>source_11</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <startConnectionPoint>source_3</startConnectionPoint>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>in</endConnectionPoint>
  </connection>
  <connection
@@ -31798,11 +31798,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/nios2_00.clk"
+   name="clk_0.clk/nios2_0.clk"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="nios2_00.clk">
+   end="nios2_0.clk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31821,15 +31821,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>nios2_00</endModule>
+  <endModule>nios2_0</endModule>
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/nios2_01.clk"
+   name="clk_0.clk/nios2_1.clk"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="nios2_01.clk">
+   end="nios2_1.clk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31848,15 +31848,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>nios2_01</endModule>
+  <endModule>nios2_1</endModule>
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/nios2_10.clk"
+   name="clk_0.clk/nios2_2.clk"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="nios2_10.clk">
+   end="nios2_2.clk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31875,15 +31875,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>nios2_10</endModule>
+  <endModule>nios2_2</endModule>
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/nios2_11.clk"
+   name="clk_0.clk/nios2_3.clk"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="nios2_11.clk">
+   end="nios2_3.clk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31902,15 +31902,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>nios2_11</endModule>
+  <endModule>nios2_3</endModule>
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/data_mem_00.clk1"
+   name="clk_0.clk/data_mem_0.clk1"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="data_mem_00.clk1">
+   end="data_mem_0.clk1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31929,15 +31929,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>data_mem_00</endModule>
+  <endModule>data_mem_0</endModule>
   <endConnectionPoint>clk1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/data_mem_01.clk1"
+   name="clk_0.clk/data_mem_1.clk1"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="data_mem_01.clk1">
+   end="data_mem_1.clk1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31956,15 +31956,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>data_mem_01</endModule>
+  <endModule>data_mem_1</endModule>
   <endConnectionPoint>clk1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/data_mem_10.clk1"
+   name="clk_0.clk/data_mem_2.clk1"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="data_mem_10.clk1">
+   end="data_mem_2.clk1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -31983,15 +31983,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>data_mem_10</endModule>
+  <endModule>data_mem_2</endModule>
   <endConnectionPoint>clk1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/data_mem_11.clk1"
+   name="clk_0.clk/data_mem_3.clk1"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="data_mem_11.clk1">
+   end="data_mem_3.clk1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32010,15 +32010,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>data_mem_11</endModule>
+  <endModule>data_mem_3</endModule>
   <endConnectionPoint>clk1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_sink_00.clk_in"
+   name="clk_0.clk/fifo_sink_0.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_sink_00.clk_in">
+   end="fifo_sink_0.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32037,15 +32037,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_sink_01.clk_in"
+   name="clk_0.clk/fifo_sink_1.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_sink_01.clk_in">
+   end="fifo_sink_1.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32064,15 +32064,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_sink_10.clk_in"
+   name="clk_0.clk/fifo_sink_2.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_sink_10.clk_in">
+   end="fifo_sink_2.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32091,15 +32091,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_sink_11.clk_in"
+   name="clk_0.clk/fifo_sink_3.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_sink_11.clk_in">
+   end="fifo_sink_3.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32118,15 +32118,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_source_00.clk_in"
+   name="clk_0.clk/fifo_source_0.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_source_00.clk_in">
+   end="fifo_source_0.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32145,15 +32145,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_source_00</endModule>
+  <endModule>fifo_source_0</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_source_01.clk_in"
+   name="clk_0.clk/fifo_source_1.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_source_01.clk_in">
+   end="fifo_source_1.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32172,15 +32172,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_source_01</endModule>
+  <endModule>fifo_source_1</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_source_10.clk_in"
+   name="clk_0.clk/fifo_source_2.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_source_10.clk_in">
+   end="fifo_source_2.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32199,15 +32199,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_source_10</endModule>
+  <endModule>fifo_source_2</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk/fifo_source_11.clk_in"
+   name="clk_0.clk/fifo_source_3.clk_in"
    kind="clock"
    version="17.1"
    start="clk_0.clk"
-   end="fifo_source_11.clk_in">
+   end="fifo_source_3.clk_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32226,7 +32226,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>fifo_source_11</endModule>
+  <endModule>fifo_source_3</endModule>
   <endConnectionPoint>clk_in</endConnectionPoint>
  </connection>
  <connection
@@ -32257,11 +32257,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clock</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.irq/fifo_sink_00.in_irq"
+   name="nios2_0.irq/fifo_sink_0.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_00.irq"
-   end="fifo_sink_00.in_irq">
+   start="nios2_0.irq"
+   end="fifo_sink_0.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>0</value>
@@ -32286,17 +32286,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.irq/fifo_source_00.in_irq"
+   name="nios2_0.irq/fifo_source_0.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_00.irq"
-   end="fifo_source_00.in_irq">
+   start="nios2_0.irq"
+   end="fifo_source_0.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>1</value>
@@ -32321,17 +32321,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_source_00</endModule>
+  <endModule>fifo_source_0</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.irq/fifo_sink_01.in_irq"
+   name="nios2_1.irq/fifo_sink_1.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_01.irq"
-   end="fifo_sink_01.in_irq">
+   start="nios2_1.irq"
+   end="fifo_sink_1.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>0</value>
@@ -32356,17 +32356,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.irq/fifo_source_01.in_irq"
+   name="nios2_1.irq/fifo_source_1.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_01.irq"
-   end="fifo_source_01.in_irq">
+   start="nios2_1.irq"
+   end="fifo_source_1.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>1</value>
@@ -32391,17 +32391,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_source_01</endModule>
+  <endModule>fifo_source_1</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.irq/fifo_sink_10.in_irq"
+   name="nios2_2.irq/fifo_sink_2.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_10.irq"
-   end="fifo_sink_10.in_irq">
+   start="nios2_2.irq"
+   end="fifo_sink_2.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>0</value>
@@ -32426,17 +32426,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.irq/fifo_source_10.in_irq"
+   name="nios2_2.irq/fifo_source_2.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_10.irq"
-   end="fifo_source_10.in_irq">
+   start="nios2_2.irq"
+   end="fifo_source_2.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>1</value>
@@ -32461,17 +32461,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_source_10</endModule>
+  <endModule>fifo_source_2</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.irq/fifo_sink_11.in_irq"
+   name="nios2_3.irq/fifo_sink_3.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_11.irq"
-   end="fifo_sink_11.in_irq">
+   start="nios2_3.irq"
+   end="fifo_sink_3.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>0</value>
@@ -32496,17 +32496,17 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.irq/fifo_source_11.in_irq"
+   name="nios2_3.irq/fifo_source_3.in_irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_11.irq"
-   end="fifo_source_11.in_irq">
+   start="nios2_3.irq"
+   end="fifo_source_3.in_irq">
   <parameter name="irqNumber">
    <type>int</type>
    <value>1</value>
@@ -32531,16 +32531,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
-  <endModule>fifo_source_11</endModule>
+  <endModule>fifo_source_3</endModule>
   <endConnectionPoint>in_irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.irq/jtag_uart_0.irq"
+   name="nios2_0.irq/jtag_uart_0.irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_00.irq"
+   start="nios2_0.irq"
    end="jtag_uart_0.irq">
   <parameter name="irqNumber">
    <type>int</type>
@@ -32566,16 +32566,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.irq/jtag_uart_0.irq"
+   name="nios2_1.irq/jtag_uart_0.irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_01.irq"
+   start="nios2_1.irq"
    end="jtag_uart_0.irq">
   <parameter name="irqNumber">
    <type>int</type>
@@ -32601,16 +32601,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.irq/jtag_uart_0.irq"
+   name="nios2_2.irq/jtag_uart_0.irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_10.irq"
+   start="nios2_2.irq"
    end="jtag_uart_0.irq">
   <parameter name="irqNumber">
    <type>int</type>
@@ -32636,16 +32636,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>irq</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.irq/jtag_uart_0.irq"
+   name="nios2_3.irq/jtag_uart_0.irq"
    kind="interrupt"
    version="17.1"
-   start="nios2_11.irq"
+   start="nios2_3.irq"
    end="jtag_uart_0.irq">
   <parameter name="irqNumber">
    <type>int</type>
@@ -32671,7 +32671,7 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>irq</startConnectionPoint>
   <endModule>jtag_uart_0</endModule>
   <endConnectionPoint>irq</endConnectionPoint>
@@ -32731,11 +32731,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/nios2_00.reset"
+   name="clk_0.clk_reset/nios2_0.reset"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="nios2_00.reset">
+   end="nios2_0.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32754,15 +32754,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>nios2_00</endModule>
+  <endModule>nios2_0</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/nios2_01.reset"
+   name="clk_0.clk_reset/nios2_1.reset"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="nios2_01.reset">
+   end="nios2_1.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32781,15 +32781,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>nios2_01</endModule>
+  <endModule>nios2_1</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/nios2_10.reset"
+   name="clk_0.clk_reset/nios2_2.reset"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="nios2_10.reset">
+   end="nios2_2.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32808,15 +32808,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>nios2_10</endModule>
+  <endModule>nios2_2</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/nios2_11.reset"
+   name="clk_0.clk_reset/nios2_3.reset"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="nios2_11.reset">
+   end="nios2_3.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32835,15 +32835,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>nios2_11</endModule>
+  <endModule>nios2_3</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/data_mem_00.reset1"
+   name="clk_0.clk_reset/data_mem_0.reset1"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="data_mem_00.reset1">
+   end="data_mem_0.reset1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32862,15 +32862,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>data_mem_00</endModule>
+  <endModule>data_mem_0</endModule>
   <endConnectionPoint>reset1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/data_mem_01.reset1"
+   name="clk_0.clk_reset/data_mem_1.reset1"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="data_mem_01.reset1">
+   end="data_mem_1.reset1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32889,15 +32889,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>data_mem_01</endModule>
+  <endModule>data_mem_1</endModule>
   <endConnectionPoint>reset1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/data_mem_10.reset1"
+   name="clk_0.clk_reset/data_mem_2.reset1"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="data_mem_10.reset1">
+   end="data_mem_2.reset1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32916,15 +32916,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>data_mem_10</endModule>
+  <endModule>data_mem_2</endModule>
   <endConnectionPoint>reset1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/data_mem_11.reset1"
+   name="clk_0.clk_reset/data_mem_3.reset1"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="data_mem_11.reset1">
+   end="data_mem_3.reset1">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32943,15 +32943,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>data_mem_11</endModule>
+  <endModule>data_mem_3</endModule>
   <endConnectionPoint>reset1</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_sink_00.reset_in"
+   name="clk_0.clk_reset/fifo_sink_0.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_sink_00.reset_in">
+   end="fifo_sink_0.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32970,15 +32970,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_sink_00</endModule>
+  <endModule>fifo_sink_0</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_sink_01.reset_in"
+   name="clk_0.clk_reset/fifo_sink_1.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_sink_01.reset_in">
+   end="fifo_sink_1.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -32997,15 +32997,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_sink_01</endModule>
+  <endModule>fifo_sink_1</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_sink_10.reset_in"
+   name="clk_0.clk_reset/fifo_sink_2.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_sink_10.reset_in">
+   end="fifo_sink_2.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33024,15 +33024,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_sink_10</endModule>
+  <endModule>fifo_sink_2</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_sink_11.reset_in"
+   name="clk_0.clk_reset/fifo_sink_3.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_sink_11.reset_in">
+   end="fifo_sink_3.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33051,15 +33051,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_sink_11</endModule>
+  <endModule>fifo_sink_3</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_source_00.reset_in"
+   name="clk_0.clk_reset/fifo_source_0.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_source_00.reset_in">
+   end="fifo_source_0.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33078,15 +33078,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_source_00</endModule>
+  <endModule>fifo_source_0</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_source_01.reset_in"
+   name="clk_0.clk_reset/fifo_source_1.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_source_01.reset_in">
+   end="fifo_source_1.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33105,15 +33105,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_source_01</endModule>
+  <endModule>fifo_source_1</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_source_10.reset_in"
+   name="clk_0.clk_reset/fifo_source_2.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_source_10.reset_in">
+   end="fifo_source_2.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33132,15 +33132,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_source_10</endModule>
+  <endModule>fifo_source_2</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="clk_0.clk_reset/fifo_source_11.reset_in"
+   name="clk_0.clk_reset/fifo_source_3.reset_in"
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_source_11.reset_in">
+   end="fifo_source_3.reset_in">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -33159,14 +33159,14 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_0</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>fifo_source_11</endModule>
+  <endModule>fifo_source_3</endModule>
   <endConnectionPoint>reset_in</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_00.debug_reset_request/clk_0.clk_in_reset"
+   name="nios2_0.debug_reset_request/clk_0.clk_in_reset"
    kind="reset"
    version="17.1"
-   start="nios2_00.debug_reset_request"
+   start="nios2_0.debug_reset_request"
    end="clk_0.clk_in_reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -33184,16 +33184,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_00</startModule>
+  <startModule>nios2_0</startModule>
   <startConnectionPoint>debug_reset_request</startConnectionPoint>
   <endModule>clk_0</endModule>
   <endConnectionPoint>clk_in_reset</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_01.debug_reset_request/clk_0.clk_in_reset"
+   name="nios2_1.debug_reset_request/clk_0.clk_in_reset"
    kind="reset"
    version="17.1"
-   start="nios2_01.debug_reset_request"
+   start="nios2_1.debug_reset_request"
    end="clk_0.clk_in_reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -33211,16 +33211,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_01</startModule>
+  <startModule>nios2_1</startModule>
   <startConnectionPoint>debug_reset_request</startConnectionPoint>
   <endModule>clk_0</endModule>
   <endConnectionPoint>clk_in_reset</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_10.debug_reset_request/clk_0.clk_in_reset"
+   name="nios2_2.debug_reset_request/clk_0.clk_in_reset"
    kind="reset"
    version="17.1"
-   start="nios2_10.debug_reset_request"
+   start="nios2_2.debug_reset_request"
    end="clk_0.clk_in_reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -33238,16 +33238,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_10</startModule>
+  <startModule>nios2_2</startModule>
   <startConnectionPoint>debug_reset_request</startConnectionPoint>
   <endModule>clk_0</endModule>
   <endConnectionPoint>clk_in_reset</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_11.debug_reset_request/clk_0.clk_in_reset"
+   name="nios2_3.debug_reset_request/clk_0.clk_in_reset"
    kind="reset"
    version="17.1"
-   start="nios2_11.debug_reset_request"
+   start="nios2_3.debug_reset_request"
    end="clk_0.clk_in_reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -33265,7 +33265,7 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>nios2_11</startModule>
+  <startModule>nios2_3</startModule>
   <startConnectionPoint>debug_reset_request</startConnectionPoint>
   <endModule>clk_0</endModule>
   <endConnectionPoint>clk_in_reset</endConnectionPoint>

@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-# Date created = 15:35:00  August 24, 2019
+# Date created = 17:16:25  September 08, 2019
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,7 +40,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA4U23C6
 set_global_assignment -name TOP_LEVEL_ENTITY qsys_system
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:35:00  AUGUST 24, 2019"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:16:25  SEPTEMBER 08, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85

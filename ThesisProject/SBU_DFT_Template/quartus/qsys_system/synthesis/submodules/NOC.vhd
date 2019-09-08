@@ -18,8 +18,8 @@ use std.textio.all;
 
 entity NOC is  --MeshMxN
 Generic(
-		--RowNo		: Integer := 4;
-		--ColNo		: Integer := 4;
+		RowNo		: Integer := 2;
+		ColNo		: Integer := 2;
 
 		PackWidth	: Integer := 8;
 		DataWidth	: Integer := 8;
@@ -28,17 +28,29 @@ Generic(
 		RoChAddr		: Integer := 1;
 		PhyChAddr		: Integer := 2;
 		ViChAddr		: Integer := 1;
-		PhyRoChAddr		: Integer := 2+1;
+		PhyRoChAddr		: Integer := 3;
 		RoCh			: Integer := 1;
 		PhyCh			: Integer := 4;
 		ViCh			: Integer := 1;
-		PhyRoCh			: Integer := 4+1;
+		PhyRoCh			: Integer := 5;
 		PoissonDelayStr : String(3 Downto 1):="200";
-		InpFileUniform  : StrArr6(0 to ColNo*RowNo-1):=("00.txt","01.txt","02.txt","03.txt");
+		InpFileUniform  : StrArr6(0 to 4-1):=(
+		
+				
+		"00.txt",
+						
+				
+		"01.txt",
+						
+				
+		"02.txt",
+						
+						"03.txt"
+								);
 
 		
  		PackGenNum : Unsigned(15 Downto 0) := To_Unsigned(300,16);
- 		PackGen    : Unsigned(RowNo*ColNo-1 Downto 0):=(Others=>'1')
+ 		PackGen    : Unsigned(4-1 Downto 0):=(Others=>'1')
 		);
 	port (
 		Clk				: In  std_logic;
@@ -48,46 +60,50 @@ Generic(
 		--ReceCnt			: Out UnsignedArr16(RowNo*ColNo-1 Downto 0);
 		--AveReceTime		: Out UnsignedArr20(RowNo*ColNo-1 Downto 0);
 		--StopSim			: In Std_Logic
+		
 
-		PE00_InpData		: Out 	Signed(DataWidth-1 downto 0); 
-		PE00_InpEn			: Out  	Std_Logic;
-		PE00_InpReady		: In 	Unsigned(ViCh-1 downto 0);
-		PE00_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
-		PE00_OutpData		: In 	Signed(DataWidth-1 downto 0); 
-		PE00_OutpEn			: In 	Std_Logic;
-		PE00_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
-		PE00_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+		PE0_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE0_InpEn			: Out  	Std_Logic;
+		PE0_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE0_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE0_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE0_OutpEn			: In 	Std_Logic;
+		PE0_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		
+		PE0_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+				
 
-		PE01_InpData		: Out 	Signed(DataWidth-1 downto 0); 
-		PE01_InpEn			: Out  	Std_Logic;
-		PE01_InpReady		: In 	Unsigned(ViCh-1 downto 0);
-		PE01_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
-		PE01_OutpData		: In 	Signed(DataWidth-1 downto 0); 
-		PE01_OutpEn			: In 	Std_Logic;
-		PE01_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
-		PE01_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+		PE1_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE1_InpEn			: Out  	Std_Logic;
+		PE1_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE1_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE1_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE1_OutpEn			: In 	Std_Logic;
+		PE1_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		
+		PE1_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+				
 
-		PE10_InpData		: Out 	Signed(DataWidth-1 downto 0); 
-		PE10_InpEn			: Out  	Std_Logic;
-		PE10_InpReady		: In 	Unsigned(ViCh-1 downto 0);
-		PE10_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
-		PE10_OutpData		: In 	Signed(DataWidth-1 downto 0); 
-		PE10_OutpEn			: In 	Std_Logic;
-		PE10_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
-		PE10_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+		PE2_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE2_InpEn			: Out  	Std_Logic;
+		PE2_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE2_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE2_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE2_OutpEn			: In 	Std_Logic;
+		PE2_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+		
+		PE2_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0);
+				
 
-		PE11_InpData		: Out 	Signed(DataWidth-1 downto 0); 
-		PE11_InpEn			: Out  	Std_Logic;
-		PE11_InpReady		: In 	Unsigned(ViCh-1 downto 0);
-		PE11_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
-		PE11_OutpData		: In 	Signed(DataWidth-1 downto 0); 
-		PE11_OutpEn			: In 	Std_Logic;
-		PE11_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
-		PE11_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0)
-
-
-
-		);
+		PE3_InpData		: Out 	Signed(DataWidth-1 downto 0); 
+		PE3_InpEn			: Out  	Std_Logic;
+		PE3_InpReady		: In 	Unsigned(ViCh-1 downto 0);
+		PE3_InpSel			: Out  	Unsigned(ViChAddr-1 downto 0);
+		PE3_OutpData		: In 	Signed(DataWidth-1 downto 0); 
+		PE3_OutpEn			: In 	Std_Logic;
+		PE3_OutpReady		: Out  	Unsigned(ViCh-1 downto 0);
+				PE3_OutpSel		: In 	Unsigned(ViChAddr-1 downto 0)
+						);
 end;
 
 
@@ -282,96 +298,19 @@ Signal	Sel2	: UnsignedArrMNxPhyxViChAddr; --ers=>" ? ViChAddr=1
 
 begin 
 
---mg1: For j in 0 to RowNo-1 Generate
---	mg2: For i in 0 to ColNo-1 Generate
---	--write(str,i);
---	--InpPoisson(j) <= String'(j);
---	--InpPoisson(j):=Int_to_string(j*ColNo+i);
---	Data2(j*ColNo+i) <= (Data(Index(j+1,i,ColNo,RowNo))(1),Data(Index(j,i+1,ColNo,RowNo))(0)
---						   ,Data(Index(j-1,i,ColNo,RowNo))(3),Data(Index(j,i-1,ColNo,RowNo))(2));
---	En2(j*ColNo+i) <= 	(En(Index(j+1,i,ColNo,RowNo))(1),En(Index(j,i+1,ColNo,RowNo))(0)
---						   ,En(Index(j-1,i,ColNo,RowNo))(3),En(Index(j,i-1,ColNo,RowNo))(2));
---	--Ready2(j*ColNo+i) <= 	(Ready(Index(j,i-1,ColNo,RowNo))(2),Ready(Index(j-1,i,ColNo,RowNo))(3)
---	--					   ,Ready(Index(j,i+1,ColNo,RowNo))(0),Ready(Index(j+1,i,ColNo,RowNo))(1));				   
 
 
-----	Ready(Index(j+1,i,ColNo,RowNo))(1) <= Ready2(j*ColNo+i)(3);
-----	Ready(Index(j,i+1,ColNo,RowNo))(0) <= Ready2(j*ColNo+i)(2);
-----	Ready(Index(j-1,i,ColNo,RowNo))(3) <= Ready2(j*ColNo+i)(1);
-----	Ready(Index(j,i-1,ColNo,RowNo))(2) <= Ready2(j*ColNo+i)(0);
---	ag3  : For k in 0 to ViCh-1 Generate
---		Ready(Index(j+1,i,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(j*ColNo+i)(3 *ViCh+k);
---		Ready(Index(j,i+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(j*ColNo+i)(2 *ViCh+k);
---		Ready(Index(j-1,i,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(j*ColNo+i)(1 *ViCh+k);
---		Ready(Index(j,i-1,ColNo,RowNo))(2 *ViCh+k) 	<= Ready2(j*ColNo+i)(0 *ViCh+k);
---	End Generate;	
-	
---	Sel2(j*ColNo+i) <=	(Sel(Index(j+1,i,ColNo,RowNo))(1),Sel(Index(j,i+1,ColNo,RowNo))(0)
---						   ,Sel(Index(j-1,i,ColNo,RowNo))(3),Sel(Index(j,i-1,ColNo,RowNo))(2));					   
---m1: Entity Work.Node 
---	Generic Map(
---		--InpFilePoisson	=> InpFilePoisson(j*ColNo+i)	,	
---		--InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
---		--OutpFilePack	=> OutpFilePack(j*ColNo+i)		 ,
---		--OutpFileTime	=> OutpFileTime(j*ColNo+i)		,
-	
---		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(j*ColNo+i))	,	
---		InpFileUniform	=> InpFileUniform(j*ColNo+i)	,	
---		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(j*ColNo+i))		 ,
---		OutpFileTime	=> Str_Add(9,6,OutpFileTimeStr,InpFileUniform(j*ColNo+i))		,
-	
---		ViChAddr	=> ViChAddr		,
---		PhyRoChAddr	=> PhyRoChAddr	,
---		--			   --
---		PhyCh		=> PhyCh		,
---		ViCh		=> ViCh			,
---		RoCh 		=> RoCh 		,
---		PhyRoCh		=> PhyRoCh		,
---		--			   --
---		PackWidth	=> PackWidth	,
---		DataWidth	=> DataWidth	,
---		--			   --
---		CurNode		=> j*ColNo+i	,
---		--Y			=> j			,	
---		PackGen		=> PackGen(j*ColNo+i) ,
---		PackGenNum	=> PackGenNum
---		)
---	Port Map(
---		Clk				=> Clk			,	
---		Reset			=> Reset		,	
-
---		InpData			=> Data2(j*ColNo+i)	,	
---		InpEn			=> En2(j*ColNo+i)		,	
---		InpReady		=> Ready2(j*ColNo+i)	,
---		InpSel			=> Sel2(j*ColNo+i)		,		
-
---		OutpData		=> Data(j*ColNo+i),
---		OutpEn			=> En(j*ColNo+i)	,	
---		OutpReady		=> Ready(j*ColNo+i)	,
-		
---		SentCnt			=> SentCnt(j*ColNo+i)	,
---		ReceCnt			=> ReceCnt(j*ColNo+i)	,
---		AveReceTime		=> AveReceTime(j*ColNo+i),
---		--sim
---		StopSim			=> StopSim,
-
---		OutpSel			=> Sel(j*ColNo+i)					
---	);
---	End Generate;	
---End Generate;	
-
-
-	--*************************************************************************************
+--*************************************************************************************
 	--*************************************************************************************
 	-- j = 0, i = 0;
 	--*************************************************************************************
 	--*************************************************************************************
 Data2(0*ColNo+0) <= (Data(Index(0+1,0,ColNo,RowNo))(1),Data(Index(0,0+1,ColNo,RowNo))(0)
-					   ,Data(Index(0-1,0,ColNo,RowNo))(3),Data(Index(0,0-1,ColNo,RowNo))(2));
+						   ,Data(Index(0-1,0,ColNo,RowNo))(3),Data(Index(0,0-1,ColNo,RowNo))(2));
 En2(0*ColNo+0) <= 	(En(Index(0+1,0,ColNo,RowNo))(1),En(Index(0,0+1,ColNo,RowNo))(0)
-					   ,En(Index(0-1,0,ColNo,RowNo))(3),En(Index(0,0-1,ColNo,RowNo))(2));
+						   ,En(Index(0-1,0,ColNo,RowNo))(3),En(Index(0,0-1,ColNo,RowNo))(2));
 
-ag00 : For k in 0 to ViCh-1 Generate
+ag0  : For k in 0 to ViCh-1 Generate
 	Ready(Index(0+1,0,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(0*ColNo+0)(3 *ViCh+k);
 	Ready(Index(0,0+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(0*ColNo+0)(2 *ViCh+k);
 	Ready(Index(0-1,0,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(0*ColNo+0)(1 *ViCh+k);
@@ -379,9 +318,10 @@ ag00 : For k in 0 to ViCh-1 Generate
 End Generate;	
 
 Sel2(0*ColNo+0) <=	(Sel(Index(0+1,0,ColNo,RowNo))(1),Sel(Index(0,0+1,ColNo,RowNo))(0)
-					   ,Sel(Index(0-1,0,ColNo,RowNo))(3),Sel(Index(0,0-1,ColNo,RowNo))(2));					   
-m00: Entity Work.Node 
+						   ,Sel(Index(0-1,0,ColNo,RowNo))(3),Sel(Index(0,0-1,ColNo,RowNo))(2));					   
+m0: Entity Work.Node 
 	Generic Map(
+	
 		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(0*ColNo+0))	,	
 		InpFileUniform	=> InpFileUniform(0*ColNo+0)	,	
 		OutpFilePack	=> Str_Add(9,6,OutpFilePackStr,InpFileUniform(0*ColNo+0))		 ,
@@ -398,8 +338,7 @@ m00: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> 0*ColNo+0	,
-		--Y			=> j			,	
+		CurNode		=> 0*ColNo+0	,	
 		PackGen		=> PackGen(0*ColNo+0) ,
 		PackGenNum	=> PackGenNum
 		)
@@ -417,20 +356,20 @@ m00: Entity Work.Node
 		OutpReady		=> Ready(0*ColNo+0)	,
 		OutpSel			=> Sel(0*ColNo+0),
 
-		PE_InpData		=> PE00_InpData,
-		PE_InpEn		=> PE00_InpEn,
-		PE_InpReady		=> PE00_InpReady,
-		PE_InpSel		=> PE00_InpSel,
+		PE_InpData		=> PE0_InpData,
+		PE_InpEn		=> PE0_InpEn,
+		PE_InpReady		=> PE0_InpReady,
+		PE_InpSel		=> PE0_InpSel,
 
-		PE_OutpData		=> PE00_OutpData,
-		PE_OutpEn		=> PE00_OutpEn,
-		PE_OutpReady 	=> PE00_OutpReady,
-		PE_OutpSel		=> PE00_OutpSel				
+		PE_OutpData		=> PE0_OutpData,
+		PE_OutpEn		=> PE0_OutpEn,
+		PE_OutpReady 	=> PE0_OutpReady,
+		PE_OutpSel		=> PE0_OutpSel					
 	);
 
 
 
-	--*************************************************************************************
+--*************************************************************************************
 	--*************************************************************************************
 	-- j = 0, i = 1;
 	--*************************************************************************************
@@ -440,7 +379,7 @@ Data2(0*ColNo+1) <= (Data(Index(0+1,1,ColNo,RowNo))(1),Data(Index(0,1+1,ColNo,Ro
 En2(0*ColNo+1) <= 	(En(Index(0+1,1,ColNo,RowNo))(1),En(Index(0,1+1,ColNo,RowNo))(0)
 						   ,En(Index(0-1,1,ColNo,RowNo))(3),En(Index(0,1-1,ColNo,RowNo))(2));
 
-ag01  : For k in 0 to ViCh-1 Generate
+ag1  : For k in 0 to ViCh-1 Generate
 	Ready(Index(0+1,1,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(0*ColNo+1)(3 *ViCh+k);
 	Ready(Index(0,1+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(0*ColNo+1)(2 *ViCh+k);
 	Ready(Index(0-1,1,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(0*ColNo+1)(1 *ViCh+k);
@@ -449,7 +388,7 @@ End Generate;
 
 Sel2(0*ColNo+1) <=	(Sel(Index(0+1,1,ColNo,RowNo))(1),Sel(Index(0,1+1,ColNo,RowNo))(0)
 						   ,Sel(Index(0-1,1,ColNo,RowNo))(3),Sel(Index(0,1-1,ColNo,RowNo))(2));					   
-m01: Entity Work.Node 
+m1: Entity Work.Node 
 	Generic Map(
 	
 		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(0*ColNo+1))	,	
@@ -468,8 +407,7 @@ m01: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> 0*ColNo+1	,
-		--Y			=> 0			,	
+		CurNode		=> 0*ColNo+1	,	
 		PackGen		=> PackGen(0*ColNo+1) ,
 		PackGenNum	=> PackGenNum
 		)
@@ -487,18 +425,20 @@ m01: Entity Work.Node
 		OutpReady		=> Ready(0*ColNo+1)	,
 		OutpSel			=> Sel(0*ColNo+1),
 
-		PE_InpData		=> PE01_InpData,
-		PE_InpEn		=> PE01_InpEn,
-		PE_InpReady		=> PE01_InpReady,
-		PE_InpSel		=> PE01_InpSel,
+		PE_InpData		=> PE1_InpData,
+		PE_InpEn		=> PE1_InpEn,
+		PE_InpReady		=> PE1_InpReady,
+		PE_InpSel		=> PE1_InpSel,
 
-		PE_OutpData		=> PE01_OutpData,
-		PE_OutpEn		=> PE01_OutpEn,
-		PE_OutpReady 	=> PE01_OutpReady,
-		PE_OutpSel		=> PE01_OutpSel					
+		PE_OutpData		=> PE1_OutpData,
+		PE_OutpEn		=> PE1_OutpEn,
+		PE_OutpReady 	=> PE1_OutpReady,
+		PE_OutpSel		=> PE1_OutpSel					
 	);
 
-	--*************************************************************************************
+
+
+--*************************************************************************************
 	--*************************************************************************************
 	-- j = 1, i = 0;
 	--*************************************************************************************
@@ -508,7 +448,7 @@ Data2(1*ColNo+0) <= (Data(Index(1+1,0,ColNo,RowNo))(1),Data(Index(1,0+1,ColNo,Ro
 En2(1*ColNo+0) <= 	(En(Index(1+1,0,ColNo,RowNo))(1),En(Index(1,0+1,ColNo,RowNo))(0)
 						   ,En(Index(1-1,0,ColNo,RowNo))(3),En(Index(1,0-1,ColNo,RowNo))(2));
 
-ag10  : For k in 0 to ViCh-1 Generate
+ag2  : For k in 0 to ViCh-1 Generate
 	Ready(Index(1+1,0,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(1*ColNo+0)(3 *ViCh+k);
 	Ready(Index(1,0+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(1*ColNo+0)(2 *ViCh+k);
 	Ready(Index(1-1,0,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(1*ColNo+0)(1 *ViCh+k);
@@ -517,7 +457,7 @@ End Generate;
 
 Sel2(1*ColNo+0) <=	(Sel(Index(1+1,0,ColNo,RowNo))(1),Sel(Index(1,0+1,ColNo,RowNo))(0)
 						   ,Sel(Index(1-1,0,ColNo,RowNo))(3),Sel(Index(1,0-1,ColNo,RowNo))(2));					   
-m10: Entity Work.Node 
+m2: Entity Work.Node 
 	Generic Map(
 	
 		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(1*ColNo+0))	,	
@@ -536,8 +476,7 @@ m10: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> 1*ColNo+0	,
-		--Y			=> 1			,	
+		CurNode		=> 1*ColNo+0	,	
 		PackGen		=> PackGen(1*ColNo+0) ,
 		PackGenNum	=> PackGenNum
 		)
@@ -555,18 +494,20 @@ m10: Entity Work.Node
 		OutpReady		=> Ready(1*ColNo+0)	,
 		OutpSel			=> Sel(1*ColNo+0),
 
-		PE_InpData		=> PE10_InpData,
-		PE_InpEn		=> PE10_InpEn,
-		PE_InpReady		=> PE10_InpReady,
-		PE_InpSel		=> PE10_InpSel,
+		PE_InpData		=> PE2_InpData,
+		PE_InpEn		=> PE2_InpEn,
+		PE_InpReady		=> PE2_InpReady,
+		PE_InpSel		=> PE2_InpSel,
 
-		PE_OutpData		=> PE10_OutpData,
-		PE_OutpEn		=> PE10_OutpEn,
-		PE_OutpReady 	=> PE10_OutpReady,
-		PE_OutpSel		=> PE10_OutpSel					
+		PE_OutpData		=> PE2_OutpData,
+		PE_OutpEn		=> PE2_OutpEn,
+		PE_OutpReady 	=> PE2_OutpReady,
+		PE_OutpSel		=> PE2_OutpSel					
 	);
 
-		--*************************************************************************************
+
+
+--*************************************************************************************
 	--*************************************************************************************
 	-- j = 1, i = 1;
 	--*************************************************************************************
@@ -576,7 +517,7 @@ Data2(1*ColNo+1) <= (Data(Index(1+1,1,ColNo,RowNo))(1),Data(Index(1,1+1,ColNo,Ro
 En2(1*ColNo+1) <= 	(En(Index(1+1,1,ColNo,RowNo))(1),En(Index(1,1+1,ColNo,RowNo))(0)
 						   ,En(Index(1-1,1,ColNo,RowNo))(3),En(Index(1,1-1,ColNo,RowNo))(2));
 
-ag11  : For k in 0 to ViCh-1 Generate
+ag3  : For k in 0 to ViCh-1 Generate
 	Ready(Index(1+1,1,ColNo,RowNo))(1 *ViCh+k) 	<= Ready2(1*ColNo+1)(3 *ViCh+k);
 	Ready(Index(1,1+1,ColNo,RowNo))(0 *ViCh+k) 	<= Ready2(1*ColNo+1)(2 *ViCh+k);
 	Ready(Index(1-1,1,ColNo,RowNo))(3 *ViCh+k) 	<= Ready2(1*ColNo+1)(1 *ViCh+k);
@@ -585,7 +526,7 @@ End Generate;
 
 Sel2(1*ColNo+1) <=	(Sel(Index(1+1,1,ColNo,RowNo))(1),Sel(Index(1,1+1,ColNo,RowNo))(0)
 						   ,Sel(Index(1-1,1,ColNo,RowNo))(3),Sel(Index(1,1-1,ColNo,RowNo))(2));					   
-m11: Entity Work.Node 
+m3: Entity Work.Node 
 	Generic Map(
 	
 		InpFilePoisson	=> Str_Add(4,6,InpFilePoissonStr,InpFileUniform(1*ColNo+1))	,	
@@ -604,8 +545,7 @@ m11: Entity Work.Node
 		PackWidth	=> PackWidth	,
 		DataWidth	=> DataWidth	,
 		--			   --
-		CurNode		=> 1*ColNo+1	,
-		--Y			=> 1			,	
+		CurNode		=> 1*ColNo+1	,	
 		PackGen		=> PackGen(1*ColNo+1) ,
 		PackGenNum	=> PackGenNum
 		)
@@ -623,15 +563,16 @@ m11: Entity Work.Node
 		OutpReady		=> Ready(1*ColNo+1)	,
 		OutpSel			=> Sel(1*ColNo+1),
 
-		PE_InpData		=> PE11_InpData,
-		PE_InpEn		=> PE11_InpEn,
-		PE_InpReady		=> PE11_InpReady,
-		PE_InpSel		=> PE11_InpSel,
+		PE_InpData		=> PE3_InpData,
+		PE_InpEn		=> PE3_InpEn,
+		PE_InpReady		=> PE3_InpReady,
+		PE_InpSel		=> PE3_InpSel,
 
-		PE_OutpData		=> PE11_OutpData,
-		PE_OutpEn		=> PE11_OutpEn,
-		PE_OutpReady 	=> PE11_OutpReady,
-		PE_OutpSel		=> PE11_OutpSel					
+		PE_OutpData		=> PE3_OutpData,
+		PE_OutpEn		=> PE3_OutpEn,
+		PE_OutpReady 	=> PE3_OutpReady,
+		PE_OutpSel		=> PE3_OutpSel					
 	);
+
 
 End;

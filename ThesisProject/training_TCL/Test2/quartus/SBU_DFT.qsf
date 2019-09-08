@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-# Date created = 12:04:16  August 19, 2019
+# Date created = 10:34:38  September 07, 2019
 #
 # -------------------------------------------------------------------------- #
 #
@@ -38,9 +38,9 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA4U23C6
-set_global_assignment -name TOP_LEVEL_ENTITY qsys_system
+set_global_assignment -name TOP_LEVEL_ENTITY SBU_DFT
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:04:16  AUGUST 19, 2019"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:34:38  SEPTEMBER 07, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -52,4 +52,3 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED WITH WEAK PULL-UP"
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_V11 -to clk_clk
-set_global_assignment -name QIP_FILE "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/training_TCL/Test2/quartus/qsys_system/synthesis/qsys_system.qip"

@@ -2,110 +2,123 @@ module wrapper (
 	clock,
 	reset,
 
-	PE00_InpData	,
-	PE00_InpEn		,
-	PE00_InpReady	,
-	PE00_InpSel		,
-
-	PE00_OutpData	,
-	PE00_OutpEn		,
-	PE00_OutpReady	,
-	PE00_OutpSel	,
 	
 
-	PE01_InpData	,
-	PE01_InpEn		,
-	PE01_InpReady	,
-	PE01_InpSel		,
-	
-	PE01_OutpData	,
-	PE01_OutpEn		,
-	PE01_OutpReady	,
-	PE01_OutpSel	,
-	
+	PE0_InpData	,
+	PE0_InpEn		,
+	PE0_InpReady	,
+	PE0_InpSel		,
 
-	PE10_InpData	,
-	PE10_InpEn		,
-	PE10_InpReady	,
-	PE10_InpSel		,
+	PE0_OutpData	,
+	PE0_OutpEn		,
+	PE0_OutpReady	,
 	
-	PE10_OutpData	,
-	PE10_OutpEn		,
-	PE10_OutpReady	,
-	PE10_OutpSel	,
+	PE0_OutpSel	,
+		
+
+	PE1_InpData	,
+	PE1_InpEn		,
+	PE1_InpReady	,
+	PE1_InpSel		,
+
+	PE1_OutpData	,
+	PE1_OutpEn		,
+	PE1_OutpReady	,
 	
+	PE1_OutpSel	,
+		
 
-	PE11_InpData	,
-	PE11_InpEn		,
-	PE11_InpReady	,
-	PE11_InpSel		,
+	PE2_InpData	,
+	PE2_InpEn		,
+	PE2_InpReady	,
+	PE2_InpSel		,
+
+	PE2_OutpData	,
+	PE2_OutpEn		,
+	PE2_OutpReady	,
 	
-	PE11_OutpData	,
-	PE11_OutpEn		,
-	PE11_OutpReady	,
-	PE11_OutpSel
+	PE2_OutpSel	,
+		
 
-	);
+	PE3_InpData	,
+	PE3_InpEn		,
+	PE3_InpReady	,
+	PE3_InpSel		,
 
-parameter PackWidth = 8;
-parameter DataWidth = 8;
-parameter AddrWidth = 2;
-parameter RoChAddr	= 1;
-parameter PhyChAddr	= 2;
-parameter ViChAddr	= 1;
+	PE3_OutpData	,
+	PE3_OutpEn		,
+	PE3_OutpReady	,
+		PE3_OutpSel	
+			);
+
+parameter RowNo       = 2;
+parameter ColNo       = 2;
+parameter PackWidth   = 8;
+parameter DataWidth   = 8;
+parameter AddrWidth   = 2;
+parameter RoChAddr	  = 1;
+parameter PhyChAddr	  = 2;
+parameter ViChAddr	  = 1;
 parameter PhyRoChAddr = 3;		
-parameter RoCh		= 1;
-parameter PhyCh		= 4;
-parameter ViCh		= 1;
-parameter PhyRoCh	= 5;
+parameter RoCh		  = 1;
+parameter PhyCh		  = 4;
+parameter ViCh		  = 1;
+parameter PhyRoCh	  = 5;
 
 input clock, reset;
 
-output 	[DataWidth - 1:0] PE00_InpData;
-output 	PE00_InpEn;
-input  	PE00_InpReady;
-output 	[ViChAddr - 1:0] PE00_InpSel;
-
-input 	[DataWidth - 1:0] PE00_OutpData;
-input 	PE00_OutpEn;
-output 	PE00_OutpReady;
-input 	[ViChAddr - 1:0] PE00_OutpSel;
 
 
-output 	[DataWidth - 1:0] PE01_InpData;
-output 	PE01_InpEn;
-input  	PE01_InpReady;
-output 	[ViChAddr - 1:0] PE01_InpSel;
+output 	[DataWidth - 1:0] PE0_InpData;
+output 	PE0_InpEn;
+input  	PE0_InpReady;
+output 	[ViChAddr - 1:0] PE0_InpSel;
 
-input 	[DataWidth - 1:0] PE01_OutpData;
-input 	PE01_OutpEn;
-output 	PE01_OutpReady;
-input 	[ViChAddr - 1:0] PE01_OutpSel;
-
-
-output 	[DataWidth - 1:0] PE10_InpData;
-output 	PE10_InpEn;
-input  	PE10_InpReady;
-output 	[ViChAddr - 1:0] PE10_InpSel;
-
-input 	[DataWidth - 1:0] PE10_OutpData;
-input 	PE10_OutpEn;
-output 	PE10_OutpReady;
-input 	[ViChAddr - 1:0] PE10_OutpSel;
+input 	[DataWidth - 1:0] PE0_OutpData;
+input 	PE0_OutpEn;
+output 	PE0_OutpReady;
+input 	[ViChAddr - 1:0] PE0_OutpSel;
 
 
-output 	[DataWidth - 1:0] PE11_InpData;
-output 	PE11_InpEn;
-input  	PE11_InpReady;
-output 	[ViChAddr - 1:0] PE11_InpSel;
 
-input 	[DataWidth - 1:0] PE11_OutpData;
-input 	PE11_OutpEn;
-output 	PE11_OutpReady;
-input 	[ViChAddr - 1:0] PE11_OutpSel;
+output 	[DataWidth - 1:0] PE1_InpData;
+output 	PE1_InpEn;
+input  	PE1_InpReady;
+output 	[ViChAddr - 1:0] PE1_InpSel;
+
+input 	[DataWidth - 1:0] PE1_OutpData;
+input 	PE1_OutpEn;
+output 	PE1_OutpReady;
+input 	[ViChAddr - 1:0] PE1_OutpSel;
+
+
+
+output 	[DataWidth - 1:0] PE2_InpData;
+output 	PE2_InpEn;
+input  	PE2_InpReady;
+output 	[ViChAddr - 1:0] PE2_InpSel;
+
+input 	[DataWidth - 1:0] PE2_OutpData;
+input 	PE2_OutpEn;
+output 	PE2_OutpReady;
+input 	[ViChAddr - 1:0] PE2_OutpSel;
+
+
+
+output 	[DataWidth - 1:0] PE3_InpData;
+output 	PE3_InpEn;
+input  	PE3_InpReady;
+output 	[ViChAddr - 1:0] PE3_InpSel;
+
+input 	[DataWidth - 1:0] PE3_OutpData;
+input 	PE3_OutpEn;
+output 	PE3_OutpReady;
+input 	[ViChAddr - 1:0] PE3_OutpSel;
 
 
 NOC #(
+	.RowNo(RowNo),
+	.ColNo(ColNo),
 	.PackWidth(PackWidth),
 	.DataWidth(DataWidth),
 	.AddrWidth(AddrWidth),
@@ -123,48 +136,53 @@ NOC #(
 	.Clk(clock),
 	.Reset(reset),
 
-	.PE00_InpData	(PE00_InpData),
-	.PE00_InpEn		(PE00_InpEn),
-	.PE00_InpReady	(PE00_InpReady),
-	.PE00_InpSel	(PE00_InpSel),
-
-	.PE00_OutpData	(PE00_OutpData),
-	.PE00_OutpEn	(PE00_OutpEn),
-	.PE00_OutpReady	(PE00_OutpReady),
-	.PE00_OutpSel	(PE00_OutpSel),
 	
 
-	.PE01_InpData	(PE01_InpData),
-	.PE01_InpEn		(PE01_InpEn),
-	.PE01_InpReady	(PE01_InpReady),
-	.PE01_InpSel	(PE01_InpSel),
-	
-	.PE01_OutpData	(PE01_OutpData),
-	.PE01_OutpEn	(PE01_OutpEn),
-	.PE01_OutpReady	(PE01_OutpReady),
-	.PE01_OutpSel	(PE01_OutpSel),
-	
+	.PE0_InpData	(PE0_InpData),
+	.PE0_InpEn		(PE0_InpEn),
+	.PE0_InpReady	(PE0_InpReady),
+	.PE0_InpSel	(PE0_InpSel),
 
-	.PE10_InpData	(PE10_InpData),
-	.PE10_InpEn		(PE10_InpEn	),
-	.PE10_InpReady	(PE10_InpReady),
-	.PE10_InpSel	(PE10_InpSel),
+	.PE0_OutpData	(PE0_OutpData),
+	.PE0_OutpEn	(PE0_OutpEn),
+	.PE0_OutpReady	(PE0_OutpReady),
 	
-	.PE10_OutpData	(PE10_OutpData),
-	.PE10_OutpEn	(PE10_OutpEn),
-	.PE10_OutpReady	(PE10_OutpReady),
-	.PE10_OutpSel	(PE10_OutpSel),
-	
+	.PE0_OutpSel	(PE0_OutpSel),
+		
 
-	.PE11_InpData	(PE11_InpData),
-	.PE11_InpEn		(PE11_InpEn),
-	.PE11_InpReady	(PE11_InpReady),
-	.PE11_InpSel	(PE11_InpSel),
+	.PE1_InpData	(PE1_InpData),
+	.PE1_InpEn		(PE1_InpEn),
+	.PE1_InpReady	(PE1_InpReady),
+	.PE1_InpSel	(PE1_InpSel),
+
+	.PE1_OutpData	(PE1_OutpData),
+	.PE1_OutpEn	(PE1_OutpEn),
+	.PE1_OutpReady	(PE1_OutpReady),
 	
-	.PE11_OutpData	(PE11_OutpData),
-	.PE11_OutpEn	(PE11_OutpEn),
-	.PE11_OutpReady	(PE11_OutpReady),
-	.PE11_OutpSel	(PE11_OutpSel)
-	);
+	.PE1_OutpSel	(PE1_OutpSel),
+		
+
+	.PE2_InpData	(PE2_InpData),
+	.PE2_InpEn		(PE2_InpEn),
+	.PE2_InpReady	(PE2_InpReady),
+	.PE2_InpSel	(PE2_InpSel),
+
+	.PE2_OutpData	(PE2_OutpData),
+	.PE2_OutpEn	(PE2_OutpEn),
+	.PE2_OutpReady	(PE2_OutpReady),
+	
+	.PE2_OutpSel	(PE2_OutpSel),
+		
+
+	.PE3_InpData	(PE3_InpData),
+	.PE3_InpEn		(PE3_InpEn),
+	.PE3_InpReady	(PE3_InpReady),
+	.PE3_InpSel	(PE3_InpSel),
+
+	.PE3_OutpData	(PE3_OutpData),
+	.PE3_OutpEn	(PE3_OutpEn),
+	.PE3_OutpReady	(PE3_OutpReady),
+		.PE3_OutpSel	(PE3_OutpSel)	
+			);
 
 endmodule 

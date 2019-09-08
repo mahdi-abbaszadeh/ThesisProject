@@ -134,14 +134,14 @@ module qsys_system_mm_interconnect_0_router_004
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h8000 - 64'h4000); 
+    localparam PAD0 = log2ceil(64'hc000 - 64'h4000); 
     localparam PAD1 = log2ceil(64'h9000 - 64'h8800); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h9000;
+    localparam ADDR_RANGE = 64'hc000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -189,10 +189,13 @@ module qsys_system_mm_interconnect_0_router_004
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x4000 .. 0x8000 )
-    if ( {address[RG:PAD0],{PAD0{1'b0}}} == 16'h4000   ) begin
+    // ( 0x4000 .. 0xc000 )
+    // ( no optimization for non-address-span aligned address range )
+    if ( ( ( sink_data[PKT_ADDR_H:PKT_ADDR_L] >= 'h4000) && (sink_data[PKT_ADDR_H:PKT_ADDR_L] < 'hc000) ) 
+              ) begin
             src_channel = 25'b10;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
+            src_data[PKT_ADDR_H:PKT_ADDR_L] = sink_data[PKT_ADDR_H:PKT_ADDR_L] - 'h4000;
     end
 
     // ( 0x8800 .. 0x9000 )

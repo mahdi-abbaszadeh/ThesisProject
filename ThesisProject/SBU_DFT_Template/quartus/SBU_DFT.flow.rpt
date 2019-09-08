@@ -1,5 +1,5 @@
 Flow report for SBU_DFT
-Sat Aug 24 15:42:21 2019
+Sun Sep 08 17:24:38 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Sat Aug 24 15:42:21 2019           ;
+; Flow Status                     ; Successful - Sun Sep 08 17:24:38 2019           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; SBU_DFT                                         ;
 ; Top-level Entity Name           ; qsys_system                                     ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA4U23C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 5,050 / 15,880 ( 32 % )                         ;
-; Total registers                 ; 5693                                            ;
+; Logic utilization (in ALMs)     ; 5,056 / 15,880 ( 32 % )                         ;
+; Total registers                 ; 5736                                            ;
 ; Total pins                      ; 1 / 314 ( < 1 % )                               ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 576,512 / 2,764,800 ( 21 % )                    ;
+; Total block memory bits         ; 701,440 / 2,764,800 ( 25 % )                    ;
 ; Total DSP Blocks                ; 0 / 84 ( 0 % )                                  ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/24/2019 15:37:11 ;
+; Start date & time ; 09/08/2019 17:18:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SBU_DFT             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name               ; Value                                                                                                                            ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID         ; 1099307303250.156664483108748                                                                                                    ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID         ; 1099307303250.156794693028520                                                                                                    ; --            ; --          ; --             ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR ; simulation/modelsim                                                                                                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT        ; Verilog Hdl                                                                                                                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL           ; ModelSim (Verilog)                                                                                                               ; <None>        ; --          ; --             ;
@@ -86,7 +86,7 @@ refer to the applicable agreement for further details.
 ; MAX_CORE_JUNCTION_TEMP        ; 85                                                                                                                               ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP        ; 0                                                                                                                                ; --            ; --          ; --             ;
 ; MISC_FILE                     ; C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/qsys_system/synthesis/../../qsys_system.qsys     ; --            ; --          ; --             ;
-; SLD_INFO                      ; QSYS_NAME qsys_system HAS_SOPCINFO 1 GENERATION_ID 1566644739                                                                    ; --            ; qsys_system ; --             ;
+; SLD_INFO                      ; QSYS_NAME qsys_system HAS_SOPCINFO 1 GENERATION_ID 1567946828                                                                    ; --            ; qsys_system ; --             ;
 ; SOPCINFO_FILE                 ; C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/qsys_system/synthesis/../../qsys_system.sopcinfo ; --            ; --          ; --             ;
 ; SYNTHESIS_ONLY_QIP            ; On                                                                                                                               ; --            ; --          ; --             ;
 ; TOP_LEVEL_ENTITY              ; qsys_system                                                                                                                      ; SBU_DFT       ; --          ; --             ;
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:42     ; 1.4                     ; 5201 MB             ; 00:02:34                           ;
-; Fitter                    ; 00:02:25     ; 1.2                     ; 6567 MB             ; 00:06:41                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4941 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:22     ; 2.4                     ; 5275 MB             ; 00:00:47                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4916 MB             ; 00:00:06                           ;
-; Total                     ; 00:04:47     ; --                      ; --                  ; 00:10:18                           ;
+; Analysis & Synthesis      ; 00:02:00     ; 1.4                     ; 5204 MB             ; 00:03:07                           ;
+; Fitter                    ; 00:02:37     ; 1.2                     ; 6563 MB             ; 00:07:18                           ;
+; Assembler                 ; 00:00:13     ; 1.0                     ; 4944 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:27     ; 2.5                     ; 5282 MB             ; 00:00:57                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4918 MB             ; 00:00:07                           ;
+; Total                     ; 00:05:24     ; --                      ; --                  ; 00:11:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

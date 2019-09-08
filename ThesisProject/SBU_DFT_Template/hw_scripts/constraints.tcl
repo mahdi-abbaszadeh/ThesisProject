@@ -70,21 +70,15 @@ proc get_pin_constraints {arg} {
 	# -------------------------------------------------------------
 	#
 	# Reset (KEY0, DEV_CLRn)
-	###set pin(ext_rstN)	{PIN = J15, IOSTD = "3.3-V LVTTL"}
-
+	
 	# Push button (KEY1)
-	###set pin(pb) 		{PIN = E1 , IOSTD = "3.3-V LVTTL"}
-
+	
 	# -------------------------------------------------------------
 	# Switches
 	# -------------------------------------------------------------
 	#
 	# Inputs
-	###set pin(sw[0])    {PIN = M1 , IOSTD = "3.3-V LVTTL"}
-	###set pin(sw[1])    {PIN = T8 , IOSTD = "3.3-V LVTTL"}
-	###set pin(sw[2])    {PIN = B9 , IOSTD = "3.3-V LVTTL"}
-	###set pin(sw[3])    {PIN = M15, IOSTD = "3.3-V LVTTL"}
-
+				
 	# -------------------------------------------------------------
 	# LEDs
 	# -------------------------------------------------------------
@@ -94,15 +88,7 @@ proc get_pin_constraints {arg} {
 	# whereas LVCMOS is only 2mA.
 	#
 	# Outputs
-	###set pin(led[0])	{PIN = A15, IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[1])	{PIN = A13, IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[2])	{PIN = B13, IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[3])	{PIN = A11, IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[4])	{PIN = D1 , IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[5])	{PIN = F3 , IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[6])	{PIN = B1 , IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-	###set pin(led[7])	{PIN = L3 , IOSTD = "3.3-V LVTTL", DRIVE = "MAXIMUM CURRENT", SLEW = 2}
-
+								
 	return
 }
 
