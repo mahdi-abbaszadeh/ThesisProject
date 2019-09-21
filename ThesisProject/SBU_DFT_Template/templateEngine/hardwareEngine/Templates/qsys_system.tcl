@@ -479,6 +479,10 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 
 	#end
 
+	#for @processor in @processors:
+	auto_assign_base_addresses data_mem_@processor.number
+	#end
+
 # Exported interfaces
 # -------------------
 #
@@ -496,3 +500,4 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 # Save the system
 # ---------------
 save_system "qsys_system.qsys"
+

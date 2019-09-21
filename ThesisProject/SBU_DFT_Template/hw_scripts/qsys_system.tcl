@@ -1334,6 +1334,15 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 	set_connection_parameter_value nios2_3.irq/jtag_uart_0.irq irqNumber {2}
 
 	
+	
+	auto_assign_base_addresses data_mem_0
+	
+	auto_assign_base_addresses data_mem_1
+	
+	auto_assign_base_addresses data_mem_2
+	
+	auto_assign_base_addresses data_mem_3
+	
 # Exported interfaces
 # -------------------
 #
@@ -1351,3 +1360,4 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 # Save the system
 # ---------------
 save_system "qsys_system.qsys"
+
