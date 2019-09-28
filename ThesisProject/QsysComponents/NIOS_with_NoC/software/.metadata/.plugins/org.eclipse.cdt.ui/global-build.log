@@ -1,0 +1,13 @@
+11:28:22 **** Incremental Build of configuration Nios II for project NIOS_00 ****
+make all 
+Info: Building ../NIOS_00_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_00_bsp/
+[BSP build complete]
+Info: Compiling code_00.c to obj/default/code_00.o
+nios2-elf-gcc -xc -MP -MMD -c -I../NIOS_00_bsp//HAL/inc -I../NIOS_00_bsp/ -I../NIOS_00_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_00.o code_00.c
+Info: Linking NIOS_00.elf
+nios2-elf-g++  -T'../NIOS_00_bsp//linker.x' -msys-crt0='../NIOS_00_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../NIOS_00_bsp/  -msmallc  -Wl,-Map=NIOS_00.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o NIOS_00.elf obj/default/code_00.o -lm -msys-lib=m
+obj/default/code_00.o: In function `main':
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\QsysComponents\NIOS_with_NoC\software\NIOS_00/code_00.c:234: undefined reference to `send_packet'
+collect2.exe: error: ld returned 1 exit status
+make: *** [NIOS_00.elf] Error 1

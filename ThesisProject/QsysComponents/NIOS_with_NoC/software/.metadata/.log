@@ -1,0 +1,92 @@
+!SESSION 2019-09-28 10:07:54.745 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-28 10:08:24.993
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:58.015
+!MESSAGE Indexed 'NIOS_10_bsp' (80 sources, 149 headers) in 3.24 sec: 5,341 declarations; 8,625 references; 1 unresolved inclusions; 2 syntax errors; 9 unresolved names (0.064%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:58.177
+!MESSAGE Indexed 'NIOS_00' (1 sources, 26 headers) in 0.149 sec: 1,424 declarations; 2,202 references; 5 unresolved inclusions; 2 syntax errors; 50 unresolved names (1.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:59.505
+!MESSAGE Indexed 'NIOS_00_bsp' (80 sources, 149 headers) in 1.25 sec: 5,341 declarations; 8,661 references; 1 unresolved inclusions; 2 syntax errors; 9 unresolved names (0.064%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:59.642
+!MESSAGE Indexed 'NIOS_01' (1 sources, 26 headers) in 0.122 sec: 1,427 declarations; 2,165 references; 5 unresolved inclusions; 0 syntax errors; 34 unresolved names (0.94%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:59.765
+!MESSAGE Indexed 'NIOS_10' (1 sources, 27 headers) in 0.109 sec: 1,448 declarations; 2,141 references; 5 unresolved inclusions; 0 syntax errors; 34 unresolved names (0.94%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:09:59.900
+!MESSAGE Indexed 'NIOS_11' (1 sources, 26 headers) in 0.124 sec: 1,427 declarations; 2,163 references; 5 unresolved inclusions; 0 syntax errors; 34 unresolved names (0.94%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:10:01.024
+!MESSAGE Indexed 'NIOS_11_bsp' (80 sources, 114 headers) in 1.04 sec: 3,541 declarations; 6,140 references; 9 unresolved inclusions; 5 syntax errors; 25 unresolved names (0.26%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-28 10:10:02.177
+!MESSAGE Indexed 'NIOS_01_bsp' (80 sources, 149 headers) in 1.06 sec: 5,341 declarations; 8,664 references; 1 unresolved inclusions; 2 syntax errors; 9 unresolved names (0.064%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:17:23.445
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:17:25.191
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_00/NIOS_00.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:17:47.329
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:17:49.057
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_01/NIOS_01.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:18:21.207
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:18:22.885
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_10/NIOS_10.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:18:52.043
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:18:53.893
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_11/NIOS_11.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:29:46.921
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:29:47.200
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:29:48.960
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_00/NIOS_00.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:45:33.671
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:45:33.984
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-28 10:45:35.673
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/QsysComponents/NIOS_with_NoC/software/NIOS_00/NIOS_00.elf]

@@ -77,7 +77,7 @@
  *        alt_getchar      Smaller overhead than getchar with direct drivers
  *
  */
-
+#include "sys/packet_transaction.h"
 #include "sys/alt_stdio.h"
 #include "altera_avalon_fifo_regs.h"
 #include "altera_avalon_fifo_util.h"
@@ -158,7 +158,7 @@ altera_avalon_fifo_clear_event(INPUT_FIFO_IN_CSR_BASE,
 ALTERA_AVALON_FIFO_EVENT_ALL);
 }*/
 
-void send_packet(alt_u32 base_address, alt_u32 ctrl_address,
+/*void send_packet(alt_u32 base_address, alt_u32 ctrl_address,
                  unsigned char src, unsigned char  dest, unsigned char packsize, unsigned char *data){
 
     unsigned int temp;
@@ -187,7 +187,7 @@ void send_packet(alt_u32 base_address, alt_u32 ctrl_address,
     temp = ((*(data + 23))<<24) | ((*(data + 22))<<16) | ((*(data + 21))<<8) | ((*(data + 20)));
     altera_avalon_fifo_write_fifo(base_address, ctrl_address, temp);
 
-}
+}*/
 
 int main()
 {
@@ -231,7 +231,6 @@ int main()
 
 
   //writeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-
   send_packet(FIFO_SOURCE_00_IN_BASE,FIFO_SOURCE_00_IN_CSR_BASE,0x0,0x1,0x20,array);
   /*altera_avalon_fifo_write_fifo(FIFO_SOURCE_00_IN_BASE, FIFO_SOURCE_00_IN_CSR_BASE,0x00200001);
   altera_avalon_fifo_write_fifo(FIFO_SOURCE_00_IN_BASE, FIFO_SOURCE_00_IN_CSR_BASE,0x0);

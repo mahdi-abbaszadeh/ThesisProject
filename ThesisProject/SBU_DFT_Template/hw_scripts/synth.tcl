@@ -69,6 +69,11 @@ if {![file exists $qwork]} {
     file mkdir $qwork/ip/NoC
     file copy hw_scripts/NoC_hw.tcl $qwork/ip/NoC
     file copy hw_sources $qwork/ip/NoC
+
+    puts " - Creating the packet_transaction directory"
+    file mkdir $qwork/ip/packet_transaction
+    file copy packet_transaction/packet_transaction_sw.tcl $qwork/ip/packet_transaction
+    file copy packet_transaction/HAL $qwork/ip/packet_transaction
 }
 
 # Create all the generated files in the work directory
