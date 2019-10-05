@@ -3,4 +3,6 @@
 #include <stdlib.h>
 
 void send_packet(alt_u32 base_address, alt_u32 ctrl_address,
-                 unsigned char src, unsigned char  dest, unsigned char packsize, unsigned char *data);
+                 unsigned char src, unsigned char  dest, unsigned char packsize, unsigned char *payload);
+
+void receive_packet(alt_u32 base_address, alt_u32 ctrl_address, unsigned char *payload);
