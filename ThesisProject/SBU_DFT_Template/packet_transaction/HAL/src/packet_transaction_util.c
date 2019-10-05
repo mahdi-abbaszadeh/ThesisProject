@@ -34,31 +34,30 @@ void send_packet(alt_u32 base_address, alt_u32 ctrl_address,
 
 void read_payload(unsigned int temp, unsigned int byte_coef, unsigned char *payload){
 	*(payload + 0 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",byte_coef,destiantion);
+	printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 1 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 1),destiantion);
+	printf("payload[%d] = %d\n",(byte_coef + 1),*(payload + 1 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 2 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 2),destiantion);
+	printf("payload[%d] = %d\n",(byte_coef + 2),*(payload + 2 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 3 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 3),destiantion);
+	printf("payload[%d] = %d\n",(byte_coef + 3),*(payload + 3 + byte_coef));
 }
 
 void receive_packet(alt_u32 base_address, alt_u32 ctrl_address, unsigned char *payload){
 	
 	unsigned int temp;
-	unsigned char destiantion, source, packet_size;
+	unsigned char destinantion, source, packet_size;
 	
 	//first four bytes
 	temp = altera_avalon_fifo_read_fifo(base_address, ctrl_address);
-
-	destiantion = temp;
-	printf("destiantion = %d\n",destiantion);
+	destinantion = temp;
+	printf("destiantion = %d\n",destinantion);
 	temp >>= 8;
 
 	source = temp;
