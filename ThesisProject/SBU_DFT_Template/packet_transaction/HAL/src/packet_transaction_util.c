@@ -98,3 +98,11 @@ void receive_packet(alt_u32 base_address, alt_u32 ctrl_address, unsigned char *p
 	read_payload(temp,20,payload);	
 }
 
+void receive_poll(alt_u32 ctrl_address, alt_u16 FIFO_STATUS){
+	int status;
+	status = altera_avalon_fifo_read_status(ctrl_address,FIFO_STATUS);
+    while(status & 0x02){
+  	  status = altera_avalon_fifo_read_status(ctrl_address,FIFO_STATUS);
+    }
+}
+

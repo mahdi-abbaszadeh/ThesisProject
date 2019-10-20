@@ -47,27 +47,28 @@
     alt_putstr("Hello from Nios II!\n");
 
     //initialization of FIFOs
-    init_input_fifo_wrclk_control(FIFO_SINK_3_IN_CSR_BASE);
-    init_input_fifo_wrclk_control(FIFO_SOURCE_3_IN_CSR_BASE);
+    init_input_fifo_wrclk_control(FIFO_SINK_2_IN_CSR_BASE);
+    init_input_fifo_wrclk_control(FIFO_SOURCE_2_IN_CSR_BASE);
 
     alt_putstr("source status:\n");
-    print_status(FIFO_SOURCE_3_IN_CSR_BASE);
+    print_status(FIFO_SOURCE_2_IN_CSR_BASE);
 
     alt_putstr("sink status:\n");
-    print_status(FIFO_SINK_3_IN_CSR_BASE);
+    print_status(FIFO_SINK_2_IN_CSR_BASE);
 
 
-    alt_putstr("waiting for receiving data:\n");
-    status = altera_avalon_fifo_read_status(FIFO_SINK_3_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
+    receive_poll(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
+    /*alt_putstr("waiting for receiving data:\n");
+    status = altera_avalon_fifo_read_status(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
     while(status & 0x02){
-      status = altera_avalon_fifo_read_status(FIFO_SINK_3_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
-    }
+      status = altera_avalon_fifo_read_status(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
+    }*/
 
     alt_putstr("read from FIFO:\n");
-    receive_packet(FIFO_SINK_3_IN_BASE,FIFO_SINK_3_IN_CSR_BASE,receive_array);
+    receive_packet(FIFO_SINK_2_OUT_BASE,FIFO_SINK_2_IN_CSR_BASE,receive_array);
 
     alt_putstr("write to FIFO\n");
-    send_packet(FIFO_SOURCE_3_IN_BASE,FIFO_SOURCE_3_IN_CSR_BASE,0x3,0x0,0x20,send_array);
+    send_packet(FIFO_SOURCE_2_IN_BASE,FIFO_SOURCE_2_IN_CSR_BASE,0x2,0x3,0x20,send_array);
 
 
 

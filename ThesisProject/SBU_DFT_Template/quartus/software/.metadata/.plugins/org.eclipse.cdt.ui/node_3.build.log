@@ -1,9 +1,44 @@
-19:08:49 **** Incremental Build of configuration Nios II for project node_3 ****
+11:15:20 **** Incremental Build of configuration Nios II for project node_3 ****
 make all 
 Info: Building ../node_3_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_3_bsp/
 [BSP build complete]
+Info: Compiling code_3.c to obj/default/code_3.o
+nios2-elf-gcc -xc -MP -MMD -c -I../node_3_bsp//HAL/inc -I../node_3_bsp/ -I../node_3_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_3.o code_3.c
+code_3.c: In function 'main':
+code_3.c:62:5: warning: implicit declaration of function 'receive_poll' [-Wimplicit-function-declaration]
+     receive_poll(FIFO_SINK_3_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
+     ^
+code_3.c:69:5: warning: implicit declaration of function 'receive_packet' [-Wimplicit-function-declaration]
+     receive_packet(FIFO_SINK_3_OUT_BASE,FIFO_SINK_3_IN_CSR_BASE,receive_array);
+     ^
+code_3.c:72:5: warning: implicit declaration of function 'send_packet' [-Wimplicit-function-declaration]
+     send_packet(FIFO_SOURCE_3_IN_BASE,FIFO_SOURCE_3_IN_CSR_BASE,0x3,0x0,0x20,send_array);
+     ^
+code_3.c:44:9: warning: unused variable 'status' [-Wunused-variable]
+     int status;
+         ^
+Info: Compiling packet_transaction_util.c to obj/default/packet_transaction_util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../node_3_bsp//HAL/inc -I../node_3_bsp/ -I../node_3_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/packet_transaction_util.o packet_transaction_util.c
+packet_transaction_util.c: In function 'read_payload':
+packet_transaction_util.c:37:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
+  ^
+packet_transaction_util.c:37:2: warning: incompatible implicit declaration of built-in function 'printf'
+packet_transaction_util.c:37:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+packet_transaction_util.c: In function 'receive_packet':
+packet_transaction_util.c:60:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("destiantion = %d\n",destinantion);
+  ^
+packet_transaction_util.c:60:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Info: Linking code_3.elf
+nios2-elf-g++  -T'../node_3_bsp//linker.x' -msys-crt0='../node_3_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node_3_bsp/  -msmallc  -Wl,-Map=code_3.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o code_3.elf obj/default/code_3.o obj/default/packet_transaction_util.o -lm -msys-lib=m
+nios2-elf-insert code_3.elf --thread_model hal --cpu_name nios2_3 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name qsys_system --jdi C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_3_bsp/../../SBU_DFT.jdi --sopcinfo C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_3_bsp/../../qsys_system.sopcinfo
+Info: (code_3.elf) 6436 Bytes program size (code + initialized data).
+Info:              24 KBytes free for stack + heap.
+Info: Creating code_3.objdump
+nios2-elf-objdump --disassemble --syms --all-header code_3.elf >code_3.objdump
 [code_3 build complete]
 
-19:08:50 Build Finished (took 1s.75ms)
+11:15:22 Build Finished (took 2s.408ms)
 

@@ -58,10 +58,12 @@
 
 
     alt_putstr("waiting for receiving data:\n");
+    receive_poll(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
+    /*
     status = altera_avalon_fifo_read_status(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
     while(status & 0x02){
       status = altera_avalon_fifo_read_status(FIFO_SINK_2_IN_CSR_BASE,ALTERA_AVALON_FIFO_STATUS_ALL);
-    }
+    }*/
 
     alt_putstr("read from FIFO:\n");
     receive_packet(FIFO_SINK_2_OUT_BASE,FIFO_SINK_2_IN_CSR_BASE,receive_array);
