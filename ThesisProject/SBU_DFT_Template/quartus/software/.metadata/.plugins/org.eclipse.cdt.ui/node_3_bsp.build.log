@@ -1,6 +1,6 @@
-11:15:22 **** Incremental Build of configuration Nios II for project node_3_bsp ****
+20:28:46 **** Incremental Build of configuration Nios II for project node_3_bsp ****
 make all 
 [BSP build complete]
 
-11:15:23 Build Finished (took 930ms)
+20:28:47 Build Finished (took 951ms)
 

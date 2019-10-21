@@ -35,6 +35,8 @@ rm $PROJECT_NAME.objdump
 rm obj/default/hello_world_small.d
 rm obj/default/hello_world_small.o
 cp ../../../sw_sources/code_0.c code_0.c
+cp ../../../packet_transaction_lib/inc/header_0/packet_transaction.h packet_transaction.h
+cp ../../../packet_transaction_lib/src/packet_transaction.c packet_transaction.c
 
 # generate make file for new source file
 nios2-app-generate-makefile --bsp-dir=../$BSP_NAME \

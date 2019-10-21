@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 5, 2019 6:02:10 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1570285930813</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Oct 21, 2019 8:01:27 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1571675487687</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template\quartus\software\node_2_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\qsys_system.sopcinfo</SopcDesignFile>

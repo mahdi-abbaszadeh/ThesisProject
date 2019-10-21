@@ -6,7 +6,7 @@
 <stringAttribute key="byteStreamDeviceDeviceID" value="2"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
 <booleanAttribute key="downloadProgram" value="true"/>
-<stringAttribute key="elfFile" value="C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template\quartus\software\node_1\code_1.elf"/>
+<stringAttribute key="elfFile" value="C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template\quartus\software\node_3\code_3.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
@@ -14,10 +14,10 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_REGISTER_BOOKKEEPING" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_VARIABLE_BOOKKEEPING" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="code_1.elf"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="node_1"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="code_3.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="node_3"/>
 <stringAttribute key="processorCableName" value="DE-SoC on localhost [USB-1]"/>
 <stringAttribute key="processorDeviceIndex" value="2"/>
-<stringAttribute key="processorInstanceId" value="1"/>
+<stringAttribute key="processorInstanceId" value="3"/>
 <booleanAttribute key="runProgram" value="true"/>
 </launchConfiguration>
