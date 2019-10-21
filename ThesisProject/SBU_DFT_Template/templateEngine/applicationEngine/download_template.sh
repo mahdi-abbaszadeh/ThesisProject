@@ -8,7 +8,7 @@ nios2-configure-sof -d 2
 #if( @prj.instanceID == '0' )
 cd software/@prj.nodeName
 #else
-cd ../software/@prj.nodeName
+cd ../@prj.nodeName
 #end
 nios2-download -g @prj.elfName --instance @prj.instanceID
 #end
