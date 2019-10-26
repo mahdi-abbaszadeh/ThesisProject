@@ -61,7 +61,7 @@ int main()
   receive_packet(receive_array);
 
   alt_putstr("write to FIFO\n");
-  send_packet(0x0,0x1,0x20,send_array);
+  send_packet(0x0,0x1,0x1111,0x2222,0x20,send_array);
 
 
   alt_putstr("waiting for receiving data:\n");

@@ -59,7 +59,8 @@ def gen():
              '#define FIFO_SINK_BASE\tFIFO_SINK_'+str(i)+'_OUT_BASE\n',
              '#define FIFO_SOURCE_BASE\tFIFO_SOURCE_'+str(i)+'_IN_BASE\n',
              '#define FIFO_STATUS\tALTERA_AVALON_FIFO_STATUS_ALL\n\n',
-             'void send_packet(unsigned char src, unsigned char  dest, unsigned char packsize, unsigned char *payload);\n\n',
+             'void send_packet(unsigned char node_src, unsigned char node_dest,\n'
+             'alt_u16 proc_src, alt_u16 proc_dest, unsigned char packsize, unsigned char *payload);\n\n',
              'void receive_packet(unsigned char *payload);\n\n',
              'void receive_poll();\n']
         file.writelines(L)
