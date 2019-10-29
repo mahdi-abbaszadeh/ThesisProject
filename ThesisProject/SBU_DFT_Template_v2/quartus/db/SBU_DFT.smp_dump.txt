@@ -1,0 +1,36 @@
+
+State Machine - |qsys_system|qsys_system_nios2_2:nios2_2|qsys_system_nios2_2_cpu:cpu|qsys_system_nios2_2_cpu_nios2_oci:the_qsys_system_nios2_2_cpu_nios2_oci|qsys_system_nios2_2_cpu_debug_slave_wrapper:the_qsys_system_nios2_2_cpu_debug_slave_wrapper|qsys_system_nios2_2_cpu_debug_slave_tck:the_qsys_system_nios2_2_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |qsys_system|qsys_system_nios2_1:nios2_1|qsys_system_nios2_1_cpu:cpu|qsys_system_nios2_1_cpu_nios2_oci:the_qsys_system_nios2_1_cpu_nios2_oci|qsys_system_nios2_1_cpu_debug_slave_wrapper:the_qsys_system_nios2_1_cpu_debug_slave_wrapper|qsys_system_nios2_1_cpu_debug_slave_tck:the_qsys_system_nios2_1_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |qsys_system|qsys_system_nios2_0:nios2_0|qsys_system_nios2_0_cpu:cpu|qsys_system_nios2_0_cpu_nios2_oci:the_qsys_system_nios2_0_cpu_nios2_oci|qsys_system_nios2_0_cpu_debug_slave_wrapper:the_qsys_system_nios2_0_cpu_debug_slave_wrapper|qsys_system_nios2_0_cpu_debug_slave_tck:the_qsys_system_nios2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |qsys_system|qsys_system_nios2_3:nios2_3|qsys_system_nios2_3_cpu:cpu|qsys_system_nios2_3_cpu_nios2_oci:the_qsys_system_nios2_3_cpu_nios2_oci|qsys_system_nios2_3_cpu_debug_slave_wrapper:the_qsys_system_nios2_3_cpu_debug_slave_wrapper|qsys_system_nios2_3_cpu_debug_slave_tck:the_qsys_system_nios2_3_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

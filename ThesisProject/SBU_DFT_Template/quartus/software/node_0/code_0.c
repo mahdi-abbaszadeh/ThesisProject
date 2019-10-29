@@ -11,8 +11,18 @@
 volatile int input_fifo_wrclk_irq_event;
 
 
+void proc_0(unsigned char *in_0, unsigned char *out_0){
+	for (int i = 0; i < 24; ++i){
+		*(out_0 + i) = *(in_0 + i) + 10;
+	}
+}
 
-  /* Initialize the fifo */
+void proc_1(unsigned char *in_00, unsigned char *in_01, unsigned char *in_1, unsigned char *out_0){
+    for (int i = 0; i < 24; ++i){
+        *(out_0 + i) = *(in_00 + i) + *(in_00 + i) + *(in_1 + i);
+    }
+}
+
 static int init_input_fifo_wrclk_control(alt_u32 control_base_address)
 {
   int return_code = ALTERA_AVALON_FIFO_OK;
@@ -23,8 +33,8 @@ static int init_input_fifo_wrclk_control(alt_u32 control_base_address)
   return return_code;
 }
 
-
 void print_status(alt_u32 control_base_address)
+
 {
   printf("--------------------------------------\n");
   printf("LEVEL = %u\n", altera_avalon_fifo_read_level(control_base_address) );
@@ -40,14 +50,36 @@ void print_status(alt_u32 control_base_address)
     altera_avalon_fifo_read_almostfull(control_base_address));
 }
 
+void read(int p_id, int in_id){
+	unsigned char receive_array[24];
+	alt_u16 proc_src, proc_dst;
+
+
+	alt_putstr("waiting for receiving data:\n");
+	receive_poll();
+
+	alt_putstr("read from FIFO:\n");
+	receive_packet(receive_array);
+
+
+}
+
 int main()
 {
-  int status;
   unsigned char send_array[24] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
   unsigned char receive_array[24];
+
+  unsigned char proc_0_in_0[24] = {};
+  unsigned char proc_0_out_0[24] = {};
+
+  unsigned char proc_1_in_0[48] = {};
+  unsigned char proc_1_in_1[24] = {};
+  unsigned char proc_1_out_0[24] = {};
+
+
   alt_putstr("Hello from Nios II!\n");
 
-    //initialization of FIFOs
+  //initialization of FIFOs
   init_input_fifo_wrclk_control(FIFO_SINK_0_IN_CSR_BASE);
   init_input_fifo_wrclk_control(FIFO_SOURCE_0_IN_CSR_BASE);
 
@@ -57,7 +89,21 @@ int main()
   alt_putstr("sink status:\n");
   print_status(FIFO_SINK_0_IN_CSR_BASE);
 
-  alt_putstr("read from FIFO:\n");
+  while(1){
+
+	  read(0,0);
+	  //p0();
+	  proc_0(*proc_0_in_0, *proc_0_out_0);
+
+	  read(0,0);
+	  //p0();
+	  proc_0(*proc_0_in_0, *proc_0_out_0);
+
+	  //p1();
+	  proc_0(*proc_1_in_0, *proc_1_in_1, *proc_1_out_0);
+  }
+
+/*  alt_putstr("read from FIFO:\n");
   receive_packet(receive_array);
 
   alt_putstr("write to FIFO\n");
@@ -68,7 +114,7 @@ int main()
   receive_poll();
 
   alt_putstr("read from FIFO:\n");
-  receive_packet(receive_array);
+  receive_packet(receive_array);*/
 
   while (1);
 

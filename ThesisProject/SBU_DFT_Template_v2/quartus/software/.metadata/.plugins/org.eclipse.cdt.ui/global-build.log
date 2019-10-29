@@ -1,0 +1,6 @@
+13:10:08 **** Build of configuration Nios II for project node_0 ****
+make all 
+Info: Building ../node_0_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_0_bsp/
+[BSP build complete]
+[code_0 build complete]
