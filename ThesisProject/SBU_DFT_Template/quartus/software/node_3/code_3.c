@@ -12,12 +12,7 @@ volatile int input_fifo_wrclk_irq_event;
 
 
 
-void proc_5(unsigned char *in_0, unsigned char *out_0){
-    for (int i = 0; i < 24; ++i){
-        *(out_0 + i) = *(in_0 + i) + 4;
-    }
-}
-
+  /* Initialize the fifo */
 static int init_input_fifo_wrclk_control(alt_u32 control_base_address)
 {
   int return_code = ALTERA_AVALON_FIFO_OK;
@@ -27,6 +22,7 @@ static int init_input_fifo_wrclk_control(alt_u32 control_base_address)
                                           ALMOST_FULL);
   return return_code;
 }
+
 
 void print_status(alt_u32 control_base_address)
 {
@@ -46,12 +42,9 @@ void print_status(alt_u32 control_base_address)
 
 int main()
 {
+  int status;
   unsigned char send_array[24] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
   unsigned char receive_array[24];
-
-  unsigned char proc_5_in_0[24] = {};
-  unsigned char proc_5_out_0[24] = {};
-
   alt_putstr("Hello from Nios II!\n");
 
     //initialization of FIFOs
@@ -71,7 +64,7 @@ int main()
   receive_packet(receive_array);
 
   alt_putstr("write to FIFO\n");
-  send_packet(0x3,0x0,0x1111,0x2222,0x20,send_array);
+  send_packet(0x3,0x0,0x20,send_array);
 
   while (1);
 

@@ -1,6 +1,139 @@
 #include "packet_transaction_util.h"
 #include "packet_transaction.h"
 
+/******************** BUFFER *********************/
+/******************** BUFFER *********************/
+
+/******************* Structure *******************/
+struct Edge edge_p5_p0;
+struct Edge edge_p0_p1;
+struct Edge edge_p4_p1;
+struct Edge edge_p1_p2;
+struct Edge edge_p1_p3;
+
+struct Edge edges[5];
+/******************* Structure *******************/
+
+struct Edge* get_edge(uint8_t proc_num, uint8_t port_num, uint8_t inout)
+{
+    if (inout == 0 /* it is input edge*/) {
+        if (proc_num == 0) {
+            if (port_num == 0) {
+                return &edge_p5_p0;
+            }
+        }
+        if (proc_num == 1) {
+            if (port_num == 0) {
+                return &edge_p0_p1;
+            }
+            if (port_num == 1) {
+                return &edge_p4_p1;
+            }
+        }
+    }
+
+    if (inout == 1 /* it is output edge*/) {
+        if (proc_num == 0) {
+            if (port_num == 0) {
+                return &edge_p0_p1;
+            }
+        }
+        if (proc_num == 1) {
+            if (port_num == 0) {
+                return &edge_p1_p2;
+            }
+            if (port_num == 1) {
+                return &edge_p1_p3;
+            }
+        }
+    }
+
+    return 0;
+}
+
+cbuf_handle_t* get_buffer(alt_u16 proc_src, alt_u16 proc_dest)
+{
+    for (int i = 0; i < 5; i++) {
+        if (edges[i].proc_src == proc_src) {
+            if (edges[i].proc_dest == proc_dest) {
+                return edges[i].buffer;
+            }
+        }
+    }
+    return 0;
+}
+
+void init_buffer(){
+	//input buffer for process0 from process5
+	uint8_t *buffer_p5_p0 = (uint8_t*)malloc(BUFFER_SIZE * sizeof(uint8_t));
+	cbuf_handle_t buff_p5_p0 = circular_buf_init(buffer_p5_p0, BUFFER_SIZE);
+	//input buffer for process1 from process0
+	uint8_t *buffer_p0_p1 = (uint8_t*)malloc(BUFFER_SIZE * sizeof(uint8_t));
+	cbuf_handle_t buff_p0_p1 = circular_buf_init(buffer_p0_p1, BUFFER_SIZE);
+	//input buffer for process1 from process4
+	uint8_t *buffer_p4_p1 = (uint8_t*)malloc(BUFFER_SIZE * sizeof(uint8_t));
+	cbuf_handle_t buff_p4_p1 = circular_buf_init(buffer_p4_p1, BUFFER_SIZE);
+}
+
+void init_structures(){
+	//Edge p5 to p0
+	edge_p5_p0.node_src = 2;
+	edge_p5_p0.node_dest = 0;
+	edge_p5_p0.proc_src = 5;
+	edge_p5_p0.proc_dest = 0;
+	edge_p5_p0.num_of_token = 1;
+	edge_p5_p0.external = 1;
+	edge_p5_p0.buffer = buff_p5_p0;
+
+	edges[0] = edge_p5_p0;
+
+
+	//Edge p0 to p1
+	edge_p0_p1.node_src = 0;
+	edge_p0_p1.node_dest = 0;
+	edge_p0_p1.proc_src = 0;
+	edge_p0_p1.proc_dest = 1;
+	edge_p0_p1.num_of_token = 1;
+	edge_p0_p1.external = 0;
+	edge_p0_p1.buffer = buff_p0_p1;
+
+	edges[1] = edge_p0_p1;
+
+
+	//Edge p4 to p1
+	edge_p4_p1.node_src = 2;
+	edge_p4_p1.node_dest = 0;
+	edge_p4_p1.proc_src = 4;
+	edge_p4_p1.proc_dest = 1;
+	edge_p4_p1.num_of_token = 1;
+	edge_p4_p1.external = 1;
+	edge_p4_p1.buffer = buff_p4_p1;
+
+	edges[2] = edge_p4_p1;
+
+
+	//Edge p1 to p2
+	edge_p1_p2.node_src = 0;
+	edge_p1_p2.node_dest = 2;
+	edge_p1_p2.proc_src = 2;
+	edge_p1_p2.proc_dest = 3;
+	edge_p1_p2.num_of_token = 1;
+	edge_p1_p2.external = 1;
+
+	edges[3] = edge_p1_p2;
+
+
+	//Edge p1 to p3
+	edge_p1_p3.node_src = 0;
+	edge_p1_p3.node_dest = 3;
+	edge_p1_p3.proc_src = 1;
+	edge_p1_p3.proc_dest = 3;
+	edge_p1_p3.num_of_token = 1;
+	edge_p1_p3.external = 1;
+
+	edges[4] = edge_p1_p3;
+}
+
 void send_packet(unsigned char node_src, unsigned char node_dest,
 alt_u16 proc_src, alt_u16 proc_dest, unsigned char packsize, unsigned char *payload){
 
@@ -55,13 +188,13 @@ void read_payload(unsigned int temp, unsigned int byte_coef, unsigned char *payl
 	printf("payload[%d] = %d\n",(byte_coef + 3),*(payload + 3 + byte_coef));
 }
 
-void receive_packet(unsigned char *payload){
+void receive_packet(){
 	
 	unsigned int temp;
 	unsigned char node_dest, node_src, packet_size;
 	unsigned char src_high, src_low;
-	
-	//test
+	unsigned char payload[24];
+
 	alt_u16 dst_proc, src_proc;
 
 	//first four bytes
@@ -92,7 +225,8 @@ void receive_packet(unsigned char *payload){
 	printf("source process = %d\n",src_proc);
 	printf("destination process = %d\n",dst_proc);
 
-	//from now, recieve the payload
+
+	//since now, recieve the payload
 
 	//1st four bytes of payload 
 	temp = altera_avalon_fifo_read_fifo(FIFO_SINK_BASE, FIFO_SINK_CSR);
@@ -117,6 +251,14 @@ void receive_packet(unsigned char *payload){
 	//6th four bytes of payload 
 	temp = altera_avalon_fifo_read_fifo(FIFO_SINK_BASE, FIFO_SINK_CSR);
 	read_payload(temp,20,payload);	
+
+	//get bufer
+	cbuf_handle_t *buffer = get_buffer(src_proc, dst_proc);
+
+	for(int i = 0; i < 24; i++)
+	{
+		circular_buf_put(buffer, payload[i]);
+	}
 }
 
 void receive_poll(){

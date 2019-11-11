@@ -144,6 +144,7 @@ ELF := code_0.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += code_0.c
 C_SRCS += packet_transaction_util.c
+C_SRCS += circular_buffer.c
 CXX_SRCS :=
 ASM_SRCS :=
 
