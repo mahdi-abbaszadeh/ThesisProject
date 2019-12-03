@@ -37,7 +37,7 @@
    {
       datum baseAddress
       {
-         value = "49152";
+         value = "98304";
          type = "String";
       }
    }
@@ -53,7 +53,7 @@
    {
       datum baseAddress
       {
-         value = "65536";
+         value = "131072";
          type = "String";
       }
    }
@@ -69,7 +69,7 @@
    {
       datum baseAddress
       {
-         value = "81920";
+         value = "163840";
          type = "String";
       }
    }
@@ -85,7 +85,7 @@
    {
       datum baseAddress
       {
-         value = "98304";
+         value = "65536";
          type = "String";
       }
    }
@@ -256,7 +256,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="16384" />
+  <parameter name="memorySize" value="24576" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -288,7 +288,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="16384" />
+  <parameter name="memorySize" value="24576" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -320,7 +320,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="16384" />
+  <parameter name="memorySize" value="24576" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -352,7 +352,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="32000" />
+  <parameter name="memorySize" value="24576" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -600,10 +600,10 @@
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="16" />
+  <parameter name="dataAddrWidth" value="17" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_0.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_0.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_0.s1' start='0xC000' end='0x10000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_0.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_0.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_0.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_0.s1' start='0x18000' end='0x1E000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -641,8 +641,8 @@
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="16" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_0.s1' start='0xC000' end='0x10000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="17" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_0.s1' start='0x18000' end='0x1E000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -778,10 +778,10 @@
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="17" />
+  <parameter name="dataAddrWidth" value="18" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_1.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_1.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_1.s1' start='0x10000' end='0x14000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_1.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_1.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_1.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_1.s1' start='0x20000' end='0x26000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -819,8 +819,8 @@
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="17" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_1.s1' start='0x10000' end='0x14000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="18" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_1.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_1.s1' start='0x20000' end='0x26000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -956,10 +956,10 @@
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="17" />
+  <parameter name="dataAddrWidth" value="18" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_2.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_2.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_2.s1' start='0x14000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_2.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_2.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_2.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_2.s1' start='0x28000' end='0x2E000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -997,8 +997,8 @@
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="17" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_2.s1' start='0x14000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="18" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_2.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_2.s1' start='0x28000' end='0x2E000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -1137,7 +1137,7 @@
   <parameter name="dataAddrWidth" value="17" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_3.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_3.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_3.s1' start='0x18000' end='0x1FD00' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='fifo_source_3.in_csr' start='0x9000' end='0x9020' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.in_csr' start='0x9020' end='0x9040' type='altera_avalon_fifo.in_csr' /><slave name='fifo_sink_3.out' start='0x9040' end='0x9048' type='altera_avalon_fifo.out' /><slave name='fifo_source_3.in' start='0x9048' end='0x9050' type='altera_avalon_fifo.in' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9050' end='0x9058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='data_mem_3.s1' start='0x10000' end='0x16000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -1176,7 +1176,7 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="17" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_3.s1' start='0x18000' end='0x1FD00' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='nios2_3.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='data_mem_3.s1' start='0x10000' end='0x16000' type='altera_avalon_onchip_memory2.s1' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -1517,7 +1517,7 @@
    start="nios2_0.data_master"
    end="data_mem_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0xc000" />
+  <parameter name="baseAddress" value="0x00018000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1526,7 +1526,7 @@
    start="nios2_1.data_master"
    end="data_mem_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1535,7 +1535,7 @@
    start="nios2_2.data_master"
    end="data_mem_2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00014000" />
+  <parameter name="baseAddress" value="0x00028000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1544,7 +1544,7 @@
    start="nios2_3.data_master"
    end="data_mem_3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00018000" />
+  <parameter name="baseAddress" value="0x00010000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1589,7 +1589,7 @@
    start="nios2_0.instruction_master"
    end="data_mem_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0xc000" />
+  <parameter name="baseAddress" value="0x00018000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1598,7 +1598,7 @@
    start="nios2_1.instruction_master"
    end="data_mem_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1607,7 +1607,7 @@
    start="nios2_2.instruction_master"
    end="data_mem_2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00014000" />
+  <parameter name="baseAddress" value="0x00028000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1616,7 +1616,7 @@
    start="nios2_3.instruction_master"
    end="data_mem_3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00018000" />
+  <parameter name="baseAddress" value="0x00010000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection

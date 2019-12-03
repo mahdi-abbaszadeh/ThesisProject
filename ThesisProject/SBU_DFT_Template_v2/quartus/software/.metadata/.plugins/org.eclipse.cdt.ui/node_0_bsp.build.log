@@ -1,6 +1,6 @@
-10:46:11 **** Build of configuration Nios II for project node_0_bsp ****
+18:27:00 **** Build of configuration Nios II for project node_0_bsp ****
 make all 
 [BSP build complete]
 
-10:46:12 Build Finished (took 919ms)
+18:27:01 Build Finished (took 817ms)
 

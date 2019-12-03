@@ -10,7 +10,7 @@ module qsys_system (
 	wire  [31:0] nios2_0_data_master_readdata;                                // mm_interconnect_0:nios2_0_data_master_readdata -> nios2_0:d_readdata
 	wire         nios2_0_data_master_waitrequest;                             // mm_interconnect_0:nios2_0_data_master_waitrequest -> nios2_0:d_waitrequest
 	wire         nios2_0_data_master_debugaccess;                             // nios2_0:debug_mem_slave_debugaccess_to_roms -> mm_interconnect_0:nios2_0_data_master_debugaccess
-	wire  [15:0] nios2_0_data_master_address;                                 // nios2_0:d_address -> mm_interconnect_0:nios2_0_data_master_address
+	wire  [16:0] nios2_0_data_master_address;                                 // nios2_0:d_address -> mm_interconnect_0:nios2_0_data_master_address
 	wire   [3:0] nios2_0_data_master_byteenable;                              // nios2_0:d_byteenable -> mm_interconnect_0:nios2_0_data_master_byteenable
 	wire         nios2_0_data_master_read;                                    // nios2_0:d_read -> mm_interconnect_0:nios2_0_data_master_read
 	wire         nios2_0_data_master_write;                                   // nios2_0:d_write -> mm_interconnect_0:nios2_0_data_master_write
@@ -18,7 +18,7 @@ module qsys_system (
 	wire  [31:0] nios2_1_data_master_readdata;                                // mm_interconnect_0:nios2_1_data_master_readdata -> nios2_1:d_readdata
 	wire         nios2_1_data_master_waitrequest;                             // mm_interconnect_0:nios2_1_data_master_waitrequest -> nios2_1:d_waitrequest
 	wire         nios2_1_data_master_debugaccess;                             // nios2_1:debug_mem_slave_debugaccess_to_roms -> mm_interconnect_0:nios2_1_data_master_debugaccess
-	wire  [16:0] nios2_1_data_master_address;                                 // nios2_1:d_address -> mm_interconnect_0:nios2_1_data_master_address
+	wire  [17:0] nios2_1_data_master_address;                                 // nios2_1:d_address -> mm_interconnect_0:nios2_1_data_master_address
 	wire   [3:0] nios2_1_data_master_byteenable;                              // nios2_1:d_byteenable -> mm_interconnect_0:nios2_1_data_master_byteenable
 	wire         nios2_1_data_master_read;                                    // nios2_1:d_read -> mm_interconnect_0:nios2_1_data_master_read
 	wire         nios2_1_data_master_write;                                   // nios2_1:d_write -> mm_interconnect_0:nios2_1_data_master_write
@@ -26,7 +26,7 @@ module qsys_system (
 	wire  [31:0] nios2_2_data_master_readdata;                                // mm_interconnect_0:nios2_2_data_master_readdata -> nios2_2:d_readdata
 	wire         nios2_2_data_master_waitrequest;                             // mm_interconnect_0:nios2_2_data_master_waitrequest -> nios2_2:d_waitrequest
 	wire         nios2_2_data_master_debugaccess;                             // nios2_2:debug_mem_slave_debugaccess_to_roms -> mm_interconnect_0:nios2_2_data_master_debugaccess
-	wire  [16:0] nios2_2_data_master_address;                                 // nios2_2:d_address -> mm_interconnect_0:nios2_2_data_master_address
+	wire  [17:0] nios2_2_data_master_address;                                 // nios2_2:d_address -> mm_interconnect_0:nios2_2_data_master_address
 	wire   [3:0] nios2_2_data_master_byteenable;                              // nios2_2:d_byteenable -> mm_interconnect_0:nios2_2_data_master_byteenable
 	wire         nios2_2_data_master_read;                                    // nios2_2:d_read -> mm_interconnect_0:nios2_2_data_master_read
 	wire         nios2_2_data_master_write;                                   // nios2_2:d_write -> mm_interconnect_0:nios2_2_data_master_write
@@ -45,15 +45,15 @@ module qsys_system (
 	wire         nios2_3_instruction_master_read;                             // nios2_3:i_read -> mm_interconnect_0:nios2_3_instruction_master_read
 	wire  [31:0] nios2_2_instruction_master_readdata;                         // mm_interconnect_0:nios2_2_instruction_master_readdata -> nios2_2:i_readdata
 	wire         nios2_2_instruction_master_waitrequest;                      // mm_interconnect_0:nios2_2_instruction_master_waitrequest -> nios2_2:i_waitrequest
-	wire  [16:0] nios2_2_instruction_master_address;                          // nios2_2:i_address -> mm_interconnect_0:nios2_2_instruction_master_address
+	wire  [17:0] nios2_2_instruction_master_address;                          // nios2_2:i_address -> mm_interconnect_0:nios2_2_instruction_master_address
 	wire         nios2_2_instruction_master_read;                             // nios2_2:i_read -> mm_interconnect_0:nios2_2_instruction_master_read
 	wire  [31:0] nios2_1_instruction_master_readdata;                         // mm_interconnect_0:nios2_1_instruction_master_readdata -> nios2_1:i_readdata
 	wire         nios2_1_instruction_master_waitrequest;                      // mm_interconnect_0:nios2_1_instruction_master_waitrequest -> nios2_1:i_waitrequest
-	wire  [16:0] nios2_1_instruction_master_address;                          // nios2_1:i_address -> mm_interconnect_0:nios2_1_instruction_master_address
+	wire  [17:0] nios2_1_instruction_master_address;                          // nios2_1:i_address -> mm_interconnect_0:nios2_1_instruction_master_address
 	wire         nios2_1_instruction_master_read;                             // nios2_1:i_read -> mm_interconnect_0:nios2_1_instruction_master_read
 	wire  [31:0] nios2_0_instruction_master_readdata;                         // mm_interconnect_0:nios2_0_instruction_master_readdata -> nios2_0:i_readdata
 	wire         nios2_0_instruction_master_waitrequest;                      // mm_interconnect_0:nios2_0_instruction_master_waitrequest -> nios2_0:i_waitrequest
-	wire  [15:0] nios2_0_instruction_master_address;                          // nios2_0:i_address -> mm_interconnect_0:nios2_0_instruction_master_address
+	wire  [16:0] nios2_0_instruction_master_address;                          // nios2_0:i_address -> mm_interconnect_0:nios2_0_instruction_master_address
 	wire         nios2_0_instruction_master_read;                             // nios2_0:i_read -> mm_interconnect_0:nios2_0_instruction_master_read
 	wire         mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_chipselect;  // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_chipselect -> jtag_uart_0:av_chipselect
 	wire  [31:0] mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_readdata;    // jtag_uart_0:av_readdata -> mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_readdata
@@ -90,7 +90,7 @@ module qsys_system (
 	wire         mm_interconnect_0_fifo_sink_0_out_read;                      // mm_interconnect_0:fifo_sink_0_out_read -> fifo_sink_0:avalonmm_read_slave_read
 	wire         mm_interconnect_0_data_mem_0_s1_chipselect;                  // mm_interconnect_0:data_mem_0_s1_chipselect -> data_mem_0:chipselect
 	wire  [31:0] mm_interconnect_0_data_mem_0_s1_readdata;                    // data_mem_0:readdata -> mm_interconnect_0:data_mem_0_s1_readdata
-	wire  [11:0] mm_interconnect_0_data_mem_0_s1_address;                     // mm_interconnect_0:data_mem_0_s1_address -> data_mem_0:address
+	wire  [12:0] mm_interconnect_0_data_mem_0_s1_address;                     // mm_interconnect_0:data_mem_0_s1_address -> data_mem_0:address
 	wire   [3:0] mm_interconnect_0_data_mem_0_s1_byteenable;                  // mm_interconnect_0:data_mem_0_s1_byteenable -> data_mem_0:byteenable
 	wire         mm_interconnect_0_data_mem_0_s1_write;                       // mm_interconnect_0:data_mem_0_s1_write -> data_mem_0:write
 	wire  [31:0] mm_interconnect_0_data_mem_0_s1_writedata;                   // mm_interconnect_0:data_mem_0_s1_writedata -> data_mem_0:writedata
@@ -156,7 +156,7 @@ module qsys_system (
 	wire         mm_interconnect_0_fifo_sink_2_out_read;                      // mm_interconnect_0:fifo_sink_2_out_read -> fifo_sink_2:avalonmm_read_slave_read
 	wire         mm_interconnect_0_data_mem_2_s1_chipselect;                  // mm_interconnect_0:data_mem_2_s1_chipselect -> data_mem_2:chipselect
 	wire  [31:0] mm_interconnect_0_data_mem_2_s1_readdata;                    // data_mem_2:readdata -> mm_interconnect_0:data_mem_2_s1_readdata
-	wire  [11:0] mm_interconnect_0_data_mem_2_s1_address;                     // mm_interconnect_0:data_mem_2_s1_address -> data_mem_2:address
+	wire  [12:0] mm_interconnect_0_data_mem_2_s1_address;                     // mm_interconnect_0:data_mem_2_s1_address -> data_mem_2:address
 	wire   [3:0] mm_interconnect_0_data_mem_2_s1_byteenable;                  // mm_interconnect_0:data_mem_2_s1_byteenable -> data_mem_2:byteenable
 	wire         mm_interconnect_0_data_mem_2_s1_write;                       // mm_interconnect_0:data_mem_2_s1_write -> data_mem_2:write
 	wire  [31:0] mm_interconnect_0_data_mem_2_s1_writedata;                   // mm_interconnect_0:data_mem_2_s1_writedata -> data_mem_2:writedata
@@ -189,7 +189,7 @@ module qsys_system (
 	wire         mm_interconnect_0_fifo_sink_1_out_read;                      // mm_interconnect_0:fifo_sink_1_out_read -> fifo_sink_1:avalonmm_read_slave_read
 	wire         mm_interconnect_0_data_mem_1_s1_chipselect;                  // mm_interconnect_0:data_mem_1_s1_chipselect -> data_mem_1:chipselect
 	wire  [31:0] mm_interconnect_0_data_mem_1_s1_readdata;                    // data_mem_1:readdata -> mm_interconnect_0:data_mem_1_s1_readdata
-	wire  [11:0] mm_interconnect_0_data_mem_1_s1_address;                     // mm_interconnect_0:data_mem_1_s1_address -> data_mem_1:address
+	wire  [12:0] mm_interconnect_0_data_mem_1_s1_address;                     // mm_interconnect_0:data_mem_1_s1_address -> data_mem_1:address
 	wire   [3:0] mm_interconnect_0_data_mem_1_s1_byteenable;                  // mm_interconnect_0:data_mem_1_s1_byteenable -> data_mem_1:byteenable
 	wire         mm_interconnect_0_data_mem_1_s1_write;                       // mm_interconnect_0:data_mem_1_s1_write -> data_mem_1:write
 	wire  [31:0] mm_interconnect_0_data_mem_1_s1_writedata;                   // mm_interconnect_0:data_mem_1_s1_writedata -> data_mem_1:writedata

@@ -142,7 +142,7 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 	set_instance_parameter_value data_mem_0 {initMemContent} {1}
 	set_instance_parameter_value data_mem_0 {initializationFileName} {onchip_mem.hex}
 	set_instance_parameter_value data_mem_0 {instanceID} {NONE}
-	set_instance_parameter_value data_mem_0 {memorySize} {16384.0}
+	set_instance_parameter_value data_mem_0 {memorySize} {24576.0}
 	set_instance_parameter_value data_mem_0 {readDuringWriteMode} {DONT_CARE}
 	set_instance_parameter_value data_mem_0 {resetrequest_enabled} {1}
 	set_instance_parameter_value data_mem_0 {simAllowMRAMContentsFile} {0}
@@ -169,7 +169,7 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 	set_instance_parameter_value data_mem_1 {initMemContent} {1}
 	set_instance_parameter_value data_mem_1 {initializationFileName} {onchip_mem.hex}
 	set_instance_parameter_value data_mem_1 {instanceID} {NONE}
-	set_instance_parameter_value data_mem_1 {memorySize} {16384.0}
+	set_instance_parameter_value data_mem_1 {memorySize} {24576.0}
 	set_instance_parameter_value data_mem_1 {readDuringWriteMode} {DONT_CARE}
 	set_instance_parameter_value data_mem_1 {resetrequest_enabled} {1}
 	set_instance_parameter_value data_mem_1 {simAllowMRAMContentsFile} {0}
@@ -196,7 +196,7 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 	set_instance_parameter_value data_mem_2 {initMemContent} {1}
 	set_instance_parameter_value data_mem_2 {initializationFileName} {onchip_mem.hex}
 	set_instance_parameter_value data_mem_2 {instanceID} {NONE}
-	set_instance_parameter_value data_mem_2 {memorySize} {16384.0}
+	set_instance_parameter_value data_mem_2 {memorySize} {24576.0}
 	set_instance_parameter_value data_mem_2 {readDuringWriteMode} {DONT_CARE}
 	set_instance_parameter_value data_mem_2 {resetrequest_enabled} {1}
 	set_instance_parameter_value data_mem_2 {simAllowMRAMContentsFile} {0}
@@ -223,7 +223,7 @@ set_project_property HIDE_FROM_IP_CATALOG {false}
 	set_instance_parameter_value data_mem_3 {initMemContent} {1}
 	set_instance_parameter_value data_mem_3 {initializationFileName} {onchip_mem.hex}
 	set_instance_parameter_value data_mem_3 {instanceID} {NONE}
-	set_instance_parameter_value data_mem_3 {memorySize} {32000.0}
+	set_instance_parameter_value data_mem_3 {memorySize} {24576.0}
 	set_instance_parameter_value data_mem_3 {readDuringWriteMode} {DONT_CARE}
 	set_instance_parameter_value data_mem_3 {resetrequest_enabled} {1}
 	set_instance_parameter_value data_mem_3 {simAllowMRAMContentsFile} {0}

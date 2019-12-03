@@ -1,14 +1,9 @@
-10:42:21 **** Incremental Build of configuration Nios II for project node_0 ****
+13:55:20 **** Incremental Build of configuration Nios II for project node_0 ****
 make all 
 Info: Building ../node_0_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_0_bsp/
 [BSP build complete]
-Info: Compiling code_0.c to obj/default/code_0.o
-nios2-elf-gcc -xc -MP -MMD -c -I../node_0_bsp//HAL/inc -I../node_0_bsp/ -I../node_0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_0.o code_0.c
-In file included from code_0.c:8:0:
-packet_transaction_util.h:5:29: fatal error: circular_buffer.h: No such file or directory
-compilation terminated.
-make: *** [obj/default/code_0.o] Error 1
+[code_0 build complete]
 
-10:42:22 Build Finished (took 1s.322ms)
+13:55:21 Build Finished (took 1s.224ms)
 

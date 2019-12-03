@@ -1,9 +1,16 @@
-10:46:12 **** Build of configuration Nios II for project node_1 ****
+18:27:01 **** Build of configuration Nios II for project node_1 ****
 make all 
 Info: Building ../node_1_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_1_bsp/
 [BSP build complete]
-[code_1 build complete]
+Info: Linking code_1.elf
+nios2-elf-g++  -T'../node_1_bsp//linker.x' -msys-crt0='../node_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node_1_bsp/  -msmallc  -Wl,-Map=code_1.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o code_1.elf obj/default/code_1.o -lm -msys-lib=m
+obj/default/code_1.o: In function `main':
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_1/code_1.c:61: undefined reference to `receive_poll'
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_1/code_1.c:64: undefined reference to `receive_packet'
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_1/code_1.c:67: undefined reference to `send_packet'
+collect2.exe: error: ld returned 1 exit status
+make: *** [code_1.elf] Error 1
 
-10:46:13 Build Finished (took 1s.516ms)
+18:27:02 Build Finished (took 1s.115ms)
 

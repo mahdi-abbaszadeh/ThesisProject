@@ -2,15 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="receive_array" key="selection"/>
+		<item value="size" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="receive_array"/>
-			<item value="send_array"/>
-			<item value="double"/>
+			<item value="size"/>
+			<item value="proc_1_outarg_0"/>
+			<item value="input_0"/>
+			<item value="Proc_0_arg"/>
+			<item value="ring_buffer_size_t"/>
 		</list>
 		<list key="replacehistory">
 		</list>

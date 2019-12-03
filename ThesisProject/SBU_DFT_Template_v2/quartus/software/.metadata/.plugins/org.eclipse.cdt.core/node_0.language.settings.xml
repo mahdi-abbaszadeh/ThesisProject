@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1948004616" name="Nios II">
+	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1655176649" name="Nios II">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="altera.tool.Nios2GCCBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
@@ -1379,48 +1379,6 @@
 			<provider id="altera.tool.Nios2GCCBuildCommandParser">
 				<language id="org.eclipse.cdt.core.gcc">
 					<resource project-relative-path="code_0.c">
-						<entry kind="includePath" name="/node_0_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/node_0_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/node_0_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_CLEAN_EXIT" value=""/>
-						<entry kind="macro" name="ALT_NO_C_PLUS_PLUS" value=""/>
-						<entry kind="macro" name="ALT_NO_EXIT" value=""/>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="ALT_USE_DIRECT_DRIVERS" value=""/>
-						<entry kind="macro" name="ALT_USE_SMALL_DRIVERS" value=""/>
-						<entry kind="macro" name="SMALL_C_LIB" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-						<entry kind="macro" name="exit(a)" value="_exit(a)"/>
-					</resource>
-					<resource project-relative-path="packet_transaction_util.c">
-						<entry kind="includePath" name="/node_0_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/node_0_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/node_0_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_CLEAN_EXIT" value=""/>
-						<entry kind="macro" name="ALT_NO_C_PLUS_PLUS" value=""/>
-						<entry kind="macro" name="ALT_NO_EXIT" value=""/>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="ALT_USE_DIRECT_DRIVERS" value=""/>
-						<entry kind="macro" name="ALT_USE_SMALL_DRIVERS" value=""/>
-						<entry kind="macro" name="SMALL_C_LIB" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-						<entry kind="macro" name="exit(a)" value="_exit(a)"/>
-					</resource>
-					<resource project-relative-path="circular_buffer.c">
 						<entry kind="includePath" name="/node_0_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

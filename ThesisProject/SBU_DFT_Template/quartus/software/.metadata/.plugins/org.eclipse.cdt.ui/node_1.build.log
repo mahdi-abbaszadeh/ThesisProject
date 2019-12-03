@@ -1,28 +1,9 @@
-10:17:50 **** Build of configuration Nios II for project node_1 ****
+13:55:41 **** Incremental Build of configuration Nios II for project node_1 ****
 make all 
 Info: Building ../node_1_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_1_bsp/
 [BSP build complete]
-Info: Compiling code_1.c to obj/default/code_1.o
-nios2-elf-gcc -xc -MP -MMD -c -I../node_1_bsp//HAL/inc -I../node_1_bsp/ -I../node_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_1.o code_1.c
-code_1.c: In function 'main':
-code_1.c:55:17: warning: unused variable 'proc_2_out_1' [-Wunused-variable]
-   unsigned char proc_2_out_1[24] = {};
-                 ^
-code_1.c:54:17: warning: unused variable 'proc_2_out_0' [-Wunused-variable]
-   unsigned char proc_2_out_0[24] = {};
-                 ^
-code_1.c:53:17: warning: unused variable 'proc_2_in_0' [-Wunused-variable]
-   unsigned char proc_2_in_0[24] = {};
-                 ^
-Info: Linking code_1.elf
-nios2-elf-g++  -T'../node_1_bsp//linker.x' -msys-crt0='../node_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node_1_bsp/  -msmallc  -Wl,-Map=code_1.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o code_1.elf obj/default/code_1.o obj/default/packet_transaction_util.o -lm -msys-lib=m
-nios2-elf-insert code_1.elf --thread_model hal --cpu_name nios2_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name qsys_system --jdi C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1_bsp/../../SBU_DFT.jdi --sopcinfo C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1_bsp/../../qsys_system.sopcinfo
-Info: (code_1.elf) 6860 Bytes program size (code + initialized data).
-Info:              9284 Bytes free for stack + heap.
-Info: Creating code_1.objdump
-nios2-elf-objdump --disassemble --syms --all-header code_1.elf >code_1.objdump
 [code_1 build complete]
 
-10:17:57 Build Finished (took 7s.806ms)
+13:55:42 Build Finished (took 1s.30ms)
 

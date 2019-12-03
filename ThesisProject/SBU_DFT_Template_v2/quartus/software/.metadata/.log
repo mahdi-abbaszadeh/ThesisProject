@@ -1,4 +1,4 @@
-!SESSION 2019-10-21 20:02:24.257 -----------------------------------------------
+!SESSION 2019-11-25 09:26:28.444 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -6,74 +6,7 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-10-21 20:02:43.893
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to www.eclipse.org:443 [www.eclipse.org/198.41.30.198] failed: Read timed out. ; version: 1.100.0.v20160217-0435
-!STACK 0
-org.apache.http.conn.ConnectTimeoutException: Connect to www.eclipse.org:443 [www.eclipse.org/198.41.30.198] failed: Read timed out
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
-	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
-	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at sun.security.ssl.InputRecord.readFully(Unknown Source)
-	at sun.security.ssl.InputRecord.read(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
-	... 16 more
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:04:43.395
-!MESSAGE Indexed 'node_0' (2 sources, 1 headers) in 0.299 sec: 36 declarations; 215 references; 11 unresolved inclusions; 0 syntax errors; 46 unresolved names (15%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:05:19.186
-!MESSAGE Indexed 'node_0_bsp' (80 sources, 101 headers) in 1.16 sec: 2,995 declarations; 5,412 references; 70 unresolved inclusions; 10 syntax errors; 140 unresolved names (1.6%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:05:38.859
-!MESSAGE Indexed 'node_1' (2 sources, 1 headers) in 0.033 sec: 36 declarations; 212 references; 11 unresolved inclusions; 0 syntax errors; 46 unresolved names (16%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:06:06.860
-!MESSAGE Indexed 'node_1_bsp' (80 sources, 123 headers) in 1.04 sec: 3,306 declarations; 6,178 references; 88 unresolved inclusions; 6 syntax errors; 170 unresolved names (1.8%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:06:34.857
-!MESSAGE Indexed 'node_2' (2 sources, 1 headers) in 0.02 sec: 36 declarations; 212 references; 11 unresolved inclusions; 0 syntax errors; 46 unresolved names (16%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:07:03.313
-!MESSAGE Indexed 'node_2_bsp' (80 sources, 61 headers) in 0.662 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:07:23.807
-!MESSAGE Indexed 'node_3' (2 sources, 1 headers) in 0.014 sec: 36 declarations; 212 references; 11 unresolved inclusions; 0 syntax errors; 46 unresolved names (16%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2019-10-21 20:07:50.647
-!MESSAGE Indexed 'node_3_bsp' (80 sources, 61 headers) in 0.6 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
-!SESSION 2019-10-21 20:13:33.232 -----------------------------------------------
-eclipse.buildId=4.5.2.M20160212-1500
-java.version=1.8.0_05
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-10-21 20:13:57.068
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-11-25 09:27:01.235
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
@@ -92,30 +25,156 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:29:44.448
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:33:14.192
+!MESSAGE Indexed 'node_0' (2 sources, 2 headers) in 0.281 sec: 46 declarations; 240 references; 11 unresolved inclusions; 0 syntax errors; 51 unresolved names (15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:35:03.564
+!MESSAGE Indexed 'node_0_bsp' (80 sources, 150 headers) in 1.89 sec: 5,368 declarations; 8,572 references; 44 unresolved inclusions; 3 syntax errors; 88 unresolved names (0.63%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:35:32.123
+!MESSAGE Indexed 'node_1' (2 sources, 2 headers) in 0.034 sec: 46 declarations; 237 references; 11 unresolved inclusions; 0 syntax errors; 51 unresolved names (15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:36:04.009
+!MESSAGE Indexed 'node_1_bsp' (80 sources, 61 headers) in 0.712 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:54:00.698
+!MESSAGE Indexed 'node0_v2_bsp' (80 sources, 61 headers) in 0.62 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 09:54:03.263
+!MESSAGE Indexed 'node0_v2' (1 sources, 0 headers) in 0.005 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:00:27.886
 !MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:29:46.162
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:00:29.594
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:03.466
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid]
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 10:02:13.277
+!MESSAGE Indexed 'node3_v2_bsp' (80 sources, 61 headers) in 0.587 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:05.218
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 10:02:15.551
+!MESSAGE Indexed 'node3_v2' (1 sources, 0 headers) in 0.002 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:19.353
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --stop --accept-bad-sysid]
+!ENTRY org.eclipse.cdt.ui 4 0 2019-11-25 10:17:15.140
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element packet_transaction_util.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2019-11-25 10:17:15.142
+!MESSAGE Element packet_transaction_util.c does not exist.
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:21.107
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_2/code_2.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:35.968
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:17:45.835
 !MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-21 20:30:37.715
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_3/code_3.elf]
-!SESSION 2019-10-26 10:15:35.146 -----------------------------------------------
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:17:47.544
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:18:19.158
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 10:18:20.910
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 18:48:49.673
+!MESSAGE Indexed 'node1_v2_bsp' (80 sources, 61 headers) in 0.51 sec: 1,294 declarations; 2,774 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-25 18:48:51.589
+!MESSAGE Indexed 'node1_v2' (1 sources, 0 headers) in 0.005 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:01.405
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:03.105
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:18.378
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:20.097
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:45.341
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:45.706
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:39:47.421
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:55:19.052
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:55:19.370
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:55:21.070
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:55:42.718
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:55:44.416
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:56:10.956
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:56:11.315
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:56:13.038
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:56:32.993
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:56:34.721
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:57:14.607
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:57:16.329
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:34.859
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:35.195
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:36.910
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:54.039
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:54.384
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 19:59:56.119
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 20:00:15.539
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-11-25 20:00:17.268
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+!SESSION 2019-12-01 10:49:17.450 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -123,7 +182,7 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-10-26 10:16:00.408
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-12-01 10:49:51.142
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
@@ -142,168 +201,45 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:20:18.712
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:20:20.867
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:20:20.951
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:20:56.595
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:20:58.625
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:20:58.684
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:35:25.432
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:35:25.703
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:35:27.649
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:35:27.708
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:35:59.636
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:36:01.676
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:36:01.736
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:36:48.648
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:36:48.884
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:36:50.875
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:36:50.934
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:37:09.391
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:37:11.384
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:37:11.440
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:44:21.062
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:44:21.304
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:44:23.323
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:44:23.383
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:44:38.300
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:44:40.228
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:44:40.287
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:45:12.900
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:45:13.166
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:45:15.135
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:45:15.194
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:48:12.843
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:48:14.827
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:48:14.886
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:48:35.980
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 11:48:37.983
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 11:48:38.041
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:28:48.254
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:28:48.469
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 18:28:50.580
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:28:50.591
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:29:23.692
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:29:24.057
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 18:29:26.012
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:29:26.070
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_0/code_0.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:29:40.765
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 18:29:42.763
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:29:42.821
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_1/code_1.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:30:19.516
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --stop --accept-bad-sysid --sidp=Not Found]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 18:30:21.526
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=2, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:30:21.585
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=2 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_2/code_2.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:30:41.627
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:35:49.968
 !MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
 
-!ENTRY com.altera.sbtgui.launch 4 0 2019-10-26 18:30:43.672
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:35:52.111
 !MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-10-26 18:30:43.730
-!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/software/node_3/code_3.elf]
-!SESSION 2019-10-27 13:06:28.670 -----------------------------------------------
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:35:52.184
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:36:42.480
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:36:44.450
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:36:44.507
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:40:37.764
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:40:38.121
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:40:40.095
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:40:40.152
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:41:14.252
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:41:16.229
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:41:16.288
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+!SESSION 2019-12-01 11:44:12.671 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -311,10 +247,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.core.resources 2 10035 2019-10-27 13:06:34.027
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-01 11:44:17.967
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-10-27 13:06:55.336
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-12-01 11:44:28.306
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
@@ -332,7 +268,436 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
-!SESSION 2019-10-27 13:07:59.736 -----------------------------------------------
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:47:12.970
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:47:14.920
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:47:14.993
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:50:06.697
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:50:08.640
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:50:08.698
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:51:55.148
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:51:55.478
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:51:57.443
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:51:57.500
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:54:19.224
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:54:21.176
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:54:21.233
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:55:16.696
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:55:17.016
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:55:18.983
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:55:19.041
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:56:18.562
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 11:56:20.504
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 11:56:20.562
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:00:29.107
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:00:31.038
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:00:31.096
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:08:51.823
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:08:52.146
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:08:54.071
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:08:54.129
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:08:56.139
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --go, --accept-bad-sysid, /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:08:56.147
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:09:52.374
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:09:54.337
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:09:54.393
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:11:43.897
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:11:44.230
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 12:11:46.172
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 12:11:46.230
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:30:47.121
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:30:47.463
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:30:49.443
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:30:49.502
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:30:51.526
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --go, --accept-bad-sysid, /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:30:51.532
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:32:29.120
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:32:31.107
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:32:31.166
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:35:24.312
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:35:26.210
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:35:26.266
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:37:21.847
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:37:22.180
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:37:24.148
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:37:24.207
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:37:45.692
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:37:47.617
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:37:47.676
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:38:20.082
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:38:22.027
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:38:22.082
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:45:46.231
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:45:46.533
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:45:48.491
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:45:48.549
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:46:06.936
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:46:07.283
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:46:09.244
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:46:09.306
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:48:20.192
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:48:20.528
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:48:22.486
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:48:22.542
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:48:38.746
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:48:40.671
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:48:40.726
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:52:06.165
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:52:08.167
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:52:08.224
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:25.075
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:25.403
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:57:27.330
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:27.387
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:50.385
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:50.701
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:57:52.640
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:57:52.697
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:58:17.197
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 13:58:19.105
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 13:58:19.162
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:01:41.680
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:01:41.990
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:01:43.938
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:01:43.994
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:02:26.132
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:02:26.445
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:02:28.396
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:02:28.453
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:04:41.709
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:04:42.036
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:04:44.002
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:04:44.060
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:05:03.224
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:05:05.140
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:05:05.198
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:51:07.011
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:51:07.346
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:51:09.233
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:51:09.291
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:52:03.476
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:52:05.448
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --tcpport=auto --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:57:43.788
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:57:44.102
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 14:57:46.059
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:57:46.118
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:58:07.450
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 14:58:09.447
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --tcpport=auto --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:03:35.955
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 15:03:37.873
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:03:37.930
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:03:57.541
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 15:03:59.514
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:03:59.572
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:04:23.466
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:04:23.815
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-01 15:04:25.735
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 15:04:25.791
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY org.eclipse.ui 4 4 2019-12-01 15:22:33.989
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@794d28a3)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@1796b4f)}
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:07:27.673
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:07:27.966
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:07:29.679
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:09:31.400
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:09:31.828
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:09:33.525
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:09:52.277
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:09:53.967
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:16:45.152
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:16:45.433
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:16:47.157
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:17:11.292
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:17:12.983
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:28:48.344
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:28:48.670
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:28:50.369
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:29:45.031
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-01 18:29:46.708
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+!SESSION 2019-12-01 18:44:14.505 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -340,33 +705,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-10-27 13:08:12.575
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
-	at com.google.gson.Gson.fromJson(Gson.java:803)
-	at com.google.gson.Gson.fromJson(Gson.java:768)
-	at com.google.gson.Gson.fromJson(Gson.java:717)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
-	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
-	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
-	... 9 more
-!SESSION 2019-11-04 10:45:32.837 -----------------------------------------------
-eclipse.buildId=4.5.2.M20160212-1500
-java.version=1.8.0_05
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-01 18:44:22.161
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-11-04 10:46:06.455
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-12-01 18:44:41.089
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
@@ -384,29 +726,42 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
-!SESSION 2019-11-09 09:56:31.094 -----------------------------------------------
-eclipse.buildId=4.5.2.M20160212-1500
-java.version=1.8.0_05
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga/17.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-11-09 09:56:55.982
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
-	at com.google.gson.Gson.fromJson(Gson.java:803)
-	at com.google.gson.Gson.fromJson(Gson.java:768)
-	at com.google.gson.Gson.fromJson(Gson.java:717)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
-	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
-	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
-	... 9 more
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:55:25.129
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-02 18:55:27.231
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:55:27.309
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:55:48.607
+!MESSAGE Terminated Launch with connection: 23DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:55:49.036
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-02 18:55:51.008
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=3, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:55:51.066
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=3 --go --accept-bad-sysid --reset-target /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2/node3_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:56:09.367
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-02 18:56:11.325
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:56:11.383
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node0_v2/node0_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:57:26.324
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-12-02 18:57:28.315
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 18:57:28.373
+!MESSAGE Executing: [D:/intelfpga/17.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=1 --go --accept-bad-sysid /cygdrive/c/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node1_v2/node1_v2.elf]

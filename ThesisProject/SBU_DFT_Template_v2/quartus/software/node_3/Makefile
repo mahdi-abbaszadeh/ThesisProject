@@ -143,10 +143,12 @@ ELF := code_3.elf
 
 # Paths to C, C++, and assembly source files.
 C_SRCS += code_3.c
-C_SRCS += packet_transaction_util.c
 CXX_SRCS :=
 ASM_SRCS :=
 
+SDIR_C_SRCS :=
+SDIR_CXX_SRCS :=
+SDIR_ASM_SRCS :=
 
 # Path to root of object file tree.
 OBJ_ROOT_DIR := obj

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SBU_DFT
-Sat Sep 21 10:32:20 2019
+Mon Nov 25 09:53:01 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Sep 21 10:32:20 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 25 09:53:01 2019 ;
 ; Revision Name             ; SBU_DFT                               ;
 ; Top-level Entity Name     ; qsys_system                           ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                     ;
-+----------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                ;
-+----------------------------------------------------------------------------------------------------------------+
-; C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/simulation/modelsim/SBU_DFT.vo ;
-+----------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/simulation/modelsim/SBU_DFT.vo ;
++-------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,14 +81,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Sat Sep 21 10:32:14 2019
+    Info: Processing started: Mon Nov 25 09:52:54 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off SBU_DFT -c SBU_DFT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file SBU_DFT.vo in folder "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file SBU_DFT.vo in folder "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4915 megabytes
-    Info: Processing ended: Sat Sep 21 10:32:21 2019
+    Info: Peak virtual memory: 4917 megabytes
+    Info: Processing ended: Mon Nov 25 09:53:01 2019
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 

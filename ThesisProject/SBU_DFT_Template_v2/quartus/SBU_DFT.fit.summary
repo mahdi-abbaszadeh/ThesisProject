@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sat Sep 21 10:31:31 2019
+Fitter Status : Successful - Mon Nov 25 09:52:09 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : SBU_DFT
 Top-level Entity Name : qsys_system
 Family : Cyclone V
 Device : 5CSEMA4U23C6
 Timing Models : Final
-Logic utilization (in ALMs) : 5,082 / 15,880 ( 32 % )
-Total registers : 5729
+Logic utilization (in ALMs) : 5,081 / 15,880 ( 32 % )
+Total registers : 5734
 Total pins : 1 / 314 ( < 1 % )
 Total virtual pins : 0
-Total block memory bits : 701,440 / 2,764,800 ( 25 % )
-Total RAM Blocks : 138 / 270 ( 51 % )
+Total block memory bits : 838,656 / 2,764,800 ( 30 % )
+Total RAM Blocks : 186 / 270 ( 69 % )
 Total DSP Blocks : 0 / 84 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -49,14 +49,14 @@ module qsys_system_mm_interconnect_0_router_004_default_decode
                DEFAULT_RD_CHANNEL = -1,
                DEFAULT_DESTID = 3 
    )
-  (output [83 - 79 : 0] default_destination_id,
+  (output [84 - 80 : 0] default_destination_id,
    output [25-1 : 0] default_wr_channel,
    output [25-1 : 0] default_rd_channel,
    output [25-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
-    DEFAULT_DESTID[83 - 79 : 0];
+    DEFAULT_DESTID[84 - 80 : 0];
 
   generate
     if (DEFAULT_CHANNEL == -1) begin : no_default_channel_assignment
@@ -93,7 +93,7 @@ module qsys_system_mm_interconnect_0_router_004
     // Command Sink (Input)
     // -------------------
     input                       sink_valid,
-    input  [97-1 : 0]    sink_data,
+    input  [98-1 : 0]    sink_data,
     input                       sink_startofpacket,
     input                       sink_endofpacket,
     output                      sink_ready,
@@ -102,7 +102,7 @@ module qsys_system_mm_interconnect_0_router_004
     // Command Source (Output)
     // -------------------
     output                          src_valid,
-    output reg [97-1    : 0] src_data,
+    output reg [98-1    : 0] src_data,
     output reg [25-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
@@ -112,18 +112,18 @@ module qsys_system_mm_interconnect_0_router_004
     // -------------------------------------------------------
     // Local parameters and variables
     // -------------------------------------------------------
-    localparam PKT_ADDR_H = 52;
+    localparam PKT_ADDR_H = 53;
     localparam PKT_ADDR_L = 36;
-    localparam PKT_DEST_ID_H = 83;
-    localparam PKT_DEST_ID_L = 79;
-    localparam PKT_PROTECTION_H = 87;
-    localparam PKT_PROTECTION_L = 85;
-    localparam ST_DATA_W = 97;
+    localparam PKT_DEST_ID_H = 84;
+    localparam PKT_DEST_ID_L = 80;
+    localparam PKT_PROTECTION_H = 88;
+    localparam PKT_PROTECTION_L = 86;
+    localparam ST_DATA_W = 98;
     localparam ST_CHANNEL_W = 25;
     localparam DECODER_TYPE = 0;
 
-    localparam PKT_TRANS_WRITE = 55;
-    localparam PKT_TRANS_READ  = 56;
+    localparam PKT_TRANS_WRITE = 56;
+    localparam PKT_TRANS_READ  = 57;
 
     localparam PKT_ADDR_W = PKT_ADDR_H-PKT_ADDR_L + 1;
     localparam PKT_DEST_ID_W = PKT_DEST_ID_H-PKT_DEST_ID_L + 1;
@@ -135,13 +135,13 @@ module qsys_system_mm_interconnect_0_router_004
     // during address decoding
     // -------------------------------------------------------
     localparam PAD0 = log2ceil(64'h9000 - 64'h8800); 
-    localparam PAD1 = log2ceil(64'h20000 - 64'h18000); 
+    localparam PAD1 = log2ceil(64'h18000 - 64'h10000); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h20000;
+    localparam ADDR_RANGE = 64'h18000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -195,8 +195,8 @@ module qsys_system_mm_interconnect_0_router_004
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 24;
     end
 
-    // ( 0x18000 .. 0x20000 )
-    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 17'h18000   ) begin
+    // ( 0x10000 .. 0x18000 )
+    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 17'h10000   ) begin
             src_channel = 25'b10;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end

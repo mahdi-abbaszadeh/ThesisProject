@@ -142,8 +142,7 @@ ACDS_VERSION := 17.1
 ELF := code_1.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += code_1.c
-C_SRCS += packet_transaction_util.c
+C_SRCS := code_1.c
 CXX_SRCS :=
 ASM_SRCS :=
 

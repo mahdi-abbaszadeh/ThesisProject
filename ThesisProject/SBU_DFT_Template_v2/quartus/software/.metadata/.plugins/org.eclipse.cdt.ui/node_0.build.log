@@ -1,55 +1,17 @@
-20:32:32 **** Incremental Build of configuration Nios II for project node_0 ****
+18:26:59 **** Incremental Build of configuration Nios II for project node_0 ****
 make all 
 Info: Building ../node_0_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node_0_bsp/
 [BSP build complete]
-Info: Compiling packet_transaction_util.c to obj/default/packet_transaction_util.o
-nios2-elf-gcc -xc -MP -MMD -c -I../node_0_bsp//HAL/inc -I../node_0_bsp/ -I../node_0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/packet_transaction_util.o packet_transaction_util.c
-packet_transaction_util.c: In function 'init_buffer':
-packet_transaction_util.c:75:16: warning: unused variable 'buff_p4_p1' [-Wunused-variable]
-  cbuf_handle_t buff_p4_p1 = circular_buf_init(buffer_p4_p1, BUFFER_SIZE);
-                ^
-packet_transaction_util.c:72:16: warning: unused variable 'buff_p0_p1' [-Wunused-variable]
-  cbuf_handle_t buff_p0_p1 = circular_buf_init(buffer_p0_p1, BUFFER_SIZE);
-                ^
-packet_transaction_util.c:69:16: warning: unused variable 'buff_p5_p0' [-Wunused-variable]
-  cbuf_handle_t buff_p5_p0 = circular_buf_init(buffer_p5_p0, BUFFER_SIZE);
-                ^
-packet_transaction_util.c: In function 'init_structures':
-packet_transaction_util.c:86:20: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  edge_p5_p0.buffer = buff_p5_p0;
-                    ^
-packet_transaction_util.c:98:20: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  edge_p0_p1.buffer = buff_p0_p1;
-                    ^
-packet_transaction_util.c:110:20: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  edge_p4_p1.buffer = buff_p4_p1;
-                    ^
-packet_transaction_util.c: In function 'read_payload':
-packet_transaction_util.c:176:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
-  ^
-packet_transaction_util.c:176:2: warning: incompatible implicit declaration of built-in function 'printf'
-packet_transaction_util.c:176:2: note: include '<stdio.h>' or provide a declaration of 'printf'
-packet_transaction_util.c: In function 'receive_packet':
-packet_transaction_util.c:203:2: warning: incompatible implicit declaration of built-in function 'printf'
-  printf("node destination = %d\n",node_dest);
-  ^
-packet_transaction_util.c:203:2: note: include '<stdio.h>' or provide a declaration of 'printf'
-packet_transaction_util.c:260:20: warning: passing argument 1 of 'circular_buf_put' from incompatible pointer type [-Wincompatible-pointer-types]
-   circular_buf_put(buffer, payload[i]);
-                    ^
-In file included from packet_transaction_util.h:5:0,
-                 from packet_transaction_util.c:1:
-circular_buffer.h:30:6: note: expected 'cbuf_handle_t {aka struct circular_buf_t *}' but argument is of type 'circular_buf_t ** {aka struct circular_buf_t **}'
- void circular_buf_put(cbuf_handle_t cbuf, uint8_t data);
-      ^
 Info: Linking code_0.elf
-nios2-elf-g++  -T'../node_0_bsp//linker.x' -msys-crt0='../node_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node_0_bsp/  -msmallc  -Wl,-Map=code_0.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o code_0.elf obj/default/circular_buffer.o obj/default/code_0.o obj/default/packet_transaction_util.o -lm -msys-lib=m
-d:/intelfpga/17.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x1011c of code_0.elf section `.bss' is not within region `data_mem_0'
-d:/intelfpga/17.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x1011c of code_0.elf section `.bss' is not within region `data_mem_0'
+nios2-elf-g++  -T'../node_0_bsp//linker.x' -msys-crt0='../node_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node_0_bsp/  -msmallc  -Wl,-Map=code_0.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o code_0.elf obj/default/code_0.o -lm -msys-lib=m
+obj/default/code_0.o: In function `main':
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_0/code_0.c:61: undefined reference to `receive_packet'
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_0/code_0.c:64: undefined reference to `send_packet'
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_0/code_0.c:68: undefined reference to `receive_poll'
+C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_0/code_0.c:71: undefined reference to `receive_packet'
 collect2.exe: error: ld returned 1 exit status
 make: *** [code_0.elf] Error 1
 
-20:32:33 Build Finished (took 1s.270ms)
+18:27:00 Build Finished (took 1s.228ms)
 

@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 21, 2019 7:59:31 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1571675371948</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template\quartus\software\node_0_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Nov 24, 2019 6:02:45 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1574605965956</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\Mahdi2016\Desktop\ThesisProject\ThesisProject\SBU_DFT_Template_v2\quartus\software\node_0_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\qsys_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
@@ -930,8 +930,8 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>data_mem_0</slaveDescriptor>
-                <addressRange>0x0000C000 - 0x0000FFFF</addressRange>
-                <addressSpan>16384</addressSpan>
+                <addressRange>0x00018000 - 0x0001DFFF</addressRange>
+                <addressSpan>24576</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>

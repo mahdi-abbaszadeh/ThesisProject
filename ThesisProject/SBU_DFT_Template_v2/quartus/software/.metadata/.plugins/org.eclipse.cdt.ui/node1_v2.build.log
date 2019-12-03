@@ -1,0 +1,9 @@
+18:57:24 **** Incremental Build of configuration Nios II for project node1_v2 ****
+make all 
+Info: Building ../node1_v2_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node1_v2_bsp/
+[BSP build complete]
+[node1_v2 build complete]
+
+18:57:25 Build Finished (took 968ms)
+

@@ -1,0 +1,76 @@
+#include "altera_avalon_fifo_regs.h"
+#include "altera_avalon_fifo_util.h"
+#include "system.h"
+#include <stdlib.h>
+#include <stdbool.h>
+//#include "circular_buffer_util.h"
+#include "ringbuffer_util.h"
+
+#define FIFO_SINK_CSR	FIFO_SINK_0_IN_CSR_BASE
+#define FIFO_SOURCE_CSR	FIFO_SOURCE_0_IN_CSR_BASE
+#define FIFO_SINK_BASE	FIFO_SINK_0_OUT_BASE
+#define FIFO_SOURCE_BASE	FIFO_SOURCE_0_IN_BASE
+#define FIFO_STATUS	ALTERA_AVALON_FIFO_STATUS_ALL
+
+//proc 0
+#define P0_INP0_TOKENT_SIZE 1
+#define P0_OUT0_TOKENT_SIZE 1
+#define P0_INP0_TYPE int
+#define P0_OUT0_TYPE int
+#define P0_INP0_TYPE_SIZE sizeof(int)
+#define P0_OUT0_TYPE_SIZE sizeof(int)
+
+//proc 1
+#define P1_INP0_TOKENT_SIZE 1
+#define P1_INP1_TOKENT_SIZE 1
+#define P1_OUT0_TOKENT_SIZE 1
+#define P1_OUT1_TOKENT_SIZE 1
+#define P1_INP0_TYPE int
+#define P1_INP1_TYPE int
+#define P1_OUT0_TYPE int
+#define P1_OUT1_TYPE int
+#define P1_INP0_TYPE_SIZE sizeof(int)
+#define P1_INP1_TYPE_SIZE sizeof(int)
+#define P1_OUT0_TYPE_SIZE sizeof(int)
+#define P1_OUT1_TYPE_SIZE sizeof(int)
+
+#define BUFFER_SIZE 50
+
+/******************** BUFFER *********************/
+//input buffer for process0 from process5
+/*cbuf_handle_t buff_p5_p0;*/
+ring_buffer_t buff_p5_p0;
+//input buffer for process1 from process0
+/*cbuf_handle_t buff_p0_p1;*/
+ring_buffer_t buff_p0_p1;
+//input buffer for process1 from process4
+/*cbuf_handle_t buff_p4_p1;*/
+ring_buffer_t buff_p4_p1;
+/******************** BUFFER *********************/
+
+/******************* Structure *******************/
+struct Edge{
+	uint8_t node_src;
+	uint8_t node_dest;
+	alt_u16 proc_src;
+	alt_u16 proc_dest;
+	uint8_t num_of_token;
+	ring_buffer_t *buffer;
+	bool external;
+};
+/******************* Structure *******************/
+
+struct Edge* get_edge(uint8_t proc_num, uint8_t port_num, uint8_t inout);
+
+ring_buffer_t* get_buffer(alt_u16 proc_src, alt_u16 proc_dest);
+
+void init_buffer();
+
+void init_structures();
+
+void send_packet(unsigned char node_src, unsigned char node_dest,
+alt_u16 proc_src, alt_u16 proc_dest, unsigned char packsize, unsigned char *payload);
+
+void receive_packet();
+
+void receive_poll();
