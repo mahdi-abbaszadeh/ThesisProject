@@ -1,0 +1,105 @@
+16:56:03 **** Incremental Build of configuration Nios II for project node2_v2 ****
+make all 
+Info: Building ../node2_v2_bsp/
+D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node2_v2_bsp/
+[BSP build complete]
+Info: Compiling code_2.c to obj/default/code_2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../node2_v2_bsp//HAL/inc -I../node2_v2_bsp/ -I../node2_v2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_2.o code_2.c
+code_2.c: In function 'read_buff':
+code_2.c:101:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
+     ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
+                                          ^
+In file included from packet_transaction_util.h:6:0,
+                 from code_2.c:7:
+ringbuffer_util.h:94:9: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t ring_buffer_dequeue_arr(ring_buffer_t *buffer, char *data, ring_buffer_size_t len);
+         ^
+code_2.c:108:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     proc_4_inp_0[i] = ( (P4_INP0_TYPE*)tmp )[0];
+     ^
+code_2.c:121:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
+     ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
+                                          ^
+In file included from packet_transaction_util.h:6:0,
+                 from code_2.c:7:
+ringbuffer_util.h:94:9: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t ring_buffer_dequeue_arr(ring_buffer_t *buffer, char *data, ring_buffer_size_t len);
+         ^
+code_2.c:123:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     proc_5_inp_0[i] = ( (P5_INP0_TYPE*)tmp )[0];
+     ^
+code_2.c: In function 'serializing_send':
+code_2.c:158:38: warning: pointer targets in passing argument 2 of 'ring_buffer_queue_arr' differ in signedness [-Wpointer-sign]
+   ring_buffer_queue_arr(edge->buffer,array,edge->size_of_token_type);
+                                      ^
+In file included from packet_transaction_util.h:6:0,
+                 from code_2.c:7:
+ringbuffer_util.h:77:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ void ring_buffer_queue_arr(ring_buffer_t *buffer, const char *data, ring_buffer_size_t size);
+      ^
+Info: Compiling packet_transaction_util.c to obj/default/packet_transaction_util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../node2_v2_bsp//HAL/inc -I../node2_v2_bsp/ -I../node2_v2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/packet_transaction_util.o packet_transaction_util.c
+In file included from packet_transaction_util.c:1:0:
+packet_transaction_util.c: In function 'send_packet':
+packet_transaction_util.h:11:26: error: 'FIFO_SOURCE_2_IN_BASE' undeclared (first use in this function)
+ #define FIFO_SOURCE_BASE FIFO_SOURCE_2_IN_BASE
+                          ^
+packet_transaction_util.c:138:35: note: in expansion of macro 'FIFO_SOURCE_BASE'
+     altera_avalon_fifo_write_fifo(FIFO_SOURCE_BASE, FIFO_SOURCE_CSR, temp);
+                                   ^
+packet_transaction_util.h:11:26: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIFO_SOURCE_BASE FIFO_SOURCE_2_IN_BASE
+                          ^
+packet_transaction_util.c:138:35: note: in expansion of macro 'FIFO_SOURCE_BASE'
+     altera_avalon_fifo_write_fifo(FIFO_SOURCE_BASE, FIFO_SOURCE_CSR, temp);
+                                   ^
+packet_transaction_util.h:9:26: error: 'FIFO_SOURCE_2_IN_CSR_BASE' undeclared (first use in this function)
+ #define FIFO_SOURCE_CSR  FIFO_SOURCE_2_IN_CSR_BASE
+                          ^
+packet_transaction_util.c:138:53: note: in expansion of macro 'FIFO_SOURCE_CSR'
+     altera_avalon_fifo_write_fifo(FIFO_SOURCE_BASE, FIFO_SOURCE_CSR, temp);
+                                                     ^
+packet_transaction_util.c: In function 'read_payload':
+packet_transaction_util.c:165:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
+  ^
+packet_transaction_util.c:165:2: warning: incompatible implicit declaration of built-in function 'printf'
+packet_transaction_util.c:165:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+In file included from packet_transaction_util.c:1:0:
+packet_transaction_util.c: In function 'receive_packet':
+packet_transaction_util.h:10:25: error: 'FIFO_SINK_2_OUT_BASE' undeclared (first use in this function)
+ #define FIFO_SINK_BASE  FIFO_SINK_2_OUT_BASE
+                         ^
+packet_transaction_util.c:190:38: note: in expansion of macro 'FIFO_SINK_BASE'
+  temp = altera_avalon_fifo_read_fifo(FIFO_SINK_BASE, FIFO_SINK_CSR);
+                                      ^
+packet_transaction_util.h:8:24: error: 'FIFO_SINK_2_IN_CSR_BASE' undeclared (first use in this function)
+ #define FIFO_SINK_CSR  FIFO_SINK_2_IN_CSR_BASE
+                        ^
+packet_transaction_util.c:190:54: note: in expansion of macro 'FIFO_SINK_CSR'
+  temp = altera_avalon_fifo_read_fifo(FIFO_SINK_BASE, FIFO_SINK_CSR);
+                                                      ^
+packet_transaction_util.c:192:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("node destination = %d\n",node_dest);
+  ^
+packet_transaction_util.c:192:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+packet_transaction_util.c:247:31: warning: pointer targets in passing argument 2 of 'ring_buffer_queue_arr' differ in signedness [-Wpointer-sign]
+  ring_buffer_queue_arr(buffer,payload,24);
+                               ^
+In file included from packet_transaction_util.h:6:0,
+                 from packet_transaction_util.c:1:
+ringbuffer_util.h:77:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ void ring_buffer_queue_arr(ring_buffer_t *buffer, const char *data, ring_buffer_size_t size);
+      ^
+In file included from packet_transaction_util.c:1:0:
+packet_transaction_util.c: In function 'receive_poll':
+packet_transaction_util.h:8:24: error: 'FIFO_SINK_2_IN_CSR_BASE' undeclared (first use in this function)
+ #define FIFO_SINK_CSR  FIFO_SINK_2_IN_CSR_BASE
+                        ^
+packet_transaction_util.c:252:42: note: in expansion of macro 'FIFO_SINK_CSR'
+  status = altera_avalon_fifo_read_status(FIFO_SINK_CSR,FIFO_STATUS);
+                                          ^
+make: *** [obj/default/packet_transaction_util.o] Error 1
+
+16:56:05 Build Finished (took 2s.454ms)
+

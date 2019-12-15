@@ -2,6 +2,7 @@
 #include "packet_transaction.h"
 
 
+/* This is only for current node */
 /****************** Structure ******************/
 struct Edge edge_p5_p0;
 struct Edge edge_p0_p1;
@@ -12,6 +13,7 @@ struct Edge edge_p1_p3;
 struct Edge edges[5];
 /****************** Structure ******************/
 
+/* This is only for current node */
 struct Edge* get_edge(uint8_t proc_num, uint8_t port_num, uint8_t inout)
 {
     if (inout == 0  /*it is input edge*/) {
@@ -49,6 +51,7 @@ struct Edge* get_edge(uint8_t proc_num, uint8_t port_num, uint8_t inout)
     return 0;
 }
 
+/* This is only for current node */
 ring_buffer_t* get_buffer(alt_u16 proc_src, alt_u16 proc_dest)
 {
     for (int i = 0; i < 5; i++) {
@@ -61,24 +64,6 @@ ring_buffer_t* get_buffer(alt_u16 proc_src, alt_u16 proc_dest)
     return 0;
 }
 
-/*uint8_t get_input_size(uint8_t proc_num, uint8_t port_num){
-	if (proc_num == 0) {
-		if (port_num == 0) {
-			return P0_INP0_TYPE_SIZE;
-		}
-	}
-
-	if (proc_num == 1) {
-		if (port_num == 0) {
-			return P1_INP0_TYPE_SIZE;
-		}
-		if (port_num == 1) {
-			return P1_INP1_TYPE_SIZE;
-		}
-	}
-	return 0;
-}*/
-
 void init_buffer(){
 	ring_buffer_t buff_p5_p0;
 	ring_buffer_init(&buff_p5_p0);
@@ -90,6 +75,7 @@ void init_buffer(){
 	ring_buffer_init(&buff_p4_p1);
 }
 
+/* This is only for current node */
 void init_structures(){
 	init_buffer();
 
@@ -98,7 +84,8 @@ void init_structures(){
 	edge_p5_p0.node_dest = 0;
 	edge_p5_p0.proc_src = 5;
 	edge_p5_p0.proc_dest = 0;
-	edge_p5_p0.num_of_token = 1;
+	edge_p5_p0.num_of_inp_token = P0_INP0_NUM_OF_TOKEN;
+	edge_p5_p0.size_of_token_type = sizeof(P0_INP0_TYPE);
 	edge_p5_p0.external = 1;
 	edge_p5_p0.buffer = &buff_p5_p0;
 
@@ -107,11 +94,13 @@ void init_structures(){
 
 	//Edge p0 to p1
 	edge_p0_p1.node_src = 0;
-	edge_p0_p1.node_dest = 1;
+	edge_p0_p1.node_dest = 0;
 	edge_p0_p1.proc_src = 0;
 	edge_p0_p1.proc_dest = 1;
-	edge_p0_p1.num_of_token = 1;
-	edge_p0_p1.external = 1;
+	edge_p0_p1.num_of_inp_token = P1_INP0_NUM_OF_TOKEN;
+	edge_p0_p1.num_of_out_token = P0_OUT0_NUM_OF_TOKEN;
+	edge_p0_p1.size_of_token_type = sizeof(P1_INP0_TYPE);
+	edge_p0_p1.external = 0;
 	edge_p0_p1.buffer = &buff_p0_p1;
 
 	edges[1] = edge_p0_p1;
@@ -122,7 +111,8 @@ void init_structures(){
 	edge_p4_p1.node_dest = 0;
 	edge_p4_p1.proc_src = 4;
 	edge_p4_p1.proc_dest = 1;
-	edge_p4_p1.num_of_token = 1;
+	edge_p4_p1.num_of_inp_token = P1_INP1_NUM_OF_TOKEN;
+	edge_p4_p1.size_of_token_type = sizeof(P1_INP1_TYPE);
 	edge_p4_p1.external = 1;
 	edge_p4_p1.buffer = &buff_p4_p1;
 
@@ -131,10 +121,11 @@ void init_structures(){
 
 	//Edge p1 to p2
 	edge_p1_p2.node_src = 0;
-	edge_p1_p2.node_dest = 2;
-	edge_p1_p2.proc_src = 2;
-	edge_p1_p2.proc_dest = 3;
-	edge_p1_p2.num_of_token = 1;
+	edge_p1_p2.node_dest = 1;
+	edge_p1_p2.proc_src = 1;
+	edge_p1_p2.proc_dest = 2;
+	edge_p1_p2.size_of_token_type = sizeof(P1_OUT0_TYPE);
+	edge_p1_p2.num_of_out_token = P1_OUT0_NUM_OF_TOKEN;
 	edge_p1_p2.external = 1;
 
 	edges[3] = edge_p1_p2;
@@ -145,7 +136,8 @@ void init_structures(){
 	edge_p1_p3.node_dest = 3;
 	edge_p1_p3.proc_src = 1;
 	edge_p1_p3.proc_dest = 3;
-	edge_p1_p3.num_of_token = 1;
+	edge_p1_p3.size_of_token_type = sizeof(P1_OUT1_TYPE);
+	edge_p1_p3.num_of_out_token = P1_OUT1_NUM_OF_TOKEN;
 	edge_p1_p3.external = 1;
 
 	edges[4] = edge_p1_p3;
@@ -190,19 +182,19 @@ alt_u16 proc_src, alt_u16 proc_dest, unsigned char packsize, unsigned char *payl
 
 void read_payload(unsigned int temp, unsigned int byte_coef, unsigned char *payload){
 	*(payload + 0 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
+	//printf("payload[%d] = %d\n",byte_coef,*(payload + 0 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 1 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 1),*(payload + 1 + byte_coef));
+	//printf("payload[%d] = %d\n",(byte_coef + 1),*(payload + 1 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 2 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 2),*(payload + 2 + byte_coef));
+	//printf("payload[%d] = %d\n",(byte_coef + 2),*(payload + 2 + byte_coef));
 	temp >>= 8;
 	
 	*(payload + 3 + byte_coef) = temp;
-	printf("payload[%d] = %d\n",(byte_coef + 3),*(payload + 3 + byte_coef));
+	//printf("payload[%d] = %d\n",(byte_coef + 3),*(payload + 3 + byte_coef));
 }
 
 void receive_packet(){
@@ -217,15 +209,15 @@ void receive_packet(){
 	//first four bytes
 	temp = altera_avalon_fifo_read_fifo(FIFO_SINK_BASE, FIFO_SINK_CSR);
 	node_dest = temp;
-	printf("node destination = %d\n",node_dest);
+	//printf("node destination = %d\n",node_dest);
 	temp >>= 8;
 
 	node_src = temp;
-	printf("node source = %d\n",node_src);
+	//printf("node source = %d\n",node_src);
 	temp >>= 8;
 
 	packet_size = temp;
-	printf("packet_size = %d\n",packet_size);
+	//printf("packet_size = %d\n",packet_size);
 	temp >>= 8;
 
 	src_high = temp;
@@ -239,8 +231,8 @@ void receive_packet(){
 	src_proc |= src_low;
 	temp >>= 8;
 	dst_proc = temp;
-	printf("source process = %d\n",src_proc);
-	printf("destination process = %d\n",dst_proc);
+	//printf("source process = %d\n",src_proc);
+	//printf("destination process = %d\n",dst_proc);
 
 
 	//since now, recieve the payload

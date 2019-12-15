@@ -144,6 +144,7 @@ ELF := node3_v2.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += code_3.c
 C_SRCS += packet_transaction_util.c
+C_SRCS += ringbuffer_util.c
 CXX_SRCS :=
 ASM_SRCS :=
 
