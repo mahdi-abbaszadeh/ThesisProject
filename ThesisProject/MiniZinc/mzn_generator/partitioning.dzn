@@ -1,0 +1,27 @@
+NUM_OF_NODES = 5;
+NUM_OF_PARTS = 3;
+MAX_PARTS_DIFF = 2;
+MAX_NET_WEIGHT = 10;
+MAX_PROCESS_METRIC = 100;
+
+nodes_matrix = [|  0, 1, 2, 0, 1,
+|  1, 0, 1, 0, 2,
+|  2, 1, 0, 1, 4,
+|  0, 0, 1, 0, 0,
+|  1, 2, 4, 0, 0,
+ |];
+
+process_metric = [ 30,
+40,
+20,
+10,
+60,
+ ];
+
+next = [ {2,3,},
+{3,5,},
+{4,},
+{},
+{3,},
+];
+

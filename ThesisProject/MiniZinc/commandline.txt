@@ -1,0 +1,1 @@
+export PATH=/Applications/MiniZincIDE.app/Contents/Resources:$PATH
