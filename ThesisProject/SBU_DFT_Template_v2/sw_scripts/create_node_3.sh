@@ -34,14 +34,14 @@ rm $PROJECT_NAME.map
 rm $PROJECT_NAME.objdump
 rm obj/default/hello_world_small.d
 rm obj/default/hello_world_small.o
-cp ../../../sw_sources/code_3.c code_3.c
-cp ../../../packet_transaction_lib/inc/header_3/packet_transaction_util.h packet_transaction_util.h
+cp ../../../sw_sources/node_3 node_3
+cp ../../../packet_transaction_lib/inc/header_2/packet_transaction_util.h packet_transaction_util.h
 cp ../../../packet_transaction_lib/inc/packet_transaction.h packet_transaction.h
-cp ../../../packet_transaction_lib/src/packet_transaction_util.c packet_transaction_util.c
+cp ../../../packet_transaction_lib/src/src_2/packet_transaction_util.c packet_transaction_util.c
 
 # generate make file for new source file
 nios2-app-generate-makefile --bsp-dir=../$BSP_NAME \
---src-files=code_3.c
+--src-files=node_3
 make
 
 # build again

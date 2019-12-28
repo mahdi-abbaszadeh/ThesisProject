@@ -1,12 +1,16 @@
-16:04:24 **** Incremental Build of configuration Nios II for project node3_v2 ****
+21:51:39 **** Incremental Build of configuration Nios II for project node3_v2 ****
 make all 
 Info: Building ../node3_v2_bsp/
 D:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../node3_v2_bsp/
 [BSP build complete]
 Info: Compiling code_3.c to obj/default/code_3.o
 nios2-elf-gcc -xc -MP -MMD -c -I../node3_v2_bsp//HAL/inc -I../node3_v2_bsp/ -I../node3_v2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/code_3.o code_3.c
+code_3.c: In function 'proc_3':
+code_3.c:36:7: warning: unused variable 'num2' [-Wunused-variable]
+  int* num2 = (P3_INP1_TYPE*)inpargs[1][0];
+       ^
 code_3.c: In function 'read_buff':
-code_3.c:85:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
+code_3.c:75:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
      ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
                                           ^
 In file included from packet_transaction_util.h:6:0,
@@ -14,13 +18,10 @@ In file included from packet_transaction_util.h:6:0,
 ringbuffer_util.h:94:9: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  uint8_t ring_buffer_dequeue_arr(ring_buffer_t *buffer, char *data, ring_buffer_size_t len);
          ^
-code_3.c:92:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+code_3.c:77:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
      proc_3_inp_0[i] = ( (P3_INP0_TYPE*)tmp )[0];
      ^
-code_3.c:97:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-    printf("processor number %d reads data from %d ,which is %x\n",edge->proc_dest,edge->proc_src,( (P3_INP0_TYPE*)tmp )[0]);
-    ^
-code_3.c:103:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
+code_3.c:83:42: warning: pointer targets in passing argument 2 of 'ring_buffer_dequeue_arr' differ in signedness [-Wpointer-sign]
      ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
                                           ^
 In file included from packet_transaction_util.h:6:0,
@@ -28,14 +29,11 @@ In file included from packet_transaction_util.h:6:0,
 ringbuffer_util.h:94:9: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  uint8_t ring_buffer_dequeue_arr(ring_buffer_t *buffer, char *data, ring_buffer_size_t len);
          ^
-code_3.c:110:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+code_3.c:85:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
      proc_3_inp_1[i] = ( (P3_INP1_TYPE*)tmp )[0];
      ^
-code_3.c:115:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-    printf("processor number %d reads data from %d ,which is %x\n",edge->proc_dest,edge->proc_src,( (P3_INP0_TYPE*)tmp )[0]);
-    ^
 code_3.c: In function 'serializing_send':
-code_3.c:151:38: warning: pointer targets in passing argument 2 of 'ring_buffer_queue_arr' differ in signedness [-Wpointer-sign]
+code_3.c:111:38: warning: pointer targets in passing argument 2 of 'ring_buffer_queue_arr' differ in signedness [-Wpointer-sign]
    ring_buffer_queue_arr(edge->buffer,send_array,24);
                                       ^
 In file included from packet_transaction_util.h:6:0,
@@ -43,17 +41,14 @@ In file included from packet_transaction_util.h:6:0,
 ringbuffer_util.h:77:6: note: expected 'const char *' but argument is of type 'unsigned char *'
  void ring_buffer_queue_arr(ring_buffer_t *buffer, const char *data, ring_buffer_size_t size);
       ^
-code_3.c:153:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-  printf("processor number %d sends data to %d ,which is %x\n",edge->proc_src,edge->proc_dest,( (int*)send_array )[0]);
-  ^
 Info: Linking node3_v2.elf
 nios2-elf-g++  -T'../node3_v2_bsp//linker.x' -msys-crt0='../node3_v2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../node3_v2_bsp/  -msmallc  -Wl,-Map=node3_v2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o node3_v2.elf obj/default/code_3.o obj/default/packet_transaction_util.o obj/default/ringbuffer_util.o -lm -msys-lib=m
 nios2-elf-insert node3_v2.elf --thread_model hal --cpu_name nios2_3 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name qsys_system --quartus_project_dir "C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus" --jdi C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2_bsp/../../SBU_DFT.jdi --sopcinfo C:/Users/Mahdi2016/Desktop/ThesisProject/ThesisProject/SBU_DFT_Template_v2/quartus/software/node3_v2_bsp/../../qsys_system.sopcinfo
-Info: (node3_v2.elf) 8944 Bytes program size (code + initialized data).
+Info: (node3_v2.elf) 8624 Bytes program size (code + initialized data).
 Info:                15 KBytes free for stack + heap.
 Info: Creating node3_v2.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source node3_v2.elf >node3_v2.objdump
 [node3_v2 build complete]
 
-16:04:26 Build Finished (took 2s.133ms)
+21:51:41 Build Finished (took 2s.187ms)
 

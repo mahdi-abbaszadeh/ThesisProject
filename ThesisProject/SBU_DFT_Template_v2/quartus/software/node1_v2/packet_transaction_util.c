@@ -206,10 +206,15 @@ void receive_packet(){
 	ring_buffer_queue_arr(buffer,payload,24);
 }
 
-void receive_poll(){
+bool receive_poll(){
 	int status;
 	status = altera_avalon_fifo_read_status(FIFO_SINK_CSR,FIFO_STATUS);
-    while(status & 0x02){
+    /*while(status & 0x02){
+    	usleep(5000000);
   	  status = altera_avalon_fifo_read_status(FIFO_SINK_CSR,FIFO_STATUS);
-    }
+    }*/
+	if(status & 0x02)
+		return false;
+	else
+		return true;
 }

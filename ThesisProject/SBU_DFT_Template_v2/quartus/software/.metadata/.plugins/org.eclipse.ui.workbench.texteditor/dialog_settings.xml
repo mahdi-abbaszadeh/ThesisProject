@@ -2,20 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="P0_INP0_TOKENT_SIZE" key="selection"/>
+		<item value="external" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="P0_INP0_TOKENT_SIZE"/>
-			<item value="size"/>
-			<item value="proc_1_outarg_0"/>
-			<item value="input_0"/>
-			<item value="Proc_0_arg"/>
-			<item value="ring_buffer_size_t"/>
+			<item value="external"/>
+			<item value="for"/>
+			<item value="for(int i = 0; i &lt; 24; ++i)"/>
+			<item value="waiting"/>
+			<item value="write to"/>
+			<item value="alt_putstr"/>
+			<item value="printf"/>
+			<item value="tmp"/>
 		</list>
 		<list key="replacehistory">
+			<item value="//alt_putstr"/>
+			<item value="//printf"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

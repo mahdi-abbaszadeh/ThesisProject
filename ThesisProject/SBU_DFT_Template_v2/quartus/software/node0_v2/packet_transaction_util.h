@@ -77,4 +77,4 @@ alt_u16 proc_src, alt_u16 proc_dest, unsigned char packsize, unsigned char *payl
 
 void receive_packet();
 
-void receive_poll();
+bool receive_poll();

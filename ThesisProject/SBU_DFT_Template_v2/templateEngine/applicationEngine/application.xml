@@ -17,66 +17,55 @@
     <!-- process infos -->
 
     <!-- process 0 -->
-    <process name="proc_0">
+    <process name="proc_0" numOfInp="1" numOfOut="1">
       <!-- input & output ports -->
-      <port name="p10_0" type="int" direction="in"/>
-      <port name="p01_0" type="int" direction="out"/>
-      <port name="p20_0" type="int" direction="in"/>
-      <port name="p02_0" type="int" direction="out"/>
-      <!-- source file -->
-      <source_file name="code_0"/>
-      <!-- constructor, include: initial values, fire rates & etc. -->
-      <constructor name="proc_0_constructor">
-        <argument name="init_val" value=""/>
-        <argument name="fire_rate" value=""/>
-      </constructor>
+      <port ID="0" name="p5_p0" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p0_p1" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_0"/>
     </process>
 
     <!-- process 1 -->
-    <process name="proc_1">
+    <process name="proc_1" numOfInp="2" numOfOut="2">
       <!-- input & output ports -->
-      <port name="p10_1" type="int" direction="out"/>
-      <port name="p01_1" type="int" direction="in"/>
-      <port name="p13_1" type="int" direction="out"/>
-      <port name="p31_1" type="int" direction="in"/>
-      <!-- source file -->
-      <source_file name="code_1"/>
-      <!-- constructor, include: initial values, fire rates & etc. -->
-      <constructor name="proc_1_constructor">
-        <argument name="init_val" value=""/>
-        <argument name="fire_rate" value=""/>
-      </constructor>
+      <port ID="0" name="p0_p1" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="1" name="p4_p1" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p1_p2" type="int" direction="OUT" numOfToken="1"/>
+      <port ID="1" name="p1_p3" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_0"/>
     </process>
 
     <!-- process 2 -->
-    <process name="proc_2">
+    <process name="proc_2" numOfInp="1" numOfOut="1">
       <!-- input & output ports -->
-      <port name="p23_2" type="int" direction="out"/>
-      <port name="p32_2" type="int" direction="in"/>
-      <port name="p20_2" type="int" direction="out"/>
-      <port name="p02_2" type="int" direction="in"/>
-      <!-- source file -->
-      <source_file name="code_2"/>
-      <!-- constructor, include: initial values, fire rates & etc. -->
-      <constructor name="proc_2_constructor">
-        <argument name="init_val" value=""/>
-        <argument name="fire_rate" value=""/>
-      </constructor>
+      <port ID="0" name="p1_p2" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p2_p3" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_1"/>
     </process>
 
     <!-- process 3 -->
-    <process name="proc_3">
+    <process name="proc_3" numOfInp="2" numOfOut="1">
       <!-- input & output ports -->
-      <port name="p31_3" type="int" direction="out"/>
-      <port name="p13_3" type="int" direction="in"/>
-      <port name="p32_3" type="int" direction="out"/>
-      <port name="p23_3" type="int" direction="in"/>
-      <!-- source file -->
-      <source_file name="code_3"/>
-      <!-- constructor, include: initial values, fire rates & etc. -->
-      <constructor name="proc_3_constructor">
-        <argument name="init_val" value=""/>
-        <argument name="fire_rate" value=""/>
-      </constructor>
+      <port ID="0" name="p2_p3" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="1" name="p1_p3" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p3_p4" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_3"/>
     </process>
+
+    <!-- process 4 -->
+    <process name="proc_4" numOfInp="1" numOfOut="2">
+      <!-- input & output ports -->
+      <port ID="0" name="p3_p4" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p4_p1" type="int" direction="OUT" numOfToken="1"/>
+      <port ID="1" name="p4_p5" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_2"/>
+    </process>
+
+    <!-- process 5 -->
+    <process name="proc_5" numOfInp="1" numOfOut="1">
+      <!-- input & output ports -->
+      <port ID="0" name="p4_p5" type="int" direction="INP" numOfToken="1" init_val=""/>
+      <port ID="0" name="p5_p0" type="int" direction="OUT" numOfToken="1"/>
+      <source_file name="node_2"/>
+    </process>
+
   </process_network>

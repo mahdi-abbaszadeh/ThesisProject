@@ -36,12 +36,7 @@ void proc_3(void ***inpargs, void ***outargs){
 	int* num2 = (P3_INP1_TYPE*)inpargs[1][0];
 	int* out1 = (P3_OUT0_TYPE*)outargs[0][0];
 
-	/*printf("proc_3 -- num1: %x\n",*num1);
-	printf("proc_3 -- num2: %x\n",*num2);*/
-
-	*out1 = *num1 + *num2;
-
-	//printf("proc_3 -- out1: %x\n",*out1);
+	*out1 = *num1 + 1;
 }
 
 static int init_input_fifo_wrclk_control(alt_u32 control_base_address)
@@ -73,62 +68,32 @@ void print_status(alt_u32 control_base_address)
 
 /* This is only for current node */
 void read_buff(struct Edge *edge, alt_u16 proc_num, uint8_t input_num){
-
-	/*printf("read buffer - size of token type: %d\n",edge->size_of_token_type);
-	printf("read buffer - number of input token: %d\n",edge->num_of_inp_token);*/
-
 	if(proc_num == 3){
 		if(input_num == 0){
 			uint8_t tmp[edge->size_of_token_type];
-
 			for(int i =0; i < edge->num_of_inp_token; ++i){
 				ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
-				//printf("circular buffer size(after dequeue): %d\n",ring_buffer_num_items((edge->buffer)));
 				ring_buffer_pop_arr(edge->buffer,(24 - edge->size_of_token_type));
-				//printf("circular buffer size(after pop): %d\n",ring_buffer_num_items((edge->buffer)));
-				/*for(int i =0; i< sizeof(tmp); i++){
-					printf("tmp[i]: %d\n",tmp[i]);
-				}*/
 				proc_3_inp_0[i] = ( (P3_INP0_TYPE*)tmp )[0];
 			}
-			/*for(int i =0; i< sizeof(proc_3_inp_0); i++){
-				printf("proc_3_inp_0[i]: %d\n",proc_3_inp_0[i]);
-			}*/
-			printf("processor number %d reads data from %d ,which is %x\n",edge->proc_dest,edge->proc_src,( (P3_INP0_TYPE*)tmp )[0]);
 		}
 		if(input_num == 1){
 			uint8_t tmp[edge->size_of_token_type];
-
 			for(int i =0; i < edge->num_of_inp_token; ++i){
 				ring_buffer_dequeue_arr(edge->buffer,tmp,edge->size_of_token_type);
-				//printf("circular buffer size(after dequeue): %d\n",ring_buffer_num_items((edge->buffer)));
 				ring_buffer_pop_arr(edge->buffer,(24 - edge->size_of_token_type));
-				//printf("circular buffer size(after pop): %d\n",ring_buffer_num_items((edge->buffer)));
-				/*for(int i =0; i< sizeof(tmp); i++){
-					printf("tmp[i]: %d\n",tmp[i]);
-				}*/
 				proc_3_inp_1[i] = ( (P3_INP1_TYPE*)tmp )[0];
 			}
-			/*for(int i =0; i< sizeof(proc_3_inp_0); i++){
-				printf("proc_3_inp_0[i]: %d\n",proc_3_inp_1[i]);
-			}*/
-			printf("processor number %d reads data from %d ,which is %x\n",edge->proc_dest,edge->proc_src,( (P3_INP0_TYPE*)tmp )[0]);
 		}
-
 	}
 }
 
 void read_data(struct Edge *edge, alt_u16 proc_num, uint8_t input_num){
 
-	//printf("circular buffer size: %d\n",ring_buffer_num_items((edge->buffer)));
 	while(ring_buffer_num_items((edge->buffer)) < (edge->num_of_inp_token * 24)){
-		//alt_putstr("waiting for receiving data:\n");
-		receive_poll();
-
-		//alt_putstr("read from FIFO:\n");
-		receive_packet();
+		if(receive_poll())
+			receive_packet();
 	}
-	//printf("circular buffer size(after read data): %d\n",ring_buffer_num_items((edge->buffer)));
 	read_buff(edge, proc_num, input_num);
 }
 
@@ -137,21 +102,14 @@ void serializing_send(struct Edge *edge, unsigned char *array){
 
 	for(int i = 0; i < edge->size_of_token_type; ++i){
 		send_array[i] = array[i];
-		//printf("in serialized data function: array[i]: %d\n",array[i]);
 	}
 
 	if(edge->external == 1){
-		//printf("external\n");
-		//alt_putstr("write to FIFO\n");
-		/*for(int i = 0; i < 24; ++i)
-			printf("send_array: %d\n",send_array[i]);*/
 		send_packet(edge->node_src, edge->node_dest, edge->proc_src, edge->proc_dest, 32, send_array);
 	}
 	else{
 		ring_buffer_queue_arr(edge->buffer,send_array,24);
 	}
-	printf("processor number %d sends data to %d ,which is %x\n",edge->proc_src,edge->proc_dest,( (int*)send_array )[0]);
-
 }
 
 /* This is only for current node */
@@ -191,7 +149,7 @@ void cleanUp(){
 }
 
 void start_FIFO(){
-	//alt_putstr("Hello from Nios II!\n");
+//	alt_putstr("Hello from Nios II!\n");
 
 	//initialization of FIFOs
 	init_input_fifo_wrclk_control(FIFO_SINK_3_IN_CSR_BASE);
@@ -212,47 +170,28 @@ int main()
 	init_structures();
 
 
-	for(int k = 0; k < 5; k++){
-
+	for(int k = 0; k < 5; ++k){
+		//alt_putstr("NODE 3 ---------------------------------------------------------\n");
 	  for(int i = 0; i <P3_NUM_OF_INPS; ++i){
-		  //alt_putstr("before get edge(for receive)\n");
-		  /* This is only for current node */
 		  struct Edge *edge = get_edge(3,i,0/*it means input edges*/);
-
-		  /*printf("edge node source: %d\n",edge->node_src);
-		  printf("edge node dest: %d\n",edge->node_dest);
-		  printf("edge proc source: %d\n",edge->proc_src);
-		  printf("edge proc proc_dest: %d\n",edge->proc_dest);*/
-
-		  //alt_putstr("before read_data\n");
+		  //printf("k = %d\t before read data from processor 3\n",k);
 		  read_data(edge,3/*which process*/, i/*which input*/);
-		  //alt_putstr("after read_data\n");
+		  //printf("k = %d\t after read data from processor 3\n",k);
 	  }
 
-	  //alt_putstr("before call proc_3\n");
 	  proc_3(proc_3_inps, proc_3_outs);
-	  //alt_putstr("after call proc_3\n");
-
 
 	  for(int i = 0; i <P3_NUM_OF_OUTS; ++i){
 
-		  //alt_putstr("before get edge(for send)\n");
 		  struct Edge *edge = get_edge(3,i,1/*it means output edges*/);
-
-		  /*printf("edge node source: %d\n",edge->node_src);
-		  printf("edge node dest:   %d\n",edge->node_dest);
-		  printf("edge proc source: %d\n",edge->proc_src);
-		  printf("edge proc proc_dest: %d\n",edge->proc_dest);*/
-
-		  //alt_putstr("before send_data\n");
+		  //printf("k = %d\t before send data from processor 3\n",k);
 		  send_data(edge,3/*which process*/, i/*which output*/);
-		  //alt_putstr("after send_data\n");
+		  //printf("k = %d\t after send data from processor 3\n",k);
 	  }
-	  usleep(4000000000);
 	}
-	  cleanUp();
+	cleanUp();
 
-	  while (1);
+	while (1);
 
-	  return 0;
+	return 0;
 }
