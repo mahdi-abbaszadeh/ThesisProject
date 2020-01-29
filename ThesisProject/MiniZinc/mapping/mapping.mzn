@@ -37,13 +37,19 @@ array[1..no_actors] of int: actor_load; %&&&&&&&&&&
 
 
 array[1..2, 1..no_flows] of int: load; %???????????????????????????
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% array[1..2, 1..no_flows] of var int: load_var;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
 array[1..no_flows] of var 0..10000: cost;
 
 % var 0..10000: load_cost;
 % var 0..10000: cpu_cost;
 var 0..10000: communication_cost;
-var 0..10000: objective;
+var 0..100000: objective;
 
 array[1..2*no_flows] of var 1..k: flow_processor;
 
@@ -72,6 +78,33 @@ array[1..k+2*no_flows] of int: total_balance;
 array[1..2*no_flows*k] of int: in_connections;
 array[1..2*no_flows*k] of int: out_connections;
 array[1..2*no_flows*k+no_links, 1..2] of int: all_connections;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% my variables and parameters 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% array[1..no_actors] of var int: actor_load_var;
+var 1..500000*100: throughput;
+
+% array[1..no_flows] of var int: inStream_var;
+% array[1..no_flows, 1..k] of var 0..max(inStream_var): inFlow_var;
+% array[1..no_flows, 1..k] of var 0..max(inStream_var): outFlow_var;
+% array[1..no_flows, 1..m] of var 0..max(max(inStream_var),link_bandwidth): flows_var;
+% array[1..2*k*no_flows + no_links] of var 0..max(max(inStream_var),link_bandwidth): total_flow_var;
+% array[1..no_flows, 1..n] of var int: b_var;
+% array[1..no_flows, 1..n] of var int: balance_var;
+% array[1..k+2*no_flows] of var int: total_balance_var;
+
+% constraint forall(i in 1..k)(
+%    processor_load = cpu_loads[i] * throughput
+% );
+% constraint forall(i in 1..2, j in 1..no_flows)(
+%    processor_load = load[i, j] * throughput
+% );
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% my variables and parameters 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% === Model constraints ===
 
@@ -105,7 +138,7 @@ constraint %% computes processors' load
 constraint  %% cost function to minimize
 	forall (i in 1..k) (cc[i] = sum(j in 1..no_flows)((flow_processor[source_destination_actor[j,1]] = i) * cost[j]))
 	/\
-	maximum(objective, [cpu_loads[i] + cc[i] | i in 1..k])
+	maximum(objective, [(cpu_loads[i]) + cc[i] | i in 1..k])
 	% maximum(load_cost, [cpu_loads[i] + cc[i] | i in 1..k])
 	% /\
 	% objective = load_cost
@@ -127,13 +160,13 @@ constraint
 	       forall (j in i+1..no_flows where source_destination_actor[i,2] = source_destination_actor[j,2]) (flow_processor[no_flows+i] = flow_processor[no_flows+j]))
 ;
 
-constraint forall ( i in 1..no_flows)
-(
-  commFlow[i, 2] = 0 /\
-  commFlow[i, 4] = 0 /\
-  commFlow[i, 5] = 0 /\
-  commFlow[i, 7] = 0
-);
+% constraint forall ( i in 1..no_flows)
+% (
+%   commFlow[i, 2] = 0 /\
+%   commFlow[i, 4] = 0 /\
+%   commFlow[i, 5] = 0 /\
+%   commFlow[i, 7] = 0
+% );
 
 solve :: seq_search([
             int_search(flow_processor, first_fail, indomain_min, complete),
@@ -173,6 +206,7 @@ output [
     "outFlow = array2d(1..\(no_flows), 1..\(k), \(outFlow));\n",
     "commFlow = array2d(1..\(no_flows), 1..\(k), \(commFlow));\n",
     "flows = array2d(1..\(no_flows), 1..\(k), \(flows));\n",
-    "actor_processor = \(actor_processor);\n"
+    "actor_processor = \(actor_processor);\n",
+    "throughput = \(throughput);\n",
 ];
 
