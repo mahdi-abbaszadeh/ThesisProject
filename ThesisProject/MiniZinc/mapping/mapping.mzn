@@ -14,8 +14,8 @@ include "globals.mzn";
 int: row;          % number of rows in the mesh
 int: col;          % number of columns in the mesh
 int: k = row*col;  %  number processors
-int: n = k + 2;    % number of nodes % this that KAZAII image
-int: no_links;     % number of links between processors % it depends on NoC architectue
+int: n = k + 2;    % number of nodes
+int: no_links;     % number of links between processors
 int: m = no_links + 2*k;  % number of arcs
 int: no_flows;     % number of flows
 int: link_bandwidth;
@@ -26,30 +26,20 @@ array[1..m, 1..2] of int: arc;
 
 array[1..m] of int: unit_cost;
 
-array[1..no_flows, 1..n] of int: balance; %????????????????????????
+array[1..no_flows, 1..n] of int: balance;
 
 int: processor_load;
 array[1..k] of var 0..processor_load: cpu_loads;
 
-array[1..no_actors] of int: actor_load; %&&&&&&&&&&
-% array[1..no_actors] of var int: var_actor_load;
+array[1..no_actors] of int: actor_load;
+array[1..2, 1..no_flows] of int: load;
 
-
-
-array[1..2, 1..no_flows] of int: load; %???????????????????????????
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% array[1..2, 1..no_flows] of var int: load_var;
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
 array[1..no_flows] of var 0..10000: cost;
 
 % var 0..10000: load_cost;
 % var 0..10000: cpu_cost;
 var 0..10000: communication_cost;
-var 0..100000: objective;
+var 0..10000: objective;
 
 array[1..2*no_flows] of var 1..k: flow_processor;
 
@@ -79,32 +69,14 @@ array[1..2*no_flows*k] of int: in_connections;
 array[1..2*no_flows*k] of int: out_connections;
 array[1..2*no_flows*k+no_links, 1..2] of int: all_connections;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% my variables and parameters 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% array[1..no_actors] of var int: actor_load_var;
-var 1..500000*100: throughput;
-
-% array[1..no_flows] of var int: inStream_var;
-% array[1..no_flows, 1..k] of var 0..max(inStream_var): inFlow_var;
-% array[1..no_flows, 1..k] of var 0..max(inStream_var): outFlow_var;
-% array[1..no_flows, 1..m] of var 0..max(max(inStream_var),link_bandwidth): flows_var;
-% array[1..2*k*no_flows + no_links] of var 0..max(max(inStream_var),link_bandwidth): total_flow_var;
-% array[1..no_flows, 1..n] of var int: b_var;
-% array[1..no_flows, 1..n] of var int: balance_var;
-% array[1..k+2*no_flows] of var int: total_balance_var;
-
-% constraint forall(i in 1..k)(
-%    processor_load = cpu_loads[i] * throughput
-% );
-% constraint forall(i in 1..2, j in 1..no_flows)(
-%    processor_load = load[i, j] * throughput
-% );
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% my variables and parameters 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+int: max_th;
+1..max_th: desired_th;
+var 1..max_th: th;
+array[1..k] of var 1..10130: part_exec; % represents each partitions cycle between its mapped actors; 10130 >= sum of each actor's execution time is 10124
+int: num_of_graph_cycles;
+array[1..num_of_graph_cycles] of 1..10130: cycles_times; % value of main graph's cycles execution time
+array[1..num_of_graph_cycles] of var 1..10130: graph_cycles_exec; % represents a cycles execution times in main graph; 10130 >= sum of each actor's execution time is 10124
+var 1..10130: lambda;
 
 %% === Model constraints ===
 
@@ -160,13 +132,57 @@ constraint
 	       forall (j in i+1..no_flows where source_destination_actor[i,2] = source_destination_actor[j,2]) (flow_processor[no_flows+i] = flow_processor[no_flows+j]))
 ;
 
-% constraint forall ( i in 1..no_flows)
-% (
-%   commFlow[i, 2] = 0 /\
-%   commFlow[i, 4] = 0 /\
-%   commFlow[i, 5] = 0 /\
-%   commFlow[i, 7] = 0
-% );
+constraint th >= desired_th;
+constraint forall (i in 1..k) (cpu_loads[i]*th <= (processor_load));
+constraint forall (i in 1..no_links) (comm_full[i]*th <= (link_bandwidth));
+%constraint forall (i in 1..2*k*no_flows + no_links) (total_flow[i] <= (max(max(inStream),link_bandwidth) div th));
+constraint forall (i in 1..k)(
+  part_exec[i] = sum(j in 1..no_actors)( bool2int(actor_processor[j] == i)*actor_load[j] )
+);  % find maximum cycle execution time among partitions
+constraint forall(i in 1..num_of_graph_cycles)(
+  if actor_processor[6] == actor_processor[7] then
+    graph_cycles_exec[i] = cycles_times[i]
+  else
+    graph_cycles_exec[i] = cycles_times[i] + 14 % it is the communication weight (W)
+  endif
+); % find maximum cycle execution time among main graph cycles
+constraint maximum(lambda, part_exec ++ graph_cycles_exec); % find the lambda regarding the equation (6)
+constraint (1000000 div lambda) >= desired_th;
+% constraint (lambda * th) = 1;
+
+constraint forall(i in 1..no_flows)(    
+    if actor_processor[source_destination_actor[i,1]] == 1 then
+      if actor_processor[source_destination_actor[i,2]] != 3 then
+        commFlow[i, 2] = 0 /\ commFlow[i, 6] = 0
+      else
+        commFlow[i, 1] = 0 /\ commFlow[i, 4] = 0
+      endif
+    
+    elseif actor_processor[source_destination_actor[i,1]] == 2 then
+      if actor_processor[source_destination_actor[i,2]] != 4 then
+        commFlow[i, 4] = 0 /\ commFlow[i, 8] = 0
+      else
+        commFlow[i, 3] = 0 /\ commFlow[i, 2] = 0
+      endif
+    
+    elseif actor_processor[source_destination_actor[i,1]] == 3 then
+      if actor_processor[source_destination_actor[i,2]] != 1 then
+        commFlow[i, 5] = 0 /\ commFlow[i, 1] = 0
+      else
+        commFlow[i, 6] = 0 /\ commFlow[i, 7] = 0
+      endif
+    
+    elseif actor_processor[source_destination_actor[i,1]] == 4 then
+      if actor_processor[source_destination_actor[i,2]] != 2 then
+        commFlow[i, 7] = 0 /\ commFlow[i, 3] = 0
+      else
+        commFlow[i, 8] = 0 /\ commFlow[i, 5] = 0
+      endif
+    else 
+      false 
+    endif
+);
+
 
 solve :: seq_search([
             int_search(flow_processor, first_fail, indomain_min, complete),
@@ -200,13 +216,16 @@ output [
     "objective = \(objective);\n",
     "communication_cost = \(communication_cost);\n",
     "flow_processor = \(flow_processor);\n",
-    "total_flow = \(total_flow);\n",
+    "constraint total_flow = \(total_flow);\n",
     "cpu_loads = \(cpu_loads);\n",
     "inFlow = array2d(1..\(no_flows), 1..\(k), \(inFlow));\n",
     "outFlow = array2d(1..\(no_flows), 1..\(k), \(outFlow));\n",
-    "commFlow = array2d(1..\(no_flows), 1..\(k), \(commFlow));\n",
-    "flows = array2d(1..\(no_flows), 1..\(k), \(flows));\n",
-    "actor_processor = \(actor_processor);\n",
-    "throughput = \(throughput);\n",
+    "commFlow = array2d(1..\(no_flows), 1..\(no_links), \(commFlow));\n",
+    "constraint flows = array2d(1..\(no_flows), 1..\(m), \(flows));\n",
+    "constraint actor_processor = \(actor_processor);\n",
+    "throughput = \(th);\n",
+    "part_exec = \(part_exec);\n",
+    "graph_cycles_exec = \(graph_cycles_exec);\n",
+    "lambda = \(lambda);\n"
 ];
 
